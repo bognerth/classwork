@@ -1,0 +1,16 @@
+#-*- encoding: utf-8 -*-
+@;1;Welche Aussage muss nicht erfuellt sein, damit ein Geraet als Computer bezeichnet werden kann
+0;Verarbeitung von Daten gemaess einer Folge von automatisch ausgefuehrten Instruktionen
+0;Programme erlauben Entscheidungen und Wiederholungen
+0;Programme können geändert oder ausgetauscht werden
+1;Benutzt X-Server zur Ausgabe
+@;1;Was zaehlt nicht zu den Merkmalen von Firmware
+0;Ist auf der Hauptplatine des Computers gespeichert
+0;Versetzt den Computer beim Einschalten in einen bestimmten Zustand
+0;ermöglicht das Starten des Betriebssystems
+1;alle Aussagen charakterisieren Firmware
+@;1;Welche Eigenschaft beschreibt am besten ein multiuserfaehiges Betriebssystem:
+0;hat eine grafische Bedienoberfläche
+0;alles ist eine Datei 
+1;ermöglicht das gleichzeitige Arbeiten mehrerer Benutzer
+0;ermöglicht vielen Benutzern das Arbeiten

@@ -1,0 +1,22 @@
+<h2>Test-Ergebnis</h2>
+
+<p>
+	<%= @test_student.points %> richtige Antworten bei <%= @test_student.count_questions %> Fragen ergibt <%= @prozent %> %. <br />
+	Das ist die Note: <b><%= POINTS_TO_NOTE[@prozent] %></b>.</p>
+<hr />
+<table class="data_table">
+<% @category.questions.each do |question| %>
+	<tr class="list_line_odd">
+		<td colspan="2"><%= question.text %></td>
+	<tr>
+	<% question.answers.each do |answer| %>
+		<tr>
+			<td>
+					<%= image_tag "plus.png" if answer.points == 1 %>
+					<%= @antworten[answer.id] == 1 && answer.points == 1 ? image_tag("ok.png") : (image_tag("cross.png") if @antworten[answer.id] )  %>
+			</td>
+			<td><%= answer.text %> </td>
+		</tr>
+	<% end %>
+<% end %>
+</table>

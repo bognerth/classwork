@@ -1,0 +1,493 @@
+#-*- encoding: utf-8 -*- 
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, die dem User theo gehören und sich unterhalb des Verzeichnisses /var/www befinden
+1;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien von /var/log aus, deren Namen mit einem großen oder kleinen C beginnt, keine Fehlerausgabe
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+1;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, von ihrem Home-Verzeichnis ausgehend, die groesser als 1 MB sind
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+1;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print 
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, von Ihrem Home-Verzeichnis ausgehend, die seit 30 Tagen nicht mehr verändert wurden
+1;find . -atime +30  
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print  
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, in dem zur Übung angelegten Verzeichnis, die mit a beginnen und dann ein r oder n als 2. Buchstaben haben
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name *anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+1;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, /home ausgehend alle Dateien des Users als der Sie angemeldet sind
+1;find /home -user tb
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name „*anwalt“ -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, vom Typ link in dem zur Übung angelegten Verzeichnis
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+1;find /bin -type l
+0;find / -type d -print
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien ihres Home-Directorys 
+1;find / -type d -print
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find /home -type d -print
+@;3;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl löscht alle Dateien aus dem Übungsverzeichnis, deren Endung auf .txt lautet
+1;find *.txt -exec rm {} \;
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@Welche der Aussagen stimmt nicht fuer das exec-Kommando
+0;Mit der –exec Funktion des find – Kommandos können Folgekommandos mit den gefundenen Dateien ausgeführt werden.
+0;Mit der -ok Funktion des find - Kommandos werden Folgekommandos mit den gefundenen Dateien ausgeführt werden. Vorher wird aber eine Bestätigungseingabe nötig.
+0;Das Semikolon muss eine ok oder exec - Funktion abschliessen
+1;Die geschweiften Klammern {} werden nur bei der -ok - Funktion durch den gefundenen Dateinamen ersetzt.
+0;Die find-Option »-print0« zu benutzen, gibt wie -print die Namen der gefundenen Dateien aus, trennt diese aber nicht durch Zeilentrenner, sondern durch Nullbytes voneinander 
+@Welche der Aussagen stimmt nicht fuer das xargs-Kommando
+0;Das xargs-Kommando arbeitet effizienter als das exec-Kommando, da es soviele Dateinamen wie moeglich sammelt, bevor der Folgebefehl ausgefuehrt wird.
+0;Die Option »-r« von xargs sorgt dafür, dass das Kommando rm nur ausgeführt wird, wenn find wirklich einen Dateinamen schickt.
+0;Die find/xargs-Kombination kommt bei eigenartigen Dateinamen in Schwierigkeiten, etwa solchen, die Leerzeichen oder gar Zeilentrenner enthalten, welche dann als Trennzeichen fehlinterpretiert werden.
+1;Die find-Option »-print0« kann nicht fuer die xargs Funktion verwendet werden. 
+@;3;Welche Aussage stimmt nicht fuer das locate - Kommando
+1;locate ist ein grundlegender Dienst, der zur Standardinstallation jeder Linux-Distribution gehört
+0;locate ist schneller als das find-Kommando
+0;Die Sonderzeichen »*«, »?« und »[…]« funktionieren bei locate wie bei Suchmustern in der Shell. 
+0;Während eine Anfrage ohne Suchmuster-Sonderzeichen jedoch alle Namen liefert, in denen der Suchbegriff irgendwo auftaucht, gibt eine Anfrage mit Suchmuster-Sonderzeichen nur diejenigen Namen aus, die komplett – von Anfang bis Ende – vom Suchbegriff beschrieben werden.
+0;Der Schrägstrich (»/«) erfährt bei locate keine Sonderbehandlung.
+@Der Befehl locate -e brief.txt ist schneller als der Befehl find brief.txt
+1;stimmt nicht
+0;stimmt
+@;3;Welche Behauptung stimmt nicht fuer reguläre Ausdrücke
+0;Reguläre Ausdrücke werden gerne »rekursiv« aus Bausteinen aufgebaut, die selbst als reguläre Ausdrücke gelten. 
+0;Die einfachsten regulären Ausdrücke sind Zeichen Buchstaben, Ziffern und viele andere Zeichen des üblichen Zeichenvorrats, die für sich selber stehen.
+1;Ein regulärer Ausdruck der mit einem $ anfaengt passt nur am Zeilenanfang, und ein regulärer Ausdruck, der mit dem ^ - Zeichen aufhört, entsprechend nur am Zeilenende 
+0;aehnlich Zeichenklassen wie bei Shell-Suchmustern gibt es die Möglichkeit, Zeichenklassen zu definieren
+@Welche Behauptung ueber Suchmuster stimmt nicht
+0;»a« passt; der reguläre Ausdruck »abc« passt auf die Zeichenkette »abc«.
+0;der reguläre Ausdruck »[a-e]« passt also auf genau eines der Zeichen »a« bis »e«
+0;»a[xy]b« passt entweder auf »axb« oder »ayb«. 
+0;»[A-Za-z]« passt auf alle Groß- und Kleinbuchstaben (ohne Umlaute)
+0;»[^abc]« passt auf alle Zeichen außer »a«, »b« und »c«. (Bei der Shell
+1;der Punkt ».« steht für ein mindestens ein beliebiges Zeichen
+@;3;Welche Behauptung beschreibt egrep am Besten
+1;egrep bietet mehr Suchmoeglichkeiten, ist aber langsamer als grep
+0;egrep erlaubt nur die Suche fester Zeichenketten, ist aber dafür schneller als grep
+0;egrep sucht in Dateien nach Zeilen bestimmten Inhalts, keine regulären Ausdrücke erlaubt
+@;3;Welche Behauptung beschreibt fgrep am Besten
+0;fgrep bietet mehr Suchmoeglichkeiten, ist aber langsamer als grep
+0;fgrep erlaubt nur die Suche fester Zeichenketten, ist aber dafür schneller als grep
+0;fgrep sucht in Dateien nach Zeilen bestimmten Inhalts, reguläre Ausdrücke sind erlaubt
+1;fgrep erlaubt nur die Suche fester Zeichenketten, ist aber dafür schneller als grep
+0;Keine der Aussagen trifft auf fgreb zu
+@;3;Der Befehl mit dem Sie in der Datei beispiel.txt alle Zeilen finden, in denen das Wort Frosch vorkommt
+1;grep Frosch beispiel.txt
+0;grep '\<Frosch\<' beispiel.txt
+0;grep ^Frosch beispiel.txt
+@;3;Der Befehl mit dem Sie in der Datei beispiel.txt alle Zeilen finden, die nur das Wort Frosch, also keine zusammengesetzten Worte wie Froschkönig, enthalten
+0;grep \Frosch\ beispiel.txt
+0;grep Frosch beispiel.txt
+1;grep '\<Frosch\<' beispiel.txt
+0;grep ^Frosch beispiel.txt
+@;3;Der Befehl mit dem Sie in der Datei beispiel.txt alle Zeilen finden, die mit Frosch anfangen
+1;grep ^Frosch beispiel.txt
+0;grep Frosch beispiel.txt
+0;grep '\<Frosch\<' beispiel.txt
+0;grep *Frosch beispiel.txt
+@;3;Die Standardkanäle fuer Daten der Bash sind
+0;pipe, tee
+1;stdin, stdout, stderr
+0;stdin, stdout
+@;3;Der Befehl mit dem Sie die Ausgabe von ls –laF in die Datei inhalt umleiten lautet
+1;ls –laF >inhalt
+0;ls -laF | inhalt
+0;ls -laF | datei
+1;ls -laF >> inhalt
+0;ls -laF < inhalt
+@;3;Nennen Sie den Operator mit dem Sie eine Zeichenfolge an eine schon bestehende Datei anhängen
+0;>
+0;<
+1;>>
+0;|
+0;keiner der Operatoren eignet sich
+@;3;Nennen Sie den Operator mit dem Sie den Standard-Eingabekanal umleiten
+0;tee
+0;>
+0;<
+1;>>
+0;|
+0;keiner der Operatoren eignet sich
+@;3;Welche Aussage beschreibt die Verwendung von Backticks am Besteb
+0;Backticks werden synonym zum einfachen Anfuehrungszeichen verwendet
+1;Backticks werden zur Kommandosubstitution verwendet 
+0;Backticks maskieren ein Kommando
+@;3;Das Konzept der Kommandosubstitution bedeutet, dass
+0;Die Standardeingabe eines Befehls anstelle des Kommandoaufrufs in die Befehlszeile eingebaut
+1;Die Standardausgabe eines Befehls anstelle des Kommandoaufrufs in die Befehlszeile eingebaut
+0;Die Fehlerausgabe eines Befehls wird unterdrueckt
+@;3;Erläutern Sie, welche Aktionen durch den folgenden Befehl ausgeführt werden: wc –w < frosch.txt >wortzahl
+Die Anzahl der Worte, die die Datei frosch.txt enthält wird in die Datei wortzahl geschrieben
+@;3;Nennen Sie das Zeichen mit dem Sie Kommandos auf der Kommandozeile verknuepfen koennen?
+0;tee
+0;>
+0;<
+0;>>
+1;keines des Zeichen eignet sich
+@;3;Pipes leiten die Ausgabe eines Kommandos in das nächste Kommando weiter.
+1;ja
+0;nein
+@;3;Der Befehl tee leitet den Datenstrom innerhalb einer Pipeline an zwei Stellen gleichzeitig
+1;ja
+0;nein
+@;3;Welche Aussage beschreibt das Werkzeugkastenprinzip von Linux nicht zutreffend
+0;Viele kleine Programme werden zu einem Befehl zusammengefasst. 
+1;Durch die Verwendung vorhandener Funktionalitaet wird keine Zeit gespart. 
+0;Bei einer Fehlerkorrektur oder Optimierung eines verwendeten Befehls profitiert der Benutzer ohne Zeit investieren zu muessen
+@;3;zwei Dateien fuege ich mit folgendem Kommand zu einer zusammen
+0;touch
+1;cat
+0;less
+0;cut
+0;head
+0;tail
+@;3;Der Schalter für das Kommando head um die ersten 25 Zeichen einer Datei angzeigt zu bekommen ist
+0;-d 20
+1;–n 20
+0;-c 20
+@;3;Der Schalter für das Kommando tail um eine Protokolldatei dauerhaft zu oeffnen um Eingaben zu sehen ist
+0;-d
+0;-n
+0;-c
+1;nicht angefuehrt
+@;3;Welche Aussage ist kein Merkmal der lexikographischen Sortierung
+0;Die ganze Zeile wird genommen
+0;Das erste differerierende Zeichen sorgt fuer die Reihenfolge
+1;beide Aussagen sind Merkmale
+@;3;Welcher Befehl sortiert die Datei text.dat nach der 2. Spalte
+1;sort –k 2 text.dat
+0;sort –n 1 text.dat
+0;sort –k 1 text.dat
+0;sort –o 1 text.dat
+@;3;Nennen Sie das Kommando mit dem nur die Zeilen der Datei text.dat ausgegeben werden die nicht doppelt vorkommen
+1;unique
+0;cut
+0;paste
+0;touch
+0;echo
+0;keiner der Befehle
+@;3;Nennen Sie das Kommando mit dem Sie Spalten aus einer Datei extrahieren koennen
+0;unique
+1;cut
+0;paste
+0;touch
+0;sort
+0;keiner der Befehle 
+@;3;Nennen Sie das Kommando mit dem Sie verschiedene Eingabedateien zeilenweise aneinanderfuegen koennen
+0;unique
+0;cat
+1;paste
+0;touch
+0;echo
+0;keiner der Befehle
+@;3;der Befehl mit dem Sie die Shell fuer 10 Sekunden pausiert heisst
+1;sleep 10
+0;wait 10
+@;3;Welche Anweisung macht folgende Ausgaben, wenn es eine Variable w=Welt gibt: Hallo Weltenbummler
+1;printf Hallo ${var}enbummler
+1;echo Hallo ${w}enbummler
+0;printf Hallo ${w}enbummler
+0;echo 'Hallo '. $w . 'enbummler'
+@;3;Welcher Befehl zeigt die in der aktuellen Shell gültigen Pfade?
+1;echo $PATH
+0;pwd
+0;keiner der Befehle
+@;3;Welcher Befehl zeigt den tatsaechlichen Pfad des Programmes 'ruby' 
+0;path ruby
+1;which ruby
+0;type ruby
+@;3;Folgender Befehl gibt die history seitenweise aus:
+0; . | less
+0; history > less
+1;history | less
+@;3;Der Befehl mit dem Sie den Befehl mit der History-Nr. 199 erneut ausführen lassen lautet:
+0;199
+1;!199
+0;keiner der Befehle
+@;3;Welche Aussage charkaterisiert nicht den Begriff Datei aus Linuxsicht
+0;Der Begriff Datei steht allgemein fuer eine abgeschlossene Ansammlung von Daten.
+1;Fuer die Art der enthaltenen Daten gibt es Einschraenkungen
+0;Eine Datei kann ein Text sein, der nur wenige Buchstaben lang ist, aber auch ein viele Megabyte großes Archiv, das das gesamte Lebenswerk eines Anwenders umfaßt.
+@;3;Welche Aussage stimmt nicht in Bezug das Linux-Dateisystem
+0;Das Dateisystem legt fest, nach welcher Methode die Daten auf einem Datenträger angeordnet und verwaltet werden.
+0;Der Verzeichnisbaum, oder ein Medium (Stick, Festplatte) wird so genannt.
+1;Es gibt ein einheitliches Dateisystem für Linuxdistributionen
+@;3;Welches Dateisystem ist nicht originär Linux
+0;ext2
+0;ext3
+1;ntfs
+0;ReiserFS
+0;btrfs
+0;swap
+@;3;Welcher Dateityp ist kein Dateityp in einem Standardlinuxsystem
+0;FILES: Grafik, Audio, Text
+0;DIRECTORIES: Tabelle mit Inode-Nummern
+0;SYMBOLISCHE LINKS: ln –s. Verknüpfungen
+0;DEVICES: Gerätedateien. Schnittstellen zu Geräten, etwa einem Laufwerk (/dev/fd0) wird mit mknod angelegt
+0;FIFOs: named pipes, erlauben die direkte Kommunikation zwischen Programmen
+0;UNIX-DOMAIN-SOCKETS: ähnlich wie FIFOs, aber mit einer bidirektionalen Kommunikation (beide Partner haben Lese- und Schreibzugriff)
+1;alle Dateitypen sind typisch fuer Linux
+@;3;In welchem Verzeichnis liegt das Betriebssystem?
+1;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis liegen die wichtigsten zum Systemstart notwendigen, ausführbaren Programme?
+1;/bin und /sbin
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis liegen die Systembibliotheken (Shared Libraries)?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+1;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis liegen  die Gerätedateien?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+1;/dev
+0;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis liegen  die Konfigurationsdateien?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+1;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis sind die Benutzer-Heimat-Verzeichnisse gelistet?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+1;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis werden  temporäre Dateien gespeichert?
+0;/boot
+0;/etc/fstab
+0;/usr
+1;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis liegen die veränderlichen Dateien?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+1;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;3;In welchem Verzeichnis liegen die  unveränderlichen Dateien?
+0;/boot
+0;/etc/fstab
+1;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;3;Welche Datei beschreibt die Zusammensetzung des Systems?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+1;/lib/etc/fstab
+0;keinem der genannten
+@;3;Was bedeutet der Begriff „mounten“?
+Einhaengen eines Datentraegers in das Dateisystem
+
+@;3;Was ist der SWAP- Bereich?
+Auslagerung des RAM-Speichers auf die Festplatte
+
+@;3;Nennen Sie das Kommando um einen USB-Stick ins Dateisystem einzuhaengen
+mount /dev/sda1 /media/usb
+
+@;3;Nennen Sie den Befehl zum Archivieren aller Dateien mit der Endung „.dat“ im Ordner docs im home-Verzeichnis. Das Archiv hat den Namen Daten.tar und liegt im Ordner archiv des home-Verzeichnisses
+1;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl zum Archivieren aller Dateien des Ordners docs im home-Verzeichnis. Das Archiv hat den Namen Daten.tar und liegt im Ordner archiv des home-Verzeichnisses
+0;tar ~/archiv/Daten.tar ~/docs
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+1;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl zum Ausgeben des Inhalts des Archivs Daten.tar
+0;tar –z Daten.tar
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+1;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl zum Entpacken des Artchivs Daten.tar
+0;tar –f Daten.tar
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+1;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl zum Komprimieren der Datei daten.txt
+0;gzip daten
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+1;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl zum Entpacken der komprimierten Datei daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+1;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl zum Komprimieren aller Dateien mit der Endung '.dat' im Ordner docs im home-Verzeichnis. Das Archiv hat den Namen Daten.tar.gz und liegt im Ordner archiv des home-Verzeichnisses
+1;tar –cvzf ~/archiv/Daten.tar ~/docs/*.dat
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl zum Entpacken des komprimierten Archivs Daten.tar.gz
+1;tar –xvzf Daten.tar.gz
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;3;Nennen Sie den Befehl um sich unter Ubuntu dauerhaft als root einzuloggen
+1;sudo  -i

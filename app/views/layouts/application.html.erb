@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+  <title>G16 Klassenarbeiten</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag controller.controller_name %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="header">
+	<div class="center_wrapper">
+		
+		<div id="toplinks">
+			<div id="toplinks_inner"><%#= current_user.email %>
+				<% if current_user %>
+					<%= current_user.email %><%= " (Admin)" if admin? %> 
+					<%= link_to "Log Out", logout_path%> 
+				<% else %>
+					<%= link_to "Sign Up", signup_path %>
+					or
+					<%= link_to "Log In", login_path %>
+				<% end %>
+
+			</div>
+		</div>
+		<div class="clearer">&nbsp;</div>
+
+		<div id="site_title">
+		  <%= image_tag 'g16_logo.png', :size => '280x100' %>
+		  <div style="float:right;margin-right:50px;">
+			<h1><a href="#">Klassenarbeiten<span></span></a></h1>
+			<p>Konfigurieren und Administrieren</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div id="navigation">
+	<div class="center_wrapper">
+		<% if admin? %>
+		<ul>
+			<li><%= link_to "Tests", tests_path %></li>
+			<li><%= link_to "Fragen", categories_path %></li>
+			<li><%= link_to "Benutzer", users_path %></li>
+		</ul>
+		<% end %>
+		<div class="clearer">&nbsp;</div>
+	</div>
+</div>
+
+<div id="layout_body">
+	
+	<div id="main_wrapper_outer">
+		<div id="main_wrapper_inner">
+			<div class="center_wrapper">
+        <% if flash.present? %>
+          <div id='flash'>
+            <% flash.each do |type, message| -%>
+              <div class="message <%= type %>">
+                <%= message %>
+              </div>
+            <% end -%>
+          </div>
+        <% end %>
+			
+				<p><%= yield %></p>
+
+				<div class="clearer">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="dashboard">
+	<div id="dashboard_content">
+		<div class="center_wrapper">
+
+			<div class="col3 left">
+				<div class="col3_content">
+					<h4>Tools</h4>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col3mid left">
+				<div class="col3_content">
+					<h4>Infos</h4>
+					<ul>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col3 right">
+				<div class="col3_content">
+					<h4>Links</h4>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="clearer">&nbsp;</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="center_wrapper">
+
+		<div class="left">
+			&copy; 2012 - Thomas Bogner
+		</div>
+		<div class="right">
+			<a href="http://templates.arcsin.se/">Website template</a> by <a href="http://arcsin.se/">Arcsin</a> 
+		</div>
+		
+		<div class="clearer">&nbsp;</div>
+
+	</div>
+</div>
+
+</body>
+</html>
+

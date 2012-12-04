@@ -1,0 +1,30 @@
+<h1>Übersicht Klassenarbeiten</h1>
+<h2>Fuer <%= current_user.email %> eingetragene Tests</h2>
+<ul>
+	<% @tests.each do |test| %>
+		<li>
+            <%= test.description %> <%#= Question.where(:category_id => course.tests.first.category_id).count %><br />
+            <% if false #@test_student %>
+            <% if course.tests.first.test_students.first.end.nil? %>
+                Der Test wurde noch nicht durchgefuehrt.
+            <% else %>
+                Durchgefuehrt am <%= course.tests.first.test_students.first.start %> mit <%= course.tests.first.test_students.first.points %> Punkten und der Note <%= POINTS_TO_NOTE[course.tests.first.test_students.first.points] %> abgeschlossen.
+            <% end %>
+            <% end %>
+        </li>
+	<% end %>
+</ul>
+<hr />
+<% if @bemerkung %>
+    <p><%= @bemerkung %></p>
+<% else %>
+    <h3>Klassenarbeit: <%= @cur_test.description %> </h3>
+    <h4>Anmerkungen Durchführung der Klassenarbeit</h4>
+    <ul>
+        <li>Zum Starten des Tests klicken Sie auf den Button Test starten.</li>
+        <li>Die Zeit wird Ihnen angezeigt.</li>
+        <li>Wenn Sie das Browserfenster schließen, oder einen zweiten Login vornehmen wird der Test abgebrochen.</li>
+        <li>Fuer den Test stehen Ihnen nach der Bestätigung durch einen Klick auf Test starten - Button <%= @cur_test.duration %> Minuten zur Verfuegung. Die Restzeit wird Ihnen nach jeder Frage angezeigt.</li>
+    </ul>
+    <%= button_to "Test starten", test_students_path %>
+<% end %>

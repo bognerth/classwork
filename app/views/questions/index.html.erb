@@ -1,0 +1,39 @@
+<h2>Fragen zur Kategorie: <%= %></h2>
+  <%= will_paginate @questions, previous_label: h("<"), next_label: h(">") %>
+
+
+<fieldset>
+<%= form_for(@questions.first) do |f| %>
+  <% if @questions.first.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@questions.first.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+      <% @questions.first.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_area :text %>
+    <%= f.label :status %>
+    <%= f.check_box :status %>
+  </div>
+
+  <%= f.fields_for :answers do |builder| %>
+    <%= render 'answer_fields', f: builder %>
+  <% end %>
+  <%= link_to_add_fields "Add Answer", f, :answers %>
+  
+
+    <%= f.hidden_field :category_id %>
+    <%= hidden_field_tag("page", @cur_page) %>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</fieldset>

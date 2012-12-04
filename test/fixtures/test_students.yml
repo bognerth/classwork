@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  test_id: 1
+  student_id: 1
+  points: 1
+  start: 2012-11-21 17:45:39
+  end: 2012-11-21 17:45:39
+
+two:
+  test_id: 1
+  student_id: 1
+  points: 1
+  start: 2012-11-21 17:45:39
+  end: 2012-11-21 17:45:39

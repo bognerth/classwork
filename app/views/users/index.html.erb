@@ -1,0 +1,21 @@
+<h1>Listing Users</h1>
+
+<table class="data_table">
+  <tr>
+    <th>Email</th>
+    <th>Gruppe</th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr  class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    <td><%= user.email %></td>
+    <td><%= user.student.group.name %></td>
+    <td><%= link_to 'Edit', edit_test_path(user) %> - <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Test', new_user_path %>

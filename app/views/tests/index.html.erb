@@ -1,0 +1,29 @@
+<h1>Listing tests</h1>
+
+<table class="data_table">
+  <tr>
+    <th>Description</th>
+    <th>Course - Category</th>
+    <th>Questions</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+
+<% @tests.each do |test| %>
+  <tr  class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    <td><%= test.description %></td>
+    <td><%= test.course.name %> -<%= test.category.name %></td>
+    <td><%= Question.where(:category_id => test.category_id).count %></td>
+    <td>
+      <% Test::STATES.each do |state| %>
+        <%= test.current_state == state ? raw("<span class='current_state'>#{state}</span>") : link_to(state,state_test_path(test,:state => state))  %> |  
+      <% end %>
+    </td>
+    <td><%= link_to 'Edit', edit_test_path(test) %> - <%= link_to 'Destroy', test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Test', new_test_path %>

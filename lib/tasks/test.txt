@@ -1,0 +1,142 @@
+#-*- encoding: utf-8 -*-
+@;1;Welche Aussage muss nicht erfuellt sein, damit ein Geraet als Computer bezeichnet werden kann
+0;Verarbeitung von Daten gemaess einer Folge von automatisch ausgefuehrten Instruktionen
+0;Programme erlauben Entscheidungen und Wiederholungen
+0;Programme können geändert oder ausgetauscht werden
+1;Benutzt X-Server zur Ausgabe
+@;1;Was zaehlt nicht zu den Merkmalen von Firmware
+0;Ist auf der Hauptplatine des Computers gespeichert
+0;Versetzt den Computer beim Einschalten in einen bestimmten Zustand
+0;ermöglicht das Starten des Betriebssystems
+1;alle Aussagen charakterisieren Firmware
+@;1;Welche Eigenschaft beschreibt am besten ein multiuserfaehiges Betriebssystem:
+0;hat eine grafische Bedienoberfläche
+0;alles ist eine Datei 
+1;ermöglicht das gleichzeitige Arbeiten mehrerer Benutzer
+0;ermöglicht vielen Benutzern das Arbeiten
+@;1;Welches Merkmal charakterisiert am wenigsten die wesentlichen Funktionen eines Betriebsystems
+0;Verwaltet die Ressourcen
+1;Ermoeglicht grafischen Output
+0;Sorgt dafür dass Programme gestartet und beendet werden können
+0;Enthält eine Benutzerschnittstelle
+0;Regelt die Netzwerkfähigkeit auf einer elementaren Ebene
+@;1;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Unix
+0;Linus Torvald
+0;Andrew Tannenbaum
+0;Dennis Ritchie
+0;Richard Stallman
+@;1;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Linux
+0;Linus Torvald
+0;Andrew Tannenbaum
+0;Dennis Ritchie
+0;Richard Stallman
+@;1;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Minix
+0;Linus Torvald
+0;Andrew Tannenbaum
+0;Dennis Ritchie
+0;Richard Stallman
+@;1;Welche Aussage stimmt fuer die Entstehung von Unix
+0;Unix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
+0;Unix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
+1;Unix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
+0;Unix wurde als Terminalemulator fuer einen 386er PC entwickelt.
+0;Keine der Aussagen trifft zu
+@;1;Welches Aussage charakterisiert den Zusammenhang zwischen BSD und Unix
+0;Unix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
+1;Unix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
+0;Unix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
+0;Unix wurde als Terminalemulator fuer einen 386er PC entwickelt.
+0;Keine der Aussagen trifft zu
+@;1;Welche Aussage charakterisiert den Zusammenhang von Unix und Minix
+1;Minix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
+0;Minix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
+0;Minix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
+0;Minix wurde als Terminalemulator fuer einen 386er PC entwickelt.
+0;Keine der Aussagen trifft zu
+@;1;Welche Aussage ist falsch. Bei Linux gilt grundsätzlich ... 
+0;Alles ist eine Datei, z.B. die PCI-Geräte des Computers in der Datei/proc/pci 
+1;Kleine, spezialisierte Programme.Ein Programm erledigt nur eine Aufgabe, aber die perfekt: less kann nur Ordnerinhalte anzeigen
+0;Vermeidung von Redundanz: wenn ein Programm eine Aufgabe erfolgreich erledigt hat, gibt es keine Ausgabe: touch datei.
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, die dem User theo gehören und sich unterhalb des Verzeichnisses /var/www befinden
+1;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien von /var/log aus, deren Namen mit einem großen oder kleinen C beginnt, keine Fehlerausgabe
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+1;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, von ihrem Home-Verzeichnis ausgehend, die groesser als 1 MB sind
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+1;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print 
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, von Ihrem Home-Verzeichnis ausgehend, die seit 30 Tagen nicht mehr verändert wurden
+1;find . -atime +30  
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print  
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, in dem zur Übung angelegten Verzeichnis, die mit a beginnen und dann ein r oder n als 2. Buchstaben haben
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name *anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+1;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, /home ausgehend alle Dateien des Users als der Sie angemeldet sind
+1;find /home -user tb
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name „*anwalt“ -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, vom Typ link in dem zur Übung angelegten Verzeichnis
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+1;find /bin -type l
+0;find / -type d -print
+@;1;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien ihres Home-Directorys 
+1;find / -type d -print
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find /home -type d -print

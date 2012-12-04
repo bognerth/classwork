@@ -1,0 +1,59 @@
+<% if @test_student.end > DateTime.now %>
+  <%= will_paginate @questions, previous_label: h("<"), next_label: h(">") %>
+
+  <div id="test">
+    <br />
+    <p>
+      <b>Start:</b> <%= l @test_student.start %> <br />
+      <b>Aktuelle Zeit: </b><%= l(DateTime.now, format: :time) %><br />
+      <b>Endzeit:</b> <%= l(@test_student.end, format: :time) %><br />
+    </p>
+
+  </div>
+
+  <div id="question_item">
+    <div id="question">
+      <%= @questions.first.text %>
+    </div>
+    <hr />
+    <div id="answers">
+      <%= form_for(@answer_student) do |f| %>
+      <% if @answer_student.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@answer_student.errors.count, "error") %> prohibited this question_student from being saved:</h2>
+        <ul>
+        <% @answer_student.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <ul>
+      <% @answers.each do |answer| %>
+        <li><%= f.radio_button(:answer_id, answer.id) %> <%= answer.text%> </li>
+      <% end %>
+    </ul>
+    <%#= hidden_field_tag("question_id", @questions.first.id) %>
+    <%= hidden_field_tag("page", @cur_page) %>
+    <%= f.hidden_field :student_id %>
+    <%= f.hidden_field :test_id %>
+    <%= f.hidden_field :question_id %>
+    <%= f.hidden_field :test_student_id %>
+    <hr />
+    <div class="actions">
+      <%= f.submit("Eintragen") %>
+    </div>
+  <% end %>
+
+    </div>
+    
+  </div>
+<% else %>
+
+  <h2>Die Zeit für die Beantwortung der Fragen ist abgelaufen</h2>
+  <p>Klicken auf den Button 'Test beenden' um die Auswertung zu starten.</p>
+<% end %>
+
+  <p>
+    <%= button_to 'Test beenden', test_student_path(current_user.c_test_student_id), method: :put, data: { confirm: 'Are you sure?' } %>
+  </p>

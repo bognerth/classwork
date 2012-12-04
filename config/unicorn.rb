@@ -28,8 +28,8 @@ pid APP_PATH + "/tmp/pids/unicorn.pid"
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
 # so prevent them from going to /dev/null when daemonized here:
-stderr_path APP_PATH + "/log/unicorn.blog.stderr.log"
-stdout_path APP_PATH + "/log/unicorn.blog.stdout.log"
+stderr_path APP_PATH + "/log/unicorn.classwork.stderr.log"
+stdout_path APP_PATH + "/log/unicorn.classwork.stdout.log"
 
 before_fork do |server, worker|
   # the following is highly recomended for Rails + "preload_app true"

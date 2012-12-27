@@ -35,14 +35,13 @@ gem 'will_paginate', '> 3.0'
 # gem 'jbuilder'
 
 group :production do
-  gem 'mysql'
+  gem 'mysql2'
 end
 
 
 group :development do
   # Use Capistrano for the deployment
   gem 'capistrano'
-  gem 'rvm-capistrano'
 end
 
 

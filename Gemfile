@@ -36,7 +36,6 @@ gem 'will_paginate', '> 3.0'
 
 group :production do
   gem 'mysql'
-  gem 'unicorn'
 end
 
 

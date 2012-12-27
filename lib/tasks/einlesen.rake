@@ -3,7 +3,7 @@ require 'iconv' #unless String.method_defined?(:encode)
 
 desc "Einlesen von Fragen"
 task :einlesen => :environment do
-	script_path = "/home/tb/Dropbox/Rails/classwork/lib/tasks/"
+	script_path = "/home/tb/Dropbox/Rails/g16_classwork/lib/tasks/"
 	path = script_path + ARGV[1]
 	puts path
 	fail "specify filename to create" unless path

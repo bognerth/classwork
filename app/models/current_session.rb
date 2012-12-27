@@ -25,7 +25,7 @@ class CurrentSession < ActiveRecord::Base
       if ctest #&& ctest.first && ctest.first.id > 0
         self.c_category_id = ctest.category_id
    		  self.c_test_id = ctest.id
-        self.c_count_questions = Question.find_all_by_category_id(ctest.category_id)
+        self.c_count_questions = Question.find_all_by_category_id(ctest.category_id).count
         self.c_duration = ctest.duration
       end
    	end

@@ -1,5 +1,4 @@
 require "bundler/capistrano"
-require "rvm/capistrano"
 
 set :scm, :git
 set :repository, 'git://github.com/bognerth/classwork.git'

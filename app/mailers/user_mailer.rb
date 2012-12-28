@@ -1,8 +1,7 @@
 class UserMailer < ActionMailer::Base
-  default from: "bognerth@gmail.com"
+  default from: "g16bogner@gmail.com"
 
-  def new_user
-		@user = User.last
-		mail(:to => "", :subject => I18n.t("bookings.neue_buchung"))
+  def registration_confirmation(user)
+		mail(:to => user.email, :subject => "Registrierung classwork.g16-hh.de")
   end
 end

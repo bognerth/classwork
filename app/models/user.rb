@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
   protected
 
   def send_mail
-  	UserMailer.new_user.deliver
+  	UserMailer.registration_confirmation.deliver(user)
   end
 
 end

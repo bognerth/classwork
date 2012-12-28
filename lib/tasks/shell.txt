@@ -806,3 +806,5 @@ mount /dev/sda1 /media/usb
 0;keiner der gelisteten Befehle
 @;1;Nennen Sie den Befehl um sich unter Ubuntu dauerhaft als root einzuloggen
 1;sudo  -i
+0;sudo
+0;sudo

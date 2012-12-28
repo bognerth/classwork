@@ -1,312 +1,312 @@
 #-*- encoding: utf-8 -*-
-@;2;Welche Aussage muss nicht erfuellt sein, damit ein Geraet als Computer bezeichnet werden kann
+@;1;Welche Aussage muss nicht erfuellt sein, damit ein Geraet als Computer bezeichnet werden kann
 0;Verarbeitung von Daten gemaess einer Folge von automatisch ausgefuehrten Instruktionen
 0;Programme erlauben Entscheidungen und Wiederholungen
 0;Programme können geändert oder ausgetauscht werden
 1;Benutzt X-Server zur Ausgabe
-@;2;Was zaehlt nicht zu den Merkmalen von Firmware
+@;1;Was zaehlt nicht zu den Merkmalen von Firmware
 0;Ist auf der Hauptplatine des Computers gespeichert
 0;Versetzt den Computer beim Einschalten in einen bestimmten Zustand
 0;ermöglicht das Starten des Betriebssystems
 1;alle Aussagen charakterisieren Firmware
-@;2;Welche Eigenschaft beschreibt am besten ein multiuserfaehiges Betriebssystem:
+@;1;Welche Eigenschaft beschreibt am besten ein multiuserfaehiges Betriebssystem:
 0;hat eine grafische Bedienoberfläche
 0;alles ist eine Datei 
 1;ermöglicht das gleichzeitige Arbeiten mehrerer Benutzer
 0;ermöglicht vielen Benutzern das Arbeiten
-@;2;Welches Merkmal charakterisiert am wenigsten die wesentlichen Funktionen eines Betriebsystems
+@;1;Welches Merkmal charakterisiert am wenigsten die wesentlichen Funktionen eines Betriebsystems
 0;Verwaltet die Ressourcen
 1;Ermoeglicht grafischen Output
 0;Sorgt dafür dass Programme gestartet und beendet werden können
 0;Enthält eine Benutzerschnittstelle
 0;Regelt die Netzwerkfähigkeit auf einer elementaren Ebene
-@;2;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Unix
+@;1;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Unix
 0;Linus Torvald
 0;Andrew Tannenbaum
 1;Dennis Ritchie
 0;Richard Stallman
-@;2;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Linux
+@;1;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Linux
 1;Linus Torvald
 0;Andrew Tannenbaum
 0;Dennis Ritchie
 0;Richard Stallman
-@;2;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Minix
+@;1;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Minix
 0;Linus Torvald
 1;Andrew Tannenbaum
 0;Dennis Ritchie
 0;Richard Stallman
-@;2;Welche Aussage stimmt fuer die Entstehung von Unix
+@;1;Welche Aussage stimmt fuer die Entstehung von Unix
 0;Unix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
 0;Unix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
 1;Unix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
 0;Unix wurde als Terminalemulator fuer einen 386er PC entwickelt.
 0;Keine der Aussagen trifft zu
-@;2;Welches Aussage charakterisiert den Zusammenhang zwischen BSD und Unix
+@;1;Welches Aussage charakterisiert den Zusammenhang zwischen BSD und Unix
 0;Unix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
 1;Unix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
 0;Unix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
 0;Unix wurde als Terminalemulator fuer einen 386er PC entwickelt.
 0;Keine der Aussagen trifft zu
-@;2;Welche Aussage charakterisiert den Zusammenhang von Unix und Minix
+@;1;Welche Aussage charakterisiert den Zusammenhang von Unix und Minix
 1;Minix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
 0;Minix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
 0;Minix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
 0;Minix wurde als Terminalemulator fuer einen 386er PC entwickelt.
 0;Keine der Aussagen trifft zu
-@;2;Welche Aussage ist falsch. Bei Linux gilt grundsätzlich ... 
+@;1;Welche Aussage ist falsch. Bei Linux gilt grundsätzlich ... 
 0;Alles ist eine Datei, z.B. die PCI-Geräte des Computers in der Datei/proc/pci 
 1;Kleine, spezialisierte Programme.Ein Programm erledigt nur eine Aufgabe, aber die perfekt: less kann nur Ordnerinhalte anzeigen
 0;Vermeidung von Redundanz: wenn ein Programm eine Aufgabe erfolgreich erledigt hat, gibt es keine Ausgabe: touch datei.
-@;2;Urheberrecht bedeutet nicht:
+@;1;Urheberrecht bedeutet nicht:
 0;Der Urheber eines Werks hat als einziger das Verfügungsrecht über das Erzeugnis
 1;Der Urheber ist verpflichtet 
-@;2;Welches Aussage charakterisiert die Softwareproduktion in den 60er und 70er Jahren am Besten
+@;1;Welches Aussage charakterisiert die Softwareproduktion in den 60er und 70er Jahren am Besten
 1;Software wurde nicht verkauft, sondern war Bestandteil der Hardware
 0;Programme kopieren und zu tauschen war selbstverständlich
 0;Software war unbezahlbar teuer
-@;2;Welcher Grund hat am Entstehen des GNU-Systems keinen Anteil
+@;1;Welcher Grund hat am Entstehen des GNU-Systems keinen Anteil
 0;Software wurde in den 70ern und 80ern zur Ware
 0;Der Quellcode des gekauften Produktes war nicht mehr einsehbar
 1;Linus Torvald wollte Linux eine Basis in der Community geben
 0;Richard M.Stallman wollte ein System implementieren, das auf der Kultur des Teilens basiert
-@;2;Welches Merkmal trifft für freie Software im Sinne des GNU-Systems nicht zu
+@;1;Welches Merkmal trifft für freie Software im Sinne des GNU-Systems nicht zu
 0;das Programm muss für jeden beliebigen Zweck benutzt werden dürfen
 0;der Quellcode muss einsehbar und veränderbar sein
 1;die Arbeit des Programmierers soll geschützt werden
 0;das veränderte Programm muss veröffentlicht und  weitergegeben werden können
-@;2;Auf der Basis von OpenSourceSoftware kann man kein Geld verdienen mit ...
+@;1;Auf der Basis von OpenSourceSoftware kann man kein Geld verdienen mit ...
 0;Training
 0;Dokumentation
 0;Kundenspezifische Weiterentwicklung und Anpassung
 1;Mit allen genannten Tätigkeiten kann eine Firma Geld verdienen
-@;2;Wozu ist man verpflichtet, wenn man unter der GPL (General Public License) veröffentlichte Software weiterentwickelt
+@;1;Wozu ist man verpflichtet, wenn man unter der GPL (General Public License) veröffentlichte Software weiterentwickelt
 0;die eigene Software unter der GPL veröffentlichen
 1;den Quellcode verschlüsseln
-@;2;Welches Lizenzmodelle ist nicht im Umfeld von OpenSource
+@;1;Welches Lizenzmodelle ist nicht im Umfeld von OpenSource
 0;Apache-Lizenz
 0;Mozilla Public Lizenz
 1;Eula
 0;BSD Lizenz
-@;2;Welches Merkmal gilt nicht für alle Linux-Distributionen 
+@;1;Welches Merkmal gilt nicht für alle Linux-Distributionen 
 0;Enthalten neben dem betriebssystem eine komplette Softwareumgebung
 0;Arbeiten mit der Bash als Shell
 1;Bieten eine grafische Benutzeroberfläche an
-@;2;Welche Distribution basiert auf der Paketverwaltung DEB
+@;1;Welche Distribution basiert auf der Paketverwaltung DEB
 0;Red Hat
 0;Suse
 1;Debian
-@;2;Welche Distribution wird von einer nicht firmengebundenen Community gepflegt
+@;1;Welche Distribution wird von einer nicht firmengebundenen Community gepflegt
 0;Red Hat
 0;Suse
 1;Debian
-@;2;Welche Distribution ist auf Server spezialisiert?
+@;1;Welche Distribution ist auf Server spezialisiert?
 1;Red Hat
 0;Suse
 0;Debian
-@;2;Welche Zuordnung von Paketverwaltungen und Distribution trifft zu:
+@;1;Welche Zuordnung von Paketverwaltungen und Distribution trifft zu:
 0;RPM (Suse, RedHat, Ubuntu)
 1;DEB (Debian, ubuntu)
 0;DEB (Debian, Arch-Linux)
-@;2;Welche Aussage zum Thema Kernel ist falsch:
+@;1;Welche Aussage zum Thema Kernel ist falsch:
 0;Der Kernel bildet die hardwareabstrahierende Schicht (Hardwareabstraktionsschicht), das heißt, er stellt der auf dieser Basis aufsetzenden Software eine einheitliche Schnittstelle (API) zur Verfügung, die unabhängig von der Rechnerarchitektur ist.
 0; Der modulare Aufbau ds Kernel ermöglicht es, im laufenden Betrieb Komponenten hinzu zu fügen und zu entfernen 
 1;Beide Aussagen sind korrekt
-@;2;Welche Zuordnung stimmt für grafische Arbeitsumgebungen
+@;1;Welche Zuordnung stimmt für grafische Arbeitsumgebungen
 0;Gnome,LXDE, KDE vollwertig
 1;Gnome + KDE vollwertig
 0;KDE leichtgewichtig
 1;XFCE vollwertig
-@;2;Gründe, die für die Benutzung der Kommandozeile unter Linux sprechen
+@;1;Gründe, die für die Benutzung der Kommandozeile unter Linux sprechen
 1;Viele Aufgaben lassen sich auf der Kommandozeile effizienter lösen
 0;Unter Linux gibt es mächtige Werkzeuge in der grafischen Umgebung
-@;2;Der Zweck einer Shell aus der Betriebssystemsicht wird beschrieben mit ...
+@;1;Der Zweck einer Shell aus der Betriebssystemsicht wird beschrieben mit ...
 1;Benutzerschnittstelle zur Interaktion mit dem Betriebssystem-Kernel
 0;...
-@;2;Welche Aufgaben einer Shell aus der Benutzersicht stimmt am Wenigsten
+@;1;Welche Aufgaben einer Shell aus der Benutzersicht stimmt am Wenigsten
 0;Kommando von der Tastatur einlesen
 0;Kommando überprüfen
 0;Kommando ausführen
 1;Resultat ausgeben
-@;2;Welche Shell wird in den meisten Distributionen als Standard eingesetzt
+@;1;Welche Shell wird in den meisten Distributionen als Standard eingesetzt
 0;Korn-Shell
 1;Bash
 0;C-Shell
-Welcher Bestandteil einer Kommandozeilenaufforderung theo@;2;mars:/var > ist falsch wiedergegeben:
+Welcher Bestandteil einer Kommandozeilenaufforderung theo@;1;mars:/var > ist falsch wiedergegeben:
 0;Theo: Benutzername
 0;Mars: Rechnername
 1;/var: Home-Verzeichnis
-@;2;Welches Tastaturzeichen verteilt ein Kommando auf zwei Zeilen
+@;1;Welches Tastaturzeichen verteilt ein Kommando auf zwei Zeilen
 0;/
 1;\
 0;|
-@;2;Welche Aussage stimmt für den Unterschied von langen und kurzen Optionen nicht
+@;1;Welche Aussage stimmt für den Unterschied von langen und kurzen Optionen nicht
 0;Kurze Optionen werden mit einem vorangestellt Bindestrich markiert, lange haben zwei Bindestriche
 1;Optionen spezifiziert den Befehl
 0;bei kurzen Optionen können mehrere hintereinander folgen 
-@;2;Unterschied zwischen einer Option und einem Argument
+@;1;Unterschied zwischen einer Option und einem Argument
 0;Option spezifiziert den Befehl, womit es gemacht wird
 1;Argument Gegenstand des Befehls, womit wird es gemacht
 0;Argument spezifiziert den Befehl
-@;2;History-Funktion der Shell wird nicht bedient mit?
+@;1;History-Funktion der Shell wird nicht bedient mit?
 1;.5
 0;!5
 0;Pfeil-Tasten
 0;Tab-Taste
-@;2;Nennen Sie die Differenz zwischen externen und internen Kommandos
+@;1;Nennen Sie die Differenz zwischen externen und internen Kommandos
 Intern: wird von Bash zur Verfügung gestellt, Vorteil Geschwindigkeit
 Extern: Programme der Verzeichnisse /usr und /usr/bin
-@;2;Nennen Sie den Befehl zur Bestimmung eines Kommandos
+@;1;Nennen Sie den Befehl zur Bestimmung eines Kommandos
 1;type
 0;which
-@;2;Befehl zum Aufruf der manpages für den Befehl ls
+@;1;Befehl zum Aufruf der manpages für den Befehl ls
 1;man ls
 0;apropos ls
 0;ls -man
-@;2;Taste zur Stichwortsuche innerhalb der Man-Pages
+@;1;Taste zur Stichwortsuche innerhalb der Man-Pages
 0:ESC
 0;q
 1:/
 0:c
-@;2;Taste zum Beenden der Hilfe der Man-Pages
+@;1;Taste zum Beenden der Hilfe der Man-Pages
 0:ESC
 1;q
 0:/
 0:c
-@;2;Mit welcher Tastatureingabe wechsele ich beim vi vom Eingabe- zum Befehlsmodus
+@;1;Mit welcher Tastatureingabe wechsele ich beim vi vom Eingabe- zum Befehlsmodus
 1;Esc
 0;:
 0;i
-@;2;Tastureingaben zum Einfügen am Zeilenende
+@;1;Tastureingaben zum Einfügen am Zeilenende
 1;A
 0;a
 0;i
 0;I
-@;2;Tastureingaben zum Einfügen am Zeilenanfang
+@;1;Tastureingaben zum Einfügen am Zeilenanfang
 0;A
 0;a
 0;i
 1;I
-@;2;Tastureingaben zum Einfügen vor der Cursorposition
+@;1;Tastureingaben zum Einfügen vor der Cursorposition
 0;A
 0;a
 1;i
 0;I
-@;2;Tastureingaben zum Einfügen nach der Cursorposition
+@;1;Tastureingaben zum Einfügen nach der Cursorposition
 0;A
 1;a
 0;i
 0;I
-@;2;Tastenkombination mit der ich einen Text im vi speichern kann
+@;1;Tastenkombination mit der ich einen Text im vi speichern kann
 0;:q
 0;:q!
 0;q!
 1;:w
 0;:wq
-@;2;Tastenkombination zum Beenden des vi, ohne dass die Änderungen gespeichert werden
+@;1;Tastenkombination zum Beenden des vi, ohne dass die Änderungen gespeichert werden
 0;:q
 1;:q!
 0;q!
 0;:wq
-@;2;Welche Aussage beschreibt die Besonderheiten des Umgangs mit Dateien unter Linux nicht
+@;1;Welche Aussage beschreibt die Besonderheiten des Umgangs mit Dateien unter Linux nicht
 0;Differenz zwischen Groß- und Kleinschreibung
 0;Es gibt keine Programmcharekterisierenden Endungen
 0;Dateiname kann beliebig lang sein und alle Buchstaben enthalten
 1;Dateinamen können bis zu 256 Zeichen lang sein
-@;2;Wie lautet die Notation der versteckten Datei ‚versteckt‘
+@;1;Wie lautet die Notation der versteckten Datei ‚versteckt‘
 1;.versteckt
 0;versteckt.bak
-@;2;Welches Zeichen steht zwischen zwischen Directory und Datei
+@;1;Welches Zeichen steht zwischen zwischen Directory und Datei
 1;/
 0;\
-@;2;Sie sind als theo angemeldet. Im Unterverzeichnis dokumente befindet sich eine Datei: etwas.log. Sie wollen sich diese Datei mit less anzeigen lassen. Wie lautet der Befehl mit einem relativen Pfad
+@;1;Sie sind als theo angemeldet. Im Unterverzeichnis dokumente befindet sich eine Datei: etwas.log. Sie wollen sich diese Datei mit less anzeigen lassen. Wie lautet der Befehl mit einem relativen Pfad
 1;less dokumente/etwas.log
 0;less /home/theo/dokumente/etwas.log
 0;less/dokument/etwas.log
 0;less etwas.log
 0;less ./etwas.log
-@;2;Sie sind als theo angemeldet. Im Unterverzeichnis dokumente befindet sich eine Datei: etwas.log. Sie wollen sich diese Datei mit less anzeigen lassen. Wie lautet der Befehl mit einem absoluten Pfad
+@;1;Sie sind als theo angemeldet. Im Unterverzeichnis dokumente befindet sich eine Datei: etwas.log. Sie wollen sich diese Datei mit less anzeigen lassen. Wie lautet der Befehl mit einem absoluten Pfad
 0;less dokumente/etwas.log
 1;less /home/theo/dokumente/etwas.log
 0;less/dokument/etwas.log
 0;less etwas.log
 0;less ./etwas.log
-@;2;Welcher Befehl zeigt den Ordnerinhalt des Verzeichnisses /etc/apache2 als Langform mit allen Dateien und allen Eigenschaften und Rechte der Dateien an
+@;1;Welcher Befehl zeigt den Ordnerinhalt des Verzeichnisses /etc/apache2 als Langform mit allen Dateien und allen Eigenschaften und Rechte der Dateien an
 0;ls -vxc /etc
 1;ls –la /etc/apache2
 0;ls --long /etc/apache2
-@;2;Wie lautet der Befehl zum Erstellen eines Ordner myweb als Unterverzeichnis von /var/www?
+@;1;Wie lautet der Befehl zum Erstellen eines Ordner myweb als Unterverzeichnis von /var/www?
 1;mkdir /var/www/myweb
 0;md /var/www/myweb
-@;2;Welcher Befehl kopiert alle Dateien und Unterordner von Ihrem HOME-Verzeichnis in das neu angelegte Verzeichnis. (Sie sind als myname angemeldet)
+@;1;Welcher Befehl kopiert alle Dateien und Unterordner von Ihrem HOME-Verzeichnis in das neu angelegte Verzeichnis. (Sie sind als myname angemeldet)
 0;cy –R /home/myname/* /var/www/myweb
 0;cp –R /var/www/myweb /home/myname/* 
 1;cp –R /home/myname/* /var/www/myweb
-@;2;Welcher Befehl löscht das komplette Verzeichnis myweb in Ihrem home – Verzeichnis 
+@;1;Welcher Befehl löscht das komplette Verzeichnis myweb in Ihrem home – Verzeichnis 
 0;rm /home/myweb
 1;rm –R /home/myweb
 0;rmdir /home
-@;2;Welcher Befehl verschiebt die Datei dat.txt vom Unterverzeichnis web ihres Homeverzeichnisses in den Temp-Ordner (tmp, direkt hinter der root) Ihres Systems
+@;1;Welcher Befehl verschiebt die Datei dat.txt vom Unterverzeichnis web ihres Homeverzeichnisses in den Temp-Ordner (tmp, direkt hinter der root) Ihres Systems
 1;mv /home/theo/web/dat.txt /tmp/dat.txt
 1;mv /tmp/dat.txt /home/theo/web/dat.txt
 1;cp /home/theo/web/dat.txt /tmp/dat.txt
-@;2;Welcher Befehl benennt die Datei datei.txt aus ihrem home-Verzeichnis in datei.log um
+@;1;Welcher Befehl benennt die Datei datei.txt aus ihrem home-Verzeichnis in datei.log um
 0;rename datei.txt datei.log
 0;rn datei.txt datei.log
 0;move datei.txt datei.log
 1;mv datei.txt datei.log
-@;2;Welcher Befehl erzeugt ohne weitere Ausgabe die Datei datei.txt in Ihrem Homeverzeichnis  
+@;1;Welcher Befehl erzeugt ohne weitere Ausgabe die Datei datei.txt in Ihrem Homeverzeichnis  
 1;touch datei.txt
 0;cat dat.txt
 0;make dat.txt
-@;2;Nennen Sie den Befehl zum Erzeugen eines Links mit der Bezeichnung ‚mylog‘ im Unterverzeichnis ‚links‘ Ihres Homeverzeichnisses auf die Datei system.log(Verzeichnis /var/log)
+@;1;Nennen Sie den Befehl zum Erzeugen eines Links mit der Bezeichnung ‚mylog‘ im Unterverzeichnis ‚links‘ Ihres Homeverzeichnisses auf die Datei system.log(Verzeichnis /var/log)
 0;ln -s /var/log/system.log  mylog
 0;ln -s mylog /var/log/system.log 
 1;ln /var/log/system.log  mylog
-@;2;Welcher Befehl zeigt die Inode des Links ‚mylog‘  im Unterverzeichnis ‚links‘ Ihres Homeverzeichnisses 
+@;1;Welcher Befehl zeigt die Inode des Links ‚mylog‘  im Unterverzeichnis ‚links‘ Ihres Homeverzeichnisses 
 1;ls -i links
 0;ls -s links
 0;ls -s links/mylog
-@;2;Welche Aussage stimmt nicht in Bezug auf Links
+@;1;Welche Aussage stimmt nicht in Bezug auf Links
 1;Auf Verzeichnisse können keine symbolischen Links gesetzt werden.
 0;Ein symbolischer Link ist eine Datei in der der Name steht auf den sie verweist. 
 0;Ein Hardlink ist ein Verweis im Dateisystem
-@;2;Welcher Befehl erstellt einen Link auf das Verzeichnis /var/log in Ihrem Homeverzeichnis mit der Bezeichnung log
+@;1;Welcher Befehl erstellt einen Link auf das Verzeichnis /var/log in Ihrem Homeverzeichnis mit der Bezeichnung log
 1;ln –s /var/log log
 0;ln /var/log log
 0;ln log /var/log
-@;2;der Inhalt der Datei vieltext.txt aus Ihrem Homeverzeichnis lässt sich mit folgendem Befehl seitenweise anzeigen
+@;1;der Inhalt der Datei vieltext.txt aus Ihrem Homeverzeichnis lässt sich mit folgendem Befehl seitenweise anzeigen
 0;much vieltext.txt
 1;less vieltext.txt
 0;page vieltext.txt
-@;2;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls dat*.txt?
+@;1;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls dat*.txt?
 0;keine
 1;datei1.txt datei2.txt datei3.txt
 0;datei2.txt
 0;datei1.txt datei3.txt
 0;datei1.txt datei2.txt
 0;datei1.txt
-@;2;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls Datei?.txt?
+@;1;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls Datei?.txt?
 1;keine
 0;datei1.txt datei2.txt datei3.txt
 0;datei2.txt
 0;datei1.txt datei3.txt
 0;datei1.txt datei2.txt
 0;datei1.txt
-@;2;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls datei[23].txt?
+@;1;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls datei[23].txt?
 0;keine
 1;datei1.txt datei2.txt datei3.txt
 0;datei2.txt
 0;datei1.txt datei3.txt
 0;datei1.txt datei2.txt
 0;datei1.txt
-@;2;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls [A-Z]at*.txt?
+@;1;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls [A-Z]at*.txt?
 1;keine
 0;datei1.txt datei2.txt datei3.txt
 0;datei2.txt
 0;datei1.txt datei3.txt
 0;datei1.txt datei2.txt
 0;datei1.txt
-@;2;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls dat[!2].txt?
+@;1;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls dat[!2].txt?
 0;keine
 0;datei1.txt datei2.txt datei3.txt
 0;datei2.txt

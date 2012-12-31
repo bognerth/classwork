@@ -1,5 +1,7 @@
 class TestStudentsController < ApplicationController
-  
+  # index: es gibt keinen aktuellen Test fuer den User
+  # klick auf Test starten leitet zur create-Methode, dort wird ein Datensatz in Tabelle test_students angelegt
+  # ob der Test abgelaufen ist laesst sich mit object.end > datetime.now ermitteln
   def index
     @tests = Test.where(:id => current_user.tests)
     if current_user.c_test_id   #es gibt einen aktuellen Test
@@ -24,7 +26,7 @@ class TestStudentsController < ApplicationController
   def show
     @test_student = TestStudent.find(params[:id])
     @cur_page = @test_student.count_questions >= params[:page].to_i ? params[:page] : 1
-    @questions = Question.where(:category_id => current_user.c_category_id).order(:id).page(@cur_page).per_page(1)
+    @questions = Question.where(:category_id => current_user.c_category_id, :status => true).order(:id).page(@cur_page).per_page(1)
     @answer_student = AnswerStudent.find_or_initialize_by_student_id_and_test_id_and_question_id(@test_student.student_id,@test_student.test_id,@questions.first.id)
     @answer_student.test_student_id = params[:id]
     #@answer_student = AnswerStudent.new
@@ -67,12 +69,7 @@ class TestStudentsController < ApplicationController
     @current_session.update_attributes(:state => 'finished')
     @category = Category.find(@current_session.c_category_id)
     @prozent = (@test_student.points * 100 / @test_student.count_questions).round
-    a = AnswerStudent.where(:test_student_id => @test_student.id)
-    @antworten = Hash.new
-    a.each {|i| @antworten[i.answer_id] = i.points}
-
-#raise @test_student.to_yaml
- 
+    @antworten = AnswerStudent.get_answer_hash(@test_student.id)
   end
 
   # GET /test_students/new
@@ -89,6 +86,16 @@ class TestStudentsController < ApplicationController
   # GET /test_students/1/edit
   def edit
     @test_student = TestStudent.find(params[:id])
+    
+    respond_to do |format|
+      format.html # new.html.erb
+      format.pdf do
+        pdf = TestStudentPdf.new(@test_student)
+        send_data pdf.render, filename: "Testergebnis-#{current_user.email}",
+                            type: "application/pdf",
+                            disposition: "inline"
+      end
+    end
   end
 
 

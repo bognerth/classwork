@@ -12,4 +12,11 @@ class AnswerStudent < ActiveRecord::Base
 		#person = Person.find_by_name(name) || Person.new(:name => name)
 		#person.update_attributes!(:s
   end
+
+  def self.get_answer_hash(test_student_id)
+    a = where(:test_student_id => test_student_id)
+    @antworten = Hash.new
+    a.each {|i| @antworten[i.answer_id] = i.points}
+    @antworten
+  end
 end

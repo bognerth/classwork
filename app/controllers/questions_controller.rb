@@ -2,6 +2,13 @@ class QuestionsController < ApplicationController
   def index
     @cur_page = Question.where(:category_id => params[:category_id]).count >= params[:page].to_i ? params[:page] : 1
     @questions = Question.where(:category_id => params[:category_id]).page(@cur_page).per_page(1)
+    if @questions.empty?
+      @question = Question.new
+      @question.category_id = params[:category_id]
+      #raise @questions.to_yaml
+    else
+      @question = @questions.first
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @questions }
@@ -9,7 +16,6 @@ class QuestionsController < ApplicationController
   end
 
   def update
-
     @question = Question.find(params[:id])
     page = params[:page].to_i + 1
 

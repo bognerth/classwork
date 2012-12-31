@@ -5,7 +5,7 @@ class Question < ActiveRecord::Base
   has_many :answer_students
   belongs_to :category
 
-	accepts_nested_attributes_for :answers, allow_destroy: true
+  accepts_nested_attributes_for :answers, allow_destroy: true
   #named_scope :previous, lambda { |p| {:conditions => ["id < ?", p.id], :limit => 1, :order => "id"} }
 	#named_scope :next, lambda { |p| {:conditions => ["id > ?", p.id], :limit => 1, :order => "id"} }
 end	

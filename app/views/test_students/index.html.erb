@@ -3,12 +3,16 @@
 <ul>
 	<% @tests.each do |test| %>
 		<li>
-            <%= test.description %> <%#= Question.where(:category_id => course.tests.first.category_id).count %><br />
+            <p><%= test.description %> (<%= link_to "Ergebnis als PDF", edit_test_student_path(test.test_students.first.id, format: "pdf") %>)</p>
+            <%#= Question.where(:category_id => course.tests.first.category_id).count %><br />
             <% if false #@test_student %>
             <% if course.tests.first.test_students.first.end.nil? %>
                 Der Test wurde noch nicht durchgefuehrt.
             <% else %>
+                <p>
                 Durchgefuehrt am <%= course.tests.first.test_students.first.start %> mit <%= course.tests.first.test_students.first.points %> Punkten und der Note <%= POINTS_TO_NOTE[course.tests.first.test_students.first.points] %> abgeschlossen.
+                </p>
+
             <% end %>
             <% end %>
         </li>

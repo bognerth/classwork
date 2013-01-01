@@ -1,7 +1,7 @@
 <h2>Fragen zur Kategorie: <%= @question.category.name %></h2>
   <%= will_paginate @questions, previous_label: h("<"), next_label: h(">") unless @questions.empty? %>
 
-
+  <%= link_to new_category_question_path(@question.category.id) %>
 <fieldset>
 <%= form_for(@question) do |f| %>
   <% if @question.errors.any? %>

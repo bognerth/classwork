@@ -17,7 +17,8 @@
   </div>
   <div class="field">
     <%= f.label :group_id %><br />
-    <%= f.number_field :group_id %>
+    <%= f.collection_select :group_id, Group.all, :id, :name %> 
+    <%= link_to "New", new_group_path %>
   </div>
   <div class="actions">
     <%= f.submit %>

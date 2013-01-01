@@ -17,15 +17,17 @@
   </div>
   <div class="field">
     <%= f.label :course_id %><br />
-    <%= f.number_field :course_id %>
+    <%= f.collection_select :course_id, Course.all, :id, :name %> 
+    <%= link_to "New", new_course_path %>
   </div>
   <div class="field">
     <%= f.label :category_id %><br />
-    <%= f.number_field :category_id %>
+    <%= f.collection_select :category_id, Category.all, :id, :name %>
+    <%= link_to "New", new_category_path %>
   </div>
   <div class="field">
     <%= f.label :dauer %> in Minuten<br />
-    <%= f.number_field :duration %>
+    <%= f.text_field :duration, :class => "semi" %>
   </div>  
   <div class="actions">
     <%= f.submit %>

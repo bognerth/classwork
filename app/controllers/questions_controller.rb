@@ -44,7 +44,7 @@ class QuestionsController < ApplicationController
   # GET /questions/new.json
   def new
     @question = Question.new
-
+    @question.category_id = params[:category_id]
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @question }
@@ -63,7 +63,7 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       if @question.save
-        format.html { redirect_to @question, notice: 'Question was successfully created.' }
+        format.html { redirect_to category_questions_path(@question.category_id, :page => Question.where(:category_id => @question.category_id).count), notice: 'Question was successfully created.' }
         format.json { render json: @question, status: :created, location: @question }
       else
         format.html { render action: "new" }

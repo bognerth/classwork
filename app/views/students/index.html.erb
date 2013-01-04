@@ -1,25 +1,18 @@
-<h1>Listing students</h1>
+<h1>Test: <%= @results[0].test.description %></h1>
 
 <table>
   <tr>
     <th>User</th>
-    <th>Group</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Prozent</th>
+    <th>Note</th>
   </tr>
 
-<% @students.each do |student| %>
+<% @results.each do |result| %>
   <tr>
-    <td><%= student.user.email %></td>
-    <td><%= student.group.name %></td>
-    <td><%= link_to 'Show', student %></td>
-    <td><%= link_to 'Edit', edit_student_path(student) %></td>
-    <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= result.student.user.email %></td>
+    <td align="center"><%= punkte = ((result.points * 100) / result.count_questions).round %> </td>
+    <td align="center"><%= POINTS_TO_NOTE[punkte] %></td>
+
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Student', new_student_path %>

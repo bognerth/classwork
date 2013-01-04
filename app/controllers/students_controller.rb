@@ -1,8 +1,7 @@
 class StudentsController < ApplicationController
-  # GET /students
-  # GET /students.json
+  #Umfunktioniert: zeigt die testergebnisse von students
   def index
-    @students = Student.all
+    @results = TestStudent.where(test_id: params[:test_id])
 
     respond_to do |format|
       format.html # index.html.erb

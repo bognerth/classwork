@@ -19,7 +19,7 @@
         <%= test.current_state == state ? raw("<span class='current_state'>#{state}</span>") : link_to(state,state_test_path(test,:state => state))  %> |  
       <% end %>
     </td>
-    <td><%= link_to 'Edit', edit_test_path(test) %> - <%= link_to 'Destroy', test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Results', students_path('test_id' => test.id) %> - <%= link_to 'Edit', edit_test_path(test) %> - <%= link_to 'Destroy', test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

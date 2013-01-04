@@ -3,10 +3,10 @@ class TestStudentsController < ApplicationController
   # klick auf Test starten leitet zur create-Methode, dort wird ein Datensatz in Tabelle test_students angelegt
   # ob der Test abgelaufen ist laesst sich mit object.end > datetime.now ermitteln
   def index
-    @tests = Test.where(:id => current_user.tests)
+    @tests = Test.where(:id => current_user.courses)
+    @tests_student = TestStudent.where(:student_id => current_user.student_id)
     if current_user.c_test_id   #es gibt einen aktuellen Test
       @cur_test = Test.find(current_user.c_test_id)
-      
       if current_user.courses.nil?
         @bemerkung = "Fuer den User gibt es keinen Kurs."
       elsif current_user.state == 'finished'

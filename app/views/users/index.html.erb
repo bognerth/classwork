@@ -11,7 +11,7 @@
   <tr  class="<%= cycle('list_line_odd', 'list_line_even') %>">
     <td><%= user.email %></td>
     <td><%= user.student.group.name %></td>
-    <td><%= link_to 'Edit', edit_test_path(user) %> - <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %> - <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

@@ -1,9 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  # def authorize
-  # 	redirect_to login_url, alert: "Not authorize" if current_user.nil?
-  # end
+  before_filter :authorize
+  protected
+  def authorize
+  	redirect_to login_url, alert: "Not authorize" #if current_user.nil?
+  end
+
 
   private
   def current_user
@@ -27,5 +30,8 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user, :admin?
 
+  def restricted
+    redirect_to test_students_url, alert: "Restricted. Only for admins" if @current_user.group_id != 1
+  end
 
 end

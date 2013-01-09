@@ -1,4 +1,6 @@
 class TestsController < ApplicationController
+  before_filter :restricted
+
   def state
     test = Test.find(params[:id])
     test.change(params[:state])

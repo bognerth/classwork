@@ -3,7 +3,7 @@ class TestStudent < ActiveRecord::Base
 
   belongs_to :student 
   belongs_to :test 
-  has_many :answer_students
+  has_many :answer_students, :dependent => :destroy
   
   def test_exists(user_id)
 

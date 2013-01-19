@@ -5,14 +5,17 @@
     <th>User</th>
     <th>Prozent</th>
     <th>Note</th>
+    <th></th>
+    <th></th>
   </tr>
 
 <% @results.each do |result| %>
   <tr>
     <td><%= result.student.user.email %></td>
-    <td align="center"><%= punkte = ((result.points * 100) / result.count_questions).round %> </td>
+    <td adlign="center"><%= punkte = ((result.points * 100) / result.count_questions).round %> </td>
     <td align="center"><%= POINTS_TO_NOTE[punkte] %></td>
-
+    <td><%#= link_to 'Details', result %> </td>
+    <td><%= link_to 'Reset', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

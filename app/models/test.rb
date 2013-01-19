@@ -11,7 +11,8 @@ class Test < ActiveRecord::Base
     delegate :new?, :open?, :canceled?, :shipped?, :closed?, to: :current_state
 
     def self.open_tests
-      joins(:events).merge TestEvent.with_last_state("open")
+      #joins(:events).merge TestEvent.with_last_state("open")
+      joins(:events).where("test_events.id IN (SELECT MAX(id) FROM test_events GROUP BY test_id) AND state = 'open'")
     end
 
     def current_state

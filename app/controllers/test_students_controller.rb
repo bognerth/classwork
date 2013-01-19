@@ -107,7 +107,7 @@ class TestStudentsController < ApplicationController
     @test_student.destroy
 
     respond_to do |format|
-      format.html { redirect_to test_students_url }
+      format.html { redirect_to tests_url }
       format.json { head :no_content }
     end
   end

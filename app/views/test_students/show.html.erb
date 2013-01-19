@@ -55,5 +55,5 @@
 <% end %>
 
   <p>
-    <%= button_to 'Test beenden', test_student_path(current_user.c_test_student_id), method: :put, data: { confirm: 'Are you sure?' } %>
+    <%= button_to 'Test beenden', test_student_path(current_session.c_test_student_id), method: :put, data: { confirm: 'Are you sure?' } %>
   </p>

@@ -27,7 +27,7 @@
     <p><%= @bemerkung %></p>
     <hr />
   <% end %>
-  <% unless current_user.state == 'finished' %>
+  <% if current_session.c_test_id && current_session.state != 'finished' %>
     <h3>Klassenarbeit: <%= @cur_test.description %> </h3>
     <h4>Anmerkungen Durchführung der Klassenarbeit</h4>
     <ul>

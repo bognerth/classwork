@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-User.create(:email => 'bognerth@gmail.com', :password => 'la+ja+no', :password_confirmation => 'la+ja+no')
+User.create(:email => 'bognerth@gmail.com', :password => 'password', :password_confirmation => 'password')
 Group.create(name: "Lehrer")
 Group.create(name: "FIT1AF")
 Group.create(name: "FIT1H")

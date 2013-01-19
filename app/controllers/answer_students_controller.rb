@@ -1,14 +1,14 @@
 class AnswerStudentsController < ApplicationController
-  # POST /answer_students
-  # POST /answer_students.json
+  # wird von test_students/show aufgerufen
   def create
     answer = Answer.find(params[:answer_student][:answer_id])
     params[:answer_student][:points] = answer.points
     @answer_student = AnswerStudent.new(params[:answer_student])
     page = params[:page].to_i + 1
+    page = page == 1 ? 2 : page
     respond_to do |format|
       if @answer_student.save
-        format.html { redirect_to test_student_path(current_user.c_test_student_id, :page => page), notice: 'Auswahl gespeichert.' }
+        format.html { redirect_to test_student_path(current_session.c_test_student_id, :page => page), notice: 'Auswahl gespeichert.' }
         format.json { render json: @answer_student, status: :created, location: @answer_student }
       else
         format.html { render action: "new" }
@@ -16,7 +16,7 @@ class AnswerStudentsController < ApplicationController
       end
     end
   rescue
-    redirect_to test_student_path(current_user.c_test_student_id, :page => params[:page]), notice: 'Waehlen Sie eine Antwort.' 
+    redirect_to test_student_path(current_session.c_test_student_id, :page => params[:page]), notice: 'Waehlen Sie eine Antwort.' 
   end
 
   # PUT /answer_students/1
@@ -26,7 +26,7 @@ class AnswerStudentsController < ApplicationController
     page = params[:page].to_i + 1
     respond_to do |format|
       if @answer_student.update_attributes(params[:answer_student])
-        format.html { redirect_to test_student_path(current_user.c_test_student_id, :page => page), notice: 'UPDATE erfolgreich.' }
+        format.html { redirect_to test_student_path(current_session.c_test_student_id, :page => page), notice: 'UPDATE erfolgreich.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

@@ -3,15 +3,16 @@ class TestStudentsController < ApplicationController
   # klick auf Test starten leitet zur create-Methode, dort wird ein Datensatz in Tabelle test_students angelegt
   # ob der Test abgelaufen ist laesst sich mit object.end > datetime.now ermitteln
   def index
-    @tests = Test.where(:id => current_user.courses)
-    @tests_student = TestStudent.where(:student_id => current_user.student_id)
-    if current_user.c_test_id   #es gibt einen aktuellen Test
-      @cur_test = Test.find(current_user.c_test_id)
-      if current_user.courses.nil?
+    @tests = Test.where(:id => current_session.courses)
+    @tests_student = TestStudent.where(:student_id => current_session.student_id)
+      
+    if current_session.c_test_id   #es gibt einen aktuellen Test
+      @cur_test = Test.find(current_session.c_test_id)
+      if current_session.courses.nil?
         @bemerkung = "Fuer den User gibt es keinen Kurs."
-      elsif current_user.state == 'finished'
+      elsif current_session.state == 'finished'
         @bemerkung = "Der User hat keinen offenen Test."
-      elsif current_user.c_test_id.nil?
+      elsif current_session.c_test_id.nil?
         @bemerkung = "Es gibt keinen aktuellen Test."
       end
     else
@@ -26,12 +27,12 @@ class TestStudentsController < ApplicationController
   def show
     @test_student = TestStudent.find(params[:id])
     @cur_page = @test_student.count_questions >= params[:page].to_i ? params[:page] : 1
-    @questions = Question.where(:category_id => current_user.c_category_id, :status => true).order(:id).page(@cur_page).per_page(1)
+    @questions = Question.where(:category_id => current_session.c_category_id, :status => true).order(:id).page(@cur_page).per_page(1)
     @answer_student = AnswerStudent.find_or_initialize_by_student_id_and_test_id_and_question_id(@test_student.student_id,@test_student.test_id,@questions.first.id)
     @answer_student.test_student_id = params[:id]
     #@answer_student = AnswerStudent.new
-    #@answer_student.student_id = current_user.student_id
-    #@answer_student.test_id = current_user.test_id
+    #@answer_student.student_id = current_session.student_id
+    #@answer_student.test_id = current_session.test_id
     #@cur_page = params[:page]
     @answers = Answer.where(:question_id => @questions.first.id) 
     respond_to do |format|
@@ -41,23 +42,23 @@ class TestStudentsController < ApplicationController
   end
 
   def create
-    if TestStudent.exists?(:test_id => current_user.c_test_id, :student_id => current_user.student_id)
-      @current_session = CurrentSession.find(current_user.id)
+    if TestStudent.exists?(:test_id => current_session.c_test_id, :student_id => current_session.student_id)
+      @current_session = CurrentSession.find(current_session.id)
       @current_session.update_attributes(:state => 'finished')
-      redirect_to test_students_path, :notice => "Der User #{current_user.email} hat den Test schon einmal durchgefuehrt."
+      redirect_to test_students_path, :notice => "Der User #{current_session.email} hat den Test schon einmal durchgefuehrt."
     else
-      test = Test.find(current_user.c_test_id)
+      test = Test.find(current_session.c_test_id)
       now = DateTime.now
-      ende = current_user.c_duration.minutes.from_now
-      count = Question.where(:category_id => current_user.c_category_id).count
-      @test_student = TestStudent.new(test_id: current_user.c_test_id, student_id: current_user.student_id, start: now, :end => ende, count_questions: count, current_question_id: 0, points: 0)
+      ende = current_session.c_duration.minutes.from_now
+      count = Question.where(:category_id => current_session.c_category_id).count
+      @test_student = TestStudent.new(test_id: current_session.c_test_id, student_id: current_session.student_id, start: now, :end => ende, count_questions: count, current_question_id: 0, points: 0)
 
       if @test_student.save
-        current_session = CurrentSession.find(current_user.id)
+        current_session = CurrentSession.find(@current_session.id)
         current_session.update_attributes(:c_test_student_id => @test_student.id, :state => 'started', :c_count_questions => count, :c_start => now)
         redirect_to test_student_path(@test_student)
       else
-        redirect_to test_students_path, :notice => "Fehler beim Anlegen eines Test fuer User #{current_user.email}."
+        redirect_to test_students_path, :notice => "Fehler beim Anlegen eines Test fuer User #{current_session.email}."
       end
     end
   end
@@ -65,7 +66,7 @@ class TestStudentsController < ApplicationController
   def update
     @test_student = TestStudent.find(params[:id])
     @test_student.update_attributes(:points => @test_student.answer_students.sum(:points))
-    @current_session = CurrentSession.find(current_user.id)
+    @current_session = CurrentSession.find(current_session.id)
     @current_session.update_attributes(:state => 'finished')
     @category = Category.find(@current_session.c_category_id)
     @prozent = (@test_student.points * 100 / @test_student.count_questions).round
@@ -91,7 +92,7 @@ class TestStudentsController < ApplicationController
       format.html # new.html.erb
       format.pdf do
         pdf = TestStudentPdf.new(@test_student)
-        send_data pdf.render, filename: "Testergebnis-#{current_user.email}",
+        send_data pdf.render, filename: "Testergebnis-#{current_session.email}",
                             type: "application/pdf",
                             disposition: "inline"
       end

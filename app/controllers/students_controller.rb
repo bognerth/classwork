@@ -2,15 +2,16 @@ class StudentsController < ApplicationController
   #Umfunktioniert: zeigt die testergebnisse von students
   def index
     @results = TestStudent.where(test_id: params[:test_id])
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @students }
+    if @results.empty?
+      redirect_to tests_path, notice: 'Keine Ergebnisse vorhanden'
+    else
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @students }
+      end
     end
   end
 
-  # GET /students/1
-  # GET /students/1.json
   def show
     @student = Student.find(params[:id])
 
@@ -20,8 +21,6 @@ class StudentsController < ApplicationController
     end
   end
 
-  # GET /students/new
-  # GET /students/new.json
   def new
     @student = Student.new
 
@@ -31,13 +30,10 @@ class StudentsController < ApplicationController
     end
   end
 
-  # GET /students/1/edit
   def edit
     @student = Student.find(params[:id])
   end
 
-  # POST /students
-  # POST /students.json
   def create
     @student = Student.new(params[:student])
 

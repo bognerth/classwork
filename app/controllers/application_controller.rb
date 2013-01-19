@@ -2,36 +2,43 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_filter :authorize
-  protected
-  def authorize
-  	redirect_to login_url, alert: "Not authorize" #if current_user.nil?
-  end
 
+  delegate :allow?, to: :current_permission
+  helper_method :allow?
 
   private
   def current_user
-  	#@current_user ||= User.find(session[:session_id]) if session[:session_id]
-    #raise session.to_yaml
-    if @current_user
-      @current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+  helper_method :current_user
+
+  def current_session
+    if @current_session
+      @current_session
     else
       if session[:current_id]
-        @current_user = CurrentSession.find(session[:current_id])
+        @current_session = CurrentSession.find(session[:current_id])
       end 
     end
   rescue ActiveRecord::RecordNotFound
     session[:current_id] = nil
     #redirect_to login_url
   end
+  helper_method :current_session
 
-  def admin?
-   	true if @current_user && @current_user.group_id == 1
+  def current_permission
+    @current_permission ||= Permission.new(current_user)
   end
 
-  helper_method :current_user, :admin?
-
-  def restricted
-    redirect_to test_students_url, alert: "Restricted. Only for admins" if @current_user.group_id != 1
+  def admin?
+    true if @current_user && @current_user.student.group.name == 'Lehrer'
+  end
+  helper_method :admin?
+  
+  def authorize
+    if !current_permission.allow?(params[:controller], params[:action])
+      redirect_to root_url, alert: "Not authorized."
+    end
   end
 
 end

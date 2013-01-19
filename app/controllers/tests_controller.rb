@@ -1,5 +1,4 @@
 class TestsController < ApplicationController
-  before_filter :restricted
 
   def state
     test = Test.find(params[:id])
@@ -15,7 +14,6 @@ class TestsController < ApplicationController
   # GET /tests.json
   def index
     @tests = Test.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @tests }

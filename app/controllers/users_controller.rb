@@ -6,9 +6,12 @@ class UsersController < ApplicationController
 	def create 
 		@user = User.new(params[:user])
 		if @user.save
-			#session[:user_id] = @user.id
+			session[:user_id] = @user.id
 			Student.create(user_id: @user.id ,group_id: params[:group_id])  
-			redirect_to root_url, notice: "Thank you for signin up!"
+			current = CurrentSession.create
+			current.make(@user.id)
+			session[:current_id] = current.id
+			redirect_to test_students_url, notice: "Thank you for signin up!"
 		else
 			render "new"
 		end

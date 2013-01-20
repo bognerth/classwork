@@ -16,7 +16,7 @@
       <% @tests_student.each do |test_student| %>
       <li>
         Durchgefuehrt am <%= test_student.start %> mit <%= punkte = ((test_student.points * 100) / test_student.count_questions).round %> Prozent und der Note <%= POINTS_TO_NOTE[punkte] %> abgeschlossen.
-        (<%= link_to "Ergebnis als PDF", edit_test_student_path(test_student.id, format: "pdf") %>)
+        (<%= link_to("Ergebnis als PDF", edit_test_student_path(test_student.id, format: "pdf")) if test_student.test.shipped? %>)
       </li>
       <% end %>
     </ul>

@@ -11,13 +11,18 @@ class StudentsController < ApplicationController
       end
     end
   end
-
+  #Umfunktioniert, zeigt die Testergebnisse als pdf zum speichern
   def show
-    @student = Student.find(params[:id])
-
+    @test_students = TestStudent.where(test_id: params[:id])  #test_id wird in der index.htm.erb mitgegeben
+    
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @student }
+      format.html # new.html.erb
+      format.pdf do
+        pdf = TestResultPdf.new(@test_students)
+        send_data pdf.render, filename: "Testergebnis-#{@test_students[0].test.description}-#{DateTime.now.to_s}",
+                            type: "application/pdf",
+                            disposition: "inline"
+      end
     end
   end
 

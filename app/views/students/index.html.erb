@@ -1,5 +1,5 @@
 <h1>Test: <%= @results[0].test.description %></h1>
-
+<p><%= link_to("Ergebnis als PDF", student_path(@results[0].test_id, format: "pdf")) %></p>
 <table>
   <tr>
     <th>User</th>
@@ -12,7 +12,7 @@
 <% @results.each do |result| %>
   <tr>
     <td><%= result.student.user.email %></td>
-    <td adlign="center"><%= punkte = ((result.points * 100) / result.count_questions).round %> </td>
+    <td align="center"><%= punkte = ((result.points * 100) / result.count_questions).round %> </td>
     <td align="center"><%= POINTS_TO_NOTE[punkte] %></td>
     <td><%#= link_to 'Details', result %> </td>
     <td><%= link_to 'Reset', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>

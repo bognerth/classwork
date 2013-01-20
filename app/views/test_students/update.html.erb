@@ -1,5 +1,5 @@
 <h2>Test-Ergebnis</h2>
-<p><%= link_to "Ergebnis als PDF", edit_test_student_path(@test_student.id, format: "pdf") %></p>
+<p><%= link_to("Ergebnis als PDF", edit_test_student_path(@test_student.id, format: "pdf")) if @test_student.test.shipped? %></p>
 <p>
 	<%= @test_student.points %> richtige Antworten bei <%= @test_student.count_questions %> Fragen ergibt <%= @prozent %> %. <br />
 	Das ist die Note: <b><%= POINTS_TO_NOTE[@prozent] %></b>.</p>

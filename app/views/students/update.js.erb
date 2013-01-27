@@ -1,0 +1,3 @@
+$("#change-<%= @teststudent.id %>").html("<%= j link_to image_tag('plus.png'), edit_student_path(@teststudent), remote: true %> <%= @teststudent.points %> von <%= @teststudent.count_questions %>");
+$("#punkte-<%= @teststudent.id %>").html("<%= punkte = ((@teststudent.points * 100) / @teststudent.count_questions).round %>");
+$("#note-<%= @teststudent.id %>").html("<%= POINTS_TO_NOTE[punkte] %>");

@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>User</th>
+    <th width="150px">Richtige Antworten</th>
     <th>Prozent</th>
     <th>Note</th>
     <th></th>
@@ -12,9 +13,22 @@
 <% @results.each do |result| %>
   <tr>
     <td><%= result.student.user.email %></td>
-    <td align="center"><%= punkte = ((result.points * 100) / result.count_questions).round %> </td>
-    <td align="center"><%= POINTS_TO_NOTE[punkte] %></td>
-    <td><%#= link_to 'Details', result %> </td>
+    <td align="center">
+      <div id="change-<%= result.id %>">
+        <%= link_to image_tag('plus.png'), edit_student_path(result), remote: true %>&nbsp;&nbsp;
+        <%= result.points %> von <%= result.count_questions %>
+      </div>
+    </td>
+    <td align="center">
+      <div id="punkte-<%= result.id %>">
+        <%= punkte = ((result.points * 100) / result.count_questions).round %> 
+      </div>
+    </td>
+    <td align="center">
+      <div id="note-<%= result.id %>">
+        <%= POINTS_TO_NOTE[punkte] %></td>
+      </div>
+    <td> </td>
     <td><%= link_to 'Reset', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>

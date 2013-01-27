@@ -29,14 +29,16 @@ class StudentsController < ApplicationController
   def new
     @student = Student.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @student }
-    end
+
   end
 
   def edit
-    @student = Student.find(params[:id])
+    @teststudent = TestStudent.find(params[:id])
+    @student = Student.find(@teststudent.student_id)
+    respond_to do |format|
+      format.html # new.html.erb
+      format.js
+    end
   end
 
   def create
@@ -56,15 +58,12 @@ class StudentsController < ApplicationController
   # PUT /students/1
   # PUT /students/1.json
   def update
-    @student = Student.find(params[:id])
+    @teststudent = TestStudent.find(params[:teststudent_id])
 
     respond_to do |format|
-      if @student.update_attributes(params[:student])
+      if @teststudent.update_attributes(:points => params[:points])
         format.html { redirect_to @student, notice: 'Student was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @student.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end

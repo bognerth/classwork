@@ -1,0 +1,467 @@
+#-*- encoding: utf-8 -*-
+@;7;Welche der folgenden apt-get-Optionen aktualisieren die Paketdatenbank?
+0;refresh
+0;reload
+0;upgrade
+1;update
+@;7;Welche der folgenden apt-get-Optionen führt ein Update der Pakete auf einem Debian/ubuntu-System durch?
+0;refresh
+0;reload
+1;upgrade
+0;update
+@;7;Welcher Unterschied besteht zwischen den Befehlen 'apt-get upgrade' und 'apt-get dist_upgrade'
+0;apt-get dist-upgrade führt einen Distrubutionsupgrade durch
+1;apt-get dist-upgrade entspricht apt-get upgrade, kann aber auch ganze Pakete ersetzen
+@;7;In welchem Verzeichnis befinden sich die Paketinformationen der Debian-Paketverwaltung?
+0;/etc/dpkg
+1;/var/lib/dpkg
+0;/var/log/dpkg
+0;/usr/lib/dpkg
+@;7;In welcher Datei sind die Quellen für ein Update von Software und System gelistet?
+0;/etc/sources.list
+0;/etc/sources
+1;/etc/apt/sources.list
+0;/etc/apt/sources
+@;7;Bei Ubuntu sind die von der Community verwalteten opensource-Pakete in:
+0;main
+0;restricted
+1;universe
+0;multiverse
+@;7;Bei Ubuntu sind die vom Ubuntu-Team erstellten und verwalteten Pakete als Opensource-Software in:
+1;main
+0;restricted
+0;universe
+0;multiverse
+@;7;Bei Ubuntu sind die vom Ubuntu-Team erstellten und verwalteten Pakete, die allerdings keine Opensource-Software ist, in:
+0;main
+1;restricted
+0;universe
+0;multiverse
+@;7;Bei Ubuntu sind die Pakete die nicht unter der Opensource-Lizenz in:
+0;main
+0;restricted
+0;universe
+1;multiverse
+@;7;Das Paket 'vim' wird mit folgendem Befehl entfernt
+0;apt-get del vim
+0;apt-get delete vim
+1;apt-get remove vim
+@;7;Pakete die nicht mehr benötigt werden werden mit dem Befehl gelöscht
+0;apt-get clean
+1;apt-get autoremove
+0;apt-get remove-all
+@;7;Was stimmt in Bezug auf aptitude 
+1;aptitude ist bei einem Debian/Ubuntu-System als Erweiterung der Paketverwaltung um eine grafische Oberfläche einsetzbar
+0;In der Servervariante von Ubuntu muss es nachinstalliert werden
+0;Bietet keinerleit Vorteile gegenüber apt-get
+@;7;Welcher Befehl zeigt den Installationsstatus von vim an
+1;aptitude show vim
+0;apt-get paket vim
+0;apt-get which vim
+@;7;Welche der folgenden Aussagen über Server ist zutreffend?
+0;Ein Server ist ein spezieller, sehr teurer Computer
+1;Ein Server ist ein Programm, das eine bestimmte Dienstleistung bereitstellt
+0;Ein Server muss stets in einen 19-Zoll-Schrank montiert werden
+0;Ein Server ist ein Programm, das eine Benutzeroberfläche für Netzwerkdienste bereitstellt
+@;7;Welche der folgenden Aussagen über Clients ist zutreffend?
+0;Ein Client ist ein Programm, das eine bestimmte Dienstleistung bereitstellt
+0;Client ist lediglich eine andere Bezeichnung für einen Desktop-PC
+1;Ein Client ist ein Programm, das eine Benutzeroberfläche für Netzwerkdienste bereitstellt
+0;Client ist lediglich eine andere Bezeichnung für einen Browser
+@;7;Wie nennt man es, wenn die Aufgaben eines Webservers auf mehrere physikalische Rechner verteilt werden?
+0;Web Caching
+0;Proxy Service
+1;Load Balancing
+0;Round Robin
+@;7;Welcher der folgenden Server ist kein klassischer Netzwerkserver?
+0;Mail-Server
+1;X Window-Server
+0;File-Server
+0;Print-Server
+@;7;Welcher Serverdienst ermöglicht die Freigabe von UNIX-Verzeichnissen im Netzwerk?
+0;LDAP
+1;NFS
+0;CUPS
+0;NIS
+0;Datei- und Druckerdienste für Windows
+@;7;Welche Aufgabe erfüllt CUPS?
+0;Verzeichnisfreigabe unter UNIX
+0;Es handelt sich um einen LDAP-kompatiblen Verzeichnisdienst
+0;Ein UNIX-Dateisystem für große Festplatten
+1;Standard-Druckerschnittstelle für verschiedene UNIX-Varianten
+@;7;Welches bekannte Internet-Anwendungsprotokoll verwendet der CUPS-Scheduler?
+1;HTTP
+0;FTP
+0;SMTP
+0;Telnet
+@;7;Welchen Dienst stellt ein Samba-Server bereit?
+0;Verzeichnisdienst
+0;NFS
+1;Datei- und Druckerdienste für Windows
+0;NIS
+@;7;Welche Datei enthält die zentrale Samba-Konfiguration?
+0;/etc/samba/sambaconf
+1;/etc/smb.conf
+0;/var/samba/conf
+0;/usr/sbin/rcsmb
+@;7;Wie wird einem SMTP-Server mitgeteilt, dass der eigentliche Mail-Text beendet ist?
+0;Durch eine Leerzeile
+0;Durch den Befehl END
+0;Durch ein EOF (entspricht der Tastenkombination STRG + D)
+1;Durch einen einzelnen Punkt in einer Zeile
+@;7;Was ist der Vorteil von IMAP gegenüber POP3?
+0;IMAP-Server bieten mehr Speicherplatz pro Postfach
+0;Auf einem IMAP-Server kann ein Benutzer mehrere E-Mail-Adressen haben
+0;Auf IMAP-Servern werden die Daten länger aufbewahrt
+1;Auf einem IMAP-Server kann ein Benutzer Ordner zur Mail-Verwaltung anlegen
+@;7;Datei und Pfad zur Konfiguration einer Netzwerkkarte heissen:
+0;/etc/network/interface
+1;/etc/network/interfaces
+0;/etc/interface
+0;/etc/hosts
+@;7;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei fuer die Aktivierung eines dhcp-Servers fuer die zweite Netzwerkkarte lautet:
+0;dhcp 172.16.1.1
+1;iface eth1 inet dhcp
+0;iface eth0 dhcp
+0;iface dhcp
+@;7;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei  fuer die DNS-Server lautet:
+0;DNS-Serverkoennen in dieser Datei nicht konfiguriert werden
+1;dns-nameservers 172.16.1.201 172.16.1.202
+0;dns 172.16.1.201 172.16.1.202
+@;7;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei  fuer die Standardgateway lautet:
+1;gateway 172.16.1.253
+0;gw 172.16.1.253
+0;gw 172.161.253
+1;alle sind nicht korrekt
+@;7;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei  fuer die Konfiguration der ersten Netzwerkkarte mit einer festen IP-Adresse lautet:
+1;iface eth0 inet static
+0;iface eth1 inet static
+0;eth0 auto
+@;7;Der Name des Rechners steht in der Datei:
+1;/etc/hostname
+0;/etc/network/host
+0;/etc/host
+@;7;Der Befehl zum Anzeigen der aktuellen Netzwerkkonfiguration lautet:
+0;ipconfig
+1;ifconfig
+@;7;Der Befehl zur temporären Konfiguration der 1. Netzwerkkarte lautet:
+1;ifconfig eth0 192.168.3.100 netmask 255.255.0.0
+0;ifconfig eth0 192.168.3.100 netmask: 255.255.0.0
+0;ipconfig eth0 192.168.3.100 netmask 255.255.0.0
+0;keiner
+@;7;Der Befehl zum Anzeigen und Ändern der Standardgateway lautet:
+1;route
+0;gateway
+0;es gibt keinen Befehl der beide Kriterien erfuellt
+@;7;Die Abkürzung SSH 
+0;bezeichnet einen Client zum Verschlüsseln von Daten
+0;bezeichnet den Server
+1;steht für Secure Shell
+@;7;Der Open-SSH-Client steht auf einem Ubuntu Rechner standardmäsig zur Verfügung
+1;ja
+0;nein 
+@;7;Der Open-SSH-Server ist auf einem Ubuntu Server standardmäsig installiert
+1;ja
+0;nein 
+@;7;Der Befehl ssh g16-hh.de
+0;verbindet mit dem root User der Rechners g16-hh.de
+0;stellt eine persistente Verbindung her
+1;initiiert eine sichere Verbindung zu dem Rechner g16-hh.de
+@;7;Der Befehl zur Installation eines SSH-Servers auf einem Ubuntu-Server lautet:
+1;sudo apt-get install openssh-server
+0;sudo apt-get install ssh
+0;sudo apt-get install ssh-server
+@;7;Der Befehl zum Stoppen des ssh-Dämons lautet
+0;ssh hat keinen Dämon
+1;/etc/init.d/ssh stop
+0;/etc/init.d/openssh stop
+@;7;Bei der ersten Verbindung eines ssh-Clients mit einem ss-Server wird beim Client ein RSA key fingerprint erzeugt
+1;ja
+0;nein
+@;7;Der Name der Datei in der der SSH-Fingerprint abgelegt wird lautet:
+0;.known_hosts
+1;.ssh/known_hosts
+0;ssh/known_hosts
+@;7;Die Aussage: wenn ich mich, nachdem ich mit ssh g16-hh.de eine Verbindung erfolgreich hergestellt habe, erneut mit einem anderen Namen oder der IP-Adresse anmelden will, wird ebenfalls ein neuer Eintrag in meiner Datei known_hosts erzeugt
+1;stimmt
+0;stimmt nicht
+@;7;Der Fingerprint-Vergleich bekommt erst dann eine Bedeutung, wenn
+0;der Client-Rechner ausgetauscht wird
+0;der Server-Rechner von Hackern übernommen wurde
+1;die Verbindungsdaten (Namen, IP-Adresse) auf einen anderen Rechner als den ursprünglichen verweisen
+@;7;Der SSH-Fingerprint wird beim Kopieren mit scp nicht geprüft
+0;stimmt
+1;stimmt nicht
+@;7;Der Befehl ssh-keygen erzeugt
+0;den Befehl gibt es nicht
+0;nur einen privaten Schlüssel
+1;einen öffentlichen und einen privaten Schlüssel
+@;7;Welchem Zweck dient die Passphrase bei der Schlüsselerzeugung?
+0;die Passphrase hat nichts mit der Schlüsselgeneration zu tun
+1;einen zusätzliche Sicherheit, da die Passphrase bei jeder Schlüsselbenutzung eingegeben werden muss
+0;Komplexitätserhöhung des privaten Schlüssels
+@;7;Der öffentliche Schlüssel wird in folgender Datei gespeichert:
+1;id_rsa.pub
+0;id_rsa
+0;public_key
+@;7;Welche Aussage über öffentlichen und privaten Schlüssel trifft den Sachverhalt am genausten?
+0;der private Schlüssel wird auf den Server kopiert
+0;der öffentliche Schlüssel kann verteilt werden
+1;Der private Schlüssel liegt auf dem Rechner, von dem aus sich der User einloggen möchte, während der öffentliche Schlüssel auf dem Rechner vorliegt, zu dem die Verbindung hergestellt wird
+@;7;Eine automatiserter Login auf einem Server ist möglich, nachdem folgenden Aktionen erledigt sind:
+0;Schlüsselerzeugung; Verteilung des privaten Schlüssels
+1;Schlüsselerzeugung ohne Eingabe einer Passphrase; Kopieren des öffentlichen Schlüssels in das .ssh Verzeichnis des Benutzers auf dem Server
+0;Erzeugen eines privaten Schlüssels auf dem Client und erzeugen eines öffentlichen Schlüssels auf dem Server
+@;7;Der Standardport von ssh ist:
+0;21
+1;22
+0;145
+@;7;Es ist aus Sicherheitsgründen sinnvoll den Port auf dem der ssh-Server lauscht zu verändern
+0;Nein, die Portnummer spielt keine Rolle
+1;Ja, der Port kann in der Datei /etc/ssh/sshd_config geändert werden
+0;Die Portnummer sollte auf keinen Fall geändert werden, da dann andere Dienste nicht mehr funktionieren
+@;7;Die sicherste Variante für SSH-Server ist es den Wert PasswordAuthentication in der Datei /etc/ssh/sshd_config auf no zu setzen, da dann nur noch ein Login über einen Schlüsseltausch möglich ist
+0;Tolle Idee, gibt es aber leider nicht
+1;Trifft zu 
+0;Diese Möglichkeit gibt es, wird allerdings im Verzeichnis .ssh/keys durch den Link: ln -s /etc/ssh/pwd .ssh/ erzeugt
+@;7;Der User theo möchte direkt nach dem Login in seinem Rechner vm-1 aus dem Verzeichnis Documents seines Home-Verzeichnisses daten.dat in das Verzeichnis /srv/webs des Webservers mit dem Namen g16-hh.de kopieren, der User g16admin, dessen Passwort bekannt ist, hat dort Schreibrechte. Welcher Befehl ist erfolgreich?
+0;scp Documents/daten.dat g16admin@g16-hh.de/srv/webs/daten.dat
+0;scp documents/daten.dat g16admin@g16-hh.de/srv/webs/daten.dat
+1;scp Documents/daten.dat g16admin@g16-hh.de:/srv/webs/daten.dat
+@;7;Der User theo möchte direkt nach dem Login in seinem Rechner vm-1 aus dem Verzeichnis Documents seines Home-Verzeichnisses daten.dat in das Verzeichnis /srv/webs des Webservers mit dem Namen g16-hh.de kopieren. Der User g16admin, dessen Passwort bekannt ist, hat dort allerdings keine Schreibrechte. Das Passwort von root ist zwar bekannt, aber root kann sich nicht von außen auf dem Server einloggen. Welcher Weg führt zum Ziel?
+0;1;scp Documents/daten.dat 16-hh.de:/srv/webs/daten.dat
+0;1;scp Documents/daten.dat g16admin@g16-hh.de:/home/g16admin/daten.dat;cp daten.dat /srv/webs/daten.dat
+1;scp Documents/daten.dat g16admin@g16-hh.de:/home/g16admin/daten.dat;ssh g16admin@g16-hh.de; su root;cp daten.dat /srv/webs/daten.dat
+0;scp Documents/daten.dat root@g16-hh.de:/srv/webs/daten.dat
+@;7;Sie sind als peter angemeldet. Sie fuegen fuer anton die Gruppe admin hinzu
+1;sudo usermod -aG admin anton
+0;sudo usermod -G admin anton
+0;sudo usermod -p admin anton
+0;sudo usermod -a admin anton
+0;keiner der genannten Befehle funktioniert
+@;7;Sie sind als peter angemeldet. Sie möchten User anton aus der Gruppe admin entfernen
+0;sudo deluser admin anton
+1;sudo deluser anton admin
+0;sudo userdel anton admin
+@;7;Welche Option sorgt dafür, dass der Apache in einem bestimmten Verzeichnis CGI-Skripte ausführt?
+0;FollowSymLinks
+0;Indexes
+1;ExecCGI
+0;AddHandler
+@;7;Welche Programmierschnittstelle dient klassischerweise zur Entwicklung von TCP/IP-Anwendungen?
+1;Berkeley Socket API
+0;LWP
+0;Net::Socket
+0;WinSock
+@;7;Welche Art von Daten gehört nicht zu denjenigen, die im Zusammenhang mit einer Datenbank unterschieden werden?
+0;Rechendaten
+0;Bewegungsdaten
+0;Stammdaten
+1;Messdaten
+@;7;Welche Kombination von Datenarten ist der Einzelpreis eines Artikels?
+0;Bewegungsdatum und Messdatum
+0;Stammdatum und Messdatum
+1;Stammdatum und Rechendatum
+0;Bewegungsdatum und Rechendatum
+@;7;Welche der folgenden Informationen ist Bewegungsdatum und Rechendatum?
+0;Kalendertag
+0;Stückzahl auf Lager
+0;Skonto
+1;Börsenkurs
+@;7;Welche Information in einer Datenbanktabelle ist der Datensatz?
+0;Ein einzelnes Feld
+1;Eine Zeile
+0;Eine Spalte
+0;Zusammengehörende Felder
+@;7;Welche Bedeutung hat der Primärschlüssel in einer relationalen Datenbank?
+0;Eindeutige Kennzeichnung einer Tabelle
+0;Schutz der Datenbank durch Verschlüsselung
+1;Eindeutige Kennzeichnung eines Datensatzes
+0;Vorlage für neue Datensätze
+@;7;Welche Relation kann in einer relationalen Datenbank nur indirekt bestehen?
+1;Die m:n-Relation
+0;Die 1:n-Relation
+0;Die 1:1-Relation
+0;Alle Relationen können direkt bestehen
+@;7;Was benötigen Sie, um eine MySQL-Datenbank über phpmyadmin zu verwalten?
+0;Einen Windows-Rechner mit PHP
+1;Einen Webserver und PHP
+0;Einen Browser und PHP
+0;Einen zweiten Rechner, auf dem die Serversoftware läuft
+@;7;Welche Indexart besitzt die Einschränkung, dass jedes Feld einer Spalte einen individuellen Wert benötigt?
+0;INDEX
+0;FULLTEXT
+0;AUTO_INCREMENT
+1;UNIQUE
+@;7;Welche der folgenden "Abfragen" gibt es in SQL nicht?
+0;Auswahlabfrage
+0;Einfügeabfrage
+1;Erweiterungsabfrage
+0;Löschabfrage
+@;7;Welchen Fehler enthält die folgende SQL-Anweisung zur Erstellung der Tabelle TEST: CREATE TABLE TEST (NR PRIMARYKEY, NAME CHAR(50) NOT NULL) ?
+0;Die Felder müssen durch ein Semikolon statt durch ein Komma getrennt werden
+1;PRIMARYKEY muss in zwei Wörtern geschrieben werden: PRIMARY KEY
+0;Die Angabe der Zeichenanzahl bei CHAR muss in eckigen Klammern stehen
+0;Bei NOT NULL fehlt der Unterstrich; es heißt NOT_NULL
+@;7;Welcher der folgenden SQL-Datentypen ist kein Fließkommatyp?
+0;FLOAT
+0;REAL
+0;DOUBLE
+1;DECIMAL
+@;7;Was ist der Unterschied zwischen den SQL-Datentypen CHAR und VARCHAR?
+0;VARCHAR kann beliebig viele Zeichen enthalten, CHAR nur eine bestimmte Anzahl
+1;VARCHAR belegt nur Speicherplatz für die tatsächlich verwendeten Zeichen, CHAR für alle Zeichen der vereinbarten Gesamtgröße
+0;VARCHAR kann mehr Zeichen enthalten als CHAR
+0;Die beiden Typen sind synonym
+@;7;Wie lassen sich alle Felder aller Datensätze der Tabelle INFO auswählen?
+0;SELECT () FROM INFO
+0;SELECT ALL FROM INFO
+1;SELECT * FROM INFO
+0;SELECT FROM INFO WHERE *
+@;7;Welche Versionsnummer trägt die aktuelle HTTP-Spezifikation?
+0;HTTP/1.0
+1;HTTP/1.1
+0;HTTP/2.0.49
+0;HTTP/4.01
+@;7;Welche der folgenden HTTP-Anfragemethoden gibt es nicht?
+0;GET
+0;POST
+1;META
+0;PUT
+@;7;Was ist die bedeutendste Neuerung der aktuellen HTTP-Version?
+0;Statt TCP kann auch UDP eingesetzt werden
+1;Persistente Verbindungen werden unterstützt
+0;Die Methode HEAD wurde neu eingeführt
+0;Es können zusätzliche Header benutzt werden
+@;7;Welches Zeichen in der URL einer GET-Anfrage leitet einen Query-String ein?
+0;&
+0;;
+1;?
+0;#
+@;7;Welchen Header benötigen HTTP/1.1-Anfragen unbedingt?
+0;Content-Type
+0;If-Match
+1;Host
+0;Accept
+@;7;Welches der folgenden Softwarepakete ist kein Projekt der Apache Software Foundation?
+0;Ant
+0;Cocoon
+0;Tomcat
+1;Perl
+@;7;Welches der folgenden Programme ist kein Webserver?
+0;Tomcat
+1;Samba
+0;Microsoft IIS
+0;Zeus
+@;7;Unter welchem der folgenden Betriebssysteme läuft Apache 2 nicht?
+0;Mac OS X
+0;Windows NT
+0;FreeBSD
+1;Mac OS 9
+@;7;Was ist "Banana Ware"?
+0;Hardware mit Bio-Antrieb
+0;Software, die mit Nahrungsmitteln als Bonus geliefert wird
+1;Software, die noch "grün" ist und "beim Kunden reift"
+0;Shareware, für die der Autor um Bananen als Gegenleistung bittet
+@;7;Wie wird ein Kommentar in der Apache-Konfigurationsdatei gekennzeichnet?
+0;<!-- Kommentar -->
+0;// Kommentar
+1;# Kommentar
+0;/* Kommentar */
+@;7;Welches sind die drei traditionellen Abschnitte der Datei httpd.conf?
+0;Server, virtuelle Hosts, Verzeichnisse
+0;Hauptverzeichnis, Unterverzeichnisse, virtuelle Hosts
+1;Programmeinstellungen, Haupt-Server, virtuelle Hosts
+0;Berechtigungen, Weiterleitungen, Sonstiges
+@;7;Welche Container dürfen nicht in andere Container verschachtelt werden?
+0;<Files> und <FilesMatch>
+0;<Directory> und <DirectoryMatch>
+0;<Limit> und <LimitExcept>
+1;<VirtualHost>
+@;7;Welche Direktive regelt die Wartezeit bis zum Abbruch einer HTTP-Transaktion?
+1;TimeOut
+0;KeepAlive
+0;MaxKeepAliveRequests
+0;MaxRequestsPerChild
+@;7;Welche Direktive gibt das Stammverzeichnis der Website an?
+0;ServerRoot
+0;DirectoryIndex
+1;DocumentRoot
+0;<Directory> ... </Directory>
+@;7;Wie lässt sich der Zugriff auf den URL-Pfad /privat auf das lokale Netzwerk (z.B. 192.168.0.0/24) beschränken?
+0;<Directory /privat>Order Allow,Deny \n Allow from 192.168.0 \n</Directory>
+0;<Location /privat>Order Deny,Allow \n Allow from 192.168.0 \n</Location>
+1;<Location /privat>Order Deny,Allow \n Deny from all \n Allow from 192.168.0 </Location>
+0;<Directory /privat>Order Allow,Deny \n Allow from 192.168.0 \n Deny from all </Directory>
+@;7;Welcher der folgenden HTTP-Header kann nicht durch eine Header-Direktive manipuliert werden?
+1;Server
+0;Location
+0;Expires
+0;Cache-Control
+@;7;Welche der folgenden Aussagen über DNS ist zutreffend?
+0;Das System besteht aus einer Textdatei, die bei Änderungen auf jeden Nameserver kopiert wird
+1;Ein DNS-Administrator kann Subdomains seiner Zone entweder selbst verwalten oder als untergeordnete Zonen delegieren
+0;Ein Webserver muss den Hostnamen www erhalten, damit er funktioniert
+0;Jeder Internet-Teilnehmer benötigt einen eigenen Nameserver
+@;7;Welche der folgenden Generic Top Level Domains gibt es nicht?
+0;.com
+0;.net
+1;.doc
+0;.info
+@;7;Welchen Vorteil besitzt SSH gegenüber Telnet?
+1;Sichere Datenübertragung durch Verschlüsselung
+0;SSH verwendet TCP, Telnet dagegen UDP
+0;Telnet-Server funktionieren nur unter UNIX, SSH-Server auch unter Windows
+0;Die Texteingabe ist bei SSH komfortabler
+@;7;Welche HTTP-Statusmeldung zeigt an, dass das angeforderte Dokument gefunden wurde und mitgeschickt wird?
+1;200
+0;204
+0;300
+0;404
+@;7;Welche Bezeichnung steht nicht für ein Überwachungs- und Analysetool
+0;Nagios
+0;Munin
+0;SNMP
+1;alle Begriffe markieren Tools für die Überwachung und Analyse
+@;7;Welche Bezeichnung steht nicht für ein Überwachungs- und Analysetool
+0;Nagios
+0;Munin
+0;SNMP
+0;Incinga
+1;alle Begriffe markieren Tools für die Überwachung und Analyse
+@;7;Ein Nachteil von Munin ist die Komplexität der Einrichtung
+0;stimmt
+1;stimmt nicht
+@;7;Mit Munin kann nur ein Rechner überwacht werden
+0;stimmt
+1;stimmt nicht
+@;7;Munin ist als Master-Client-Anwendung aufgebaut. Der Master sammelt die Daten.
+0;stimmt
+1;stimmt nicht
+@;7;Eine Voraussetzung für die Installation und die sinnvolle Verwendung von Munin ist das VOrhandensein eines Webservers und eines Cron-Dämons
+1;stimmt
+0;stimmt nicht
+@;7;Die Konfiguration des Munin-Master erfolgt über die Datei
+0;/etc/munin/munin-master.conf
+1;/etc/munin/munin.conf
+0;/var/munin/munin.conf
+@;7;Munin legt standardmäßig die Daten für den Webserver in dem Verzeichnis ab:
+1;/var/www/munin  
+0;/etc/munin/www
+0;/var/munin
+@;7;Wenn beim Aufruf http://g16-hh.de/munin ein Access-Fehler angezeigt wird, dann
+0;sollte in der Datei /etc/apache2/sites-available/munin.conf 'allow from all' gesetzt werden
+1;sollte in der Datei /etc/munin/apache.conf 'allow from' gesetzt werden 
+0;sollte in der Datei /etc/apache2/sites-available/munin.conf 'deny from all' gelöscht werden
+@;7;Den Status der automatisch installierten Module zeigt der Befehl
+0;munin-node --suggest
+1;munin-node-configure --suggest
+0;munin-configure
+@;7;Das Verzeichis der verfügbaren Plugins liegt bei Ubuntu in:
+1;/usr/share/munin/plugins
+0;/opt/lib/munin/plugins
+0;/etc/munin/plugins
+@;7;Das Verzeichis der aktuellen Plugins liegt bei Ubuntu in:
+0;/usr/share/munin/plugins
+0;/opt/lib/munin/plugins
+1;/etc/munin/plugins

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.13'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -26,6 +26,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'will_paginate', '> 3.0'
 gem "prawn"
 group :production do
-  gem 'mysql2'
+  #gem 'mysql2'
 end
 

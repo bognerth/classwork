@@ -21,7 +21,8 @@ class UsersController < ApplicationController
   end
   def update
     @user = User.find(params[:id])
-
+    @student = Student.find_by_user_id(@user.id)
+    @student.update_attribute(:group_id, params[:group_id])
     respond_to do |format|
       if @user.update_attributes(params[:user])
         format.html { redirect_to users_path, notice: 'User was successfully updated.' }
@@ -35,4 +36,10 @@ class UsersController < ApplicationController
 	def index
 		@users = User.all
 	end
+
+  def destroy
+    user = User.find(params[:id])
+    user.destroy
+    redirect_to users_url, :notice => "#{user.email} geloescht."
+  end
 end

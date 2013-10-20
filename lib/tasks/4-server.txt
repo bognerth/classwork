@@ -1,0 +1,644 @@
+#-*- encoding: utf-8 -*-
+@;0;Welche der folgenden Aussagen über Server ist zutreffend?
+0;Ein Server ist ein spezieller, sehr teurer Computer
+1;Ein Server ist ein Programm, das eine bestimmte Dienstleistung bereitstellt
+0;Ein Server muss stets in einen 19-Zoll-Schrank montiert werden
+0;Ein Server ist ein Programm, das eine Benutzeroberfläche für Netzwerkdienste bereitstellt
+@;0;Welche der folgenden Aussagen über Clients ist zutreffend?
+0;Ein Client ist ein Programm, das eine bestimmte Dienstleistung bereitstellt
+0;Client ist lediglich eine andere Bezeichnung für einen Desktop-PC
+1;Ein Client ist ein Programm, das eine Benutzeroberfläche für Netzwerkdienste bereitstellt
+0;Client ist lediglich eine andere Bezeichnung für einen Browser
+@;0;Wie nennt man es, wenn die Aufgaben eines Webservers auf mehrere physikalische Rechner verteilt werden?
+0;Web Caching
+0;Proxy Service
+1;Load Balancing
+0;Round Robin
+@;0;Welcher der folgenden Server ist kein klassischer Netzwerkserver?
+0;Mail-Server
+1;X Window-Server
+0;File-Server
+0;Print-Server
+@;0;Welcher Serverdienst ermöglicht die Freigabe von UNIX-Verzeichnissen im Netzwerk?
+0;LDAP
+1;NFS
+0;CUPS
+0;NIS
+0;Datei- und Druckerdienste für Windows
+@;0;Welche Aufgabe erfüllt CUPS?
+0;Verzeichnisfreigabe unter UNIX
+0;Es handelt sich um einen LDAP-kompatiblen Verzeichnisdienst
+0;Ein UNIX-Dateisystem für große Festplatten
+1;Standard-Druckerschnittstelle für verschiedene UNIX-Varianten
+@;0;Welches bekannte Internet-Anwendungsprotokoll verwendet der CUPS-Scheduler?
+1;HTTP
+0;FTP
+0;SMTP
+0;Telnet
+@;0;Welchen Dienst stellt ein Samba-Server bereit?
+0;Verzeichnisdienst
+0;NFS
+1;Datei- und Druckerdienste für Windows
+0;NIS
+@;0;Welche Datei enthält die zentrale Samba-Konfiguration?
+0;/etc/samba/sambaconf
+1;/etc/smb.conf
+0;/var/samba/conf
+0;/usr/sbin/rcsmb
+@;0;Wie wird bei einer Verzeichnisfreigabe in der Samba-Konfigurationsdatei angegeben, dass der lokale Pfad /export/freigabe lautet?
+0;directory = /export/freigabe
+0;[export/freigabe]
+1;path = /export/freigabe
+0;public = /export/freigabe
+@;0;In welcher Mail-Codierung wird "Köln" als "K=FCln" wiedergegeben usw.?
+0;7bit
+1;quoted-printable
+0;base64
+0;binary
+@;0;Wie wird einem SMTP-Server mitgeteilt, dass der eigentliche Mail-Text beendet ist?
+0;Durch eine Leerzeile
+0;Durch den Befehl END
+0;Durch ein EOF (entspricht der Tastenkombination STRG + D)
+1;Durch einen einzelnen Punkt in einer Zeile
+@;0;Was ist der Vorteil von IMAP gegenüber POP3?
+0;IMAP-Server bieten mehr Speicherplatz pro Postfach
+0;Auf einem IMAP-Server kann ein Benutzer mehrere E-Mail-Adressen haben
+0;Auf IMAP-Servern werden die Daten länger aufbewahrt
+1;Auf einem IMAP-Server kann ein Benutzer Ordner zur Mail-Verwaltung anlegen
+@;0;Welche Header-Zeile ist eine NNTP-Ergänzung zu den klassischen RFC-822-Headern?
+0;Subject
+0;From
+1;Message-ID
+0;Content-type
+@;0;Die Abkürzung SSH 
+0;bezeichnet einen Client zum Verschlüsseln von Daten
+0;bezeichnet den Server
+1;steht für Secure Shell
+@;0;Der Open-SSH-Client steht auf einem Ubuntu Rechner standardmäsig zur Verfügung
+1;ja
+0;nein 
+@;0;Der Open-SSH-Server ist auf einem Ubuntu Server standardmäsig installiert
+1;ja
+0;nein 
+@;0;Der Befehl ssh g16-hh.de
+0;verbindet mit dem root User der Rechners g16-hh.de
+0;stellt eine persistente Verbindung her
+1;initiiert eine sichere Verbindung zu dem Rechner g16-hh.de
+@;0;Der Befehl zur Installation eines SSH-Servers auf einem Ubuntu-Server lautet:
+1;sudo apt-get install openssh-server
+0;sudo apt-get install ssh
+0;sudo apt-get install ssh-server
+@;0;Der Befehl zum Stoppen des ssh-Dämons lautet
+0;ssh hat keinen Dämon
+1;/etc/init.d/ssh stop
+0;/etc/init.d/openssh stop
+@;0;Bei der ersten Verbindung eines ssh-Clients mit einem ss-Server wird beim Client ein RSA key fingerprint erzeugt
+1;ja
+0;nein
+@;0;Der Name der Datei in der der SSH-Fingerprint abgelegt wird lautet:
+0;.known_hosts
+1;.ssh/known_hosts
+0;ssh/known_hosts
+@;0;Die Aussage: wenn ich mich, nachdem ich mit ssh g16-hh.de eine Verbindung erfolgreich hergestellt habe, erneut mit einem anderen Namen oder der IP-Adresse anmelden will, wird ebenfalls ein neuer Eintrag in meiner Datei known_hosts erzeugt
+1;stimmt
+0;stimmt nicht
+@;0;Der Fingerprint-Vergleich bekommt erst dann eine Bedeutung, wenn
+0;der Client-Rechner ausgetauscht wird
+0;der Server-Rechner von Hackern übernommen wurde
+1;die Verbindungsdaten (Namen, IP-Adresse) auf einen anderen Rechner als den ursprünglichen verweisen
+@;0;Der SSH-Fingerprint wird beim Kopieren mit scp nicht geprüft
+0;stimmt
+1;stimmt nicht
+@;1;Der Befehl ssh-keygen erzeugt
+0;den Befehl gibt es nicht
+0;nur einen privaten Schlüssel
+1;einen öffentlichen und einen privaten Schlüssel
+@;0;Welchem Zweck dient die Passphrase bei der Schlüsselerzeugung?
+0;die Passphrase hat nichts mit der Schlüsselgeneration zu tun
+1;einen zusätzliche Sicherheit, da die Passphrase bei jeder Schlüsselbenutzung eingegeben werden muss
+0;Komplexitätserhöhung des privaten Schlüssels
+@;0;Der öffentliche Schlüssel wird in folgender Datei gespeichert:
+1;id_rsa.pub
+0;id_rsa
+0;public_key
+@;1;Welche Aussage über öffentlichen und privaten Schlüssel trifft den Sachverhalt am genausten?
+0;der private Schlüssel wird auf den Server kopiert
+0;der öffentliche Schlüssel kann verteilt werden
+1;Der private Schlüssel liegt auf dem Rechner, von dem aus sich der User einloggen möchte, während der öffentliche Schlüssel auf dem Rechner vorliegt, zu dem die Verbindung hergestellt wird
+@;0;Eine automatiserter Login auf einem Server ist möglich, nachdem folgenden Aktionen erledigt sind:
+0;Schlüsselerzeugung; Verteilung des privaten Schlüssels
+1;Schlüsselerzeugung ohne Eingabe einer Passphrase; Kopieren des öffentlichen Schlüssels in das .ssh Verzeichnis des Benutzers auf dem Server
+0;Erzeugen eines privaten Schlüssels auf dem Client und erzeugen eines öffentlichen Schlüssels auf dem Server
+@;0;Der Standardport von ssh ist:
+0;21
+1;22
+0;145
+@;0;Es ist aus Sicherheitsgründen sinnvoll den Port auf dem der ssh-Server lauscht zu verändern
+0;Nein, die Portnummer spielt keine Rolle
+1;Ja, der Port kann in der Datei /etc/ssh/sshd_config geändert werden
+0;Die Portnummer sollte auf keinen Fall geändert werden, da dann andere Dienste nicht mehr funktionieren
+@;0;Die sicherste Variante für SSH-Server ist es den Wert PasswordAuthentication in der Datei /etc/ssh/sshd_config auf no zu setzen, da dann nur noch ein Login über einen Schlüsseltausch möglich ist
+0;Tolle Idee, gibt es aber leider nicht
+1;Trifft zu 
+0;Diese Möglichkeit gibt es, wird allerdings im Verzeichnis .ssh/keys durch den Link: ln -s /etc/ssh/pwd .ssh/ erzeugt
+@;0;Der User theo möchte direkt nach dem Login in seinem Rechner vm-1 aus dem Verzeichnis Documents seines Home-Verzeichnisses daten.dat in das Verzeichnis /srv/webs des Webservers mit dem Namen g16-hh.de kopieren, der User g16admin, dessen Passwort bekannt ist, hat dort Schreibrechte. Welcher Befehl ist erfolgreich?
+0;scp Documents/daten.dat g16admin@g16-hh.de/srv/webs/daten.dat
+0;scp documents/daten.dat g16admin@g16-hh.de/srv/webs/daten.dat
+1;scp Documents/daten.dat g16admin@g16-hh.de:/srv/webs/daten.dat
+@;0;Der User theo möchte direkt nach dem Login in seinem Rechner vm-1 aus dem Verzeichnis Documents seines Home-Verzeichnisses daten.dat in das Verzeichnis /srv/webs des Webservers mit dem Namen g16-hh.de kopieren. Der User g16admin, dessen Passwort bekannt ist, hat dort allerdings keine Schreibrechte. Das Passwort von root ist zwar bekannt, aber root kann sich nicht von außen auf dem Server einloggen. Welcher Weg führt zum Ziel?
+0;1;scp Documents/daten.dat 16-hh.de:/srv/webs/daten.dat
+0;1;scp Documents/daten.dat g16admin@g16-hh.de:/home/g16admin/daten.dat;cp daten.dat /srv/webs/daten.dat
+1;scp Documents/daten.dat g16admin@g16-hh.de:/home/g16admin/daten.dat;ssh g16admin@g16-hh.de; su root;cp daten.dat /srv/webs/daten.dat
+0;scp Documents/daten.dat root@g16-hh.de:/srv/webs/daten.dat
+@;0;Sie sind als peter angemeldet. Sie fuegen fuer anton die Gruppe admin hinzu
+1;sudo usermod -aG admin anton
+0;sudo usermod -G admin anton
+0;sudo usermod -p admin anton
+0;sudo usermod -a admin anton
+0;keiner der genannten Befehle funktioniert
+@;0;Sie sind als peter angemeldet. Sie möchten User anton aus der Gruppe admin entfernen
+0;sudo deluser admin anton
+1;sudo deluser anton admin
+0;sudo userdel anton admin
+@;0;Welche Option sorgt dafür, dass der Apache in einem bestimmten Verzeichnis CGI-Skripte ausführt?
+0;FollowSymLinks
+0;Indexes
+1;ExecCGI
+0;AddHandler
+@;0;Welche Programmierschnittstelle dient klassischerweise zur Entwicklung von TCP/IP-Anwendungen?
+1;Berkeley Socket API
+0;LWP
+0;Net::Socket
+0;WinSock
+@;0;Welche Art von Daten gehört nicht zu denjenigen, die im Zusammenhang mit einer Datenbank unterschieden werden?
+0;Rechendaten
+0;Bewegungsdaten
+0;Stammdaten
+1;Messdaten
+@;0;Welche Kombination von Datenarten ist der Einzelpreis eines Artikels?
+0;Bewegungsdatum und Messdatum
+0;Stammdatum und Messdatum
+1;Stammdatum und Rechendatum
+0;Bewegungsdatum und Rechendatum
+@;0;Welche der folgenden Informationen ist Bewegungsdatum und Rechendatum?
+0;Kalendertag
+0;Stückzahl auf Lager
+0;Skonto
+1;Börsenkurs
+@;0;Welche Information in einer Datenbanktabelle ist der Datensatz?
+0;Ein einzelnes Feld
+1;Eine Zeile
+0;Eine Spalte
+0;Zusammengehörende Felder
+@;0;Welche Bedeutung hat der Primärschlüssel in einer relationalen Datenbank?
+0;Eindeutige Kennzeichnung einer Tabelle
+0;Schutz der Datenbank durch Verschlüsselung
+1;Eindeutige Kennzeichnung eines Datensatzes
+0;Vorlage für neue Datensätze
+@;0;Welche Relation kann in einer relationalen Datenbank nur indirekt bestehen?
+1;Die m:n-Relation
+0;Die 1:n-Relation
+0;Die 1:1-Relation
+0;Alle Relationen können direkt bestehen
+@;0;Welche Bedeutung hat die zweite Normalform (2NF) einer relationalen Datenbank?
+0;Die Information innerhalb eines Feldes muss atomar sein
+0;Die Felder eines Datensatzes müssen funktional unabhängig sein
+1;Ein Datensatz darf nur direkte Informationen über denselben Sachverhalt enthalten
+0;Bei mehrteiligen Primärschlüsseln muss jeder Datensatz von allen Elementen dieses Schlüssels abhängen
+@;0;Was ist ein Vorteil der objektorientierten gegenüber der relationalen Datenbank?
+0;Nur in einer OO-Datenbank können die Felder verschiedene Datentypen besitzen
+1;Die Beziehungen sind nicht auf Schlüssel beschränkt und können freier gestaltet werden
+0;Nur die OO-Datenbank ist programmierbar
+0;In OO-Datenbanken funktioniert die Suche schneller
+@;0;Was benötigen Sie, um eine MySQL-Datenbank über phpmyadmin zu verwalten?
+0;Einen Windows-Rechner mit PHP
+1;Einen Webserver und PHP
+0;Einen Browser und PHP
+0;Einen zweiten Rechner, auf dem die Serversoftware läuft
+@;0;Welche Indexart besitzt die Einschränkung, dass jedes Feld einer Spalte einen individuellen Wert benötigt?
+0;INDEX
+0;FULLTEXT
+0;AUTO_INCREMENT
+1;UNIQUE
+@;0;Welche der folgenden "Abfragen" gibt es in SQL nicht?
+0;Auswahlabfrage
+0;Einfügeabfrage
+1;Erweiterungsabfrage
+0;Löschabfrage
+@;0;Welchen Fehler enthält die folgende SQL-Anweisung zur Erstellung der Tabelle TEST: CREATE TABLE TEST (NR PRIMARYKEY, NAME CHAR(50) NOT NULL) ?
+0;Die Felder müssen durch ein Semikolon statt durch ein Komma getrennt werden
+1;PRIMARYKEY muss in zwei Wörtern geschrieben werden: PRIMARY KEY
+0;Die Angabe der Zeichenanzahl bei CHAR muss in eckigen Klammern stehen
+0;Bei NOT NULL fehlt der Unterstrich; es heißt NOT_NULL
+@;0;Welcher der folgenden SQL-Datentypen ist kein Fließkommatyp?
+0;FLOAT
+0;REAL
+0;DOUBLE
+1;DECIMAL
+@;0;Was ist der Unterschied zwischen den SQL-Datentypen CHAR und VARCHAR?
+0;VARCHAR kann beliebig viele Zeichen enthalten, CHAR nur eine bestimmte Anzahl
+1;VARCHAR belegt nur Speicherplatz für die tatsächlich verwendeten Zeichen, CHAR für alle Zeichen der vereinbarten Gesamtgröße
+0;VARCHAR kann mehr Zeichen enthalten als CHAR
+0;Die beiden Typen sind synonym
+@;0;Wie lassen sich alle Felder aller Datensätze der Tabelle INFO auswählen?
+0;SELECT () FROM INFO
+0;SELECT ALL FROM INFO
+1;SELECT * FROM INFO
+0;SELECT FROM INFO WHERE *
+@;0;Was ist zu beachten, wenn Sie alle Elemente einer Tabelle mittels COUNT zählen möchten?
+0;Sie müssen alle Felder auswählen
+0;Sie dürfen jedes Feld außer dem Primärschlüssel auswählen
+1;Sie dürfen nur den Primärschlüssel auswählen
+0;Sie können jedes beliebige Feld auswählen, aber nur eines
+@;0;Wie lässt sich die folgende SQL-Join-Abfrage mittels WHERE darstellen: SELECT * FROM TEST, INFO INNER JOIN TEST.NR ON INFO.NR ?
+0;SELECT * FROM TEST, INFO WHERE NR=NR
+0;SELECT * FROM TEST, INFO WHERE NR
+0;SELECT * FROM TEST, INFO WHERE NR.NR
+1;SELECT * FROM TEST, INFO WHERE TEST.NR=INFO.NR
+@;0;Welche Versionsnummer trägt die aktuelle HTTP-Spezifikation?
+0;HTTP/1.0
+1;HTTP/1.1
+0;HTTP/2.0.49
+0;HTTP/4.01
+@;0;Für welchen Internetdienst wurde das MIME-Verfahren ursprünglich entwickelt?
+0;FTP
+0;Telnet
+0;WWW
+1;E-Mail
+@;0;Welche der folgenden HTTP-Anfragemethoden gibt es nicht?
+0;GET
+0;POST
+1;META
+0;PUT
+@;0;Was ist die bedeutendste Neuerung der aktuellen HTTP-Version?
+0;Statt TCP kann auch UDP eingesetzt werden
+1;Persistente Verbindungen werden unterstützt
+0;Die Methode HEAD wurde neu eingeführt
+0;Es können zusätzliche Header benutzt werden
+@;0;Welches Zeichen in der URL einer GET-Anfrage leitet einen Query-String ein?
+0;&
+0;;
+1;?
+0;#
+@;0;Was bewirkt eine HEAD-Anfrage?
+0;Sie fordert nur den <head>-Bereich von HTML-Dokumenten an
+0;Sie ändert Server-Header
+0;Sie wird nur von Suchmaschinen eingesetzt
+1;Sie fordert nur die Header der Server-Antwort an
+@;0;Welchen MIME-Type besitzen POST-Daten standardmäßig?
+0;application/form-data
+0;multipart/alternative
+1;application/x-www-form-urlencoded
+0;text/html
+@;0;Was wird bei der Standardcodierung von Formulardaten aus dem Leerzeichen?
+0;%20
+1;+ (Plus)
+0;_ (Unterstrich)
+0;&space;
+@;0;Welche Gruppe von HTTP-Statusnummern bezeichnet Client-Fehler?
+0;1xx
+0;3xx
+1;4xx
+0;5xx
+@;0;Wofür stehen HTTP-Statusnummern der Gruppe 2xx?
+0;Allgemeine Informationen
+1;Erfolgsmeldungen
+0;Umleitungen
+0;Server-Fehler
+@;0;Welcher Text begleitet in der Regel die HTTP-Statusmeldung 200?
+0;Created
+0;Not Found
+0;No Content
+1;OK
+@;0;Mit welchem HTTP-Statuscode wird ein Benutzer zur Authentifizierung aufgefordert?
+1;401
+0;403
+0;303
+0;202
+@;0;Welcher der folgenden HTTP-Header kann nur bei der Anfrage, aber nicht bei der Antwort stehen?
+0;Connection
+1;Accept-Charset
+0;Accept-Ranges
+0;Cache-Control
+@;0;Was ist der Standard-Qualitätsfaktor für einen im Accept-Header angegebenen Typ?
+0;q=0.1
+0;q=0.01
+0;q=0.5
+1;q=1
+@;0;Welcher HTTP-Header entscheidet darüber, ob eine Verbindung persistent sein soll?
+0;Cache-Control
+1;Connection
+0;Expires
+0;Max-Forwards
+@;0;Was gibt der HTTP-Header Content-Type an?
+1;Den MIME-Type der gelieferten Ressource
+0;Die Bit-Breite des Zeichensatzes
+0;Die Sprachversion des Dokuments
+0;Die HTML-Version der Datei
+@;0;Welche der folgenden Datumsangaben folgt dem RFC-1123-Format?
+1;Mon, 28 Jun 2004 21:06:34 GMT
+0;Monday, 28-Jun-04 21:06:34 GMT
+0;Mon Jun 28 23:06:34 2004
+0;Monday 2004-06-28 23:06:34 CEST
+@;0;Was besagt das "Robustness Principle" nach Jon Postel?
+0;Never change a running system
+1;Be conservative in what you do, be liberal in what you accept from others
+0;Read the f***ing manual
+0;Das rubbernecken sichtseeren keepen das cotton-pickenen hans in das pockets muss, relaxen und watchen das blinkenlichten.
+@;0;Welchen Header benötigen HTTP/1.1-Anfragen unbedingt?
+0;Content-Type
+0;If-Match
+1;Host
+0;Accept
+@;0;Wie geben HTTP-Weiterleitungen (Status 3xx) die URL des Weiterleitungsziels an?
+0;Durch HTML-Hyperlinks
+0;Durch einen Via-Header
+0;Durch ein <meta>-Tag
+1;Durch einen Location-Header
+@;0;Welche Angabe enthält der Referer-Header?
+0;URL der angeforderten Ressource
+0;Name und Version des Browsers
+1;URL des Dokuments, das auf die angeforderte Ressource verweist
+0;IP-Adresse des anfragenden Hosts
+@;0;Welcher Anfrage-Header enthält Authentifizierungsdaten?
+1;Authorization
+0;User-Agent
+0;WWW-Authenticate
+0;Transfer-Encoding
+@;0;Welches der folgenden Softwarepakete ist kein Projekt der Apache Software Foundation?
+0;Ant
+0;Cocoon
+0;Tomcat
+1;Perl
+@;0;Welches der folgenden Programme ist kein Webserver?
+0;Tomcat
+1;Samba
+0;Microsoft IIS
+0;Zeus
+@;0;Unter welchem der folgenden Betriebssysteme läuft Apache 2 nicht?
+0;Mac OS X
+0;Windows NT
+0;FreeBSD
+1;Mac OS 9
+@;0;Was ist "Banana Ware"?
+0;Hardware mit Bio-Antrieb
+0;Software, die mit Nahrungsmitteln als Bonus geliefert wird
+1;Software, die noch "grün" ist und "beim Kunden reift"
+0;Shareware, für die der Autor um Bananen als Gegenleistung bittet
+@;0;Welches Ziel verfolgt die Apache Portable Runtime (APR)?
+1;Abstraktion von Betriebssystem- und Netzwerkfunktionen
+0;POSIX-Emulation auf Nicht-UNIX-Systemen
+0;Export der Webserver-Kernfunktionen für externe Programme
+0;Verschiedene Modelle zur Nebenläufigkeit
+@;0;Welches Laufzeitmodell wird bisher von keinem Apache-MPM unterstützt?
+0;Preforking
+0;Threading
+0;Forking/Threading-Hybrid-Modell
+1;select()
+@;0;Welches MPM ist Standard unter UNIX?
+0;worker
+1;prefork
+0;perchild
+0;leader
+@;0;Für welches der folgenden Betriebssysteme gibt es ein eigenes MPM?
+0;Linux
+0;FreeBSD
+1;Windows
+0;Mac OS X
+@;0;Wie wird das Apache-Quellcode-Paket auf einem modernen UNIX-System meist entpackt?
+1;tar xzvf httpd-2.0.nn.tar.gz
+0;untar httpd-2.0.nn.tar.gz |gunzip
+0;unzip -t httpd-2.0.nn.tar.gz
+0;gzip -x httpd-2.0.nn.tar.gz |tar -u
+@;0;Wie heißt das Konfigurations-Skript im Apache-Quellcodebaum für UNIX?
+0;install
+0;setup
+1;configure
+0;makeconf
+@;0;Welche Konfigurationsoption können Sie verwenden, um Apache 2 komplett unter dem Verzeichnis /usr/local/httpd2 zu installieren?
+0;--eprefix=/usr/local/httpd2
+0;--dir=/usr/local/httpd2
+1;--prefix=/usr/local/httpd2
+0;-i /usr/local/httpd2
+@;0;Welches Verzeichnislayout wird derzeit noch nicht mit der Apache-Quellcode-Distribution geliefert?
+0;Apache
+0;GNU
+1;Gentoo
+0;Darwin
+@;0;Welches der folgenden Module wird bei einem Standard-Build-Vorgang nicht mit einkompiliert?
+0;mod_auth
+0;mod_cgi
+1;mod_rewrite
+0;mod_imap
+@;0;Welchen Vorteil besitzen DSO-Module?
+0;Sie laufen in kompilierter Form auf verschiedenen Systemen
+1;Sie lassen sich ohne Apache-Neukompilierung nachinstallieren
+0;Sie beschleunigen den Server
+0;Sie belegen weniger Speicherplatz als statische Module
+@;0;Wie lassen sich mod_alias, mod_dir und mod_rewrite als DSO kompilieren?
+1;--enable-mods-shared="alias dir rewrite"
+0;--enable-so --enable-modules="alias dir rewrite"
+0;--with-modules="alias dir rewrite" --shared
+0;Optionale Module wie mod_rewrite können nicht als DSO kompiliert werden
+@;0;Lässt sich die eigentliche Kernfunktionalität von Apache - HTTP - beim Kompilieren unter UNIX deaktiveren?
+0;Nein
+1;Ja, mit Hilfe der Konfigurationsoption --disable-http
+0;Ja, aber nur durch Auskommentieren einiger Zeilen im Konfigurationsskript
+0;Ja, über die Konfigurationsoption --disable-modules="http"
+@;0;Welche Befehle müssen eingegeben werden, um die Apache-Kompilierung und -Installation unter UNIX vorzunehmen?
+0;make; configure
+0;gcc --automake
+0;make dep; make install
+1;make; make install
+@;0;Für welche Plattform bietet die Apache Group stets einen Binär-Installer der aktuellen Release?
+1;Win32
+0;x86-Linux
+0;Mac OS X
+0;Sun Solaris
+@;0;Mit welchem Apache-Kommandozeilentool können Sie DSO-Module nachinstallieren?
+0;httpd
+0;apachectl
+1;apxs
+0;htdigest
+@;0;Wie können Sie überprüfen, ob die Konfigurationsdatei /home/user/myhttpd.conf syntaktisch korrekt ist, ohne Apache zu starten?
+0;htverify /home/user/myhttpd.conf
+1;httpd -f /home/user/myhttpd.conf -t
+0;httpd --verify /home/user/myhttpd.conf
+0;htdigest -f /home/user/myhttpd.conf
+@;0;Welches POSIX-Signal besitzt für den Apache-Hauptprozess keine besondere Bedeutung?
+0;TERM
+0;USR1
+1;INT
+0;HUP
+@;0;Welchen Namen trägt das praktische Apache-Steuerskript für UNIX-Systeme?
+0;htdigest
+0;htcontrol
+0;apachestart
+1;apachectl
+@;0;Wird Apache für UNIX mit einer Standardmöglichkeit zum automatischen Start geliefert?
+0;Nein, es ist nämlich gar nicht möglich, ihn automatisch zu starten. Er muss stets manuell durch root gestartet werden.
+0;Ja. Sie brauchen nur das Skript htautoconfig auszuführen
+1;Nein, weil verschiedene Systeme unterschiedliche Methoden für automatische Starts verwenden (System V Init beziehungsweise BSD-Startskripte)
+0;Ja. Sie müssen ihn dazu mit --with-autostart kompilieren
+@;0;Von welchem Server stammen Syntax und Grundaufbau der Apache-Konfigurationsdatei ab?
+0;Microsoft Internet Information Server
+1;NCSA HTTPd
+0;wuFTPd
+0;sendmail
+@;0;Wie wird ein Kommentar in der Apache-Konfigurationsdatei gekennzeichnet?
+0;<!-- Kommentar -->
+0;// Kommentar
+1;# Kommentar
+0;/* Kommentar */
+@;0;Welches sind die drei traditionellen Abschnitte der Datei httpd.conf?
+0;Server, virtuelle Hosts, Verzeichnisse
+0;Hauptverzeichnis, Unterverzeichnisse, virtuelle Hosts
+1;Programmeinstellungen, Haupt-Server, virtuelle Hosts
+0;Berechtigungen, Weiterleitungen, Sonstiges
+@;0;Wie werden Direktiven gekennzeichnet, die nur für den URL-Pfad /test gelten sollen?
+0;<Directory /test> ... </Directory>
+1;<Location /test> ... </Location>
+0;<Files /test/*> ... </Files>
+0;<DirectoryMatch ^/test> ... </DirectoryMatch>
+@;0;Wann werden Direktiven im Container <IfDefine Monday> ... </IfDefine> ausgeführt?
+0;Nur montags
+0;Wenn Apache mit der Option --with-define="Monday" kompiliert wurde
+0;Gar nicht - es heißt nicht IfDefine, sondern IfDefined
+1;Wenn Apache mit der Option -DMonday gestartet wurde
+@;0;Was schränkt ein <Limit>-Container ein?
+0;Client-IP-Adressen
+1;Zulässige HTTP-Anfrage-Methoden
+0;MIME-Types
+0;Berechtigte Benutzer
+@;0;In welche Container dürfen keine anderen Container mehr verschachtelt werden?
+0;<Files> und <FilesMatch>
+0;<Directory> und <DirectoryMatch>
+1;<Limit> und <LimitExcept>
+0;<VirtualHost>
+@;0;Welche Container dürfen nicht in andere Container verschachtelt werden?
+0;<Files> und <FilesMatch>
+0;<Directory> und <DirectoryMatch>
+0;<Limit> und <LimitExcept>
+1;<VirtualHost>
+@;0;Welche Direktive regelt die Wartezeit bis zum Abbruch einer HTTP-Transaktion?
+1;TimeOut
+0;KeepAlive
+0;MaxKeepAliveRequests
+0;MaxRequestsPerChild
+@;0;Wie wird mod_ssl geladen, wenn es als DSO kompiliert wurde und im Verzeichnis modules unterhalb der ServerRoot liegt?
+0;LoadFile modules/mod_ssl.so
+0;LoadModule modules/mod_ssl.so
+0;LoadFile ssl_module mod_ssl.so
+1;LoadModule ssl_module modules/mod_ssl.so
+@;0;Welcher ServerTokens-Wert entspricht "Apache/2.0.50 (Unix)"?
+0;Major
+1;OS
+0;Minor
+0;Full
+@;0;Welche Direktive gibt das Stammverzeichnis der Website an?
+0;ServerRoot
+0;DirectoryIndex
+1;DocumentRoot
+0;<Directory> ... </Directory>
+@;0;Wie lässt sich der Zugriff auf den URL-Pfad /privat auf das lokale Netzwerk (z.B. 192.168.0.0/24) beschränken?
+0;<Directory /privat>Order Allow,Deny \n Allow from 192.168.0 \n</Directory>
+0;<Location /privat>Order Deny,Allow \n Allow from 192.168.0 \n</Location>
+1;<Location /privat>Order Deny,Allow \n Deny from all \n Allow from 192.168.0 </Location>
+0;<Directory /privat>Order Allow,Deny \n Allow from 192.168.0 \n Deny from all </Directory>
+@;0;Welcher der folgenden HTTP-Header kann nicht durch eine Header-Direktive manipuliert werden?
+1;Server
+0;Location
+0;Expires
+0;Cache-Control
+@;0;Welcher der folgenden Header-Befehle hängt den angegebenen Wert an einen bestehenden Header an?
+0;Header set
+1;Header append
+0;Header add
+0;Header echo
+@;0;Welche der folgenden ExpiresDefault-Angaben ist ungültig?
+0;ExpiresDefault M86400
+0;ExpiresDefault A3600
+0;ExpiresDefault modification plus 3 hours
+1;ExpiresDefault 7200
+@;0;Welche der folgenden Aussagen über DNS ist zutreffend?
+0;Das System besteht aus einer Textdatei, die bei Änderungen auf jeden Nameserver kopiert wird
+1;Ein DNS-Administrator kann Subdomains seiner Zone entweder selbst verwalten oder als untergeordnete Zonen delegieren
+0;Ein Webserver muss den Hostnamen www erhalten, damit er funktioniert
+0;Jeder Internet-Teilnehmer benötigt einen eigenen Nameserver
+@;0;Welche der folgenden Generic Top Level Domains gibt es nicht?
+0;.com
+0;.net
+1;.doc
+0;.info
+@;0;Welchen Vorteil besitzt SSH gegenüber Telnet?
+1;Sichere Datenübertragung durch Verschlüsselung
+0;SSH verwendet TCP, Telnet dagegen UDP
+0;Telnet-Server funktionieren nur unter UNIX, SSH-Server auch unter Windows
+0;Die Texteingabe ist bei SSH komfortabler
+@;0;Welchen der folgenden FTP-Befehle gibt es nicht?
+0;binary
+0;get
+1;decimal
+0;put
+@;0;Für welche Dateien braucht bei der FTP-Übertragung nicht der Binärmodus verwendet zu werden?
+0;Bilddateien
+0;Ausführbare Programme
+1;HTML-Dokumente
+0;Videodateien
+@;0;Welcher MIME-Type wird für ein JPEG-Bild verwendet?
+0;application/x-jpeg
+1;image/jpeg
+0;image/jpg
+0;application/image-jpg
+@;0;Welcher RFC-822-Header gibt den MIME-Type an?
+1;Content-type
+0;Content-transfer-encoding
+0;Mime-type
+0;File-type
+@;0;Welche HTTP-Statusmeldung zeigt an, dass das angeforderte Dokument gefunden wurde und mitgeschickt wird?
+1;200
+0;204
+0;300
+0;404
+@;0;Welche Bezeichnung steht nicht für ein Überwachungs- und Analysetool
+0;Nagios
+0;Munin
+0;SNMP
+0;Incinga
+1;alle Begriffe markieren Tools für die Überwachung und Analyse
+@;0;Ein Nachteil von Munin ist die Komplexität der Einrichtung
+0;stimmt
+1;stimmt nicht
+@;0;Mit Munin kann nur ein Rechner überwacht werden
+0;stimmt
+1;stimmt nicht
+@;0;Munin ist als Master-Client-Anwendung aufgebaut. Der Master sammelt die Daten.
+0;stimmt
+1;stimmt nicht
+@;0;Eine Voraussetzung für die Installation und die sinnvolle Verwendung von Munin ist das VOrhandensein eines Webservers und eines Cron-Dämons
+1;stimmt
+0;stimmt nicht
+@;0;Die Konfiguration des Munin-Master erfolgt über die Datei
+0;/etc/munin/munin-master.conf
+1;/etc/munin/munin.conf
+0;/var/munin/munin.conf
+@;0;Munin legt standardmäßig die Daten für den Webserver in dem Verzeichnis ab:
+1;/var/www/munin  
+0;/etc/munin/www
+0;/var/munin
+@;0;Wenn beim Aufruf http://g16-hh.de/munin ein Access-Fehler angezeigt wird, dann
+0;sollte in der Datei /etc/apache2/sites-available/munin.conf 'allow from all' gesetzt werden
+1;sollte in der Datei /etc/munin/apache.conf 'allow from' gesetzt werden 
+0;sollte in der Datei /etc/apache2/sites-available/munin.conf 'deny from all' gelöscht werden
+@;0;Den Status der automatisch installierten Module zeigt der Befehl
+0;munin-node --suggest
+1;munin-node-configure --suggest
+0;munin-configure
+@;0;Das Verzeichis der verfügbaren Plugins liegt bei Ubuntu in:
+1;/usr/share/munin/plugins
+0;/opt/lib/munin/plugins
+0;/etc/munin/plugins
+@;0;Das Verzeichis der aktuellen Plugins liegt bei Ubuntu in:
+0;/usr/share/munin/plugins
+0;/opt/lib/munin/plugins
+1;/etc/munin/plugins

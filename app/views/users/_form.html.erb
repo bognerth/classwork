@@ -18,7 +18,7 @@
 
   <div class="field">
       <%= f.label 'Klasse' %><br />
-      <%= select_tag :group_id, "<option value='3'>FIT1H</option><option value='2'>FIT1AF</option>", :prompt => "Klasse zuordnen" %>
+      <%= select_tag :group_id, options_for_select(Group.where('id > 1').map { |group| [group.name, group.id] }),:prompt => "Klasse zuordnen" %>
   </div>
   <div class="field">
     <%= f.label :password %><br/>

@@ -1,0 +1,463 @@
+#-*- encoding: utf-8 -*-
+@;0;Welches Protokoll ist speziell fuer VoiceOverIp konzipiert
+0;ICMP
+0;UDP
+0;SMTP
+0;TCP
+0;IP
+1;keines der genannten
+@;0;Welches Protokoll ist auf Geschwindigkeit des Versands von Datenpaketen konzipiert
+0;ICMP
+1;UDP
+0;SMTP
+0;TCP
+0;IP
+0;keines der genannten
+@;0;Welches Protokoll nutzt der ping-Befehl
+1;ICMP
+0;UDP
+0;SMTP
+0;TCP
+0;keines der genannten
+@;0;Welches Protokoll sorgt fuer einen zuverlässigen Transport der Datenpakete
+0;ICMP
+0;UDP
+1;TCP
+0;IP
+0;keines der genannten
+@;0;Welches Protokoll wird als verbindungsorientiertes Transportprotokoll bezeichnet
+0;ICMP
+0;UDP
+0;SMTP
+1;TCP
+0;IP
+0;keines der genannten
+@;0;Welches Protokoll wird speziell zur Uebertragung von Dateien verwendet
+0;ICMP
+0;UDP
+0;SMTP
+0;TCP
+0;IP
+1;keines der genannten 
+@;0;Welches Protokoll wird zum Transport von Mail-Nachrichten verwendet
+0;ICMP
+0;UDP
+1;SMTP
+0;TCP
+0;IP
+0;keines der genannten
+@;0;Welches Protokoll ermittelt den Endpunkt einer Kommunikation
+0;ICMP
+0;UDP
+0;SMTP
+0;TCP
+1;IP
+0;keines der genannten
+@;0;Datei und Pfad zur Konfiguration einer Netzwerkkarte heissen:
+0;/etc/network/interface
+1;/etc/network/interfaces
+0;/etc/interface
+0;/etc/hosts
+@;0;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei fuer die Aktivierung eines dhcp-Servers fuer die zweite Netzwerkkarte lautet:
+0;dhcp 172.16.1.1
+1;iface eth1 inet dhcp
+0;iface eth0 dhcp
+0;iface dhcp
+@;0;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei  fuer die DNS-Server lautet:
+0;DNS-Serverkoennen in dieser Datei nicht konfiguriert werden
+1;dns-nameservers 172.16.1.201 172.16.1.202
+0;dns 172.16.1.201 172.16.1.202
+@;0;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei  fuer die Standardgateway lautet:
+1;gateway 172.16.1.253
+0;gw 172.16.1.253
+0;gw 172.161.253
+1;alle sind nicht korrekt
+@;0;Der korrekte Eintrag in der Netzwerk-Konfigurations-Datei  fuer die Konfiguration der ersten Netzwerkkarte mit einer festen IP-Adresse lautet:
+1;iface eth0 inet static
+0;iface eth1 inet static
+0;eth0 auto
+@;0;Der Name des Rechners steht in der Datei:
+1;/etc/hostname
+0;/etc/network/host
+0;/etc/host
+@;0;Der Befehl zum Anzeigen der aktuellen Netzwerkkonfiguration lautet:
+0;ipconfig
+1;ifconfig
+@;0;Der Befehl zur temporären Konfiguration der 1. Netzwerkkarte lautet:
+1;ifconfig eth0 192.168.3.100 netmask 255.255.0.0
+0;ifconfig eth0 192.168.3.100 netmask: 255.255.0.0
+0;ipconfig eth0 192.168.3.100 netmask 255.255.0.0
+0;keiner
+@;0;Der Befehl zum Anzeigen und Ändern der Standardgateway lautet:
+1;route
+0;gateway
+0;es gibt keinen Befehl der beide Kriterien erfuellt
+@;Ein Standard Linux-System hat an aktiven Ports:
+0;1024
+1;65536
+0;2048
+0;16384
+@;0;Eine Liste der Wellknown-Ports ist in der Datei:
+0;/etc/services/ports
+1;/etc/services
+0;/system/ports
+@;0;Eine DNS-Abfrage bei der zu einer IP-Adresse ein Name ermittelt wird heisst:
+0;nicht definiert
+1;Reverse-Lookup
+0;DNS-Lookup
+@;0;Das Kommando, das die aktuell offenen Ports von g16-hh.de anzeigt lautet:
+0;nicht aufgefuehrt
+1;nmap g16-hh.de
+0;route localhost
+0;route g16-hh.de
+@;0;Die Aufgabe des DNS-Servers besteht in:
+1;Zuordnung von IP-Adresse und FQDN
+0;ist nicht aufgefuehrt
+0;Der Rechnername wird als IP ausgegeben
+@;0;Das Programm zur effizienten Identifikation eines defekten Routers heisst:
+1;traceroute
+0;ping
+0;router
+0;keines ist geeignet
+@;0;Der Befehl <host heise.de> liefert:
+0;nichts brauchbares
+1;die IP-Adresse von heise.de
+0;die komplette DNS-Information von heise.de
+@;0;Der Befehl dig heise.de liefert:
+0;den Befehl gibt es nicht
+0;die IP-Adresse von heise.de
+1;alle in Frage kommenden DNS-Informationen
+@;0;Welche Art der Adressauflösung führt ARP durch?
+0;Domain-Name in IP-Adresse
+0;MAC-Adresse in IP-Adresse
+1;IP-Adresse in MAC-Adresse
+0;Domain-Name in MAC-Adresse
+@;0;Mit welchem Bitmuster beginnt eine IP-Adresse der Klasse C?
+0;0
+0;10
+1;110
+0;1110
+@;0;In welchem Bereich liegt das erste Byte einer IP-Adresse der Klasse B?
+0;64 bis 127
+1;128 bis 191
+0;192 bis 223
+0;128 bis 159
+@;0;Welche der folgenden IP-Adressen gehört nach Klassenlogik nicht mit den drei anderen in ein Teilnetz?
+0;187.15.16.17
+0;187.15.17.18
+1;187.16.17.18
+0;187.15.16.18
+@;0;Zu welchem Netzwerk gehört die IP-Adresse 152.14.21.7 nach Klassenlogik?
+1;152.14.0.0
+0;152.14.21.0
+0;152.0.0.0
+0;152.14.16.0
+Welche der folgenden IP-Adressen ist keine private, frei verfügbare Adresse gemäß RFC 1918?
+0;192.168.27.11
+0;172.21.47.11
+0;10.0.8.15
+1;172.47.11.12
+@;0;Zu welchem der folgenden Netze gehört die IP-Adresse 196.17.8.92 nicht?
+0;196.17.0.0/16
+0;196.17.0.0/17
+1;196.17.8.0/26
+0;196.17.8.0/25
+@;0;Das Netz 156.19.0.0/16 wird per CIDR in vier gleich große Netze unterteilt. Welches der folgenden ist eines der neuen Teilnetze?
+0;156.19.0.0/20
+0;156.19.16.0/18
+1;156.19.64.0/18
+0;156.19.128.0/19
+@;0;Wie viele Hosts kann jedes Teilnetz maximal enthalten, wenn ein Klasse-C-Netz in vier Teile unterteilt wird?
+1;62
+0;128
+0;127
+0;64
+@;0;Welche Bedeutung besitzt der TTL-Wert (Time To Live) im IP-Datagramm?
+0;Er gibt die Uhrzeit an, wann das Datagramm erzeugt wurde
+0;Er gibt die Uhrzeit an, bis zu der das Datagramm bestehen wird
+0;Er zählt die Sekunden, die das Datagramm bereits existiert
+1;Er zählt die Hops, die das Datagramm erlebt, bis 0 herunter
+@;0;Zu welchem Problem können unterschiedliche MTUs verschiedener Netzwerkschnittstellen bei IP-Datagrammen führen?
+0;Die Datagramme können nicht weitergeleitet werden
+1;Die Datagramme werden fragmentiert
+0;Die Datagramme müssen erneut gesender werden
+0;Die Datagramme werden langsamer transportiert
+@;0;Was ist die genaue Definition eines Default Gateway?
+0;Der Router ins nächstgelegene Netz
+0;Der Router ins Internet
+1;Der Router für Verbindungen in alle Netze, für die kein separater Router existiert
+0;Der Router in einem Netz, in dem kein weiterer Router existiert
+@;0;Welche Adresse ist von dem Netzwerk 156.81.0.0/19 aus nur über einen Router zu erreichen?
+0;156.81.9.18
+0;156.81.18.9
+1;156.81.81.9
+0;156.81.0.9
+@;0;Das Netzwerk 152.17.0.0/17 ist über drei Router mit anderen Netzen verbunden: r1 für das Netzwerk 152.17.128.0/17, r2 für 152.18.0.0/16 und r3 für alle anderen Netze. Welcher Router wird für eine Verbindung zur Adresse 152.18.210.22 verwendet?
+0;r1
+1;r2
+0;r3
+0;Keiner; die Adresse befindet sich im aktuellen Teilnetz
+@;0;Was wird im Zusammenhang mit IP-Routing als autonomes System bezeichnet?
+0;Ein Rechner, der nicht an ein Netzwerk angeschlossen ist
+0;Ein lokales Netzwerk ohne Verbindung zu anderen Teilnetzen
+1;Die Gesamtheit aller Netzwerke eines Betreibers
+0;Ein allein stehender Router
+@;0;Zu welchem Zweck wird ein internes Routing-Protokoll eingesetzt?
+0;Für das Routing innerhalb eines Teilnetzes
+1;Für das Routing innerhalb eines autonomen Systems
+0;Für das Routing innerhalb eines Netzes ohne Außenverbindung
+0;Für das Routing zwischen mehreren virtuellen Netzwerkschnittstellen auf einem einzelnen Rechner
+@;0;Welches der folgenden Routing-Protokolle ist ein externes Routing-Protokoll?
+0;RIP
+0;OSPF
+1;BGP
+0;Keines der genannten
+@;0;Wie viele Hops sind die maximalen Kosten, die ein RIP-Router für eine Verbindung speichert?
+0;8
+1;15
+0;20
+0;31
+@;0;Welcher TCP/IP-Dienst ermöglicht die automatische Vergabe von IP-Adressen?
+0;BOOTP
+0;NAT
+1;DHCP
+0;ARP
+@;0;Wie lang ist eine IPv6-Adresse?
+0;64 Bit
+1;128 Bit
+0;32 Bit
+0;variabel
+@;0;Welches Transportprotokoll verwendet das Verbindungstestprogramm Ping?
+0;UDP
+1;ICMP
+0;TCP
+0;Keins, sondern RawIP
+@;0;Welche Flags sind (nacheinander) bei den drei Datenpaketen gesetzt, die den Drei-Wege-Handshake bei TCP bilden?
+0;SYN, ACK, SYN
+0;SYN, SYN, ACK
+1;SYN, SYN/ACK, ACK
+0;SYN, ACK, SYN/ACK
+@;0;Welche TCP-Portnummern sind "Well-known Ports" - festgelegte Portnummern für Serverdienste?
+0;0 bis 255
+1;0 bis 1023
+0;0 bis 16383
+0;0 bis 32767
+@;0;Was ist der Vorteil von UDP gegenüber TCP als Transportprotokoll?
+1;Schnellere Übertragung auf Kosten der Zuverlässigkeit
+0;Schnellere Übertragung durch höhere Übertragungsraten
+0;Sichere Übertragung durch Verschlüsselung
+0;Möglichkeit der Übertragung in Nicht-IP-Netze
+@;0;Welchen TCP-Port verwendet ein Webserver?
+0;21
+0;53
+1;80
+0;110
+@;0;Welcher Serverdienst verwendet den TCP-Port 23?
+0;echo
+0;ftp
+0;smtp
+1;telnet
+@;0;Aus welcher Datei können auf einem UNIX-System Adressauflösungen von Hostnamen gelesen werden?
+0;/var/hosts.txt
+0;/etc/services.txt
+1;/etc/hosts
+0;/var/addresses
+@;0;Was ist keine Aufgabe eines Netzwerks?
+0;Kommunikation zwischen seinen Benutzern
+1;Gemeinsame Stromversorgung mehrerer Rechner
+0;Austausch von Daten
+0;Verteilte Anwendungen
+@;0;Welches der folgenden Merkmale gehört nicht zwangsläufig zur paketvermittelten Datenübertragung?
+0;Absender- und Empfängeradresse in jedem Paket
+0;Die Unterteilung der Daten in kleinere Einheiten
+1;Ein Bestätigungsverfahren, das die Datenauslieferung garantiert
+0;Die Fähigkeit zur Weiterleitung der Datenpakekte über verschiedene Wege
+@;0;Aus wie vielen Computern bestand das ARPANet bei seiner Einführung?
+0;40
+1;4
+0;400
+0;800
+@;0;Welcher bis heute bedeutende Internetdienst wurde 1972 erfunden?
+0;CGI
+0;World Wide Web
+0;Newsgroups
+1;E-Mail
+@;0;Wo wurde das kabelbasierte Ethernet entwickelt?
+0;An der Universität von Hawaii
+1;Im XEROX PARC
+0;An der University of California, Berkeley
+0;Bei IBM
+@;0;Wie werden die Standards des Internets dokumentiert?
+0;In Patentschriften
+0;In IEEE-Drafts
+0;In Diplom- und Doktorarbeiten
+1;In öffentlich verfügbaren RFC-Dokumenten
+@;0;Mit welchem Netz wurde der zivile Teil des ARPANet zum Internet zusammengeschlossen?
+0;FidoNet
+0;CompuServe
+1;NSFNet
+0;BTX
+@;0;Welche Geräte wurden als erste zur Datenfernübertragung verwendet?
+0;Funkgeräte
+1;Akustikkoppler
+0;Telegraphen
+0;Modems
+@;0;Was war die entscheidende Neuerung am World Wide Web?
+0;Die Einführung von Hypertext
+0;Wissenschaftliche Internet-Anwendung
+0;Die Verwendung eines textbasierten Kommunikationsprotokolls
+1;Die Anwendung von Hypertext über ein Netzwerk
+@;0;Wie heißt das Protokoll, das für die WWW-Kommunikation verwendet wird?
+0;LWP
+0;WWWP
+1;HTTP
+0;HTML
+@;0;Welche OSI-Schicht ist Nummer 3?
+0;Bitübertragungsschicht
+1;Vermittlungsschicht
+0;Sicherungsschicht
+0;Transportschicht
+@;0;Welche Nummer hat die OSI-Darstellungsschicht
+1;6
+0;5
+0;7
+0;4
+@;0;Was ist eine Aufgabe der OSI-Sicherungsschicht?
+0;Datenstromverschlüsselung
+0;Erzeugung von Datenpaketen
+1;Steuerung des Zugriffs auf das Übertragungsmedium
+0;Routing
+@;0;Welches ist keine Schicht im Schichtenmodell nach dem DDN Standard Protocol Handbook?
+0;Netzzugangsschicht
+0;Internetschicht
+1;Sitzungsschicht
+0;Anwendungsschicht
+@;0;Welcher OSI-Schicht entspricht die DDN-Internetschicht in etwa?
+0;Sicherungsschicht
+1;Vermittlungsschicht
+0;Transportschicht
+0:Sitzungsschicht
+@;0;Welches der folgenden Protokolle arbeitet auf der DDN-Transportschicht?
+0;FTP
+1;TCP
+0;IP
+0;ARP
+@;0;Welche Netzwerkarte hat die größte Reichweite?
+0;MAN
+0;WAN
+1;GAN
+0;LAN
+@;0;Bei welcher Netzwerktopologie sind alle Stationen mit einem zentralen Verteiler verbunden?
+0;Baum
+1;Stern
+0;Ring
+0;Bus
+@;0;Bei welchem Netzwerk unterscheidet sich die physikalische von der logischen Topologie?
+1;Token Ring
+0;Ethernet über BNC
+0;WAN
+0;Internet
+@;0;Welcher der folgenden Netzwerkdienste wird typischerweise als Peer-to-Peer- und nicht als Client-Server-Dienst bereitgestellt?
+0;E-Mail
+0;Internetzugang
+1;Druckerfreigabe
+0;Datenbankzugriff
+@;0;Welcher Linux-Befehl ermöglicht die Konfiguration von Netzwerkschnittstellen?
+0;ping
+1;ifconfig
+0;netstat
+0;insmod
+@;0;Mit welchem Befehl lässt sich unter Linux 192.168.1.1 als Default Gateway festlegen?
+0;router 192.168.1.1
+0:route -default 192.168.1.1
+1;route add default gw 192.168.1.1
+0;router -d 192.168.1.1
+@;0;Welche Aufgabe erfüllt das Dienstprogramm ping?
+0;Überprüfen der Nameserverkonfiguration
+0;Einstellen der IP-Adresse
+0;Start des File-Servers
+1;Überprüfen, ob ein bestimmter Host erreichbar ist
+@;0;Auf welche Weise erreicht es traceroute, dass ein Router nach dem anderen antwortet?
+0;Alle Router im Netz des Providers werden befragt
+0;Der Nameserver, der Auskunft über den angefragten Host geben kann, kennt auch die Route dorthin
+1;Der TTL-Wert der ICMP-Testpakete wird nacheinander jeweils um 1 erhöht
+0;Gar nicht - die Antwort kommt vom letzten Router, der alle anderen aus dem Paketinhalt liest
+@;0;Welche netstat-Variante gibt unter UNIX die Routing-Tabellen aus?
+1;netstat -rn
+0;netstat --route
+0;netstat -i routing
+0;netstat |grep route
+@;0;Welches TCP/IP-Dienstprogramm befragt Nameserver?
+0;netstat
+0;finger
+1;dig
+0;named
+@;0;Welche der folgenden Aussagen treffen für IP-Adressen  nicht zu?
+1;Ein Rechner muss immer eine weltweit eindeutige IP-Adresse besitzen.
+0;Die Aufgabe von IP-Adressen ist es, Rechner in einem Netz eindeutig zu identifizieren. 
+0;Eine IPv4-Adresse besteht aus 4 Byte, die mit Punkten getrennt notiert werden
+@;0;Mit welchem Befehl (ohne Angabe von Parametern) kann man die Interfaces vom Ehternet-Netzwerk konfigurieren?
+0;network
+0;ipconfig
+1;ifconfig
+0;mask
+@;0;Welche Zusammenhänge bestehen nicht zwischen einem Domain-Namen und einer IP-Adresse?
+0;Zu jeder Domain gibt es eine eindeutige IP-Adresse
+1;Jeder IP-Adresse ist eine eindeutige Domain zugeordnet.
+0;Das Domain Name System (DNS) hat die Aufgabe symbolische Namen (Domain-Name) in IP-Adressen abzubilden.
+@;0;Was versteht man unter der MAC-Adresse?
+0;Adressen, die von der Firma Apple für ihre Mac-Rechner vergeben werden.
+0;Adressen, die ursprünglich von der Firma Apple für ihre Mac-Rechner vergeben wurden und dann auf alle anderen Rechner von Appel ausgedehnt wurden.
+1;Eine MAC-Adresse ist die eindeutige Hardware-Adresse jedes einzelnen Netzwerkadapters, die zur eindeutigen Identifikation des Gerätes im Netzwerk dient.
+@;0;Was versteht man unter eine Netzmaske?
+0;Ein Programm, welches ein Netzwerk bei Zugriffen auf das Internet maskiert und vor unberechtigten Zugriffen schützt.
+1;Eine Netzmaske ist eine Bitmaske, die IP-Adressen in eine Net-ID und einen Hostteil trennt.
+0;Netzmaske ist die falsche Bezeichnung. Korrekt heißt es Netzwerkmaske.
+@;0;Wie kann man die Schreibweise 192.168.100.22/25 interpretieren?
+0;Diese Notation bezeichnet einen IP-Nummernbereich und zwar die IP-Adressen 192.168.100.22, 192.168.100.23, 192.168.100.24 und 192.168.100.25
+0;Diese Notation besagt, dass die IP-Adresse 192.168.100.22 einem Subnetz mit 25 Teilnehmern angehört.
+1;Diese Schreibweise steht für die IPv4-Adresse 192.168.100.22 und die Netzwerkadresse 255.255.255.128
+@;0;Was versteht man unter einem privaten Netzwerk?
+0;Ein Netzwerk, welches kein Verbindung zum öffentlichen Netz hat
+0;privat im Sinne von geheim
+1;Private Netzwerke werden benutzt, wenn ein Netzwerk, in welchem mehr Geräte angeschlossen sind, als vom Internetprovider IP-Adressen zur Verfügung stehen, mit dem Internet verbunden wird.
+@;0;Welche der folgenden Portzuordnung ist falsch?
+1;20: FTP
+0;21: FTP
+0;22: SSH
+0;25: SMTP
+@;0;Bei welchem der folgenden Subnetze handelt es sich um kein privates Netzwerk?
+0;10.0.0.0/8
+0;10.0.0.0/12
+0;172.16.0.0/12
+1;191.168.0.0/16
+0;192.168.0.0/16
+@;0;Welche der folgenden Portzuordnung ist nicht korrekt?
+0;53: DNS
+0;80: HTTP
+0;110: POP3
+1;442: HTTP
+0;443: HTTPS
+0;23: telnet
+@;0;In welcher Datei findet man auf einem Unix- oder Linux-System die Liste der Ports?
+1;/etc/services
+0;/etc/ports
+0;/etc/ports.conf
+0;/etc/portlist
+@;0;Mit Hilfe von welcher Datei kann man in einem kleinen Netzwerk eine Namensauflösung realisieren, ohnen einen Nameserver zu benutzen?
+0;/etc/named.conf
+0;/etc/bindd.conf
+1;/etc/hosts
+0;/etc/resolv.conf
+0;/etc/dns.conf
+@;0;Ein Netzwerk soll so konfiguriert werden, dass sich ein Nutzer mit seiner gewohnten Arbeitsumgebung an einem beliebigen Rechner einloggen kann. Welche Verzeichnis sollte dazu per NFS exportiert werden?
+0;/usr
+0;/etc
+1;/home
+0;/usr/bin
+@;0;Welchen der folgenden Dienste benötigt man, wenn man einen Linuxrechner in ein Windows-Netzwerk mit WINS-Server integrieren will?
+0;winservd
+0;winserver
+1;smbd
+0;windd
+

@@ -1,0 +1,3545 @@
+
+Für welche der folgenden Verzeichnisse ist ein Backup am wichtigsten?
+ /usr/
+ /tmp/
+ /opt/
+ /etc/
+
+Mit welchem Kommando kann man die Zugriffsrechte für eine Datei ändern?
+ chown
+ chmod
+ perm
+ chfile
+
+Welche der folgenden Kommandos sind äquivalent zu "chmod 751 ~/test.c, wenn sie von einem Benutzer frank ausgeführt werden"? 
+ chmod u=rwx,g=rx,o=x ~/test.c
+ chmod u+rwx,g+rx,o+x ~/test.c
+ chmod u+rwx,g+rx,o+x /home/frank/test.c
+ chmod u=rwx,g=rx,g-w,o=x,o-wr ~/test.c
+
+Welche der folgenden Aussagen sind korrekt?
+ Bei einem Hardlink handelt es sich um einen weiteren Dateinamen für eine bereits existierende Datei. 
+ Hardlinks zu beliebigen Dateien sind möglich.
+ Hardlinks können nur zu Verzeichnissen auf der gleichen Festplattenpartition exisitieren.
+ Hardlinks können nur zu Verzeichnissen und Dateien auf der gleichen Partition existieren.
+
+Mit welchem Kommando kann man den Eigentümer (owner) einer Datei dat in owner linus ändern?
+ chown linus dat
+ change -o linus dat
+ owner linus dat
+
+Nehmen wir an, dass wir uns in einem Verzeichnis befinden, in dem es nur die Datei mit dem Namen abcd gibt. Was wird ausgegeben, wenn wir dort die Kommandos
+DIR=ls; echo $DIR "$DIR" '$DIR' `$DIR`
+abschicken?
+ ls ls $DIR ls
+ ls ls $DIR abcd
+ ls ls abcd abcd
+ ls abcd ls ls
+
+Welches der folgenden Kommandos hat neben anderen Zeilen auch die folgende Zeile
+/dev/sdb2             439G  286G  131G  69% /home 
+ausgegeben? 
+ ls -l
+ ls -lh
+ du -csh
+ df -h
+
+Welches der folgenden Kommandos sendet die Standardausgabe (stdout) in die Datei ausgabe und die Fehlermeldungen (stderr) in die Datei fehler?
+ ein_programm 1> ausgabe 2> fehler
+ ein_programm 2> ausgabe 1> fehler
+ ein_programm 0> ausgabe 1> fehler
+ ein_programm > ausgabe
+
+Welches der folgenden Kommandos lenkt die Ausgabe des ls-Kommandos in die Datei verzeichnis_inhalt um?
+ ls | verzeichnis_inhalt
+ ls -f verzeichnis_inhalt
+ ls < verzeichnis_inhalt
+ ls > verzeichnis_inhalt
+
+Jemand möchte eine Textdatei mit allen xml-Dateien des aktuellen Verzeichnisses erstellen. Jeweils ein Dateiname pro Zeile. Welches der folgenden Kommandos leistet dies?
+ ls -l > XML-Dateien.txt
+ ls -1 > XML-Dateien.txt
+ ls -1 | XML-Dateien.txt
+ ls -s > XML-Dateien.txt
+ ls -1 *.xml | tee XML-Dateien.txt
+
+Welches der folgenden Kommandos sendet sowohl die Standardausgabe (stdout) als auch die Fehlermeldungen (stderr) in die Datei beides?
+ ein_programm 1> beides 2> beides
+ ein_programm 2> beides 1> beides
+ ein_programm >& beides
+ ein_programm &> beides
+ ein_programm > beides 2>&1
+ ein_programm 2> beides 1>&2
+
+Welches der folgenden Kommandos erzeugt eine neue Datei mit dem Namen NEU?
+ mkfile NEU
+ touch NEU
+ create
+
+Mit welchem Kommando wechselt man das Arbeitsverzeichnis?
+ 
+
+In welchem Verzeichnis liegen die Home-Verzeichnisse der Benutzer?
+ /home
+ /data
+ /root/
+ /usr
+
+Mit welchem Kommando erzeugt man ein neues Verzeichnis?
+ 
+
+Mit welchem Kommando kann man die Datei datei1 in datei2 umbenennen?
+ cp datei1 datai2
+ mv datei1 datei2
+ mv datei2 datei1
+ rename datei1 datei2
+
+Was passiert, wenn man einen Soft-Link ln1, der auf eine Datei data zeigt, mit "cp ln1 ln2" kopiert? 
+ ln2 ist anschließend ein weiterer Soft-Link auf die Datei data
+ Es entsteht eine neue Datei ln2, die eine exakte Kopie von der data ist.
+ ln2 wird zu einem Hardlink von ln1
+ ln2 wird zu einem Hardlink zu der Datei data
+
+Welche der folgenden Zugriffsberechtigung stellt "read, write und execute" für den Besitzer und "read und execute" für die anderen dar?
+ 755
+ 644
+ 711
+ 522
+
+Mit welchem Kommando kann man den Besitzer einer Datei oder eines Verzeichnisses ändern?
+ 
+
+Mit welchem Kommando kann man versuchen den Dateityp einer Datei zu bestimmen?
+ check
+ file
+ dtype
+ type
+
+Mit welchem Kommando kann man die Gruppenzugehörigkeit von Dateien und Verzeichnissen ändern?
+ chgrp
+ group
+ chmod
+ chown
+
+Man befindet sich in einem Verzeichnis, in dem es kein Unterverzeichnis mit dem Namen sub1 gibt. Welches der folgenden Kommandos erzeugt die Unterverzeichnisse sub1/sub11/sub111?
+ mkdir sub1/sub11/sub111
+ mkdir -p sub1/sub11/sub111
+ mkdir -m sub1/sub11/sub111
+ mkdir -s sub1/sub11/sub111
+
+Ein Benutzer führt folgendes Kommando aus
+mv t1 t2 t3
+Was passiert, wenn t1, t2 und t3 Dateien sind?
+ Die Datei t3 wird mit dem Inhalt von t1 und t2 überschrieben.
+ Man erhält die Fehlermeldung "mv: target `t3' is not a directory".
+ Das System erzeugt ein Verzeichnis t3 und speichert dann die drei Dateien t1, t2 und t3 in diesem Verzeichnis.
+
+Was passiert, wenn man den Befehl cp mit mehreren Dateinamen und als letztem PArameter ein Verzeichnis aufruft? Beispiel:
+cp Datei1 Datei2 Datei2 Docus
+
+ Geht nicht, da cp immer nur eine Datei auf eine andere kopieren kann.
+ Alle angegebenen Dateien werden in das Verzeichnis kopiert, also im Beispiel Docus
+ Geht nur einzeln, wenn man auch im Verzeichnis "Docus" den Dateinamen angibt, unter dem die Datei gespeichert werden soll.
+
+Wie kann man sicherstellen, dass cp nachfragt, bevor es eine bereits existierende Datei überschreibt?
+ Geht nicht, man sollte sich deshalb vorher genau überlegen, was man tut.
+ Man muss die "-p"-Option setzen.
+ Man muss die "-i"-Option setzen.
+ Man muss die "-q"-Option setzen.
+
+Das Verzeichnis "Programme" befindet sich im aktuellen Verzeichnis. Mit welchem der folgenden Befehle kann man diese Verzeichnis komplett kopieren?
+ cp -r Programme /data/backup/Programme
+ cp -R Programme /data/backup/Programme
+ cp Programme /data/backup/Programme
+
+Ein Benutzer führt folgendes Kommando aus
+mv Datei1 Datei2 mein-verzeichnis
+Was passiert, wenn das Verzeichnis mein-verzeichnis noch nicht vorhanden ist?
+ Geht nicht, denn das Zielverzeichnis muss vorhanden sein!
+ Es wird ein neues Verzeichnis mit dem Namen "mein-verzeichnis" angelegt und anschließend werden die beiden Dateien in neue Verzeichnis verschoben.
+ Der Befehl bricht mit einer entsprechenden Fehlermeldung ab. 
+
+Welche Informationen sind nicht Bestandteil eines Inodes?
+ Das Gerät (device) dem der Inode angehört.
+ Gruppen-ID der Gruppe, der die Datei zugeordnet ist.
+ Zugriffsrechte der Datei.
+ Typ der Datei
+ Größe der Datei in Bytes
+ Name der Datei
+ Der eigentliche Inhalt der Datei
+ Referenzzähler für die Hardlinks
+ Datum des letzten Zugriffs auf die Datei
+
+Ein Benutzer führt folgendes Kommando aus
+mv Datei mein_verzeichnis
+Was passiert, wenn das Verzeichnis mein-verzeichnis noch nicht vorhanden ist?
+ Geht nicht, denn das Zielverzeichnis muss vorhanden sein!
+ Die Datei "Datei" wird in "mein_verzeichnis" umbenannt.
+ Es wird ein Verzeichnis "mein_verzeichnis" angelegt und die Datei "Datei" in dieses Verzeichnis verschoben. 
+
+Ein Benutzer führt folgendes Kommando aus
+mv Datei1 Datei2 mein-verzeichnis
+Was passiert, wenn das Verzeichnis mein-verzeichnis bereits vorhanden ist?
+ Das Zielverzeichnis, also in unserem Beispeil mein-verzeichnis, darf nicht vorhanden sein.
+ Die beiden Dateien werden in das vorhandene Verzeichnis verschoben.
+ Es wird ein neues Verzeichnis mit einer Tilde am Ende angelegt, also mein-verzeichnis~
+
+Ein Benutzer führt folgendes cp-Kommando durch
+cp t1 t2 t3
+Was passiert, wenn t1, t2 und t3 Dateien sind?
+ Die Datei t3 wird mit dem Inhalt von t1 und t2 überschrieben.
+ Man erhält die Fehlermeldung "cp: target `t3' is not a directory".
+ Das System erzeugt ein Verzeichnis t3 und speichert dann die drei Dateien t1, t2 und t3 in diesem Verzeichnis.
+
+Welche der folgenden Befehle löschen ein Verzeichnis mit all seinen Unterverzeichnissen?
+ rm -r Docus
+ rmdir Docus
+ rmdir -r docus
+ rmdir -R docus
+ rm -R Docus
+ rmdir -p docus
+
+Mit welchem Kommando kann man die Gruppenzugehörigkeit einer Datei dat in Gruppe team ändern?
+ chown :team dat
+ chown -g team dat
+ chgrp team dat
+ chgrp -g team dat
+
+
+Für welche der folgenden Verzeichnisse ist ein Backup am wichtigsten?
+
+Die richtige Antwort:
+/etc/
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Kommando kann man die Zugriffsrechte für eine Datei ändern?
+
+Die richtige Antwort:
+chmod
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Kommandos sind äquivalent zu "chmod 751 ~/test.c, wenn sie von einem Benutzer frank ausgeführt werden"? 
+
+Die richtigen Alternativen lauten:
+chmod u=rwx,g=rx,o=x ~/test.c
+chmod u=rwx,g=rx,g-w,o=x,o-wr ~/test.c
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die 2. Alternative ist nicht richtig, weil mit diesem Befehl lediglich Berechtigungen hinzugefügt werden. Hatte zum Beispiel die Datei vorher alle Berechtigungen für Benutzer, Gruppe und Others, dann wird sie diese Berechtigungen auch nach der Ausführung der 2. Alternative haben, was aber nicht "chmod 751 ~/test.c" entspricht. Für die 3. Alternative gilt natürlich das Gleiche, der einzige Unterschied besteht lediglich in der unterschiedlichen aber korrekten Pfadangabe.
+
+
+Welche der folgenden Aussagen sind korrekt?
+
+Die richtigen Alternativen lauten:
+Bei einem Hardlink handelt es sich um einen weiteren Dateinamen für eine bereits existierende Datei.
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Hardlinks können nur zu Dateien auf der gleichen Partition existieren.
+
+
+Mit welchem Kommando kann man den Eigentümer (owner) einer Datei dat in owner linus ändern?
+
+Die richtige Antwort:
+chown linus dat
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Beachten Sie bitte, dass sich chown in der Regel nur als Benutzer root ausführen lässt!
+
+
+Nehmen wir an, dass wir uns in einem Verzeichnis befinden, in dem es nur die Datei mit dem Namen abcd gibt. Was wird ausgegeben, wenn wir dort die Kommandos
+DIR=ls; echo $DIR "$DIR" '$DIR' `$DIR`
+abschicken?
+
+Die richtige Antwort:
+ls ls $DIR abcd
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Korrekt ist die zweite Alternative, also "ls ls $DIR abcd". 
+Das erste Argument des echo-Kommandos gibt den Wert der Variablen $DIR aus. Im zweiten Argument ist $DIR innerhalb von doppelten Anführungszeichen, was bedeutet, dass der Wert von Variablen ausgewertet wird, als wird auch in diesem Fall ls ausgegeben. Im dritten Argument steht $DIR innerhalb einfacher Anführungszeichen, d.h. $-Zeichen haben keine Sonderbedeutung und deshalb wird die Variable nicht ausgewertet. Im 4. Argument steht das Argument innerhalb von Backquotes, d.h. der Wert der Variablen wird als Befehl ausgewertet.
+
+
+Welches der folgenden Kommandos hat neben anderen Zeilen auch die folgende Zeile
+/dev/sdb2             439G  286G  131G  69% /home 
+ausgegeben? 
+
+Die richtige Antwort:
+df -h
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches der folgenden Kommandos sendet die Standardausgabe (stdout) in die Datei ausgabe und die Fehlermeldungen (stderr) in die Datei fehler?
+
+Die richtigen Alternativen lauten:
+ein_programm 1> ausgabe 2> fehler
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Welches der folgenden Kommandos lenkt die Ausgabe des ls-Kommandos in die Datei verzeichnis_inhalt um?
+
+Die richtige Antwort:
+ls > verzeichnis_inhalt
+
+Sie hatten die Frage nicht beantwortet!
+
+Jemand möchte eine Textdatei mit allen xml-Dateien des aktuellen Verzeichnisses erstellen. Jeweils ein Dateiname pro Zeile. Welches der folgenden Kommandos leistet dies?
+
+Die richtigen Alternativen lauten:
+ls -1 *.xml | tee XML-Dateien.txt
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die letzte Alternative benutzt das tee-Kommando, um sowohl die Ausgabe in die Datei zu schreiben als auch die Standard-Ausgabe zu erhalten.
+
+
+Welches der folgenden Kommandos sendet sowohl die Standardausgabe (stdout) als auch die Fehlermeldungen (stderr) in die Datei beides?
+
+Die richtigen Alternativen lauten:
+ein_programm >& beides
+ein_programm &> beides
+ein_programm > beides 2>&1
+ein_programm 2> beides 1>&2
+Keine der 4 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Man stellt sich am besten vor, dass jeder Weiterleitungsoperator (redirection operator) eine führende Ziffer hat, die bestimmt welcher Kanal ( 0 = standard input; 1 = standard output; 2 = standard error) betroffen ist, also z.B. 2> für die Umleitung des Fehlerkanals.
+Bei der vorletzten Alternative stellt die 1 das Ziel der Umlenkung dar, als stdout, wobei ">&" bestimmt, dass die 1 als Kanal ("file descriptor") und nicht als Datei aufzufassen ist. Die Zeichenfolge "2>&" ist untrennbar, d.h. es dürfen keine Trennzeichen dazwischen stehen.
+In der letzten Alternative könnte man auch statt "1>&2" nur ">&2" schreiben, da 1 der Default-Wert ist.
+
+
+Welches der folgenden Kommandos erzeugt eine neue Datei mit dem Namen NEU?
+
+Die richtige Antwort:
+touch NEU
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Kommando wechselt man das Arbeitsverzeichnis?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "cd"
+
+In welchem Verzeichnis liegen die Home-Verzeichnisse der Benutzer?
+
+Die richtige Antwort:
+/home
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Kommando erzeugt man ein neues Verzeichnis?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "mkdir"
+
+Mit welchem Kommando kann man die Datei datei1 in datei2 umbenennen?
+
+Die richtige Antwort:
+mv datei1 datei2
+
+Sie hatten die Frage nicht beantwortet!
+
+Was passiert, wenn man einen Soft-Link ln1, der auf eine Datei data zeigt, mit "cp ln1 ln2" kopiert? 
+
+Die richtige Antwort:
+Es entsteht eine neue Datei ln2, die eine exakte Kopie von der data ist.
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Zugriffsberechtigung stellt "read, write und execute" für den Besitzer und "read und execute" für die anderen dar?
+
+Die richtige Antwort:
+755
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Kommando kann man den Besitzer einer Datei oder eines Verzeichnisses ändern?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "chown"
+
+Mit welchem Kommando kann man versuchen den Dateityp einer Datei zu bestimmen?
+
+Die richtige Antwort:
+file
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+file versucht die Art oder den Typ der angegebenen Datei zu bestimmen. Dazu werden drei Tests durchgeführt: ein Dateisystemtest, ein Kennzahlentest und ein Sprachtest. Der erste erfolgreiche Test führt zur Ausgabe des erkannten Dateityps. 
+
+
+Mit welchem Kommando kann man die Gruppenzugehörigkeit von Dateien und Verzeichnissen ändern?
+
+Die richtigen Alternativen lauten:
+chgrp
+chown
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die Gruppenzugehörigkeit einer Datei z.B. abc.txt kann man mit chown wie folgt auf beispielsweise die Gruppe "users" ändern: chown :users abc.txt 
+
+
+Man befindet sich in einem Verzeichnis, in dem es kein Unterverzeichnis mit dem Namen sub1 gibt. Welches der folgenden Kommandos erzeugt die Unterverzeichnisse sub1/sub11/sub111?
+
+Die richtigen Alternativen lauten:
+mkdir -p sub1/sub11/sub111
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Ein Benutzer führt folgendes Kommando aus
+mv t1 t2 t3
+Was passiert, wenn t1, t2 und t3 Dateien sind?
+
+Die richtige Antwort:
+Man erhält die Fehlermeldung "mv: target `t3' is not a directory".
+
+Sie hatten die Frage nicht beantwortet!
+
+Was passiert, wenn man den Befehl cp mit mehreren Dateinamen und als letztem PArameter ein Verzeichnis aufruft? Beispiel:
+cp Datei1 Datei2 Datei2 Docus
+
+
+Die richtige Antwort:
+Alle angegebenen Dateien werden in das Verzeichnis kopiert, also im Beispiel Docus
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie kann man sicherstellen, dass cp nachfragt, bevor es eine bereits existierende Datei überschreibt?
+
+Die richtige Antwort:
+Man muss die "-i"-Option setzen.
+
+Sie hatten die Frage nicht beantwortet!
+
+Das Verzeichnis "Programme" befindet sich im aktuellen Verzeichnis. Mit welchem der folgenden Befehle kann man diese Verzeichnis komplett kopieren?
+
+Die richtigen Alternativen lauten:
+cp -r Programme /data/backup/Programme
+cp -R Programme /data/backup/Programme
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Ein Benutzer führt folgendes Kommando aus
+mv Datei1 Datei2 mein-verzeichnis
+Was passiert, wenn das Verzeichnis mein-verzeichnis noch nicht vorhanden ist?
+
+Die richtigen Alternativen lauten:
+Geht nicht, denn das Zielverzeichnis muss vorhanden sein!
+Der Befehl bricht mit einer entsprechenden Fehlermeldung ab.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Werden bei mv mehr als zwei Parameter angegeben, erwartet mv immer, dass der letzte Parameter ein Verzeichnis ist! Hätte man statt obigem Befehl den Befehl
+mv Datei1 mein-verzeichnis
+abgesetzt, dann wäre der Inhalt der Datei Datei1 in eine Datei names mein-verzeichnis kopiert worden. Also entgegen der Wortwahl wäre kein Verzeichnis entstanden!
+
+
+Welche Informationen sind nicht Bestandteil eines Inodes?
+
+Die richtigen Alternativen lauten:
+Name der Datei
+Der eigentliche Inhalt der Datei
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Mit Datei sind bei dieser Frage auch Verzeichnisse, Links, Pipes und so weiter gemeint.
+
+
+Ein Benutzer führt folgendes Kommando aus
+mv Datei mein_verzeichnis
+Was passiert, wenn das Verzeichnis mein-verzeichnis noch nicht vorhanden ist?
+
+Die richtige Antwort:
+Die Datei "Datei" wird in "mein_verzeichnis" umbenannt.
+
+Sie hatten die Frage nicht beantwortet!
+
+Ein Benutzer führt folgendes Kommando aus
+mv Datei1 Datei2 mein-verzeichnis
+Was passiert, wenn das Verzeichnis mein-verzeichnis bereits vorhanden ist?
+
+Die richtige Antwort:
+Die beiden Dateien werden in das vorhandene Verzeichnis verschoben.
+
+Sie hatten die Frage nicht beantwortet!
+
+Ein Benutzer führt folgendes cp-Kommando durch
+cp t1 t2 t3
+Was passiert, wenn t1, t2 und t3 Dateien sind?
+
+Die richtige Antwort:
+Man erhält die Fehlermeldung "cp: target `t3' is not a directory".
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Befehle löschen ein Verzeichnis mit all seinen Unterverzeichnissen?
+
+Die richtigen Alternativen lauten:
+rm -r Docus
+rm -R Docus
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Kommando kann man die Gruppenzugehörigkeit einer Datei dat in Gruppe team ändern?
+
+Die richtigen Alternativen lauten:
+chown :team dat
+chgrp team dat
+
+
+
+________________________________________________________________
+
+
+Bei welcher Anweisung wird die Standard-Ausgabe (stdout) des Kommandos cmd in die Datei "datei" geschrieben bzw. falls "datei" bereits existiert an den Inhalt angehängt?
+ cmd | datei 
+ cmd; datei
+ cmd >> datei
+ cmd > datei
+
+Wie wird die Standardausgabe in der Bash-Shell angesprochen?
+ 
+
+Wie lautet die Standarddatei der Bash-Shell für den Standardfehler?
+ 
+
+Welches der folgenden Kommandos sendet die Ausgabe von Kommando1 zu Kommando2?
+ Kommando1 | Kommando2
+ Kommando1 && Kommando2
+ Kommando1 || Kommando2
+ Kommando1 > Kommando2
+ Kommando1 >> Kommando2 
+
+Wie kann man Fehlerkanal und Ausgabe vertauschen?
+ kommando 3>&2 2>&1 1>&3
+ Kommando 1>&3 2>&1 3>&2 
+ Kommando 1>&2 2>&1
+ Kommando 2>&1 1>&2
+ Fehlerkanal und Ausgabe kann man nicht vertauschen, da sie immer getrennt bleiben müssen. 
+
+Welche der folgenden Anweisungsfolgen schreiben sowohl das Ergebnis von "pwd" als auch das Ergebnis von "ls -l" in die Datei verzeichnis.txt?
+ pwd ; ls -l > verzeichnis.txt
+ (pwd ; ls -l) > verzeichnis.txt
+ { pwd ; ls -l; } > verzeichnis.txt
+ pwd > verzeichis.txt; ls -l >> verzeichnis.txt
+
+Welche der folgenden Zeichenfolgen dient dazu stdout und stderr in eine Datei umzulenken?
+ &&
+ <&
+ |&
+ >&
+
+Aufgabe für Spezialisten:
+Welche der folgenden Kommandozeilen schreibt die Ergebnisse eines Kommandos "Kommando" in eine Datei "Ergebnisse" und übergibt die Fehlerausgaben an einen Prozess mit dem Namen Nachbearbeitung, der dann seine Ausgabe in die Datei "Fehler.log" schreibt.
+ Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 3>&- | Nachbearbeitung > Fehler.log
+ Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 | Nachbearbeitung > Fehler.log
+ Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 | Nachbearbeitung 2> Fehler.log
+ Kommando 3>&1 1>&2 2> Ergebnisse 2>&3 | Nachbearbeitung > Fehler.log
+ Kommando 3>&1 1>&2 2>&3 2> Ergebnisse | Nachbearbeitung 2> Fehler.log
+
+Welches der folgenden Kommandos sendet die Ausgabe von Kommando in die Datei "Daten-File", wobei eine bereits bestehende Datei gelöscht wird?
+ Kommando | Daten-File
+ Kommando && Daten-File
+ Kommando || Daten-File
+ Kommando > Daten-File
+ Kommando >> Daten-File
+
+Welches der folgenden set-Optionen schützt eine bestehende Datei davor durch Datei-Umlenkung überschrieben zu werden?
+ set noclobber
+ set -o noclobber
+ set +o noclobber
+ set +o nowrite
+ set nowrite
+
+In welchen der folgenden Kommandozeilen wird die Standardfehlerausgabe (stderr) und die Standardausgabe (stdout) vertauscht?
+ cat a b c d 3>&1 1>&2 2>&3 3>&- | less 
+ (ls; ls foobar) >fehler.txt 3>&2 2>&1 1>&3
+ (pwd; ls foobar) >fehler.txt 1>&3 2>&1 3>&2 3>&- 
+ (pwd; ls foobar) >fehler.txt 1>&3 3>&2 2>&1 3>&-
+
+Wie kann man sowohl die Fehlerausgabe als auch die Standardausgabe in die Datei "Alle_Ausgaben" lenken?
+ (ls foobar; ls) 2>&1 >Alle_Ausgaben
+ (ls foobar; ls) >Alle_Ausgaben 2>&1
+ (ls foobar; ls) >>Alle_Ausgaben 2>&1
+ (ls foobar; ls) >Alle_Ausgaben 1>&2
+
+Wenn die Shell-interne Option "noclobber" gesetzt ist, dann gilt folgendes:
+ Versucht man mittels cp eine Datei auf eine bereits bestehende zu kopieren, erfolgt eine Warnung.
+ Versucht man mittels mv eine Datei auf eine bereits bestehende zu kopieren, erfolgt eine Warnung.
+ Bei der Umlenkung der Standardausgabe mittels ">" in eine Datei, gibt es eine Fehlermeldung, wenn diese Datei bereits existiert.
+
+Welches der folgenden Kommandos erzeugt eine benamte Pipe mit dem Namen npipe?
+ mkpipe npipe
+ mkfifo npipe
+ kommando |npipe
+ lnpipe npipe
+
+Wie kann man die noclobber-Option der Shell abschalten?
+ Man kann sie nur von Befehl zu Befehl abschalten, da sie immer standardmäßig eingeschaltet ist.
+ set -o noclobber
+ set +o noclobber
+ set +o nowrite
+ clobber --off
+
+Welcher der folgenden Kommandos überschreibt auf jeden Fall ohne Nachzufragen die Datei "Chancenlos"?
+ echo "Ich ueberschreibe dich." > Chancenlos
+ echo "Ich ueberschreibe dich." >> Chancenlos
+ echo "Ich ueberschreibe dich." 2> Chancenlos
+ echo "Ich ueberschreibe dich." >| Chancenlos
+ echo "Ich ueberschreibe dich." |> Chancenlos
+
+Wie kann man die Fehlerausgaben eines Skriptes "beispiel.sh" an eine Datei "logdatei.txt" anhängen?
+ ./beispiel.sh 2>> logdatei.txt
+ ./beispiel.sh 1>> logdatei.txt
+ ./beispiel.sh 2> logdatei.txt
+ ./beispiel.sh 1> logdatei.txt
+
+Welche der folgenden Kommandozeilen schreiben die Ergebnisse des "ls -l"-Kommandos in die Dateien Datei1 und Datei2 
+ ls -l | tee Datei1 Datei2
+ ls -l | tee Datei1 > Datei2
+ ls -l | tee Datei1 Datei2
+ ls -l | tee Datei1 | tee Datei2
+ ls -l > Datei1 | tee Datei2
+
+Mit welchem Kommando wird der Standardeingabekanal (stdin) geschlossen?
+ 1<&-
+ 0<&-
+ close(stdin)
+ close("stdin")
+
+Welche Aussagen bzgl. des folgenden Kommandos
+>> Ausgabe Programm < Eingabe
+sind korrekt? 
+ Die Umlenkung ">> Ausgabe" darf nicht am Anfang stehen, sondern muss am Ende oder vor "< Eingabe" kommen.
+ Die Eingabe für das Kommando "Programm" kommt von der Datei "Eingabe"
+ Die Ausgabe des Kommandos "Programm" wird in die Datei "Ausgabe" geschrieben
+ Die Position von ">> Ausgabe" ist falsch, deshalb wird ein Schreiben in die Datei "Ausgabe" nicht erfolgen. Stattdessen wird die Ausgabe an stdout weitergeleitet.
+
+Für welche der folgenden Kommandos gilt in der Bash-Shell: Falls eine Datei "filename" existiert, wird deren Inhalt gelöscht. Anschließend existiert eine Datei mit leerem Inhalt. Wenn keine Datei "filename" existiert, wird eine mit leerem Inhalt erzeugt. 
+ : > filename
+ rm -f filename; touch filename
+ > filename
+ cat filename > /dev/null
+ mv filename > /dev/null
+
+Was passiert in folgendem Kommando?
+foobar >foo 2>&1
+
+ Die Standardausgabe von foobar wird in die Datei "foo" geschrieben, während die Standardfehlerausgabe nach "&1" geschrieben wird.
+ Sowohl die Standardausgabe als auch die Standardfehlerausgabe werden in die Datei "foo" geschrieben.
+ Das Kommando ergibt keinen Sinn, da der Fehlerkanal nicht mehr wegen der vorigen Umlenkung in die Datei "foo" in die Standardausgabe geschrieben kann.
+
+Man hat die Aufgabe mittels "cat shell.txt tutorial.txt" die beiden Dateien "shell.txt" "tutorial.txt" zu konkatenieren. Das Ergebis möchte man in die Datei shell_tutorial.txt schreiben. Welche der folgenden Kommandos realieren die Aufgabe?
+ cat shell.txt tutorial.txt > shell_tutorial.txt
+ cat shell.txt >shell_tutorial.txt tutorial.txt
+ cat >shell_tutorial.txt shell.txt tutorial.txt
+ >shell_tutorial.txt cat shell.txt tutorial.txt
+
+Ein Shell-Skript soll keine Fehlerausgaben liefern. Mit welcher Anweisung am Anfang des Skriptes kann man dies erreichen?
+ exec 2>/dev/null
+ 2>&3
+ exec 2>&1
+
+
+
+Bei welcher Anweisung wird die Standard-Ausgabe (stdout) des Kommandos cmd in die Datei "datei" geschrieben bzw. falls "datei" bereits existiert an den Inhalt angehängt?
+
+Die richtige Antwort:
+cmd >> datei
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie wird die Standardausgabe in der Bash-Shell angesprochen?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "stdout"
+
+Wie lautet die Standarddatei der Bash-Shell für den Standardfehler?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "stderr"
+
+Welches der folgenden Kommandos sendet die Ausgabe von Kommando1 zu Kommando2?
+
+Die richtige Antwort:
+Kommando1 | Kommando2
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie kann man Fehlerkanal und Ausgabe vertauschen?
+
+Die richtigen Alternativen lauten:
+kommando 3>&2 2>&1 1>&3
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Zuerst wird mit "3>&2" der Deskriptor 3 auf die gleiche Datei gesetzt, wie der Deskriptor mit der Nummer 2, also die Standardfehlerausgabe (stderr). Dadurch wird diese Information "gerettet", denn im nächsten Schritt wird mit "2>&1" der Deskriptor 2 auf die gleiche Datei wie der Deskriptor 1 gesetzt, d.h. der Deskriptor 2 zeigt nun auf die Standardausgabe-Datei (stdout). Mit "1>&3" wird der Deskriptor 1 auf den Wert vom Deskriptor 3 (also dem ursprünglichen Wert des Deskriptors 2) gesetzt. Der Deskriptor 1 zeigt somit auf die Standardfehlerausgabe (stderr). Damit ist die Standardfehlerausgabe und die Standardausgabe vertauscht.
+Sehr schön testen kann man es übrigens mit folgendem Kommando:
+(pwd; ls foobar) 3>&2 2>&1 1>&3 | tee abc.txt
+Der Trick liegt darin, dass man mit dem Untershell-Aufruf (pwd; ls foobar) gleichzeitig eine Ausgabe mittels pwd und mittels "ls foobar" einen Fehler erzeugt.
+Sehr schön wird dieses Beispiel auf der Seite Linux Problem-Hilfe: Ein- und Ausgabeumlenkung erklärt!
+
+
+Welche der folgenden Anweisungsfolgen schreiben sowohl das Ergebnis von "pwd" als auch das Ergebnis von "ls -l" in die Datei verzeichnis.txt?
+
+Die richtigen Alternativen lauten:
+(pwd ; ls -l) > verzeichnis.txt
+{ pwd ; ls -l; } > verzeichnis.txt
+pwd > verzeichis.txt; ls -l >> verzeichnis.txt
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die geschweiften Klammern bilden eine Gruppe von Anweisungen, während die runden Klammern eine Untershell aufrufen.
+
+
+Welche der folgenden Zeichenfolgen dient dazu stdout und stderr in eine Datei umzulenken?
+
+Die richtige Antwort:
+>&
+
+Sie hatten die Frage nicht beantwortet!
+
+Aufgabe für Spezialisten:
+Welche der folgenden Kommandozeilen schreibt die Ergebnisse eines Kommandos "Kommando" in eine Datei "Ergebnisse" und übergibt die Fehlerausgaben an einen Prozess mit dem Namen Nachbearbeitung, der dann seine Ausgabe in die Datei "Fehler.log" schreibt.
+
+Die richtigen Alternativen lauten:
+Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 3>&- | Nachbearbeitung > Fehler.log
+Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 | Nachbearbeitung > Fehler.log
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die erste Alternative unterscheidet sich von der zweiten nur dadurch, dass der Kanal 3 korrekt geschlossen wird "3>&-", was aber meistens nicht dringend nötig ist. 
+
+
+Welches der folgenden Kommandos sendet die Ausgabe von Kommando in die Datei "Daten-File", wobei eine bereits bestehende Datei gelöscht wird?
+
+Die richtige Antwort:
+Kommando > Daten-File
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches der folgenden set-Optionen schützt eine bestehende Datei davor durch Datei-Umlenkung überschrieben zu werden?
+
+Die richtigen Alternativen lauten:
+set -o noclobber
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Mit "set -o" werden "nachträglich" Shell-Optionen eingestellt. Alternativ kann man diese Option bereits beim Start einer Bash entweder durch die Option -C oder -noclobber eingeschalten. 
+
+
+In welchen der folgenden Kommandozeilen wird die Standardfehlerausgabe (stderr) und die Standardausgabe (stdout) vertauscht?
+
+Die richtigen Alternativen lauten:
+cat a b c d 3>&1 1>&2 2>&3 3>&- | less
+(ls; ls foobar) >fehler.txt 3>&2 2>&1 1>&3
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Wie kann man sowohl die Fehlerausgabe als auch die Standardausgabe in die Datei "Alle_Ausgaben" lenken?
+
+Die richtigen Alternativen lauten:
+(ls foobar; ls) >Alle_Ausgaben 2>&1
+(ls foobar; ls) >>Alle_Ausgaben 2>&1
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Im Sinne der vage formulierten Aufgabenstellung sind sowohl die zweite als auch die dritte Alternative korrekt. Im zweiten Fall wird eine gegebenenfalls vorhandene Datei überschrieben, während im dritten Fall die Ausgaben (Fehler- und "normale" Ausgaben an eine existierende Datei angehängt würden.
+
+
+Wenn die Shell-interne Option "noclobber" gesetzt ist, dann gilt folgendes:
+
+Die richtigen Alternativen lauten:
+Bei der Umlenkung der Standardausgabe mittels ">" in eine Datei, gibt es eine Fehlermeldung, wenn diese Datei bereits existiert.
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Welches der folgenden Kommandos erzeugt eine benamte Pipe mit dem Namen npipe?
+
+Die richtige Antwort:
+mkfifo npipe
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie kann man die noclobber-Option der Shell abschalten?
+
+Die richtige Antwort:
+set +o noclobber
+
+Sie hatten die Frage nicht beantwortet!
+
+Welcher der folgenden Kommandos überschreibt auf jeden Fall ohne Nachzufragen die Datei "Chancenlos"?
+
+Die richtigen Alternativen lauten:
+echo "Ich ueberschreibe dich." >| Chancenlos
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Mit ein wenig Überlegung erkennt man leicht, warum die letzte Alternative nicht möglich sein kann. "|>" bedeutet, dass man eine Pipe öffnet und das ">"-Zeichen wird damit zu einem "falsch" platzierten Umleitungsoperator. 
+Die 4. Alternative ist korrekt auch wenn sie verwirrend ausschaut. Das Pipe-Zeichen "|" ist in diesem Zusammenhang nicht als Pipe zu interpretieren. Vielmehr bedeutet es in der Kombination ">|", dass die folgende Datei in jedem Fall überschrieben wird, unabhängig ob die noclobber-Option gesetzt ist oder nicht. 
+
+
+Wie kann man die Fehlerausgaben eines Skriptes "beispiel.sh" an eine Datei "logdatei.txt" anhängen?
+
+Die richtige Antwort:
+./beispiel.sh 2>> logdatei.txt
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Kommandozeilen schreiben die Ergebnisse des "ls -l"-Kommandos in die Dateien Datei1 und Datei2 
+
+Die richtigen Alternativen lauten:
+ls -l | tee Datei1 Datei2
+ls -l | tee Datei1 > Datei2
+ls -l | tee Datei1 Datei2
+ls -l | tee Datei1 | tee Datei2
+Keine der 4 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Im letzten Fall wird nur eine leere Datei Datei2 geschrieben. Hinter tee können übrigens beliebig viele Dateinamen stehen, in die dann alle die Eingabe von tee - also die Ausgabe der Pipe - geschrieben wird.
+
+
+Mit welchem Kommando wird der Standardeingabekanal (stdin) geschlossen?
+
+Die richtige Antwort:
+0<&-
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche Aussagen bzgl. des folgenden Kommandos
+>> Ausgabe Programm < Eingabe
+sind korrekt? 
+
+Die richtigen Alternativen lauten:
+Die Eingabe für das Kommando "Programm" kommt von der Datei "Eingabe"
+Die Ausgabe des Kommandos "Programm" wird in die Datei "Ausgabe" geschrieben
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Für welche der folgenden Kommandos gilt in der Bash-Shell: Falls eine Datei "filename" existiert, wird deren Inhalt gelöscht. Anschließend existiert eine Datei mit leerem Inhalt. Wenn keine Datei "filename" existiert, wird eine mit leerem Inhalt erzeugt. 
+
+Die richtigen Alternativen lauten:
+: > filename
+rm -f filename; touch filename
+> filename
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Achtung: Die dritte Alternative, d.h. "> filename" gilt nicht in allen Shells. Sie funktioniert beispielsweise nicht in der Z-Shell (zsh).
+
+
+Was passiert in folgendem Kommando?
+foobar >foo 2>&1
+
+
+Die richtige Antwort:
+Sowohl die Standardausgabe als auch die Standardfehlerausgabe werden in die Datei "foo" geschrieben.
+
+Sie hatten die Frage nicht beantwortet!
+
+Man hat die Aufgabe mittels "cat shell.txt tutorial.txt" die beiden Dateien "shell.txt" "tutorial.txt" zu konkatenieren. Das Ergebis möchte man in die Datei shell_tutorial.txt schreiben. Welche der folgenden Kommandos realieren die Aufgabe?
+
+Die richtigen Alternativen lauten:
+cat shell.txt tutorial.txt > shell_tutorial.txt
+cat shell.txt >shell_tutorial.txt tutorial.txt
+cat >shell_tutorial.txt shell.txt tutorial.txt
+>shell_tutorial.txt cat shell.txt tutorial.txt
+Keine der 4 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Für viele schwer zu glauben, aber alle vier Alternativen sind korrekt. Die Umleitung (Redirection) ist also unabhängig von ihrer Position. 
+
+
+Ein Shell-Skript soll keine Fehlerausgaben liefern. Mit welcher Anweisung am Anfang des Skriptes kann man dies erreichen?
+
+Die richtige Antwort:
+exec 2>/dev/null
+
+Sie hatten die Frage nicht beantwortet!
+
+____________________________________
+
+
+Gibt man im Kommandozeilenmodus, also nach dem ":" ein "q!", geschieht folgendes:
+
+Die richtigen Alternativen lauten:
+Der vi wird verlassen ohne dass der bearbeitete Text abgespeichert wird
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+
+
+
+Der Name vi stammt von:
+
+Die richtige Antwort:
+visual
+
+Sie hatten die Frage nicht beantwortet!
+
+In welchem Modus befindet sich der vi nach dem Start?
+
+Die richtige Antwort:
+Befehlsmodus (command mode)
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Der Kommandozeilenmodus wird manchmal auch als Komplexbefehlsmodus bezeichnet.
+
+
+Was bewirkt die Eingabe der Taste A im Befehlsmodus?
+
+Die richtigen Alternativen lauten:
+Der vi geht in den Einfügemodus, und der Cursor wird ans Ende der Zeile positioniert.
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Was bewirkt die Eingabe der Taste a im Befehlsmodus?
+
+Die richtigen Alternativen lauten:
+Der vi geht in den Einfügemodus, und der Text wird hinter der aktuellen Cursorposition eingefügt.
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Man befindet sich im Befehlsmodus und möchte Text unmittelbar vor der aktuellen Cursorposition einfügen. Mit welchem Kommando lässt sich dies bewerkstelligen?
+
+Die richtigen Alternativen lauten:
+i
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Man möchte einen Text im vi unter einem neuen Namen "lpic.txt" abspeichern. Mit welchem Kommando kann man dies im Kommandozeilenmodus realisieren?
+
+Die richtige Antwort:
+:w lpic.txt
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Kommandos im Kommandozeilenmodus speichert eine Datei unter dem bestehenden Namen ab und verlässt dann den vi?
+
+Die richtigen Alternativen lauten:
+:wq
+:x
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Mit welcher Taste bzw. Tastenkombination kann man den Einfügemodus verlassen und in den Befehlsmodus gehen?
+
+Die richtige Antwort:
+ESC-Taste
+
+Sie hatten 
+
+
+__________________________________________-
+
+
+Welche der folgenden Kommandozeilen druckt die letzten 15 Zeilen einer Datei beispiel.txt aus?
+ head --last 15 beispiel.txt
+ head -n -15 beispiel.txt
+ tail -15
+ tail -n 15
+ tac beispiel.txt | head -15 | tac
+
+Tac ist ein Kommando, 
+ welches das Kommandozeilen-Spiel tic-tac-toe startet.
+ eine Datei in umgekehrter Reihenfolge der Zeilen ausgibt.
+ eine Datei byteweise in umgekehrter Reihenfolge ausgibt.
+ das zwei Dateien zusammenfügt ("tacked")
+
+Welche der folgenden Aufrufe druckt die ersten 42 Bytes einer Datei linux.txt aus?
+ head 42 linux.txt
+ head -c 42 linux.txt
+ head --bytes 42 linux.txt
+ head -c -42 linux.txt
+
+Welches Kommando spaltet eine Datei laenglich.log in mehrere Dateien von maximal 100 Zeilen Größe auf.
+ cut -l 100 laenglich.log
+ split -l 100 laenglich.log
+ split -c 100 laenglich.log
+ chop -l 100 laenglich.log
+
+Welches Kommando liefert die letzten 10 Zeilen einer Datei datei.txt?
+ tail datei.txt
+ tail -10 datei.txt
+ last -10 datei.txt
+ head -10 datei.txt
+
+Der Linux-Befehl "join datei1.txt datei2.txt"
+ verknüpft die zwei Dateien nach dem Schlüsselfeld 1 (default)
+ hängt die zweite Datei hinter die erste Datei
+ hängt die erste Datei hinter die zweite Datei
+
+Welche der folgenden Kommandozeilen druckt eine Datei in Oktalformat aus?
+ od -t o 
+ od -t x 
+ od -o 
+ od 
+
+Welche der folgenden Kommandos liefert das Ergebnis "LINUX IST BESSER"
+ echo "Linux ist besser" | tr a-z A-Z
+ echo "Linux ist besser" | tr '[:lower:]' '[:upper:]'
+ echo "Linux ist besser" | pr --upper
+ echo "Linux ist besser" | wc -u
+
+Mit welchem Tool erreicht man, dass alle Tabulatoren einer Datei (oder der Standardeingabe) in Leerzeichen umgewandelt werden.
+ notabs
+ expand
+ tabs
+ tab2blank
+
+Welches Kommando reicht die Ausgabe an stdout weiter und speichert sie gleichzeitig in einer Datei
+ | tee 
+ | tload 
+ | stdout -f 
+ | redirect -f 
+ | tee -f 
+
+Welches Kommando filtert Nachname und Ort aus den Zeilen einer Datei "adressen.txt" heraus? Die Adressdaten sind zeilenweise in folgendem Format abgespeichert: "Vorname:Nachname:PLZ:Ort:Strasse"
+ cut -b 9-16,21-25 adressen.txt
+ cut -d: -f 2,4 adressen.txt
+ awk 'BEGIN {FS=":"} {print $2":"$4}' adressen.txt
+ sed "s/\(.*\):\(.*\):\(.*\):\(.*\):\(.*\)/\2 \4/" adressen.txt
+
+Welches Kommando liefert die Anzahl der Zeilen einer Datei?
+ count
+ lines
+ wc
+ nl
+ clines
+
+Welches der folgenden Kommandos versucht Zeilen für eine vorgegebene maximale Länge möglichst gleich lang zu machen?
+ expand
+ fmt
+ nl
+ wc
+ tr
+
+Welche der folgenden Kommandos kann man benutzen um sich jeweils eine Bildschirmseite Ausgabe anzuschauen?
+ sed
+ more
+ print
+ less
+ grep
+
+Welches der folgenden Kommandos gibt die Kommentarzeilen eines Bash-Shellskriptes BeispielSkript aus?
+ find "^#" BeispielSkript
+ sed -n "/^#/p" BeispielSkript
+ grep -v "^#" BeispielSkript
+ locate "^#" BeispielSkript
+
+In einem Text beispiel.txt sollen jeweils 8 Leerzeichen zu einem TAB-Zeichen zusammengefasst werden. Welches der folgenden Kommandos leistet das?
+ expand beispiel.txt
+ tr -t 8 beispiel.txt
+ tabs beispiel.txt
+ unexpand beispiel.txt
+
+Mit welchem Befehl kann man die Anzahl der Zeichen einer Datei ermitteln?
+ 
+
+Welches der folgenden Kommandos sollte innerhalb einer Pipe dazu benutzt werden bestimmte Zeichen in andere Zeichen zu wandeln, z.B. alle Großbuchstaben in Kleinbuchstaben.
+ awk
+ grep
+ tr
+ pr
+ nl
+
+Mit welche der folgenden Kommandos kann man den Inhalt einer Binärdatei in für menschen lesbarer Form ausgeben?
+ dump
+ hexdump
+ od
+ xd
+ hd
+
+Mit welcher Option wird bei sort der Feldtrenner umdefiniert?
+ -f
+ -t
+ -s
+ -p
+
+Welches Programm dient der Nummerierung von Text-Dateien?
+ nr
+ wc
+ nl
+ ln
+
+Welche der folgenden Aussagen bzgl. des regulären Ausdrucks ^[^1-9a-z] ist wahr?
+ Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile nur aus Ziffern und Buchstaben besteht.
+ Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile nur aus Ziffern, allerdings ohne die 0 und aus Kleinbuchstaben besteht.
+ Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile nur aus der Ziffer 0 oder aus einem Großbuchstaben besteht.
+ Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile mit der Ziffer 0 oder einem Großbuchstaben beginnt.
+ Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile mit einer Ziffer, allerdings nicht die 0, oder einem Kleinbuchstaben beginnt.
+
+Wozu dient das Kommando "pr"?
+ Mit diesem Komando werden Dateien auf dem Standarddrucker ausgegeben.
+ Mit "pr" werden Dateien für Druckausgabe konvertiert.
+ Es liefert eine Liste der momentan aktiven Prozesse
+ Es gibt kein Kommando pr, sondern nur eine Umgebungsvariable PR, die das Ausgbeverhalten des Eingabepromptes festlegt.
+
+In einem Text beispiel.txt soll jedes TAB-Zeichen durch 4 Leerzeichen ersetzt werden. Welches der folgenden Kommandos leistet das?
+ expand -t 4 beispiel.txt
+ tr -t 4 beispiel.txt
+ tabs -t 4 beispiel.txt
+ unexpand -t 4 beispiel.txt
+
+Was bewirkt das Kommando "pr -l 20 -o 10 -h "Mein Header" Beispieldatei"?
+ Die Datei "Beispieldatei" wird für die Druckausgabe aufbereitet: Mit der Überschrift "Mein Header", einem linken Offset von 10 Spalten und 20 Zeilen Inhalt pro Seite.
+ Die Datei "Beispieldatei" wird mit den Optionen "Mein Header" als Titel, einem linken Offset von 10 Spalten und 20 Zeilen Inhalt pro Seite an den Standarddrucker geschickt.
+
+Man hat eine Datei der Form: 
+
+Frank Meyer Radolfzell 07732/43452
+Peter Rabe Singen 07531/70021
+Ottmar Huber Rosenheim 08031/7877-0
+Anna Rabe Radolfzell 07732/2343
+Oskar Lindner Konstanz 07531/890
+Anna List München 089/3434544
+Franziska Huber Rosenheim 08031/787878
+Helge Rabe Konstanz 07531/343454
+
+Man möchte diese Datei nun so sortieren, dass zuerst nach dem Nachnamen und dann nach dem Vornamen sortiert wird. Welcher der folgenden Befehle leistet dies?
+ sort -k2,2 -k1,1 adressen.txt
+ sort -k2,1 adressen.txt
+ sort +1 -2 +0 -1 adressen.txt
+ sort +2 +1 adressen.txt
+
+Mit welchem Befehl kann man (unter anderem) die Anzahl der Zeilen einer Datei ermitteln?
+ 
+
+Mit welcher Option kann man eine Datei mittels des sort-Befehls numerisch sortieren?
+ -g
+ -n
+ -z
+ -d
+
+Jemand möchte eine Datei mit dem sort-Befehl in umgekehrter alphabetischer Reihenfolge sortieren. Welche der folgenden Optionen leisten dies?
+ -fr
+ -ir
+ -Ri
+ -bi
+
+Mit welchem Befehl kann man eine Textdatei auf eine Zeilenlänge von maximal 60 Zeichen formatieren, wobei Trennungen nur zwischen Wörten, also bei Leerzeichen, und nicht nach einem Punkt erfolgen. 
+ fmt -w 60 
+ fold -w 60 
+ format -w 60 
+
+Worin unterscheidet sich das Kommando fold von dem Kommando fmt?
+ Sie unterscheiden sich nicht, denn fmt ist nur eine veraltete Version von fold.
+ fold trennt Zeilen defaultmäßig nach 80 Zeichen. Gegebenenfalls werden Wörter dadruch zerhackt.
+ fold umbricht Zeilen, wenn sie länger als 80 Zeichen sind, füllt aber Zeilen nicht mit den Folgezeilen auf, wie dies bei fmt geschieht
+ tmt umbricht Zeilen, wenn sie länger als 80 Zeichen sind, füllt aber Zeilen nicht mit den Folgezeilen auf, wie dies fold macht.
+
+Welche der folgenden Kommandos sortiert eine Datei und gibt mehrfach vorkommende Zeilen nur einmal aus.
+ sort -n test.txt | uniq -d 
+ uniq test.txt
+ sort -n test.txt | uniq
+ sort -n test.txt | uniq -u
+ sort -u test.txt
+
+Man hat ein Preisliste "Preisliste" in einem simplen Format, d.h. pro Zeile jeweils eine Produktnummer und ein Preis, getrennt durch ein Leerzeichen oder Tab, z.B.
+32344 326.87
+32348 123.99
+54589 989.00
+Welche der folgenden Bash-Kommandofolgen sortiert eine Datei "Preisliste" numerisch absteigend, nummeriert diese Liste und spaltet sie anschließend in kleine Dateien (Liste01, Liste02, Liste03, usw.) mit höchstens jeweils 25 Zeilen auf? 
+ sort -k 2 -n Preisliste | nl | split -25 -
+ sort -k 2 -n Preisliste | nl | cut -25 -
+ sort -k 2 -nr Preisliste | nl | tee liste | split -25 -d liste Liste
+ sort -k 2 -nr Preisliste | nl | split -25 -d - Liste
+ sort -k 2 -nr Preisliste | nl > split -25 -
+ sort -k 2 -nr Preisliste | nl | tee liste ; split -25 -d liste Liste 
+
+
+
+Welche der folgenden Kommandozeilen druckt die letzten 15 Zeilen einer Datei beispiel.txt aus?
+
+Die richtigen Alternativen lauten:
+tail -15
+tail -n 15
+tac beispiel.txt | head -15 | tac
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die letzte Kommondozeile ist eine nette "Spielerei", da man mit tac und head das Verhalten von tail simulieren kann.
+
+
+Tac ist ein Kommando, 
+
+Die richtige Antwort:
+eine Datei in umgekehrter Reihenfolge der Zeilen ausgibt.
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Aufrufe druckt die ersten 42 Bytes einer Datei linux.txt aus?
+
+Die richtigen Alternativen lauten:
+head -c 42 linux.txt
+head --bytes 42 linux.txt
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Bei der ersten Alternative ergibt die 42 keinen Sinn. Die 42 wird als Dateiname angesehen, und da diese Datei wahrscheinlich nicht exisitiert erfolgt eine entsprechende Fehlermeldung, dann gibt head die ersten 10 Zeilen der Datei linux.txt aus.
+"head -c -42 linux.txt" bewirkt, dass die gesamte Datei linux.txt ohne die letzten 42 Zeichen ausgedruckt wird.
+
+
+Welches Kommando spaltet eine Datei laenglich.log in mehrere Dateien von maximal 100 Zeilen Größe auf.
+
+Die richtigen Alternativen lauten:
+split -l 100 laenglich.log
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die Option "-c" dient dazu die Anzahl von Bytes anzugeben, nach denen spätestens die Datei geteilt werden soll, also "-c 100" erzeugt Dateien, die jeweils maximal 100 Bytes enthalten. 
+
+
+Welches Kommando liefert die letzten 10 Zeilen einer Datei datei.txt?
+
+Die richtigen Alternativen lauten:
+tail datei.txt
+tail -10 datei.txt
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Der Linux-Befehl "join datei1.txt datei2.txt"
+
+Die richtigen Alternativen lauten:
+verknüpft die zwei Dateien nach dem Schlüsselfeld 1 (default)
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden Kommandozeilen druckt eine Datei in Oktalformat aus?
+
+Die richtigen Alternativen lauten:
+od -t o
+od
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden Kommandos liefert das Ergebnis "LINUX IST BESSER"
+
+Die richtigen Alternativen lauten:
+echo "Linux ist besser" | tr a-z A-Z
+echo "Linux ist besser" | tr '[:lower:]' '[:upper:]'
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Tool erreicht man, dass alle Tabulatoren einer Datei (oder der Standardeingabe) in Leerzeichen umgewandelt werden.
+
+Die richtige Antwort:
+expand
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches Kommando reicht die Ausgabe an stdout weiter und speichert sie gleichzeitig in einer Datei
+
+Die richtige Antwort:
+| tee 
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches Kommando filtert Nachname und Ort aus den Zeilen einer Datei "adressen.txt" heraus? Die Adressdaten sind zeilenweise in folgendem Format abgespeichert: "Vorname:Nachname:PLZ:Ort:Strasse"
+
+Die richtigen Alternativen lauten:
+cut -d: -f 2,4 adressen.txt
+awk 'BEGIN {FS=":"} {print $2":"$4}' adressen.txt
+sed "s/\(.*\):\(.*\):\(.*\):\(.*\):\(.*\)/\2 \4/" adressen.txt
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die erste Alternative kann im Allgemeinen nicht funktionieren, da angenommen wird, dass der Nachname immer ab Position 9 beginnt und bei Position 16 endet und der Ort bei Position 21 und bei 25 endet. 
+
+
+Welches Kommando liefert die Anzahl der Zeilen einer Datei?
+
+Die richtige Antwort:
+wc
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Ein Aufruf des Kommandos wc liefert drei Zahlenwerte: Anzahl der Zeilen, Anzahl der Wörter und Anzahl der Zeichen.
+Will man nur die Anzahl der Zeilen als Ergebnis, so kann man dies mit der Option "-l" erreichen. Also "wc -l " liefert dann nur die Anzahl der Zeilen.
+
+
+Welches der folgenden Kommandos versucht Zeilen für eine vorgegebene maximale Länge möglichst gleich lang zu machen?
+
+Die richtige Antwort:
+fmt
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Kommandos kann man benutzen um sich jeweils eine Bildschirmseite Ausgabe anzuschauen?
+
+Die richtigen Alternativen lauten:
+more
+less
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welches der folgenden Kommandos gibt die Kommentarzeilen eines Bash-Shellskriptes BeispielSkript aus?
+
+Die richtige Antwort:
+sed -n "/^#/p" BeispielSkript
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Wegen der "-v"-Option gibt grep alle Zeilen aus, die keine Kommentarzeilen sind. Ohne "-v"-Option wäre diese Alternative übrigens auch richtig gewesen. Beim sed-Kommando ist die Option "-m" wesentlich, weil diese sicherstellt, dass nur die Zeilen ausgegeben werden, die per regulärem Ausdruck gematched werden. 
+
+
+In einem Text beispiel.txt sollen jeweils 8 Leerzeichen zu einem TAB-Zeichen zusammengefasst werden. Welches der folgenden Kommandos leistet das?
+
+Die richtigen Alternativen lauten:
+unexpand beispiel.txt
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Befehl kann man die Anzahl der Zeichen einer Datei ermitteln?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "wc"
+
+Welches der folgenden Kommandos sollte innerhalb einer Pipe dazu benutzt werden bestimmte Zeichen in andere Zeichen zu wandeln, z.B. alle Großbuchstaben in Kleinbuchstaben.
+
+Die richtige Antwort:
+tr
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welche der folgenden Kommandos kann man den Inhalt einer Binärdatei in für menschen lesbarer Form ausgeben?
+
+Die richtigen Alternativen lauten:
+hexdump
+od
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Mit welcher Option wird bei sort der Feldtrenner umdefiniert?
+
+Die richtige Antwort:
+-t
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Das f steht übrigens für fold, was im Englischen (zusammen)falten, zusammenklappen bzw. zusammenlegen bedeutet.
+
+
+Welches Programm dient der Nummerierung von Text-Dateien?
+
+Die richtige Antwort:
+nl
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Aussagen bzgl. des regulären Ausdrucks ^[^1-9a-z] ist wahr?
+
+Die richtige Antwort:
+Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile mit der Ziffer 0 oder einem Großbuchstaben beginnt.
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Der Ausdruck ist übrigens auch wahr, wenn der zu untersuchende String mit einem bliebigen Sonderzeichen beginnt.
+
+
+Wozu dient das Kommando "pr"?
+
+Die richtige Antwort:
+Mit "pr" werden Dateien für Druckausgabe konvertiert.
+
+Sie hatten die Frage nicht beantwortet!
+
+In einem Text beispiel.txt soll jedes TAB-Zeichen durch 4 Leerzeichen ersetzt werden. Welches der folgenden Kommandos leistet das?
+
+Die richtigen Alternativen lauten:
+expand -t 4 beispiel.txt
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Was bewirkt das Kommando "pr -l 20 -o 10 -h "Mein Header" Beispieldatei"?
+
+Die richtige Antwort:
+Die Datei "Beispieldatei" wird für die Druckausgabe aufbereitet: Mit der Überschrift "Mein Header", einem linken Offset von 10 Spalten und 20 Zeilen Inhalt pro Seite.
+
+Sie hatten die Frage nicht beantwortet!
+
+Man hat eine Datei der Form: 
+
+Frank Meyer Radolfzell 07732/43452
+Peter Rabe Singen 07531/70021
+Ottmar Huber Rosenheim 08031/7877-0
+Anna Rabe Radolfzell 07732/2343
+Oskar Lindner Konstanz 07531/890
+Anna List München 089/3434544
+Franziska Huber Rosenheim 08031/787878
+Helge Rabe Konstanz 07531/343454
+
+Man möchte diese Datei nun so sortieren, dass zuerst nach dem Nachnamen und dann nach dem Vornamen sortiert wird. Welcher der folgenden Befehle leistet dies?
+
+Die richtigen Alternativen lauten:
+sort -k2,2 -k1,1 adressen.txt
+sort +1 -2 +0 -1 adressen.txt
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Warnung: Die 3. Alternative ist zwar korrekt, aber die Syntax gilt als überholt!
+
+
+Mit welchem Befehl kann man (unter anderem) die Anzahl der Zeilen einer Datei ermitteln?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "wc"
+
+Mit welcher Option kann man eine Datei mittels des sort-Befehls numerisch sortieren?
+
+Die richtigen Alternativen lauten:
+-g
+-n
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Jemand möchte eine Datei mit dem sort-Befehl in umgekehrter alphabetischer Reihenfolge sortieren. Welche der folgenden Optionen leisten dies?
+
+Die richtige Antwort:
+-fr
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Die Option "-i", die man üblicherweise für "case insensitive" erwartet, wird beim sort-Befehl dazu benutzt, alle nichtdruckbaren Zeichen zu ignorieren.
+
+
+Mit welchem Befehl kann man eine Textdatei auf eine Zeilenlänge von maximal 60 Zeichen formatieren, wobei Trennungen nur zwischen Wörten, also bei Leerzeichen, und nicht nach einem Punkt erfolgen. 
+
+Die richtige Antwort:
+fmt -w 60 
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Den Befehl format gibt es nicht und der Befehl fold trennt per Default auch innerhalb von Wörtern. 
+
+
+Worin unterscheidet sich das Kommando fold von dem Kommando fmt?
+
+Die richtigen Alternativen lauten:
+fold trennt Zeilen defaultmäßig nach 80 Zeichen. Gegebenenfalls werden Wörter dadruch zerhackt.
+fold umbricht Zeilen, wenn sie länger als 80 Zeichen sind, füllt aber Zeilen nicht mit den Folgezeilen auf, wie dies bei fmt geschieht
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden Kommandos sortiert eine Datei und gibt mehrfach vorkommende Zeilen nur einmal aus.
+
+Die richtigen Alternativen lauten:
+sort -n test.txt | uniq
+sort -n test.txt | uniq -u
+sort -u test.txt
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+In der ersten Alternative werden nur die Zeilen der Datei ausgegeben, die nicht mehrfach vorkommen. Das Kommando uniq alleine, wie in der zweiten Alternative, führt keine Sortierung durch, d.h. nur Duplikate, die unmittelbar hintereinander folgen werden entfernt. "-u" als Option bei uniq ist die Default-Einstellung.
+
+
+Man hat ein Preisliste "Preisliste" in einem simplen Format, d.h. pro Zeile jeweils eine Produktnummer und ein Preis, getrennt durch ein Leerzeichen oder Tab, z.B.
+32344 326.87
+32348 123.99
+54589 989.00
+Welche der folgenden Bash-Kommandofolgen sortiert eine Datei "Preisliste" numerisch absteigend, nummeriert diese Liste und spaltet sie anschließend in kleine Dateien (Liste01, Liste02, Liste03, usw.) mit höchstens jeweils 25 Zeilen auf? 
+
+Die richtigen Alternativen lauten:
+sort -k 2 -nr Preisliste | nl | split -25 -d - Liste
+sort -k 2 -nr Preisliste | nl | tee liste ; split -25 -d liste Liste
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die letzte Alternative ist zwar auch korrekt, hat aber einen unschönen Nebeneffekt: Sie erzeugt eine Hilfsdatei "liste", die nicht gelöscht wird. 
+
+
+
+_____________________________________________________
+
+
+Welche der folgenden Aussagen treffen für IP-Adressen zu?
+ Ein Rechner muss immer eine weltweit eindeutige IP-Adresse besitzen.
+ Die Aufgabe von IP-Adressen ist es, Rechner in einem Netz eindeutig zu identifizieren. 
+ Eine IPv4-Adresse besteht aus 4 Byte, die mit Punkten getrennt notiert werden
+
+Mit welchem Befehl (ohne Angabe von Parametern) kann man die Interfaces vom Ehternet-Netzwerk konfigurieren?
+ 
+
+Welche Zusammenhänge bestehen zwischen einem Domain-Namen und einer IP-Adresse?
+ Zu jeder Domain gibt es eine eindeutige IP-Adresse
+ Jeder IP-Adresse ist eine eindeutige Domain zugeordnet.
+ Das Domain Name System (DNS) hat die Aufgabe symbolische Namen (Domain-Name) in IP-Adressen abzubilden.
+
+Was versteht man unter der MAC-Adresse?
+ Adressen, die von der Firma Apple für ihre Mac-Rechner vergeben werden.
+ Adressen, die ursprünglich von der Firma Apple für ihre Mac-Rechner vergeben wurden und dann auf alle anderen Rechner von Appel ausgedehnt wurden.
+ Eine MAC-Adresse ist die eindeutige Hardware-Adresse jedes einzelnen Netzwerkadapters, die zur eindeutigen Identifikation des Gerätes im Netzwerk dient.
+
+Was versteht man unter eine Netzmaske?
+ Ein Programm, welches ein Netzwerk bei Zugriffen auf das Internet maskiert und vor unberechtigten Zugriffen schützt.
+ Eine Netzmaske ist eine Bitmaske, die IP-Adressen in eine Net-ID und einen Hostteil trennt.
+ Netzmaske ist die falsche Bezeichnung. Korrekt heißt es Netzwerkmaske.
+
+Wie kann man die Schreibweise 192.168.100.22/25 interpretieren?
+ Diese Notation bezeichnet einen IP-Nummernbereich und zwar die IP-Adressen 192.168.100.22, 192.168.100.23, 192.168.100.24 und 192.168.100.25
+ Diese Notation besagt, dass die IP-Adresse 192.168.100.22 einem Subnetz mit 25 Teilnehmern angehört.
+ Diese Schreibweise steht für die IPv4-Adresse 192.168.100.22 und die Netzwerkadresse 255.255.255.128
+
+Was versteht man unter einem privaten Netzwerk?
+ Ein Netzwerk, welches kein Verbindung zum öffentlichen Netz hat
+ privat im Sinne von geheim
+ Private Netzwerke werden benutzt, wenn ein Netzwerk, in welchem mehr Geräte angeschlossen sind, als vom Internetprovider IP-Adressen zur Verfügung stehen, mit dem Internet verbunden wird.
+
+Welche der folgenden Portzuordnungen sind korrekt?
+ 20: FTP
+ 21: FTP
+ 22: HTTPS
+ 22: SSH
+ 23: SSH
+ 25: SMTP
+
+Bei welchem der folgenden Subnetze handelt es sich um private Netzwerke?
+ 10.0.0.0/8
+ 10.0.0.0/12
+ 172.16.0.0/12
+ 171.16.0.0/12
+ 191.168.0.0/16
+ 192.168.0.0/16
+
+Welche der folgenden Portzuordnungen sind korrekt?
+ 53: DNS
+ 80: HTTP
+ 110: POP3
+ 442: HTTP
+ 443: HTTPS
+ 23: telnet
+ 80: HTTP
+
+In welcher Datei findet man auf einem Unix- oder Linux-System die Liste der Ports?
+ /etc/services
+ /etc/ports
+ /etc/ports.conf
+ /etc/portlist
+
+Mit Hilfe von welcher Datei kann man in einem kleinen Netzwerk eine Namensauflösung realisieren, ohnen einen Nameserver zu benutzen?
+ /etc/named.conf
+ /etc/bindd.conf
+ /etc/hosts
+ /etc/resolv.conf
+ /etc/dns.conf
+
+Ein Netzwerk soll so konfiguriert werden, dass sich ein Nutzer mit seiner gewohnten Arbeitsumgebung an einem beliebigen Rechner einloggen kann. Welche Verzeichnis sollte dazu per NFS exportiert werden?
+ /usr
+ /etc
+ /home
+ /usr/bin
+
+Welchen der folgenden Dienste benötigt man, wenn man einen Linuxrechner in ein Windows-Netzwerk mit WINS-Server integrieren will?
+ winservd
+ winserver
+ smbd
+ windd
+
+ Welche der folgenden Aussagen treffen für IP-Adressen zu?
+
+Die richtigen Alternativen lauten:
+Die Aufgabe von IP-Adressen ist es, Rechner in einem Netz eindeutig zu identifizieren.
+Eine IPv4-Adresse besteht aus 4 Byte, die mit Punkten getrennt notiert werden
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Erst wenn ein Rechner sich im Internet beteiligt, muss er dort unter eindeutigen IP-Adresse agieren, intern also im Firmen- oder im Heimnetzwerk kann er frei wählbare Adressen benutzen, z.B. 192.168.1.1
+
+
+Mit welchem Befehl (ohne Angabe von Parametern) kann man die Interfaces vom Ehternet-Netzwerk konfigurieren?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "ifconfig"
+
+Kommentar: 
+Unter Windows heißt der entsprechende Befehl übrigens ipconfig. ifconfig steht für 'interface configuration'.
+
+
+Welche Zusammenhänge bestehen zwischen einem Domain-Namen und einer IP-Adresse?
+
+Die richtigen Alternativen lauten:
+Zu jeder Domain gibt es eine eindeutige IP-Adresse
+Das Domain Name System (DNS) hat die Aufgabe symbolische Namen (Domain-Name) in IP-Adressen abzubilden.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Ein Rechner mit einer IP-Adresse kann mehrere Domains hosten, aber jeder Domain muss eine eindeutige IP-Adresse zugeordnet sein. Eigentlich müsste man sagen, dass die IP-Adresse zu einer bestimmten Domain zu einem definierten Zeitpunkt eindeutig sein muss. Im Laufe der Zeit können Domains andere IP-Adressen zugeordnet werden. Bei den Domains von Google können sich sichere Zuordnungen zur Gewährleistungen einer optimalen Rechnerauslastungen innerhalb von Sekunden ändern.
+
+
+Was versteht man unter der MAC-Adresse?
+
+Die richtige Antwort:
+Eine MAC-Adresse ist die eindeutige Hardware-Adresse jedes einzelnen Netzwerkadapters, die zur eindeutigen Identifikation des Gerätes im Netzwerk dient.
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+In einem Netz müssen alle Teilnehmer verschiedene MAC-Adressen haben. MAC-Adressen können auch lokal administriert werden (Locally administered address, LAA). Die am meisten genutzten MAC-Adressen sind jedoch die UAA (Universally Administered Addresses). UAAs werden direkt vom Hersteller weltweit eindeutig vergeben.
+
+
+Was versteht man unter eine Netzmaske?
+
+Die richtige Antwort:
+Eine Netzmaske ist eine Bitmaske, die IP-Adressen in eine Net-ID und einen Hostteil trennt.
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Netzwerkmaske und Netzmaske sind beide korrekt und werden synonym gebraucht.
+
+
+Wie kann man die Schreibweise 192.168.100.22/25 interpretieren?
+
+Die richtige Antwort:
+Diese Schreibweise steht für die IPv4-Adresse 192.168.100.22 und die Netzwerkadresse 255.255.255.128
+
+Sie hatten die Frage nicht beantwortet!
+
+Was versteht man unter einem privaten Netzwerk?
+
+Die richtige Antwort:
+Private Netzwerke werden benutzt, wenn ein Netzwerk, in welchem mehr Geräte angeschlossen sind, als vom Internetprovider IP-Adressen zur Verfügung stehen, mit dem Internet verbunden wird.
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Portzuordnungen sind korrekt?
+
+Die richtigen Alternativen lauten:
+21: FTP
+22: SSH
+25: SMTP
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Bei welchem der folgenden Subnetze handelt es sich um private Netzwerke?
+
+Die richtigen Alternativen lauten:
+10.0.0.0/8
+10.0.0.0/12
+172.16.0.0/12
+192.168.0.0/16
+Keine der 4 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Welches private Netzwerk man benutzt, ist prinzipiell egal. Allerdings gibt es erhebliche Unterschiede bzgl. der Anzahl der zur Verfügung stehenden IP-Adressen:
+10.0.0.0/8  max. 16.777.216 IP-Adressen
+172.16.0.0/12 max. 1.048.576 IP-Adressen
+192.168.0.0/16  max. 65.536 IP-Adressen
+
+
+Welche der folgenden Portzuordnungen sind korrekt?
+
+Die richtigen Alternativen lauten:
+53: DNS
+80: HTTP
+110: POP3
+443: HTTPS
+23: telnet
+80: HTTP
+Keine der 6 korrekten Alternativen wurde angekreuzt!
+
+In welcher Datei findet man auf einem Unix- oder Linux-System die Liste der Ports?
+
+Die richtige Antwort:
+/etc/services
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit Hilfe von welcher Datei kann man in einem kleinen Netzwerk eine Namensauflösung realisieren, ohnen einen Nameserver zu benutzen?
+
+Die richtige Antwort:
+/etc/hosts
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Interessanterweise gehört die Datei 'namend.conf' zum Nameserver bind, also nicht etwa bind.conf oder bindd.con, wie man es vielleicht erwarten würde. 
+Mit Hilfe der Datei hosts können einzelnen Rechnernamen IP-Adressen zugewiesen werden.
+
+
+Ein Netzwerk soll so konfiguriert werden, dass sich ein Nutzer mit seiner gewohnten Arbeitsumgebung an einem beliebigen Rechner einloggen kann. Welche Verzeichnis sollte dazu per NFS exportiert werden?
+
+Die richtige Antwort:
+/home
+
+Sie hatten die Frage nicht beantwortet!
+
+Welchen der folgenden Dienste benötigt man, wenn man einen Linuxrechner in ein Windows-Netzwerk mit WINS-Server integrieren will?
+
+Die richtige Antwort:
+smbd
+
+Sie hatten die Frage nicht beantwortet!
+
+
+______________________________________________________
+
+
+
+Der erste Linux-Kernel wurde von folgender Person geschrieben:
+ Ken Thompson
+ Bill Gates
+ Steve Balmer
+ Linus Torvalds
+
+Linux gibt es seit
+ 1969
+ 1970
+ 1991
+ 1993
+
+Welche der folgenden Aussagen sind korrekt?
+ Was man allgemein als Linux bezeichnet, ist nicht Linux, sondern der Linux-Kernel plus GNU?
+ Minux ist ein Unix-ähnliches Betriebssystem.
+ Shareware ist Open Source.
+ Linux basiert auf Unix.
+ Linux ist eine Firma.
+
+Welchem Betriebssystem ist Linux ähnlich?
+ DOS
+ Windows NT
+ Unix
+ Minix
+
+Was wurde von Linux Torvalds entwickelt?
+ Linux-Kernel
+ Linux als Ganzes
+ Unix
+ MS-DOS
+
+Von wem wurde die erste Version von Unix geschrieben?
+ Richard Stallman
+ Ken Thompson
+ Dennis M. Ritchie
+ Brian W. Kernighan
+
+In welchem Jahr entstand die erste Version von Unix?
+ 1969
+ 1970
+ 1991
+ 1993
+
+Was versteht man unter "The EPOCHE" im Linux/Unix-Umfeld?
+ Der Beginn der Unix-Zeitzählung.
+ Der Tag der ersten Veröffentlichung eines Unix-Systems.
+ Die Zeit, in der der erste Linux-Kernel entwickelt wurde.
+
+Wann beginnt die offzielle Unixzeit?
+ 1. August 1969
+ 1. Januar 1970
+ 1. Januar 1969
+ 1. Januar 1991
+
+Die erste X-Oberfläche gibt es in Linux seit:
+ Von Anfang an
+ 1999
+ 1992
+ 2003
+
+Welche der folgenden Aussagen stehen im Einklang mit der Linux bzw. Unix-Philosophie?
+ klein aber fein
+ Programme sollten nach Möglichkeit kompativel zu Microsoft-Betriebssystemen sein
+ Portabilität ist wichtiger als Effizienz
+ Schweigen ist Gold
+ Jedes Programm ist ein Filter
+
+Freie Software / OpenSource-Software ist Sofware, 
+ die in menschenlesbarer Form vorliegt.
+ die beliebig oft kopiert, verbreitet und genutzt werden darf.
+ die kostenlos ist. Die Quellen müssen dabei nicht unbedingt vorliegen.
+ die zunächst kostenlos ist. Zahlen muss man, wenn die SW regelmäßig nutzt.
+ die verändert und in veränderter Form weitergegeben werden darf.
+
+Was bedeutet GNU?
+ General Public License
+ Gnu is not Unix
+ Generally not Unix
+
+Von wem wurde das GNU-Projekt gegründet?
+ Linux Torvalds
+ Richard Stallman gründete zusammen mit Linux Torvalds das GNU-Projekt
+ Richard Stallman
+ AT&T
+
+Richard Stallman ist der Begründer
+ der Open-Source-Bewegung
+ der Freie-Software-Bewegung
+ der Free Software Foundation
+ des GNU-Projektes
+ von Red Hat
+
+Unix hieß ursprünglich
+ Unics
+ Multics
+ DR-DOS
+ SINIX
+
+Scherzfrage: Was hat Linus Torvalds mit dem Papsttum in Rom gemeinsam?
+ Linus war auch der Name des ersten Papstes
+ Sein zweiter Vorname entspricht dem Vornamen des jetzigen Papstes "Benedict"
+ Beide sind Führer einer großen Glaubensbewegung
+
+Wann wurde Linux unter die GNU GPL gestellt?
+ Von Anfang an
+ 1991
+ 1992
+ 2000
+ Linux hat eine eigene Lizenz, die zwar der GNU GPL sehr ähnlich ist, aber dennoch einen größeren Freiraum für die kommerzielle Nutzung ermöglichst.
+
+
+Der erste Linux-Kernel wurde von folgender Person geschrieben:
+
+Die richtige Antwort:
+Linus Torvalds
+
+Sie hatten die Frage nicht beantwortet!
+
+Linux gibt es seit
+
+Die richtige Antwort:
+1991
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Aussagen sind korrekt?
+
+Die richtigen Alternativen lauten:
+Was man allgemein als Linux bezeichnet, ist nicht Linux, sondern der Linux-Kernel plus GNU?
+Minux ist ein Unix-ähnliches Betriebssystem.
+Linux basiert auf Unix.
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Welchem Betriebssystem ist Linux ähnlich?
+
+Die richtigen Alternativen lauten:
+Unix
+Minix
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Was wurde von Linux Torvalds entwickelt?
+
+Die richtige Antwort:
+Linux-Kernel
+
+Sie hatten die Frage nicht beantwortet!
+
+Von wem wurde die erste Version von Unix geschrieben?
+
+Die richtige Antwort:
+Ken Thompson
+
+Sie hatten die Frage nicht beantwortet!
+
+In welchem Jahr entstand die erste Version von Unix?
+
+Die richtige Antwort:
+1969
+
+Sie hatten die Frage nicht beantwortet!
+
+Was versteht man unter "The EPOCHE" im Linux/Unix-Umfeld?
+
+Die richtige Antwort:
+Der Beginn der Unix-Zeitzählung.
+
+Sie hatten die Frage nicht beantwortet!
+
+Wann beginnt die offzielle Unixzeit?
+
+Die richtige Antwort:
+1. Januar 1970
+
+Sie hatten die Frage nicht beantwortet!
+
+Die erste X-Oberfläche gibt es in Linux seit:
+
+Die richtige Antwort:
+1992
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Aussagen stehen im Einklang mit der Linux bzw. Unix-Philosophie?
+
+Die richtigen Alternativen lauten:
+klein aber fein
+Portabilität ist wichtiger als Effizienz
+Schweigen ist Gold
+Jedes Programm ist ein Filter
+Keine der 4 korrekten Alternativen wurde angekreuzt!
+
+Freie Software / OpenSource-Software ist Sofware, 
+
+Die richtigen Alternativen lauten:
+die in menschenlesbarer Form vorliegt.
+die beliebig oft kopiert, verbreitet und genutzt werden darf.
+die verändert und in veränderter Form weitergegeben werden darf.
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Was bedeutet GNU?
+
+Die richtige Antwort:
+Gnu is not Unix
+
+Sie hatten die Frage nicht beantwortet!
+
+Von wem wurde das GNU-Projekt gegründet?
+
+Die richtige Antwort:
+Richard Stallman
+
+Sie hatten die Frage nicht beantwortet!
+
+Richard Stallman ist der Begründer
+
+Die richtigen Alternativen lauten:
+der Freie-Software-Bewegung
+der Free Software Foundation
+des GNU-Projektes
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Stallman grenzt die Freie-Software-Bewegung deutlich von der Open-Source-Bewegung ab. Ihn stört an der Open-Source-Bewegung, dass sie für größerer Akzeptanz in der Wirtschaft die Freiheit der Software als argumentative Grundlage vernachlässige und sich nur auf die Vorteile im Entwicklungsmodell oder die technische Überlegenheit der einzelnen Programme beschränkt. Kein Wunder, dass ihn die Open-Source-Bewegung im Gegenzug häufig als zu radikal ansieht. Dennoch arbeiten beide Bewegungen bei der Entwicklung der Software eng zusammen.
+
+
+Unix hieß ursprünglich
+
+Die richtige Antwort:
+Unics
+
+Sie hatten die Frage nicht beantwortet!
+
+Scherzfrage: Was hat Linus Torvalds mit dem Papsttum in Rom gemeinsam?
+
+Die richtigen Alternativen lauten:
+Linus war auch der Name des ersten Papstes
+Sein zweiter Vorname entspricht dem Vornamen des jetzigen Papstes "Benedict"
+Beide sind Führer einer großen Glaubensbewegung
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Naja, wie gesagt, eine Scherzfrage. OB man nun wirklich Linux als Glaubensbewegung ansehen kann, ist fraglich. Ansonsten ist nicht bekannt, ob Linus Torvalds besonders fromm ist oder nicht. Ist für Linux auch total egal, welcher Konfession der Kernel angehört :-)
+
+
+Wann wurde Linux unter die GNU GPL gestellt?
+
+Die richtige Antwort:
+1992
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Anfangs wurde Linux von Linus Torvalds unter einer eigenen Lizenz veröffentlicht, die jegliche kommerzielle Nutzung verbot. Bald merkte Torvalds, dass diese Lizenz die weitere Entwicklung von Linux behinderte. Er entschied sich deshalb 1992, Linux unter die GNU GPL zu stellen. Damit war es möglich Linux in GNU zu integrieren. Im Gesamtpaket konnte es dann als das erste freie Betriebssystem vertrieben werden. Ein Schritt, der das Betriebsystem für eine noch größere Zahl von Entwicklern attraktiv machte.
+
+
+
+__________________________________________
+
+
+Welche der folgenden Aussagen sind falsch?
+ Ein Paketmanager ist ein Programm, dass die Zustellung von E-Mails unter Linux überwacht.
+ Ein Paketmanager überwacht und managed die Zustellung von E-Mails an lokale Benutzer des Systems.
+ Paketmanager dienen der komfortablen Verwaltung von Software eines Computersystems. 
+ RPM ist ein Paketmanager
+
+Welche der folgenden Distributionen benutzen RPM als Paketmanger?
+ Debian
+ OpenSuSE
+ Fedora
+ Mandriva
+ Ubuntu
+
+Was ist normalerweise nicht in einem Paket enthalten?
+ binäre Programmdateien
+ Konfigurationsdateien
+ Angaben zur Übersetzung in andere Paketformate
+ Dateien mit Daten
+ Metadaten
+
+Mit welchem der folgenden Kommandos kann man kein Paket installieren?
+ rpm
+ apt-get
+ apt-rpm
+ package-install
+
+Mit welchem der folgenden Befehle kann man ein lokal vorliegendes Debian-Paket foobar.deb installieren?
+ dpkg --install foobar.deb
+ apt-get -i foobar.deb
+ aptitude install foobar.deb
+ rpm -i foobar.deb
+
+Welche der folgenden Aussagen treffen für den Befehl apt-get zu?
+ Abhängige Pakete werden automatisch nachinstalliert.
+ Die Pakete müssen lokal auf dem Rechner vorliegen, aber nicht notwendigerweise im Arbeitsverzeichnis.
+ Der Befehl "apt-get remove paketname" entfernt ein vorhandenes Paket, jedoch nicht die von diesem abhängigen Pakete.
+ "apt-get --install paketname" installiert ein Paket und sämtliche abhängigen Pakete.
+
+Mit welchem Kommando lässt sich ein rpm-Paket foobar.rpm in ein Debian-Paket wandeln?
+ alien -r foobar.rpm
+ rpm2deb foobar.rpm
+ alien foobar.rpm
+ alien -d foobar.rpm
+ pconv -debian foobar.rpm
+
+In welcher der folgenden Kommandozeilen wird ein Paket mit dem Namen beispiel.rpm installiert?
+ rpm install beispiel.rpm
+ rpi beispiel.rpm
+ rpm -i beispiel.rpm
+ rpm-install beispiel.rpm
+
+Welches Paketsystem wird von SuSE verwendet?
+ rpm
+ deb
+ tgz
+ tar
+
+Wie installiert man zwei rpm-Pakete a.rpm und b.rpm, wenn diese wechselseitig voneinander abhängig sind?
+ rpm -f a.rpm; rpm -f b.rpm
+ rpm -i a.rpm b.prm
+ rpm -i a.rpm; rpm -i b.rpm
+ rpm --dependancy a.rpm b.prm
+
+Wie lautet die korrekte Syntax, um ein Paket beispiel.deb vollständig, d.h. inklusive der Konfigurationsdateien aus dem System zu entfernen?
+ dpkg -r beispiel.deb
+ dpkg -P beispiel.deb
+ dpkg -r --complete beispiel.deb
+ dpkg -e beispiel.deb
+ dpkg --purge beispiel.deb
+
+Mit welchem Skript kann man ein Makefile für ein spezifisches System generieren?
+ genmake
+ configure
+ config
+ generate
+
+Mit welcher Linking-Methode kann man kleinere ausführbare Dateien erzeugen?
+ compact
+ dynamisch
+ variabel
+ statisch
+
+Mit welchem Befehl kann man kompilierte Software im System installieren?
+ install
+ make
+ make install
+ make setup
+
+Welche rpm-Option dient dazu eine beschädigte rpm-Datenbank von neuem zu erzeugen?
+ rpm --rebuilddb
+ rpm --updatedb
+ rpm --regenerate
+ rpm --fixdb
+
+Welches Programm aktualisiert die Datei /etc/ld.so.cache?
+ ldupdate
+ ldconf
+ ldconfig
+ ldcache
+
+Welche der folgenden rpm-Befehle löschen ein RPM Paket beispiel.rpm?
+ rpm --uninstall beispiel.rpm
+ rpm --remove beispiel.rpm
+ rpm -e beispiel.rpm
+ rpm -u beispiel.rpm
+ rpm --erase beispiel.rpm
+
+Welche der folgenden apt-get-Optionen aktualisieren die Paketdatenbank?
+ refresh
+ reload
+ upgrade
+ update
+
+In welchem Verzeichnis befinden sich die Paketinformationen der Debian-Paketverwaltung?
+ /etc/dpkg
+ /var/lib/dpkg
+ /var/log/dpkg
+ /usr/lib/dpkg
+
+ Welche der folgenden Aussagen sind falsch?
+
+Die richtigen Alternativen lauten:
+Ein Paketmanager ist ein Programm, dass die Zustellung von E-Mails unter Linux überwacht.
+Ein Paketmanager überwacht und managed die Zustellung von E-Mails an lokale Benutzer des Systems.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden Distributionen benutzen RPM als Paketmanger?
+
+Die richtigen Alternativen lauten:
+OpenSuSE
+Fedora
+Mandriva
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Was ist normalerweise nicht in einem Paket enthalten?
+
+Die richtigen Alternativen lauten:
+Angaben zur Übersetzung in andere Paketformate
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem der folgenden Kommandos kann man kein Paket installieren?
+
+Die richtige Antwort:
+package-install
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem der folgenden Befehle kann man ein lokal vorliegendes Debian-Paket foobar.deb installieren?
+
+Die richtigen Alternativen lauten:
+dpkg --install foobar.deb
+aptitude install foobar.deb
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Statt "--install" hätte in der ersten Alternative auch "-i" stehen können. Die zweite Alternative wäre korrekt, wenn dort statt "-i" nur "install" (also ohne Minus-Zeichen) stehen würde. Die vierte Alternative ist falsch, da mit rpm nur rpm-Pakete installiert werden können.
+
+
+Welche der folgenden Aussagen treffen für den Befehl apt-get zu?
+
+Die richtigen Alternativen lauten:
+Abhängige Pakete werden automatisch nachinstalliert.
+Der Befehl "apt-get remove paketname" entfernt ein vorhandenes Paket, jedoch nicht die von diesem abhängigen Pakete.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die zweite Alternative ist falsch, da die Pakete nicht wie bei dpkg lokal auf dem Rechner vorliegen müssen, sondern sie werden bei Bedarf aus verschiedenen Quellen im Internet, sogenannten Repositories, heruntergeladen. Die vierte Option wäre richtig, wenn nur "install" ohne die beiden Minus-Zeichen dort stehen würde.
+
+
+Mit welchem Kommando lässt sich ein rpm-Paket foobar.rpm in ein Debian-Paket wandeln?
+
+Die richtigen Alternativen lauten:
+alien foobar.rpm
+alien -d foobar.rpm
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+alien ist ein Programm zum Wandeln zwischen verschiedenen Paketformaten. Es wandelt Pakete zwischen RedHat rpm, Debian deb, Stampede slp, Slackware tgz und Solaris pkg. Per default wandelt "alien" ohne Optionen ein Paket in ein Debian-Paket, d.h. die dritte Alternative ist korrekt. Explizit wandelt man ein Paket in Debian-Format mit der Option "-d". Die Option "-r" ist im obigen Fall falsch, da sie ein beliebiges Paket in RPM-Format wandelt. 
+
+
+In welcher der folgenden Kommandozeilen wird ein Paket mit dem Namen beispiel.rpm installiert?
+
+Die richtige Antwort:
+rpm -i beispiel.rpm
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+In der ersten Zeile müsste statt es install ein "--install" stehen, dann wäre alles okay. rpi und rpm-install sind keine Kommandos im Zusammenhang mit Paket-Installationen. 
+
+
+Welches Paketsystem wird von SuSE verwendet?
+
+Die richtigen Alternativen lauten:
+rpm
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Wie installiert man zwei rpm-Pakete a.rpm und b.rpm, wenn diese wechselseitig voneinander abhängig sind?
+
+Die richtige Antwort:
+rpm -i a.rpm b.prm
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie lautet die korrekte Syntax, um ein Paket beispiel.deb vollständig, d.h. inklusive der Konfigurationsdateien aus dem System zu entfernen?
+
+Die richtigen Alternativen lauten:
+dpkg -P beispiel.deb
+dpkg --purge beispiel.deb
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die Option "-r" entfernt nur die Programmdateien eines Paketes, aber nicht die Konfigurationsdateien. Die Option "--complete" gibt es nicht! Die Option "-e" kann leicht zu Verwechslungen führen, vor allem wenn man bedenkt, dass "rpm -e" für die Deinstallation eines Paketes verwendet wird. "dpkg -e" 
+
+
+Mit welchem Skript kann man ein Makefile für ein spezifisches System generieren?
+
+Die richtigen Alternativen lauten:
+configure
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Mit welcher Linking-Methode kann man kleinere ausführbare Dateien erzeugen?
+
+Die richtigen Alternativen lauten:
+dynamisch
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Befehl kann man kompilierte Software im System installieren?
+
+Die richtigen Alternativen lauten:
+make install
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Welche rpm-Option dient dazu eine beschädigte rpm-Datenbank von neuem zu erzeugen?
+
+Die richtigen Alternativen lauten:
+rpm --rebuilddb
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Welches Programm aktualisiert die Datei /etc/ld.so.cache?
+
+Die richtigen Alternativen lauten:
+ldconfig
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden rpm-Befehle löschen ein RPM Paket beispiel.rpm?
+
+Die richtigen Alternativen lauten:
+rpm -e beispiel.rpm
+rpm --erase beispiel.rpm
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden apt-get-Optionen aktualisieren die Paketdatenbank?
+
+Die richtigen Alternativen lauten:
+update
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+In welchem Verzeichnis befinden sich die Paketinformationen der Debian-Paketverwaltung?
+
+Die richtigen Alternativen lauten:
+/var/lib/dpkg
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+im Verzeichnis /etc/dpkg befinden sich sich Konfigurationsdateien von dpkg. 
+________________________________________________________________________
+
+ Mit welchem Tastenkürzel kann man in der Liste der bereits früher eingegebenen Kommandos (command history) suchen?
+
+Die richtigen Alternativen lauten:
+<Strg>+<R>
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+<Strg>+<K> löscht alle Zeichen bis zum Ende einer Befehlszeile. <Alt>+<F> bewegt den Cursor um ein Wort vorwärts (<Alt>+<F> entsprechend rückwärts).
+Gibt man <Strg>+<R> und anschließend ein Zeichen, so wird ausgehend vom zuletzt eingegebenen Befehl die erste Befehlszeile gesucht, die mit diesem Zeichen beginnt. Gibt man mehrere Zeichen hintereinander ein, sie wird die Befehlszeile gesucht, die mit diesem String beginnt. Gibt man dann <Strg>+<R> wiederholt ein, wandert man im Befehlsstack entsprechend dem eingegebenen String durch die passenden Befehlszeilen zurücl. <Strg>+<S> funktioniert analog. Allerdings wird nicht mit dem zuletzt eingegebenen Befehl sondern dem zuerst eingegebenen begonnen.
+
+
+Mit welchem Kommando fügt man den Inhalt des Puffers (buffer) vor der aktuellen Zeile im vi ein?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "P"
+
+Welches der folgenden Kommandos liefert Informationen über die Größe der Dateien im aktuellen Verzeichnis?
+
+Die richtigen Alternativen lauten:
+ls -l
+ls -s
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die Option "-S" der letzten Option sortiert die Dateien und Verzeichnisse des aktuellen Verzeichnisses anhand ihrer Größe, gibt aber nicht die Größe der Dateien aus. Die Option "-s" gibt zu jeder Datei die Größe in Blocks an. Mit der Option "-l" erhält man ein detailliertes Listing und damit auch die Dateigröße.
+
+
+Welches der folgenden Skripte druckt den Text "Linux ist toll!" aus?
+
+Die richtigen Alternativen lauten:
+text="Windows ist ...?"; { text="Linux ist toll"; }; echo $text
+text="Windows ist ...?"; { export text="Linux ist toll"; }; echo $text
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Da es sich bei den beiden ersten Alternativen durch die runden Klammern um Untershells handelt, wird der Wert in der Elternshell nicht verändert. Das "export" in der zweiten Alternative hilft nicht, da globale Variablen nicht in die Parent-Shell zurückgegeben werden, sondern nur in Untershells exportiert werden. 
+
+
+Will man interaktiv eine Eingabe vom Benutzer eines Shelskriptes erhalten und diese in der Variablen EINGABE speichern, so kann man folgendes Kommando verwenden:
+
+Die richtige Antwort:
+read EINGABE
+
+Sie hatten die Frage nicht beantwortet!
+
+Geben Sie das Kommando ein, mit dem man 3 Textzeilen im vi löscht:
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "3dd"
+
+Mit welchem Kommando fügt man den Inhalt des Puffers (buffer) hinter der aktuellen Zeile im vi ein?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "p"
+
+Was bewirkt das Kommando ": > Smiley"
+
+Die richtige Antwort:
+Falls die Datei "Smiley" existiert wird sie gelöscht und hat danach die Länge 0
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Der Doppelpunkt ist nur ein Dummy-Platzhalter, der keine Ausgabe produziert, weswegen die Datei "Smiley" nachher wirklich keinen Inhalt hat. Eigentlich kann man den Doppelpunkt im Kommando auch weglassen, aber dann funktioniert dieses Kommando nicht in allen Shells. Funktioniert z.B. nicht in der Z-Shell, aber in der bash und der Bourne-Shell.
+
+
+Welches ist die Defaul-Shell bei Linux-Systemen?
+
+Die richtige Antwort:
+bash
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Kommando stellt man die Bourne-Again-Shell als Default-Shell ein?
+
+Die richtige Antwort:
+chsh -s /bin/bash
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche Datei enthält die im System vorhanden Shells?
+
+Die richtige Antwort:
+/etc/shells
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Trennzeichen werden mehrere Kommandos in einer Kommandozeile verknüpft?
+
+Die richtige Antwort:
+;
+
+Sie hatten die Frage nicht beantwortet!
+
+Welchen Editor benutzt die GNU Readline Library per Default?
+
+Die richtige Antwort:
+emacs
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche Datei wird benutzt, um die Default-Shell eines Benutzer festzulegen?
+
+Die richtige Antwort:
+/etc/passwd
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie sieht das korrekte Format für die Eingabe einer Kommandozeile in der Kommandoshell aus?
+
+Die richtige Antwort:
+Kommandoname Optionen Argumente
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welcher Tastenkombination kann man eine Kommandozeile in der nächsten Zeile fortsetzen?
+
+Die richtige Antwort:
+\ Eingabetaste
+
+Sie hatten die Frage nicht beantwortet!
+
+Man befindet sich in der Bash-Shell und möchte in eine C-Shell wechseln. Dies ist durch Eingabe des folgendnen Kommandos auf der Kommandozeile möglich:
+
+Die richtige Antwort:
+csh
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Die dritte Alternative würde in der Datei /etc/passwd die C-Shell als zukünftige Default-Shell einstellen, also nicht das, was verlangt ist.
+
+
+Welches Kommando liefert einem die Information darüber, in welcher Shell man sich gerade befindet?
+
+Die richtigen Alternativen lauten:
+echo $0
+echo $SHELL
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+"echo $0" funktioniert übrigens in allen Shells nicht nur in der Bash-Shell. Die Umgebungsvariable $SHELL nennt die Shell, die man als erstes gestartet hatte, während $shell ebenso wie "echo $0" die Shell angibt, in der man sich zur Zeit befindet. 
+
+
+Welche Editoren benutzt die GNU Readline Library?
+
+Die richtigen Alternativen lauten:
+emacs
+vi
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Als Default ist jedoch der Emacs eingestellt!
+
+
+Mit welchem Kommnado kann man sich alle in einer Bash-Shell definierten Variablen anzeigen lassen?
+
+Die richtigen Alternativen lauten:
+set
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Kommando kann man sich die aktuellen Keyboard bindings anschauen?
+
+Die richtige Antwort:
+bind -v
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie macht man die Variable BEISPIEL zu einer globalen Variablen in der Bash?
+
+Die richtigen Alternativen lauten:
+export BEISPIEL
+declare -x BEISPIEL
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welche Datei enthält bei einem System mit der Bash-Shell die systemweiten Variablen-Definitionen?
+
+Die richtige Antwort:
+/etc/profile
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Kommando kann man als Root das Passwort eines Benutzers boris ändern?
+
+Die richtige Antwort:
+passwd boris
+
+Sie hatten die Frage nicht beantwortet!
+
+Ein Skript oder Programm, welches sich nicht im aktuellen Verzeichnis befindet kann auf verschiedene Arten gestartet werden:
+
+Die richtigen Alternativen lauten:
+Durch Angabe des vollständigen Pfades
+durch einfache Nennung des Skriptnamens, wenn der zugehörige Pfad in der Umgebungsvariablen $PATH enthalten ist.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Wann kann ein Kommando, welches auf der Kommandozeile eingegeben wird von der Bash-Shell gefunden und interpretiert werden?
+
+Die richtigen Alternativen lauten:
+Wenn es sich um ein eingebautes (built-in) Kommando handelt.
+Wenn es sich um ein ausführbares Programm handelt, welches in einem in der Umgebungsvariablen PATH aufgeführten Verzeichnis befindet.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die beiden letzten Alternativen funtionieren zwar häufig, aber nur deshalb, weil das Homeverzeichnis und das aktuelle Verzeichnis in PATH explizit angegeben sind. 
+
+
+Mit welchem Kommnado kann man sich alle in einer Bash-Shell exportierten Variablen anzeigen lassen?
+
+Die richtigen Alternativen lauten:
+env
+export -p
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Sowohl "set" als auch "declare -p" geben eine Liste aller Shell-Variablen und Funktionen aus, also global und lokal. showenv ist ein Fantasiename.
+
+
+Welche der folgenden Aussagen ist korrekt?
+
+Die richtigen Alternativen lauten:
+Beim Start einer Login-Bash-Shell wird nur eine der Dateien ~/.bash_profile, ~/.bash_login und ~/.bash_login ausgeführt.
+Exisitiert die Datei ~/.bash_profile so wird diese immer beim Start einer Login-Shell ausgeführt.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+/etc/profile ist eine systemweite Initialisierungs-Datei, die bei jedem Login automatisch ausgeführt wird, unabhängig davon, ob eine persönliche .profile existiert. Beim Start einer Login-Shell wird immer nur eine der drei Dateien ~/.bash_profile, ~/.bash_login oder ~/.profile ausgeführt und zwar wird in der angegebenen Reihenfolge gesucht. Die erste die gefunden wird wird ausgeführt. Wird zum Beispiel ~/.bash_profile gefunden, dann wird diese ausgeführt und nach ~/.bash_login oder ~/.profile wird nicht mehr gesucht. Aus diesem Grund wird immer die Datei ~/.bash_profile ausgeführt, wenn sie existiert.
+
+
+Das Aussehen des Login-Promptes wird durch folgende Umgebungsvariable bestimmt:
+
+Die richtige Antwort:
+PS1
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie weist man der Variablen VAL den Wert 42 in der Bash-Shell zu?
+
+Die richtigen Alternativen lauten:
+let VAL=42
+VAL=42
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die erste Alternative ist eine korrekte Zuweisung in der C-Shell (csh), aber in der Bash ist set ein Befehl zur Ausgabe aller definierten Variablen und Funktionsdefinitionen.
+Die zweite Alternative mit "let" erfüllt zwar erfüllt zwar die gestellte Aufgabe, aber nur, weil auf der rechten Seite ein numerischer Wert steht. "let" dient der Zuweisung von numerischen Ausdrücken in der Bash-Shell. Die letzte Alternative ist falsch, weil es vor und nach dem Gleichheitszeichen kein Blank geben darf.
+
+
+Die Umgebungsvariable PS1 steht für
+
+Die richtige Antwort:
+Prompt String 1
+
+Sie hatten die Frage nicht beantwortet!
+
+Was passiert bei folgender Kommandofolge
+dir=ls
+$dir
+in der Bash-Shell?
+
+Die richtigen Alternativen lauten:
+Der String ls wird in der ersten Zeile einer Variablen dir zugeordnet und dann wird durch das vorangestellte $-Zeichen der Wert von dir, also ls, als Kommando interpretiert.
+Es wird der Inhalt des aktuellen Verzeichnisses ausgegeben.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Wie weist man der Variablen NAME den Wert "Linus" in der Bash-Shell zu?
+
+Die richtigen Alternativen lauten:
+NAME="Linus"
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die erste Alternative ist zum Beispiel eine korrekte Zuweisung in der C-Shell (csh), aber in der Bash ist set ein Befehl zur Ausgabe aller definierten Variablen und Funktionsdefinitionen.
+"let" dient der Zuweisung von numerischen Ausdrücken in der Bash-Shell. Die letzte Alternative ist falsch, weil es vor und nach dem Gleichheitszeichen kein Blank geben darf.
+
+
+Eine Umgebungsvariable VAR1 soll vor dem Aufruf eines Skriptes WHATEVER auf einen neuen Wert (47) gesetzt werden, damit WHATEVER diesen Wert über VAR1 erhält. Nach diesem Aufruf soll VAR1 wieder den alten Wert in der aktuellen Shell haben. Welche der folgenden Codefragmente erfüllen das?
+
+Die richtigen Alternativen lauten:
+help=$VAR1; export VAR1=47; WHATEVER; export VAR1=$help
+VAR1=47 WHATEVER;
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Wie kann man eine Variable VAR in BASH komplett entfernen?
+
+Die richtige Antwort:
+unset VAR
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+"VAR=" löscht den Wert der Variablen VAR, aber die Variable selbst besteht natürlich noch weiter. "export -p VAR" ergibt so keinen Sinn. "export -p" gibt eine Liste aller existierenden globalen Variablen aus. "export -n VAR" nimmt VAR nur aus der Liste der exportierten Variablen heraus, d.h. VAR existiert (falls sie überhaupt exisitierte) anschließend als lokale Variable weiter. "unset -v" dient zum vollständigen Löschen einer Variable. Die Option "-v" ist der Default-Wert. Die Option "-f" dient übrigens zum Entfernen von Funktionen.
+
+
+________________________________________
+
+
+Welche der folgenden Kommandozeilen findet alle Dateien, die mit einer Tilde enden und löscht sie?
+ find . -name "*~" -exec rm {} \;
+ find . -name "*~" -exec rm $0
+ find . -name "*~" | xargs rm
+ rm -r "*~"
+ find . -name "*~" | rm
+
+Mit welchem Befehl kann man Dateien im Filesystem finden?
+ type
+ whereis
+ locate
+ find
+ which
+ search
+ file
+ whatis
+
+In welchem Verzeichnis befinden sich die Konfigurationsdateien für den ganzen Rechner
+ /etc
+ /dev
+ /lib
+ /bin
+
+In welchem Verzeichnis befinden sich die elementaren Linux-Kommandos zur Systemverwaltung, die von allen Benutzern ausgeführt werden können?
+ /etc
+ /dev
+ /lib
+ /bin
+
+In welchem Verzeichnis befindet sich der Befehl ifconfig?
+ /bin
+ /sbin
+ /usr/bin
+ /usr/local/bin
+
+Welches der folgenden Verzeichnisse enthält keine "richtigen" Dateien?
+ /etc
+ /dev
+ /lib
+ /bin
+
+In welcher Datei findet sich der Pfad zum Home-Verzeichnis eines Benutzers?
+ /etc/passwd
+ /etc/skel
+ /etc/profile
+ /etc/bashrc
+
+Welche Datei enthält die Default-Einstellungen für ein neu anzulegendes Home-Verzeichnis?
+ /etc/passwd
+ /etc/skel
+ /etc/profile
+ /etc/bashrc
+
+Das Verzeichnis /sbin hat folgende Aufgabe:
+ Es enthält Dateien und Verzeichnisse, die eine besondere Sicherheit verlangen. Daher auch das "s".
+ Wesentliche Programme zur Systemadministration wie z.B. fdisk, fsck und mkfs sind in diesem Verzeichnis gespeichert.
+ Zwischen /sbin und /bin gibt es im Prinzip keine Unterschiede. Die unterschiedlichen Namen sind nur historisch bedingt.
+ /sbin ist lediglich ein Link auf /bin
+
+Welche der folgenden Aussagen bzgl. des /boot-Verzeichnisses sind korrekt?
+ In diesem Verzeichnis sind die Dateien für den Bootloader (LILO oder GRUB) enthalten
+ In diesem Verzeichnis finden sich alle für das Hochfahren (booten) eines Systems wichtigen Dateien.
+ In diesem Verzeichnis befindet sich auch der Kernel (vmlinuz)
+ In diesem Verzeichnis befinden sich die Konfigurationsdateien der Systemprogramme.
+
+Der FHS (Filesystem Hierarchy Standard) gliedert die Dateien und Verzeichnisse eines Linux-Dateisystems unter anderem in variable und statische Dateien bzw. Bereiche. Welche der folgenden Verzeichnisse enthalten keine variablen Dateien?
+ /var/mail
+ /var/log
+ /etc
+ /home/
+ /usr
+
+Ein Benutzer hat ein interessantes neues Programm geschrieben, was auch von den anderen Benutzer des Systems benötigt wird. Er möchte es gerne unter /bin abspeichern. Welche der folgenden Argumentationen sind korrekt?
+ Benutzerprogramme sollen prinzipiell nicht in /bin gespeichert werden.
+ Er sollte sein Programm in /usr/local/bin speichern.
+ Da es sich um ein Programm handelt, welches von allen benutzt wird sollte es unbedingt in /bin wahlweise auch in /usr/bin gespeichert werden
+ Da es sich um ein Benutzerprogramm handelt, darf es nur unter /home im entsprechenden Verzeichnis des Benutzers gespeichert werden. Wichtig ist nur, dass es für alle ausführbar ist.
+
+Wie kann man die von locate benutzte Datenbank kreieren bzw. updaten?
+ Aufruf des Kommandos "updatedb"
+ locate -database
+ locate -c 
+ update -e "/tmp,/home"
+
+Welche Datei enthält eine Übersicht über alle im System verfügbaren Gruppen?
+ /etc/groups
+ /etc/group
+ /etc/groups/all
+ /etc/grp
+
+Welche der folgenden Verzeichnisse müssen in einem Linux-System unter dem Root-Dateisystem vorhanden sein?
+ /home
+ /lib
+ /sbin
+ /bin
+ /root
+
+In einem Verzeichnis mit dem lokalen Pfad "projekt" sollen alle Dateien mit der Endung ".o" und der Endung "~" gelöscht werden. Welches der folgenden Kommandos erledigen dies?
+ find projekt -name "*.o" -o -name "*~" -exec rm {} \;
+ find projekt -name "*.o" -o -name "*~" | xargs rm
+ find projekt -name "*.o" || -name "*~" -exec rm {} \;
+ find projekt -name "*.o" || -name "*~" | xargs rm
+ find projekt -name "*.o" -o "*~" -exec rm {} \;
+ find projekt -name "*.o" -o -name "*~" | rm {}
+
+Man möchte in einem Verzeichnis "books" alle Dateien, die innerhalb der letzten 24 Stunden geändert (nur inhaltliche Änderungen, kein chmod, chown, etc ist gewünscht) wurden, als bzip2-Datei speichern. Welche der folgenden Kommandofolgen liefert das gewünschte Ergebnis?
+ tar cvjf new.tbz2 `find books -mtime 0 -a -type f`
+ tar cvzf new.tbz2 `find books -mtime 0 -a -type f`
+ tar cvzf new.tbz2 `find books -mtime 1 -a -type f`
+ tar cvjf new.tbz2 `find books -ctime 1 -a -type f`
+ tar cvjf new.tbz2 `find books -atime 0 -a -type f`
+
+
+ Welche der folgenden Kommandozeilen findet alle Dateien, die mit einer Tilde enden und löscht sie?
+
+Die richtigen Alternativen lauten:
+find . -name "*~" -exec rm {} \;
+find . -name "*~" | xargs rm
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die zweite Alternative stellt keinen gültigen find-Aufruf dar. Die gefundenen Dateien und Verzeichnisse werden, wie in der ersten Alternative, mit "{}" angesprochen. Im dritten Fall übergibt xargs die von find gefundenen Dateien an rm als Parameter weiter. 
+
+
+Mit welchem Befehl kann man Dateien im Filesystem finden?
+
+Die richtigen Alternativen lauten:
+type
+whereis
+locate
+find
+which
+Keine der 5 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+"which " ermittelt in welchem der in PATH enthaltenen Verzeichnissen sich das Programm befindet, d.h. "which" ermittelt welches Programm ausgeführt würde, wenn ohne Pfad aufgerufen wird. "type " arbeitet wie "which" sucht aber zusätzlich noch in den in der Shell integrierten (built-in) Kommandos. "type echo" liefert beispielsweise "echo is a shell builtin".
+"whereis " durchsucht alle Linux-Standardverzeichnisse.(siehe "man whereis")
+"locate " ermöglicht eine sehr schnelle Suche nach Dateien, da es hierzu eine Datenbank benutzt (locatedb).
+Leider ist locate je nach Distribution unterschiedlich implementiert:
+Außer in OpenSuSE wird locate standardmäßig installiert. Um es unter OpenSuSE zu nutzen, muss man das Paket find-utils installieren und und dann als root einmalig den Befehl updatedb starten. Ab dann läuft locate automatisch.
+Unter Debian und Ubuntu befindet sich locate im Paket slocate
+Unter Fedora und Re d Hat befindet sich locate im Paket mlocate
+
+
+In welchem Verzeichnis befinden sich die Konfigurationsdateien für den ganzen Rechner
+
+Die richtige Antwort:
+/etc
+
+Sie hatten die Frage nicht beantwortet!
+
+In welchem Verzeichnis befinden sich die elementaren Linux-Kommandos zur Systemverwaltung, die von allen Benutzern ausgeführt werden können?
+
+Die richtige Antwort:
+/bin
+
+Sie hatten die Frage nicht beantwortet!
+
+In welchem Verzeichnis befindet sich der Befehl ifconfig?
+
+Die richtige Antwort:
+/sbin
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches der folgenden Verzeichnisse enthält keine "richtigen" Dateien?
+
+Die richtige Antwort:
+/dev
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Auch die Hardwarekomponenten (devices), wie z.B. Festplatten und RAM, werden unter Linux als Dateien verwaltet. Daten werden nicht direkt von einem Gerät gelesen oder dorthin geschrieben sondern über eine Datei, die sich in dev befindet. Die Dateien in /dev sind keine "richtigen" Dateien, denn in ihnen werden keine Daten gespeichert. Sie dienen nur als "Bindeglied" zwischen den Geräten und dem Linux-Kernel. (nur I-Nodes)
+
+
+In welcher Datei findet sich der Pfad zum Home-Verzeichnis eines Benutzers?
+
+Die richtige Antwort:
+/etc/passwd
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche Datei enthält die Default-Einstellungen für ein neu anzulegendes Home-Verzeichnis?
+
+Die richtige Antwort:
+/etc/skel
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Im Verzeichnis skel stehen Standard-Konfigurationen und sonstige Dateien, die bei der Neuanlage eines Benutzers in dessen Homeverzeichnis kopiert werden. Wird die Bash-Shell als Login-Shell ausgeführt, wird standardmäßig die .profile-Datei im Homeverzeichnis und /etc/profile ausgeführt. Auf jeden Fall wird immer /etc/bashrc bzw. bash.bashrc ausgeführt. Die Information, welches Home-Verzeichnis für einen Benutzer zu benutzen ist, steht jedoch nur in /etc/passwd.
+
+
+Das Verzeichnis /sbin hat folgende Aufgabe:
+
+Die richtige Antwort:
+Wesentliche Programme zur Systemadministration wie z.B. fdisk, fsck und mkfs sind in diesem Verzeichnis gespeichert.
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Aussagen bzgl. des /boot-Verzeichnisses sind korrekt?
+
+Die richtigen Alternativen lauten:
+In diesem Verzeichnis sind die Dateien für den Bootloader (LILO oder GRUB) enthalten
+In diesem Verzeichnis finden sich alle für das Hochfahren (booten) eines Systems wichtigen Dateien.
+In diesem Verzeichnis befindet sich auch der Kernel (vmlinuz)
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Der FHS (Filesystem Hierarchy Standard) gliedert die Dateien und Verzeichnisse eines Linux-Dateisystems unter anderem in variable und statische Dateien bzw. Bereiche. Welche der folgenden Verzeichnisse enthalten keine variablen Dateien?
+
+Die richtigen Alternativen lauten:
+/etc
+/usr
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die Verzeichnisse /etc und /usr sind zwar durch den Superuser (Systemadministrator) veränderbar, aber ändern sich nicht im laufenden Betrieb durch Benutzereingriff oder durch Benutzerprogramme. Deshalb betrachtet man sie als statisch.
+
+
+Ein Benutzer hat ein interessantes neues Programm geschrieben, was auch von den anderen Benutzer des Systems benötigt wird. Er möchte es gerne unter /bin abspeichern. Welche der folgenden Argumentationen sind korrekt?
+
+Die richtigen Alternativen lauten:
+Benutzerprogramme sollen prinzipiell nicht in /bin gespeichert werden.
+Er sollte sein Programm in /usr/local/bin speichern.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Eines der wichtigsten Argumente Benutzerprogramme nicht in /bin oder /usr/bin zu speichern besteht darin, dass diese Programme bei einer Neuinstallation oder einem Update auf eine neue Distributionsversion verloren gehen. Wollte man sie retten, besteht das Problem darin, dass man sich nicht mehr erinnert, welche Programme man zugefügt hat oder nicht. Alle Programme in /usr/local/bin kamen nicht mehr der Distribution und müssen deshalb komplett ins neue System übernommen werden. 
+
+
+Wie kann man die von locate benutzte Datenbank kreieren bzw. updaten?
+
+Die richtigen Alternativen lauten:
+Aufruf des Kommandos "updatedb"
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die letzte Alternative ist zwar korrekt aber bedarf der Erklärung: Die Option -e wird von einer Liste von Verzeichnissen gefolgt, deren Inhalte nicht für die Datenbank aufbereitet werden sollen. Die Verzeichnisse "/tmp und /home" werden meistens schon in der Konfigurationsdatei /etc/updatedb.conf ausgenommen. 
+Kommentare zu locate befinden sich weiter oben in diesem Text unter der Frage "Mit welchem Befehl kann man Dateien im Filesystem finden?"
+
+
+Welche Datei enthält eine Übersicht über alle im System verfügbaren Gruppen?
+
+Die richtige Antwort:
+/etc/group
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Verzeichnisse müssen in einem Linux-System unter dem Root-Dateisystem vorhanden sein?
+
+Die richtigen Alternativen lauten:
+/lib
+/sbin
+/bin
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Auch wenn es vielleicht manche wundert: /home und /root sind laut FHS (Filesystem Hierarchy Standard) nicht zwingend vorgeschrieben sondern nur optional. Allerdings gibt es wohl kaum eine Distribution in der sie fehlen.
+
+
+In einem Verzeichnis mit dem lokalen Pfad "projekt" sollen alle Dateien mit der Endung ".o" und der Endung "~" gelöscht werden. Welches der folgenden Kommandos erledigen dies?
+
+Die richtigen Alternativen lauten:
+find projekt -name "*.o" -o -name "*~" -exec rm {} \;
+find projekt -name "*.o" -o -name "*~" | xargs rm
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Die Variante mit xargs hat einen Vorteil gegenüber der Variante mit "-exec", denn mit xargs wird einmal für alle gefundenen Dateien der rm-Prozess aufgerufen, während im anderen Fall jedesmal ein rm-Prozess aufgerufen wird.
+
+
+Man möchte in einem Verzeichnis "books" alle Dateien, die innerhalb der letzten 24 Stunden geändert (nur inhaltliche Änderungen, kein chmod, chown, etc ist gewünscht) wurden, als bzip2-Datei speichern. Welche der folgenden Kommandofolgen liefert das gewünschte Ergebnis?
+
+Die richtige Antwort:
+tar cvjf new.tbz2 `find books -mtime 0 -a -type f`
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Die Option z komprimiert nicht im bzip2-Format, sondern im gzip-Format, weshalb die 2. und die 3. Alternative ausfallen. Die 3. und 4. Alternative ist auch falsch, weil der Parameter bei mtime bzw. bei ctime 1 ist, was einem Zeitraum zwischen 24 und 48 Stunden definiert. ctime ist auch nicht korrekt, weil es nicht nur die Änderungen der Dateiinhalte, sondern auch Dateien deren Besitzverhältnisse, Zugriffsrechte, Gruppenzugehörigkeit oder andere Daten des Inodes sich geändert haben. atime in der letzten Alternative beinhaltet ctime und liefert deshalb nicht das gewünschte Ergebnis.
+
+
+_______________________________________________________________________
+
+
+
+Was bewirkt in der Bash-Shell das Drücken von <Strg>+<Z> (control-Z) bei einem laufenden Programm?
+ Das im Vordergrund laufende Programm wird unterbrochen.
+ An das im Vordergrund laufende Programm wird ein SIGTSTP-Signal geschickt, was eine Unterbrechung des Programms bewirkt.
+ Ein im Vordergrund laufendes Programm wird in den Hintergrund geschickt.
+ Der Benutzer wird aus der laufenden Shell abgemeldet.
+
+Was bewirkt das Et-Zeichen (&), wenn es am Ende einer Eingabezeile in der Bash steht?
+ Es bewirkt, dass der Prozess im Vordergrund läuft.
+ Damit wird der vor dem Et-Zeichen stehende Proszess im Hintergrund ablaufen.
+ Es sagt der Shell, dass das Kommando auf der nächsten Zeile fortgesetzt werden wird.
+ Das Et-Zeichen sollte nie am Ende einer Zeile stehen, sondern immer zwischen zwei Kommandos.
+
+Mit welcher Zeichenfolge schickt man ein von einem Terminal aus im Vordergrund gestartetes Programm in den Hintergrund?
+ <Strg>+<Z> und anschließende Eingabe von bg
+ <Strg>+<C> und anschließende Eingabe von bg
+ <Strg>+<B> und anschließende Eingabe von bg
+ <Strg>+<D> und anschließende Eingabe von bg
+
+Mit welchem Kommando holt man einen im Hintergrund laufenden Prozess wieder in den Vordergrund?
+ 
+
+Mit welchem der folgenden Kommandos beendet man einen Prozess mit der Nummer 4711 ohne ihm zu erlauben sich ordentlich zu beenden.
+ kill 4711
+ kill -1 4711
+ kill -9 4711
+ kill -15 4711
+
+Welches Signal wird mit "kill" verschickt, wenn kill ohne weitere Optionen aufgerufen wird, d.h. keine Signal angegeben wird? (Bitte die Nummer und nicht den Signalnamen angeben.)
+ 
+
+Mit dem "kill -9"-Kommando wird folgendes Signal an einen laufenden Prozess geschickt:
+ SIGHUP
+ SIGKILL
+ SIGTERM
+ SIGQUIT
+
+Mit welchem Kommando kann man sich die Prozesse in einer baumartigen Struktur darstellen lassen? (Nur einen Kommandonamen ohne Pfad und ohne Optionen angeben)
+ 
+
+Welche der folgenden kill-Kommandos sind alternative Schreibweisen zu "kill -9"?
+ kill -s SIGKILL
+ kill -KILL
+ kill -i 
+ kill -NOW
+
+Welches Signal wird mit "kill" verschickt, wenn kill ohne weitere Optionen aufgerufen wird, d.h. keine Signal angegeben wird? (Bitte den Signalnamen und nicht die Nummer angeben.)
+ 
+
+Mit welchem Kommando kann man die Priorität eines bereits gestarteten Prozesses ändern?
+ priority
+ renice
+ nice
+ ps
+ top
+
+Was bewirkt das folgende Kommando
+renice +1 4711 -u freddy root -p 42 ?
+
+ Der Prozess mit der PID 4711 wird auf die Priorität 1 gesetzt und der Besitzer wird von freddy auf root geändert. Die maximale Laufzeit wird auf 42 Sekunden gesetzt.
+ Die Priorität der Prozesse mit den PIDs 4711 und 42 werden auf 1 gesetzt, ebenso wie alle Prozesse der Benutzer freddy und root.
+ Die Priorität der Prozesse mit den PIDs 4711 und 42 werden auf 1 gesetzt, falls die Prozesse entweder dem Benutzer freddy oder dem Benutzer root gehören.
+ Die Priorität der Prozesse mit den PIDs 4711 und 42 werden auf 1 gesetzt, und der Besitzer wird von freddy auf root geändert.
+
+Was bewirkt das Kommando
+kill -15 4711 9 ?
+
+ Die Prozesse 4711 und 9 bekommen das SIGKILL-Kommando geschickt.
+ Die Prozesse 4711 und 9 bekommen das SIGTERM-Kommando geschickt.
+ Der Prozess 4711 erhält nach 9 Sekunden das SIGKILL-Kommando geschickt.
+ Der Prozess 4711 erhält nach 9 Sekunden das SIGTERM-Kommando geschickt.
+
+Welche der folgenden Aussagen bzgl. des init-Prozesses ist richtig?
+ Bei dem init-Prozess handelt es sich um den ersten vom Kernel gestarteten Prozess.
+ Der init-Prozess hat die PID 1 und ist der Vorfahre von allen anderen Prozessen.
+ Der init-Prozess hat die PID 0 und ist der Vorfahre von allen anderen Prozessen.
+ Der init-Prozess ist der Prozess, der den Kernel startet.
+
+Welche der folgenden Aussagen bzgl. Elternprozesse ist wahr?
+ Unter dem Elternprozess eines Prozesses versteht man den Prozess, der ihn geschaffen hat.
+ Unter dem Elternprozess eines Prozesses versteht man den Prozess, der eine um eins kleinere Prozessnummer hat.
+ Jeder Prozess hat einen Elternprozess mit einer eindeutigen PID.
+ Es gibt mindestens einen Prozess, der keinen Elternprozess hat.
+ Wenn ein Elternprozess eines Programmes x aufhört zu existieren, wird automatisch der init-Prozess zum Elternprozess des Programmes x.
+
+Was bewirkt der top-Befehl?
+ top druckt per Default die ersten 20 Zeilen einer Datei aus.
+ Das top-Kommando druckt die 10 Prozesse aus, welche die meiste Rechenzeit verbraucht haben.
+ top zeigt eine Prozessliste an, die alle paar Sekunden aktualisiert wird. 
+ Die Programme, die als letztes aktiv waren, erscheinen ganz oben in der Liste.
+
+Mit welchem Kommando kann man Prozesse beenden?
+ kill
+ renice
+ ps
+ top
+
+Wie kann man mit pstree sowohl den Prozess-Namen als auch die PID ausgeben lassen?
+ pstree gibt per Default beides aus.
+ Mit der Option -p
+ Durch Angabe der Option -c
+
+Was ist die Ausgabe von ps ohne Parameter?
+ Alle Prozesse, aber nur die Namen und keine PID oder Benutzer-Angaben
+ ps zeigt ohne Optionen nur die eigenen Prozesse des Benutzers, aber nur die, die aus Textkonsolen bzw. Shell-Fenstern gestartet
+ ps zeigt ohne Optionen nur die eigenen Prozesse des Benutzer
+
+Welche Art von Optionen kennt das ps-Kommando?
+ UNIX-Optionen
+ BSD-Optionen
+ Lang-Optionen von GNU
+
+Was bewirkt die Option -h beim pstree-Kommando?
+ Wie auch bei anderen Kommandos üblich, erhält man einen Hilfe-Text zum Kommando.
+ Mit "pstree -h" werden die Elternpfade zum gerade laufenden Prozess durch Fettdruck hervorgehoben.
+ Es gibt keine Option -h beim pstree-Kommando
+
+Mit welcher Option, kann man sich mittels ps auch Prozesse anzeigen lassen, die keinem Terminal zugeordnet sind, also interne Prozesse zur Systemverwaltung (Daemons)?
+ -u
+ x
+ -x
+ u
+ -i
+
+Mit welchem Kommando lassen sich alle Hintergrundprozesse der aktiven Shell anzeigen?
+ 
+
+Wie kann man sich beim hobs-Kommando auch die Prozess-ID anzeigen lassen?
+ Die wird immer mit angezeigt.
+ mit der Option -l
+ mit der Option -p
+
+Was bewirkt das Kommando "kill %9"?
+ Hier kann es sich wohl nur um einen Schreibfehler handeln und "kill -9" ist gemeint
+ Alle Prozesse, die bis zu 9 Prozen der Prozessorleistung beanspruchen werden gestoppt.
+ Der 9. im Hintergrund laufende Job wird beendet.
+
+Welche Signale können von Prozessen nicht abgefangen werden?
+ SIGHUB
+ SIGTRAP
+ SIGKILL
+ SIGINT
+ SIGSTOP
+ SIGTERM
+
+Mit welchem Befehl erreicht man, dass ein Hintergrundprozess nach dem Ende seines Elternprozesses selbständig weiterexistiert.
+ 
+
+Welche der folgenden Kommandos senden ein SIGTERM zu dem Prozess mit der PID 1001?
+ kill 1001
+ kill -15 1001
+ kill -SIGTERM 1001
+ kill -sigterm 1001
+ kill -TERM 1001
+ kill -s 15 1001
+ kill -s SIGTERM 1001
+
+Was versteht man unter einem Zombie?
+ Das ist ein Prozess, der beim ps-Kommando als <defunct> eingetragen ist.
+ Das ist ein Prozess, der beim Beenden hängen geblieben ist und nicht mehr ansprechbar ist.
+ Einen Zombie kann man mittels "kill -9 <PID>" abscchießen.
+
+
+Was bewirkt in der Bash-Shell das Drücken von <Strg>+<Z> (control-Z) bei einem laufenden Programm?
+
+Die richtigen Alternativen lauten:
+Das im Vordergrund laufende Programm wird unterbrochen.
+An das im Vordergrund laufende Programm wird ein SIGTSTP-Signal geschickt, was eine Unterbrechung des Programms bewirkt.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Ein im Vordergrund laufendes Programm kann <Strg>+<Z> zuerst unterbrochen und dann durch Eingabe von "bg <ENTER>" in den Hintergrund geschickt werden.
+
+
+Was bewirkt das Et-Zeichen (&), wenn es am Ende einer Eingabezeile in der Bash steht?
+
+Die richtige Antwort:
+Damit wird der vor dem Et-Zeichen stehende Proszess im Hintergrund ablaufen.
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welcher Zeichenfolge schickt man ein von einem Terminal aus im Vordergrund gestartetes Programm in den Hintergrund?
+
+Die richtige Antwort:
+<Strg>+<Z> und anschließende Eingabe von bg
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welchem Kommando holt man einen im Hintergrund laufenden Prozess wieder in den Vordergrund?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "fg"
+
+Kommentar: 
+Wenn mehrere Prozesse im Hintergrund laufen, wird der Job in den Vordergrund gebracht, der zuletzt in den Hintergrund geschickt worden war.
+
+
+Mit welchem der folgenden Kommandos beendet man einen Prozess mit der Nummer 4711 ohne ihm zu erlauben sich ordentlich zu beenden.
+
+Die richtige Antwort:
+kill -9 4711
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches Signal wird mit "kill" verschickt, wenn kill ohne weitere Optionen aufgerufen wird, d.h. keine Signal angegeben wird? (Bitte die Nummer und nicht den Signalnamen angeben.)
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "15"
+
+Mit dem "kill -9"-Kommando wird folgendes Signal an einen laufenden Prozess geschickt:
+
+Die richtige Antwort:
+SIGKILL
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Das SIGHUP-Signal entspricht der Option "-1" des Kill-Kommandos. Dieses Signal stoppt einen laufenden Prozess und führt anschließend einen Neustart des Prozesses durch. SIGTERM entspricht der Option "-15" des Kill-Kommandos. Dieses Signal erlaubt einem Prozess sich "ordentlich" zu beenden, d.h. ein Prozess kann gegebenenfalls notwendige Aufräumarbeiten durchführen.
+
+
+Mit welchem Kommando kann man sich die Prozesse in einer baumartigen Struktur darstellen lassen? (Nur einen Kommandonamen ohne Pfad und ohne Optionen angeben)
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "pstree"
+
+Kommentar: 
+"ps -afx" oder "ps -eH" geben die Prozesse auch in einer baumartigen Struktur aus, aber dies war nach der Fragestellung nicht gefragt.
+
+
+Welche der folgenden kill-Kommandos sind alternative Schreibweisen zu "kill -9"?
+
+Die richtigen Alternativen lauten:
+kill -s SIGKILL
+kill -KILL
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welches Signal wird mit "kill" verschickt, wenn kill ohne weitere Optionen aufgerufen wird, d.h. keine Signal angegeben wird? (Bitte den Signalnamen und nicht die Nummer angeben.)
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "SIGTERM"
+
+Mit welchem Kommando kann man die Priorität eines bereits gestarteten Prozesses ändern?
+
+Die richtigen Alternativen lauten:
+renice
+top
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Ein Feature, was häufig nicht bekannt ist: top nimmt auch interaktiv Kommandos entgegen. Die Eingabe von "r" (renice) bewirkt, dass man aufgefordert wird (PID to renice:) eine PID eines Prozesses anzugeben, der eine neue Priorität erhalten soll. Danach kann man den neuen Wert eingeben.
+
+
+Was bewirkt das folgende Kommando
+renice +1 4711 -u freddy root -p 42 ?
+
+
+Die richtige Antwort:
+Die Priorität der Prozesse mit den PIDs 4711 und 42 werden auf 1 gesetzt, ebenso wie alle Prozesse der Benutzer freddy und root.
+
+Sie hatten die Frage nicht beantwortet!
+
+Was bewirkt das Kommando
+kill -15 4711 9 ?
+
+
+Die richtige Antwort:
+Die Prozesse 4711 und 9 bekommen das SIGTERM-Kommando geschickt.
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Aussagen bzgl. des init-Prozesses ist richtig?
+
+Die richtigen Alternativen lauten:
+Bei dem init-Prozess handelt es sich um den ersten vom Kernel gestarteten Prozess.
+Der init-Prozess hat die PID 1 und ist der Vorfahre von allen anderen Prozessen.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden Aussagen bzgl. Elternprozesse ist wahr?
+
+Die richtigen Alternativen lauten:
+Unter dem Elternprozess eines Prozesses versteht man den Prozess, der ihn geschaffen hat.
+Es gibt mindestens einen Prozess, der keinen Elternprozess hat.
+Wenn ein Elternprozess eines Programmes x aufhört zu existieren, wird automatisch der init-Prozess zum Elternprozess des Programmes x.
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Der init-Prozess hat keinen Elternprozess. Insofern ist auch die Alternative 2 falsch, da der init-Prozess keinen Vorfahren hat, sondern direkt aus dem Kernel gestartet worden ist.
+
+
+Was bewirkt der top-Befehl?
+
+Die richtigen Alternativen lauten:
+top zeigt eine Prozessliste an, die alle paar Sekunden aktualisiert wird.
+Die Programme, die als letztes aktiv waren, erscheinen ganz oben in der Liste.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Kommando kann man Prozesse beenden?
+
+Die richtigen Alternativen lauten:
+kill
+top
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Ein feature, was häufig nicht bekannt ist: top nimmt auch interaktiv Kommandos entgegen. Die Eingabe von "k" (Kill) bewirkt, dass man aufgefordert wird (PID to kill:) eine PID eines Prozesses anzugeben, der beendet werden soll. Danach wird man aufgefordert "Kill PID 8377 with signal [15]:" den Signal-Wert einzugeben. Der Default ist 15.
+
+
+Wie kann man mit pstree sowohl den Prozess-Namen als auch die PID ausgeben lassen?
+
+Die richtige Antwort:
+Mit der Option -p
+
+Sie hatten die Frage nicht beantwortet!
+
+Was ist die Ausgabe von ps ohne Parameter?
+
+Die richtigen Alternativen lauten:
+ps zeigt ohne Optionen nur die eigenen Prozesse des Benutzers, aber nur die, die aus Textkonsolen bzw. Shell-Fenstern gestartet
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Welche Art von Optionen kennt das ps-Kommando?
+
+Die richtigen Alternativen lauten:
+UNIX-Optionen
+BSD-Optionen
+Lang-Optionen von GNU
+Keine der 3 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+UNIX-Optionen können zusammengefasst werden. Diesen Optionen muss ein "-"-Zeichen vorangestellt werden. 
+BSD-Optionen darf kein Minus-Zeichen vorangestellt werden, können aber auch wie Unix-Optionen zusammengefasst werden.
+Lang-Optionen von GNU werden von zwei Minuszeichen eingeleitet.
+
+
+Was bewirkt die Option -h beim pstree-Kommando?
+
+Die richtige Antwort:
+Mit "pstree -h" werden die Elternpfade zum gerade laufenden Prozess durch Fettdruck hervorgehoben.
+
+Sie hatten die Frage nicht beantwortet!
+
+Mit welcher Option, kann man sich mittels ps auch Prozesse anzeigen lassen, die keinem Terminal zugeordnet sind, also interne Prozesse zur Systemverwaltung (Daemons)?
+
+Die richtigen Alternativen lauten:
+x
+-x
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Kommando lassen sich alle Hintergrundprozesse der aktiven Shell anzeigen?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "jobs"
+
+Kommentar: 
+Die Optionen des jobs-Kommandos:
+-l: zusätzliche Anzeigen der PID
+-n: Nur Prozesse anzeigen, deren Status sich seit dem letzten Aufruf von jobs geändert hat
+-p: Nur die PIDs anzeigen
+-r: Nur aktive Prozesse anzeigen, d.h. die Prozesse, die im Hintergrund laufen (Status: running) und nicht gestoppt sind (Status: stopped)
+-s: Nur gestoppte Prozesse anzeigen.
+
+
+Wie kann man sich beim hobs-Kommando auch die Prozess-ID anzeigen lassen?
+
+Die richtige Antwort:
+mit der Option -l
+
+Sie hatten die Frage nicht beantwortet!
+
+Was bewirkt das Kommando "kill %9"?
+
+Die richtige Antwort:
+Der 9. im Hintergrund laufende Job wird beendet.
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+In der Bash-Shell werden die Hintergrundjobs mittels "%1, %2, %3 ..." gezählt.
+
+
+Welche Signale können von Prozessen nicht abgefangen werden?
+
+Die richtigen Alternativen lauten:
+SIGKILL
+SIGSTOP
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Mit welchem Befehl erreicht man, dass ein Hintergrundprozess nach dem Ende seines Elternprozesses selbständig weiterexistiert.
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "nohup"
+
+Kommentar: 
+Ein von nohup gestartete Kommando arbeitet unabhängig von der aktiven Shell, ein so gestartetes Kommando läuft auch nach dem Beenden der Shell (logout) weiter. Die Ausgaben von nohup werden in eine Datei nohup.out im aktuellen Verzeichnis umgeleitet. Kann nohup diese im aktuellen Verzeichnis nicht erzeugen, wird sie im Home-Verzeichnis angelegt. Falls nohup kein nohup.out anlegen kann, beendet es seine Tätigkeit vorzeitig.
+
+
+Welche der folgenden Kommandos senden ein SIGTERM zu dem Prozess mit der PID 1001?
+
+Die richtigen Alternativen lauten:
+kill 1001
+kill -15 1001
+kill -SIGTERM 1001
+kill -sigterm 1001
+kill -TERM 1001
+kill -s 15 1001
+kill -s SIGTERM 1001
+Keine der 7 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Kaum vorstellbar, aber es ist wirklich so: Alle diese Alternativen sind richtig!
+
+
+Was versteht man unter einem Zombie?
+
+Die richtigen Alternativen lauten:
+Das ist ein Prozess, der beim ps-Kommando als <defunct> eingetragen ist.
+Das ist ein Prozess, der beim Beenden hängen geblieben ist und nicht mehr ansprechbar ist.
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Ein Zombie unter Linux ist ähnlich den Untoten der Horrorfilme ein Prozess, der nicht mehr "lebt", weil er schon beendet wurde, aber dennoch als nicht mehr ansprechbarer Prozess im System "rumgeistert". Wie die Monster in den Genre-Filmen, lassen sich Zombies in der Shell auch nicht töten (mittels kill), da sie ja eigentlich schon tot sind.
+
+
+
+___________________________________________________
+
+
+
+
+Welcher Befehl entspricht dem Aufruf man -k?
+ 
+
+Welche Option von 'man' zeigt nicht die Manualseiten, sondern die Position der Dateien im Dateisystem an?
+ -w
+ -p
+ -l
+ -o
+
+Welches Kommando entspricht dem Aufruf man -f?
+ 
+
+Welche Sektion der Man-Pages enthält Informationen über Kernel-Fehler?
+ 1
+ 2
+ 7
+ 9
+
+In welcher Sektion der Man-Pages gibt es Informationen über Benutzer-Kommandos?
+ 1
+ 2
+ 7
+ 9
+
+Welche Datenbank durchsuchen die Kommandos whatis und apropos?
+ whatis-Datenbank
+ apropos-Datenbank
+ man-Datenbank
+ man-Dateien
+
+Wie verhält sich man defaultmäßig, wenn es in verschiedenen Abschnitten der Manualseiten Einträge mit gleichen Namen gibt?
+ Wird eine Manualseite in einem Abschnitt gefunden, so terminiert man nach Anzeigen dieser Seite.
+ Es werden immer alle Einträge ausgegeben
+
+Welche Umgebungsvariable bestimmt, wenn sie gesetzt ist, in welcher Reihenfolge die Abschnitte der Maualseiten von 'man' durchsucht werden?
+ 
+Welcher Befehl entspricht dem Aufruf man -k?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "apropos"
+
+Welche Option von 'man' zeigt nicht die Manualseiten, sondern die Position der Dateien im Dateisystem an?
+
+Die richtige Antwort:
+-w
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches Kommando entspricht dem Aufruf man -f?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "whatis"
+
+Welche Sektion der Man-Pages enthält Informationen über Kernel-Fehler?
+
+Die richtige Antwort:
+2
+
+Sie hatten die Frage nicht beantwortet!
+
+In welcher Sektion der Man-Pages gibt es Informationen über Benutzer-Kommandos?
+
+Die richtige Antwort:
+1
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche Datenbank durchsuchen die Kommandos whatis und apropos?
+
+Die richtige Antwort:
+whatis-Datenbank
+
+Sie hatten die Frage nicht beantwortet!
+
+Wie verhält sich man defaultmäßig, wenn es in verschiedenen Abschnitten der Manualseiten Einträge mit gleichen Namen gibt?
+
+Die richtige Antwort:
+Wird eine Manualseite in einem Abschnitt gefunden, so terminiert man nach Anzeigen dieser Seite.
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Die Einträge aller Abschnitte für einen Befehl werden bei man angezeigt, wenn man man mit der Option '-a' bzw. '--all' aufruft.
+
+
+Welche Umgebungsvariable bestimmt, wenn sie gesetzt ist, in welcher Reihenfolge die Abschnitte der Maualseiten von 'man' durchsucht werden?
+
+Sie hatten keine Antwort angegeben! Die Antwort lautet: "MANSECT"
+
+Kommentar: 
+Ist MANSECT nicht gesetzt, ist die Default-Reihenfolge wie folgt bestimmt: 1:8:2:3:4:5:6:7:9:tcl:n:l:p:o
+
+
+___________________________________________________
+
+Mit welchem Kommando kann man in einem laufenden System in den Einbenutzermodus (single user mode) wechseln?
+ telinit 1
+ init 0
+ init 1
+ single
+ runlevel 1
+
+Welcher der folgenden Namen bezeichnet keinen Bootloader?
+ GRUB
+ LILO
+ NTLDR
+ GRAB
+
+Wann muss Lilo neu initialisiert werden?
+ Wenn einer neuer Kernel installiert wurde
+ Nach jeder Änderung in der Konfigurationsdatei des Lilo
+ Wenn zwischenzeitlich ein anderes Betriebssystem gestartet worden ist.
+ Lilo muss nur einmal mit der Installation initialisiert werden. Danach nicht mehr
+
+Wann muss Grub neu initialisiert werden?
+ Wenn einer neuer Kernel mit einer neuen Versionsnummer installiert wurde
+ Nach einer Änderung in der Konfigurationsdatei des Grub
+ Wenn zwischenzeitlich ein anderes Betriebssystem gestartet worden ist.
+ Grub muss nur einmal mit der Installation initialisiert werden. Danach nicht mehr
+
+Welche der folgenden Aussagen/Unterschiede zu LILO und GRUB treffen zu?
+ Während LILO nur Linux-Systeme booten kann, kann GRUB auch andere Betriebssysteme, wie beispielsweise Windows booten
+ Der Grub muss nur einmal z.B. bei der Systeminstallation mit grub-install installiert werden, während beim Lilo nach jeder Änderung in der Konfigurationsdatei mit dem Befehl lilo neu initialisiert werden muss.
+ Grub steht für Grand Unified Bootloader
+ Lilo steht für Linux Loader
+ Grub findet ohne genaue Positionsangaben Kerneldateien auf der Festplatte, während Lilo nur erfolgreich startet, wenn ihm die genaue Position des Kernels bekannt ist.
+ Nach einem Kernel-Update ist jedesmal ein Aufruf von Lilo (/sbin/lilo) notwendig, während bei Grub nur eine Aktualisierung der Konfigurationsdatei nötig ist.
+
+Die Konfigurationsdatei von Lilo befindet sich in 
+ /etc/lilo.conf
+ /boot/lilo/lilo.conf
+ /boot/lilo.conf
+ /etc/lilo/lilo.conf
+
+Welches der folgenden Kommandos führt zu einem Anhalten des Rechners (shutdown mit halt)
+ init 0
+ init 1
+ init 3
+ init 6
+
+Was geschieht in Runlevel 4?
+ Der Computer wird neu gestartet
+ Der Computer geht in den Mehrbenutzerbetrieb mit Netzwerk
+ Der Computer geht in den Mehrbenutzerbetrieb ohne Netzwerk
+ Dieses Runlevel wird normalerweise nicht verwendet
+
+Die Konfigurationsdatei vom Grub befindet sich in 
+ /etc/grub.conf
+ /boot/grub/grub.conf
+ /boot/grub.conf
+ /etc/grub/grub.conf
+
+Durch welche Datei wird das Verhalten der Tastenkombination <Strg>+<Alt>+<Entf> gesteuert? 
+ /etc/magic
+ /etc/keybinds
+ /etc/inittab
+ /etc/defkeymap.name
+
+Mit welchen Kommandos fährt man Linux im Textmodus herunter?
+ shutdown -h now
+ halt
+ init 0
+ poweroff
+
+Welche der folgenden Aussagen sind korrekt?
+ shutdown ruft halt auf und halt seinerseits benutzt den "init 0"-Prozess
+ halt ruft shutdown auf und shutdown seinerseits benutzt den "init 0"-Prozess
+ Der "init 0"-Prozess ruft sowohl "shutdown" als auch "halt" auf
+
+Man gibt das Kommando "runlevel" und erhält als Ergebnis die beiden Zahlen "1 5". Wie ist dieses Ergebnis zu interpretieren?
+ Das System befindet sich derzeit in Runlevel 5
+ Das System befindet sich derzeit in Runlevel 1
+ Der vorherige Runlevel war 5
+ Der vorherige Runlevel war 1
+
+Welches der folgenden Kommandos bewirkt einen Neustart des Rechners (shutdown mit reboot)
+ init 0
+ init 2
+ init 5
+ init 6
+
+Mit welcher Option muss man halt aufrufen, wenn man erzwingen will, dass ein halt ohne Aufruf von shutdown ausgeführt wird.
+ halt -f
+ halt -n
+ halt -i
+
+Welche PID hat der init-Prozess?
+ 0
+ 1
+ 2
+ immer verschieden, d.h. irgendeine gültige Prozessnummer
+ distributionsabhängig mal 0 mal 1
+
+Ein Benutzer führt den Befehl "runlevel" aus und erhält "3 5" als Antwort. Was bedeutet dies?
+ Es zeigt dem Benutzer, dass System nicht korrekt konfiguriert ist, da die beiden Zahlen übereinstimmen müssten.
+ Das System befindet sich im Runlevel 3, und die 5 stellt den Default-Wert dar.
+ Zu einem früheren Zeitpunkt hatte sich das System im Runlevel 3 befunden, befindet sich jetzt aber im Runlevel 5
+ Das System befindet sich im Runlevel 3 wird aber diesen in 5 Sekunden wegen eines Reboots verlassen.
+
+Was bewirkt die Eingabe von "linux 3" beim Lilo-Boot-Prompt?
+ Linux wird im Runlevel 3 gebootet
+ Linux wird im Runlevel 2 gebootet, da die Zählung hier bei Null beginnt.
+ Die dritte Version des Linux-Kernels wird gebootet.
+
+
+
+Mit welchem Kommando kann man in einem laufenden System in den Einbenutzermodus (single user mode) wechseln?
+
+Die richtigen Alternativen lauten:
+telinit 1
+init 1
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Mit dem Kommando runlevel kann man sich nur den aktuellen runlevel anzeigen lassen, aber man kann diesen nicht ändern.
+
+
+Welcher der folgenden Namen bezeichnet keinen Bootloader?
+
+Die richtige Antwort:
+GRAB
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Der NTLDR ist zwar ein Bootloader, aber keiner, der sich für das Booten eines Linux-Systems eignet.
+
+
+Wann muss Lilo neu initialisiert werden?
+
+Die richtige Antwort:
+Nach jeder Änderung in der Konfigurationsdatei des Lilo
+
+Sie hatten die Frage nicht beantwortet!
+
+Wann muss Grub neu initialisiert werden?
+
+Die richtige Antwort:
+Grub muss nur einmal mit der Installation initialisiert werden. Danach nicht mehr
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche der folgenden Aussagen/Unterschiede zu LILO und GRUB treffen zu?
+
+Die richtigen Alternativen lauten:
+Der Grub muss nur einmal z.B. bei der Systeminstallation mit grub-install installiert werden, während beim Lilo nach jeder Änderung in der Konfigurationsdatei mit dem Befehl lilo neu initialisiert werden muss.
+Grub steht für Grand Unified Bootloader
+Lilo steht für Linux Loader
+Grub findet ohne genaue Positionsangaben Kerneldateien auf der Festplatte, während Lilo nur erfolgreich startet, wenn ihm die genaue Position des Kernels bekannt ist.
+Nach einem Kernel-Update ist jedesmal ein Aufruf von Lilo (/sbin/lilo) notwendig, während bei Grub nur eine Aktualisierung der Konfigurationsdatei nötig ist.
+Keine der 5 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Wird ein Kernel durch einen neuen Kernel überschrieben, bracht bei Grub noch nicht einmal die Konfigurationsdatei geändert zu werden, aber bei Lilo ist der Aufruf von /sbin/lilo notwendig.
+
+
+Die Konfigurationsdatei von Lilo befindet sich in 
+
+Die richtige Antwort:
+/etc/lilo.conf
+
+Sie hatten die Frage nicht beantwortet!
+
+Welches der folgenden Kommandos führt zu einem Anhalten des Rechners (shutdown mit halt)
+
+Die richtigen Alternativen lauten:
+init 0
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Was geschieht in Runlevel 4?
+
+Die richtigen Alternativen lauten:
+Dieses Runlevel wird normalerweise nicht verwendet
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Die Konfigurationsdatei vom Grub befindet sich in 
+
+Die richtige Antwort:
+/boot/grub/grub.conf
+
+Sie hatten die Frage nicht beantwortet!
+
+Durch welche Datei wird das Verhalten der Tastenkombination <Strg>+<Alt>+<Entf> gesteuert? 
+
+Die richtige Antwort:
+/etc/inittab
+
+Sie hatten die Frage nicht beantwortet!
+
+Kommentar: 
+Auch wenn der Name irgendwie vertraut klingt, es gibt (normalerweise) keine Datei "/etc/keybinds"
+
+
+Mit welchen Kommandos fährt man Linux im Textmodus herunter?
+
+Die richtigen Alternativen lauten:
+shutdown -h now
+halt
+init 0
+poweroff
+Keine der 4 korrekten Alternativen wurde angekreuzt!
+
+Welche der folgenden Aussagen sind korrekt?
+
+Die richtige Antwort:
+halt ruft shutdown auf und shutdown seinerseits benutzt den "init 0"-Prozess
+
+Sie hatten die Frage nicht beantwortet!
+
+Man gibt das Kommando "runlevel" und erhält als Ergebnis die beiden Zahlen "1 5". Wie ist dieses Ergebnis zu interpretieren?
+
+Die richtigen Alternativen lauten:
+Das System befindet sich derzeit in Runlevel 5
+Der vorherige Runlevel war 1
+Keine der 2 korrekten Alternativen wurde angekreuzt!
+
+Kommentar: 
+Hat man nach dem Booten nicht das Runlevel geändert, erhält man für die erste Zahl ein N. Unter Debian und Ubuntu besteht die Ausgabe von "runlevel" aus "N 2", falls man das Runlevel nicht geändert hat.
+
+
+Welches der folgenden Kommandos bewirkt einen Neustart des Rechners (shutdown mit reboot)
+
+Die richtigen Alternativen lauten:
+init 6
+Keine der 1 korrekten Alternativen wurde angekreuzt!
+
+Mit welcher Option muss man halt aufrufen, wenn man erzwingen will, dass ein halt ohne Aufruf von shutdown ausgeführt wird.
+
+Die richtige Antwort:
+halt -f
+
+Sie hatten die Frage nicht beantwortet!
+
+Welche PID hat der init-Prozess?
+
+Die richtige Antwort:
+1
+
+Sie hatten die Frage nicht beantwortet!
+
+Ein Benutzer führt den Befehl "runlevel" aus und erhält "3 5" als Antwort. Was bedeutet dies?
+
+Die richtige Antwort:
+Zu einem früheren Zeitpunkt hatte sich das System im Runlevel 3 befunden, befindet sich jetzt aber im Runlevel 5
+
+Sie hatten die Frage nicht beantwortet!
+
+Was bewirkt die Eingabe von "linux 3" beim Lilo-Boot-Prompt?
+
+Die richtige Antwort:
+Linux wird im Runlevel 3 gebootet
+
+Sie hatten die Frage nicht beantwortet!
+

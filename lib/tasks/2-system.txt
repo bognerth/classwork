@@ -1,0 +1,1352 @@
+#-*- encoding: utf-8 -*-
+@;0;Welche moderne Alternative ergänzt die Prozesse?
+0;Swap-Partitionen
+1;Threads
+0;Dienste
+0;Gerätetreiber
+@;0;Welche Datenbank durchsuchen die Kommandos whatis und apropos?
+1;whatis-Datenbank
+0;apropos-Datenbank
+0;man-Datenbank
+0;man-Dateien
+@;0;Mit welchem Kommando fügt man den Inhalt des Puffers (buffer) vor der aktuellen Zeile im vi ein?
+0;A
+1;P
+0;X
+0;Q
+@;0;Welches der folgenden Kommandos liefert Informationen über die Größe der Dateien im aktuellen Verzeichnis?
+1;ls -l
+0;ls
+0;ls -a
+0;ls -S
+@;0;Welches der folgenden Skripte druckt den Text "Linux ist toll!" aus?
+0;text="Windows ist ...?"; ( text="Linux ist toll"); echo "$text"
+0;text="Windows ist ...?"; ( export text="Linux ist toll"); echo "$text"
+1;text="Windows ist ...?"; { text="Linux ist toll"; }; echo $text
+0;text="Windows ist ...?"; { export text="Linux ist toll"; }; echo text
+@;0;Will man interaktiv eine Eingabe vom Benutzer eines Shellskriptes erhalten und diese in der Variablen EINGABE speichern, so kann man folgendes Kommando verwenden:
+0;read $EINGABE
+0;input $EINGABE
+1;read EINGABE
+0;input EINGABE
+0;get EINGABE
+@;0;Geben Sie das Kommando ein, mit dem man 3 Textzeilen im vi löscht:
+0;3a
+0;3d
+1;3dd
+0;3da 
+@;0;Mit welchem Kommando fügt man den Inhalt des Puffers (buffer) hinter der aktuellen Zeile im vi ein?
+0;r
+0;a
+1;p
+0;pp 
+@;0;Was bewirkt das Kommando ": > Smiley"
+0;Kommando ist fehlerhaft, sollte ":-> Smiley" lauten.
+1;Falls die Datei "Smiley" existiert wird sie gelöscht und hat danach die Länge 0
+0;Vor dem Doppelpunkt fehlt noch ein Shell-Befehl
+@;0;Welches ist die Defaul-Shell bei Linux-Systemen?
+0;rsh
+1;bash
+0;sh
+0;csh
+@;0;Mit welchem Kommando stellt man die Bourne-Again-Shell als Default-Shell ein?
+0;change -s /bin/bash
+0;chng -c /bin/bash
+0;nsh -s /bin/bash
+1;chsh -s /bin/bash
+@;0;Welche Datei enthält die im System vorhanden Shells?
+1;/etc/shells
+0;/etc/shell
+0;/etc/shells/all
+0;/etc/passwd
+@;0;Mit welchem Trennzeichen werden mehrere Kommandos in einer Kommandozeile verknüpft?
+0;Doppelpunkt
+1; Semikolon
+0;Pipe
+0;Backslash
+@;0;Welchen Editor benutzt die GNU Readline Library per Default?
+0;nano
+1;emacs
+0;pico
+0;vi
+0;ed
+@;0;Welche Datei wird benutzt, um die Default-Shell eines Benutzer festzulegen?
+1;/etc/passwd
+0;/etc/skel
+0;/etc/profile
+0;/etc/bashrc
+@;0;Wie sieht das korrekte Format für die Eingabe einer Kommandozeile in der Kommandoshell aus?
+0;Kommandoname
+0;Kommandoname Optionen
+0;Kommandoname Argumente Optionen
+1;Kommandoname Optionen Argumente
+@;0;Mit welcher Tastenkombination kann man eine Kommandozeile in der nächsten Zeile fortsetzen?
+1;Backslash + Eingabetaste
+0;Slash + Eingabetaste
+0;Tab Eingabetaste
+0;+ Eingabetaste
+@;0;Man befindet sich in der Bash-Shell und möchte in eine C-Shell wechseln. Dies ist durch Eingabe des folgendnen Kommandos auf der Kommandozeile möglich:
+1;csh
+0;/etc/csh
+0;chsh -s /usr/bin/csh
+0;start csh
+@;0;Welches Kommando liefert keine Information darüber, in welcher Shell man sich gerade befindet?
+0;echo $0
+0;echo $SHELL
+1;echo $BASH
+@;0;Mit welchem Kommnado kann man sich alle in einer Bash-Shell definierten Variablen anzeigen lassen?
+1;set
+0;env
+0;export -p
+0;showenv
+@;0;Mit welchem Kommando kann man sich die aktuellen Keyboard bindings anschauen?
+0;keys -v
+0;bind -keyboard
+1;bind -v
+0;display -keys
+@;0;Wie macht man die Variable BEISPIEL zu einer globalen Variablen in der Bash?
+1;export BEISPIEL
+0;declare -i BEISPIEL
+0;env BEISPIEL
+0;set BEISPIEL
+@;0;Welche Datei enthält bei einem System mit der Bash-Shell die systemweiten Variablen-Definitionen?
+0;/home/.profile
+1;/etc/profile
+0;/etc/bash
+0;/etc/bashrc
+@;0;Mit welchem Kommando kann man als Root das Passwort eines Benutzers boris ändern?
+0;chpassword boris
+1;passwd boris
+0;password boris
+0;password --new boris
+@;0;Ein Skript oder Programm, welches sich nicht im aktuellen Verzeichnis befindet kann auf verschiedene Arten gestartet werden:
+0;Durch Angabe des vollständigen Dateinamens
+1;durch einfache Nennung des Skriptnamens, wenn der zugehörige Pfad in der Umgebungsvariablen $PATH enthalten ist.
+0;durch einfache Nennung des Skriptnamens, wenn der zugehörige Pfad in der Datei /etc/progs definiert wurde.
+0;Programme können überall im Dateisystem stehen, denn das System findet sie automatisch
+@;0;Wann kann ein Kommando, welches auf der Kommandozeile eingegeben wird von der Bash-Shell gefunden und interpretiert werden?
+1;Wenn es sich um ein eingebautes (built-in) Kommando handelt.
+0;Wenn es ein ausführbares Programm ist, welches sich im aktuellen Verzeichnis befindet.
+0;Wenn es ein sich im Homeverzeichnis befindliches Programm handelt. 
+@;0;Mit welchem Kommnado kann man sich alle in einer Bash-Shell exportierten Variablen anzeigen lassen?
+0;set
+1;env
+0;showenv
+0;declare -p
+@;0;Welche der folgenden Aussagen ist nicht korrekt?  Wenn eine .profile-Datei im Home-Verzeichnis eines Nutzers exisitert, dann wird diese und nicht die Datei /etc/profile beim Login ausgeführt.
+0;Beim Start einer Login-Bash-Shell werden die Dateien ~/.bash_profile, ~/.bash_login und ~/.bash_login ausgeführt.
+1;Beim Start einer Login-Bash-Shell wird nur eine der Dateien ~/.bash_profile, ~/.bash_login und ~/.bash_login ausgeführt.
+0;Exisitiert die Datei ~/.bash_profile so wird diese immer beim Start einer Login-Shell ausgeführt.
+@;0;Das Aussehen des Login-Promptes wird durch folgende Umgebungsvariable bestimmt:
+0;PROMPT
+0;LOGIN
+1;PS1
+0;IP1
+@;0;Wie weist man der Variablen VAL den Wert 42 in der Bash-Shell zu?
+0;set VAL=42
+0;let VAL = 42
+1;VAL=42
+0;VAL = 42
+@;0;Die Umgebungsvariable PS1 steht für
+0;den Post-Script mit der Nummer 1
+1;Prompt String 1
+0;P-Shell 1
+0;PostScript, Release 1
+@;0;Was passiert bei folgender Kommandofolge: dir=ls; $dir; in der Bash-Shell?
+0;Der Wert der Variablen ls wird einer Variablen dir zugeordnet und dann ausgedruckt.
+1;Der String ls wird in der ersten Zeile einer Variablen dir zugeordnet und dann wird durch das vorangestellte $-Zeichen der Wert von dir, also ls, als Kommando interpretiert. Es wird der Inhalt des aktuellen Verzeichnisses ausgegeben.
+0;Es kommt zu einer Fehlermeldung, da die zweite Zeile syntaktisch falsch ist. 
+@;0;Wie weist man der Variablen NAME den Wert "Linus" in der Bash-Shell zu?
+0;set NAME="Linus"
+0;let NAME="Linus"
+0;let NAME = "Linus"
+1;NAME="Linus"
+0;NAME = "Linus"
+@;0;Eine Umgebungsvariable VAR1 soll vor dem Aufruf eines Skriptes WHATEVER auf einen neuen Wert (47) gesetzt werden, damit WHATEVER diesen Wert über VAR1 erhält. Nach diesem Aufruf soll VAR1 wieder den alten Wert in der aktuellen Shell haben. Welche der folgenden Codefragmente erfüllen das?
+1;help=$VAR1; export VAR1=47; WHATEVER; export VAR1=$help; VAR1=47 WHATEVER;
+0;WHATEVER(VAR1=47)
+0;WHATEVER using VAR1=47
+@;0;Wie kann man eine Variable VAR in BASH komplett entfernen?
+0;VAR=
+0;export -p VAR
+0;export -n VAR
+1;unset VAR
+@;0;Welche der folgenden Kommandozeilen druckt die letzten 15 Zeilen einer Datei beispiel.txt nicht aus?
+1;head --last 15 beispiel.txt
+0;tail -15
+0;tail -n 15
+0;tac beispiel.txt | head -15 | tac
+@;0;Tac ist ein Kommando, 
+0;welches das Kommandozeilen-Spiel tic-tac-toe startet.
+1;eine Datei in umgekehrter Reihenfolge der Zeilen ausgibt.
+0;eine Datei byteweise in umgekehrter Reihenfolge ausgibt.
+0;das zwei Dateien zusammenfügt ("tacked")
+@;0;Welche der folgenden Aufrufe druckt die ersten 42 Bytes einer Datei linux.txt aus?
+0;head 42 linux.txt
+1;head -c 42 linux.txt
+0;head --b 42 linux.txt
+0;head -c -42 linux.txt
+@;0;Welches Kommando spaltet eine Datei laenglich.log in mehrere Dateien von maximal 100 Zeilen Größe auf.
+0;cut -l 100 laenglich.log
+1;split -l 100 laenglich.log
+0;split -c 100 laenglich.log
+0;chop -l 100 laenglich.log
+@;0;Welches Kommando liefert die letzten 10 Zeilen einer Datei datei.txt?
+1;tail datei.txt
+0;tail 10 datei.txt
+0;last -10 datei.txt
+0;head -10 datei.txt
+@;0;Der Linux-Befehl "join datei1.txt datei2.txt"
+1;verknüpft die zwei Dateien nach dem Schlüsselfeld 1 (default)
+0;hängt die zweite Datei hinter die erste Datei
+0;hängt die erste Datei hinter die zweite Datei
+@;0;Welche der folgenden Kommandozeilen druckt eine Datei in Oktalformat aus?
+0;od -l o 
+0;od -t x 
+0;od -o 
+1;od 
+@;0;Welche der folgenden Kommandos liefert das Ergebnis "LINUX IST BESSER"
+1;echo "Linux ist besser" | tr a-z A-Z
+0;echo "Linux ist besser" | tr '[:lower:]' 
+0;echo "Linux ist besser" | pr --upper
+0;echo "Linux ist besser" | wc -u
+@;0;Mit welchem Tool erreicht man, dass alle Tabulatoren einer Datei (oder der Standardeingabe) in Leerzeichen umgewandelt werden.
+0;notabs
+1;expand
+0;tabs
+0;tab2blank
+@;0;Welches Kommando reicht die Ausgabe an stdout weiter und speichert sie gleichzeitig in einer Datei
+1; | tee 
+0; | tload 
+0; | stdout -f 
+0; | redirect -f 
+0; | tee -f 
+@;0;Welches Kommando filtert nicht Nachname und Ort aus den Zeilen einer Datei "adressen.txt" heraus? Die Adressdaten sind zeilenweise in folgendem Format abgespeichert: "Vorname:Nachname:PLZ:Ort:Strasse"
+1;cut -b 9-16,21-25 adressen.txt
+0;cut -d: -f 2,4 adressen.txt
+0;awk 'BEGIN {FS=":"} {print $2":"$4}' adressen.txt
+0;sed "s/\(.*\):\(.*\):\(.*\):\(.*\):\(.*\)/\2 \4/" adressen.txt
+@;0;Welches Kommando liefert die Anzahl der Zeilen einer Datei?
+0;count
+0;lines
+1;wc
+0;nl
+0;clines
+@;0;Welches der folgenden Kommandos versucht Zeilen für eine vorgegebene maximale Länge möglichst gleich lang zu machen?
+0;expand
+1;fmt
+0;nl
+0;wc
+0;tr
+@;0;Welche der folgenden Kommandos kann man benutzen um sich jeweils eine Bildschirmseite Ausgabe anzuschauen?
+0;sed
+0;hore
+0;print
+1;less
+0;grep
+@;0;Welches der folgenden Kommandos gibt die Kommentarzeilen eines Bash-Shellskriptes BeispielSkript aus?
+0;find "^#" BeispielSkript
+1;sed -n "/^#/p" BeispielSkript
+0;grep -v "^#" BeispielSkript
+0;locate "^#" BeispielSkript
+@;0;In einem Text beispiel.txt sollen jeweils 8 Leerzeichen zu einem TAB-Zeichen zusammengefasst werden. Welches der folgenden Kommandos leistet das?
+0;expand beispiel.txt
+0;tr -t 8 beispiel.txt
+0;tabs beispiel.txt
+1;unexpand beispiel.txt
+@;0;Mit welchem Befehl kann man die Anzahl der Zeichen einer Datei ermitteln?
+0;expand
+0;fmt
+0;nl
+1;wc
+0;tr
+@;0;Welches der folgenden Kommandos sollte innerhalb einer Pipe dazu benutzt werden bestimmte Zeichen in andere Zeichen zu wandeln, z.B. alle Großbuchstaben in Kleinbuchstaben.
+0;awk
+0;grep
+1;tr
+0;pr
+0;nl
+@;0;Mit welche der folgenden Kommandos kann man den Inhalt einer Binärdatei in für menschen lesbarer Form ausgeben?
+0;dump
+1;hexdump
+0;md
+0;xd
+0;hd
+@;0;Mit welcher Option wird bei sort der Feldtrenner umdefiniert?
+0;-f
+1;-t
+0;-s
+0;-p
+@;0;Welches Programm dient der Nummerierung von Text-Dateien?
+0;nr
+0;wc
+1;nl
+0;ln
+@;0;Welche der folgenden Aussagen bzgl. des regulären Ausdrucks ^[^1-9a-z] ist wahr?
+0;Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile nur aus Ziffern und Buchstaben besteht.
+0;Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile nur aus Ziffern, allerdings ohne die 0 und aus Kleinbuchstaben besteht.
+0;Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile nur aus der Ziffer 0 oder aus einem Großbuchstaben besteht.
+1;Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile mit der Ziffer 0 oder einem Großbuchstaben beginnt.
+0;Der Ausdruck liefert true, wenn der zu unterzuchende String oder die zu untersuchende Zeile mit einer Ziffer, allerdings nicht die 0, oder einem Kleinbuchstaben beginnt.
+@;0;Wozu dient das Kommando "pr"?
+0;Mit diesem Komando werden Dateien auf dem Standarddrucker ausgegeben.
+1;Mit "pr" werden Dateien für Druckausgabe konvertiert.
+0;Es liefert eine Liste der momentan aktiven Prozesse
+0;Es gibt kein Kommando pr, sondern nur eine Umgebungsvariable PR, die das Ausgbeverhalten des Eingabepromptes festlegt.
+@;0;In einem Text beispiel.txt soll jedes TAB-Zeichen durch 4 Leerzeichen ersetzt werden. Welches der folgenden Kommandos leistet das?
+1;expand -t 4 beispiel.txt
+0;tr -t 4 beispiel.txt
+0;tabs -t 4 beispiel.txt
+0;unexpand -t 4 beispiel.txt
+@;0;Was bewirkt das Kommando "pr -l 20 -o 10 -h "Mein Header" Beispieldatei"?
+1;Die Datei "Beispieldatei" wird für die Druckausgabe aufbereitet: Mit der Überschrift "Mein Header", einem linken Offset von 10 Spalten und 20 Zeilen Inhalt pro Seite.
+0;Die Datei "Beispieldatei" wird mit den Optionen "Mein Header" als Titel, einem linken Offset von 10 Spalten und 20 Zeilen Inhalt pro Seite an den Standarddrucker geschickt.
+@;0;Mit welcher Option kann man eine Datei mittels des sort-Befehls numerisch sortieren?
+0;-l
+1;-n
+0;-z
+0;-d
+@;0;Jemand möchte eine Datei mit dem sort-Befehl in umgekehrter alphabetischer Reihenfolge sortieren. Welche der folgenden Optionen leisten dies?
+1;-fr
+0;-ir
+0;-Ri
+0;-bi
+@;0;Mit welchem Befehl kann man eine Textdatei auf eine Zeilenlänge von maximal 60 Zeichen formatieren, wobei Trennungen nur zwischen Wörten, also bei Leerzeichen, und nicht nach einem Punkt erfolgen. 
+1;fmt -w 60 
+0;fold -w 60 
+0;format -w 60 
+@;0;Worin unterscheidet sich das Kommando fold von dem Kommando fmt? Welches Aussage ist falsch?
+0;fold trennt Zeilen defaultmäßig nach 80 Zeichen. Gegebenenfalls werden Wörter dadruch zerhackt.
+0;fold umbricht Zeilen, wenn sie länger als 80 Zeichen sind, füllt aber Zeilen nicht mit den Folgezeilen auf, wie dies bei fmt geschieht
+1;tmt umbricht Zeilen, wenn sie länger als 80 Zeichen sind, füllt aber Zeilen nicht mit den Folgezeilen auf, wie dies fold macht.
+@;0;Welche der folgenden Kommandos sortiert eine Datei und gibt mehrfach vorkommende Zeilen mehrfach aus.
+1;sort -n test.txt | uniq -d 
+0;sort -n test.txt | uniq
+0;sort -n test.txt | uniq -u
+0;sort -u test.txt
+@;0;Zu welcher Datei passt die nachfolgende Beschreibung: regelt die Benutzerberechtigungen auf dem Computer
+0;/etc/shadow
+0;/usr/shadow
+0;/bin/shadow
+0;/etc/group
+0;/usr/group
+0;/bin/group
+0;/etc/passwd
+0;/usr/passwd
+0;/bin/passwd
+1;die beschriebene Funktionalität befindet sich in keiner der Dateien
+@;0;Zu welcher Datei passt die nachfolgende Beschreibung: enthält das Passwort im Klartext
+0;/etc/shadow
+0;/usr/shadow
+0;/bin/shadow
+0;/etc/group
+0;/usr/group
+0;/bin/group
+0;/etc/passwd
+0;/usr/passwd
+0;/bin/passwd
+1;die beschriebene Funktionalität befindet sich in keiner der Dateien
+@;0;Zu welcher Datei passt die nachfolgende Beschreibung:  enthält Benutzernamen
+0;/etc/shadow
+0;/usr/shadow
+0;/bin/shadow
+0;/etc/user
+0;/etc/users
+0;/bin/group
+1;/etc/passwd
+0;/usr/passwd
+0;/bin/passwd
+0;die beschriebene Funktionalität befindet sich in keiner der Dateien 
+@;0;Zu welcher Datei passt die nachfolgende Beschreibung: enthält Hinweise zur Login-Shell
+0;/etc/shadow
+0;/usr/shadow
+0;/bin/shadow
+1;/etc/passwd
+0;/usr/passwd
+0;/bin/passwd
+0;die beschriebene Funktionalität befindet sich in keiner der Dateien 
+@;0;Zu welcher Datei passt die nachfolgende Beschreibung: enthält das verschlüsselte Passwort
+0;/etc/shadow
+0;/usr/shadow
+0;/bin/shadow
+0;/etc/group
+0;/usr/group
+0;/bin/group
+1;/etc/passwd
+0;/usr/passwd
+0;/bin/passwd
+0;die beschriebene Funktionalität befindet sich in keiner der Dateien enthält die auf dem System angelegten Gruppen
+@;0;Welche der folgenden Kommandozeilen findet alle Dateien, die mit einer Tilde enden und löscht sie?
+1;find . -name "*~" -exec rm {} \;
+0;find . -name "*~" -exec rm $0
+0;find . -name "*~" | xorgs rm
+0;rm -r "*~"
+0;find . -name "*~" | rm
+@;0;Mit welchem Befehl kann man keine Dateien im Filesystem finden?
+0;type
+0;whereis
+0;locate
+0;find
+0;which
+1;search
+@;0;In welchem Verzeichnis befinden sich die Konfigurationsdateien für den ganzen Rechner
+1;/etc
+0;/dev
+0;/lib
+0;/bin
+@;0;In welchem Verzeichnis befinden sich die elementaren Linux-Kommandos zur Systemverwaltung, die von allen Benutzern ausgeführt werden können?
+0;/etc
+0;/dev
+0;/lib
+1;/bin
+@;0;In welchem Verzeichnis befindet sich der Befehl ifconfig?
+0;/bin
+1;/sbin
+0;/usr/bin
+0;/usr/local/bin
+@;0;Welches der folgenden Verzeichnisse enthält keine "richtigen" Dateien?
+0;/etc
+1;/dev
+0;/lib
+0;/bin
+@;0;In welcher Datei findet sich der Pfad zum Home-Verzeichnis eines Benutzers?
+1;/etc/passwd
+0;/etc/skel
+0;/etc/profile
+0;/etc/bashrc
+Welche Datei enthält die Default-Einstellungen für ein neu anzulegendes Home-Verzeichnis?
+0;/etc/passwd
+1;/etc/skel
+0;/etc/profile
+0;/etc/bashrc
+@;0;Das Verzeichnis /sbin hat folgende Aufgabe:
+0;Es enthält Dateien und Verzeichnisse, die eine besondere Sicherheit verlangen. Daher auch das "s".
+1;Wesentliche Programme zur Systemadministration wie z.B. fdisk, fsck und mkfs sind in diesem Verzeichnis gespeichert.
+0;Zwischen /sbin und /bin gibt es im Prinzip keine Unterschiede. Die unterschiedlichen Namen sind nur historisch bedingt.
+0;/sbin ist lediglich ein Link auf /bin
+@;0;Welche der folgenden Aussagen bzgl. des /boot-Verzeichnisses ist nicht korrekt?
+0;In diesem Verzeichnis sind die Dateien für den Bootloader (LILO oder GRUB) enthalten
+0;In diesem Verzeichnis finden sich alle für das Hochfahren (booten) eines Systems wichtigen Dateien.
+0;In diesem Verzeichnis befindet sich auch der Kernel (vmlinuz)
+1;In diesem Verzeichnis befinden sich die Konfigurationsdateien der Systemprogramme.
+@;0;Der FHS (Filesystem Hierarchy Standard) gliedert die Dateien und Verzeichnisse eines Linux-Dateisystems unter anderem in variable und statische Dateien bzw. Bereiche. Welche der folgenden Verzeichnisse enthalten keine variablen Dateien?
+0;/var/mail
+0;/var/log
+1;/usr
+0;/etc/fhs
+0;/home/
+@;0;Ein Benutzer hat ein interessantes neues Programm geschrieben, was auch von den anderen Benutzer des Systems benötigt wird. Er möchte es gerne unter /bin abspeichern. Welche der folgenden Argumentationen sind korrekt?
+0;Benutzerprogramme sollen prinzipiell in /bin gespeichert werden.
+1;Er sollte sein Programm in /usr/local/bin speichern.
+0;Da es sich um ein Programm handelt, welches von allen benutzt wird sollte es unbedingt in /bin wahlweise auch in /usr/bin gespeichert werden
+0;Da es sich um ein Benutzerprogramm handelt, darf es nur unter /home im entsprechenden Verzeichnis des Benutzers gespeichert werden. Wichtig ist nur, dass es für alle ausführbar ist.
+@;0;Wie kann man die von locate benutzte Datenbank kreieren bzw. updaten?
+1;Aufruf des Kommandos "updatedb"
+0;locate -database
+0;locate -c 
+0;update -e "/tmp,/home"
+@;0;Welche Datei enthält eine Übersicht über alle im System verfügbaren Gruppen?
+0;/etc/groups
+1;/etc/group
+0;/etc/groups/all
+0;/etc/grp
+@;0;Welches der folgenden Verzeichnisse muss nicht notwendig in einem Linux-System unter dem Root-Dateisystem vorhanden sein?
+0;/lib
+1; /home
+0;/sbin
+0;/bin
+@;0;In einem Verzeichnis mit dem lokalen Pfad "projekt" sollen alle Dateien mit der Endung ".o" und der Endung "~" gelöscht werden. Welches der folgenden Kommandos erledigen dies?
+0;find projekt -name "*.o" -name "*~" -exec rm {} \;
+1;find projekt -name "*.o" -o -name "*~" | xargs rm
+0;ind projekt -name "*.o" || -name "*~" -exec rm {} \;
+0;find projekt -name "*.o" || -name "*~" | xargs rm
+0;find projekt -name "*.o" -o "*~" -exec rm {} \;
+0;find projekt -name "*.o" -o -name "*~" | rm {}
+@;0;Man möchte in einem Verzeichnis "books" alle Dateien, die innerhalb der letzten 24 Stunden geändert (nur inhaltliche Änderungen, kein chmod, chown, etc ist gewünscht) wurden, als bzip2-Datei speichern. Welche der folgenden Kommandofolgen liefert das gewünschte Ergebnis?
+0;tar cvlf new.tbz2 `find books -mtime 0 -a -type f`
+1;tar cvjf new.tbz2 `find books -mtime 0 -a -type f`
+0;tar cvzf new.tbz2 `find books -mtime 1 -a -type f`
+0;tar cvjf new.tbz2 `find books -ctime 1 -a -type f`
+0;tar cvjf new.tbz2 `find books -atime 0 -a -type f`
+@;0;Welche Aussage stimmt nicht für folgende Zeile: user1:x:116:126:group1,,,:/nonexistent:/bin/false
+0;user1 kann sich nicht einloggen
+0;user1 ist ein Systemaccount
+0;user1 hat ein Benutzerverzeichnis
+0;user1 ist Mitglied von group1
+@;0;Welche Aussage stimmt für den Eintrag :/bin/false der für folgenden Zeile: user1:x:116:126:group1,,,:/nonexistent:/bin/false
+0;user1 ist deaktiviert
+0;user1 kann sich nicht einloggen
+0;keine Aussage stimmt
+@;0;Welche Aussage stimmt bezüglich der Datei /usr/shadow
+0;die Datei kann nur von root gelesen werden
+0;die Datei kann nur von root gelesen und geschrieben werden
+1;keine Aussage trifft zu
+@;0;Welches Aussage stimmt bezüglich der Datei /etc/shadow 
+0;die Datei kann nur von root gelesen werden
+1;die Datei kann nur von root geschrieben werden
+0;keine Aussage trifft zu
+@;0;Bei der Installation von Linux werden folgende Konten standardmäßig eingerichtet:
+0;admin und benutzer
+1;root und benutzer
+0;nur admin
+0;nur root
+0;nur benutzer
+@;0;Die numerische Kennung von Benutzerkonten heißt:
+1;UID
+0;GUID
+0;ganz anders
+@;0;Welche Aussage stimmt:
+0;Benutzer sind eindeutig durch die numerische Kennung gekennzeichnet
+1;Verschiedene Benutzer können die gleich numerische Kennung haben
+0;beide Aussagen sind falsch
+@;0;Welche Aussage stimmt:
+1;Benutzer können seit der Kernel-Version 2.6 unendlich vielen Gruppen zugeordnet werden
+0;Benutzer können maximal 32 Gruppen zugeordnet sein
+@;0;Mit welchem Programm ermittele ich die primären und sekundären Gruppen eines Benutzers?
+0;last
+0;gid
+1;id
+0;groups
+@;0;Mit welcher Methode kann root keinen neuen Benutzer anlegen:
+0;adduser
+0;useradd
+1;Kopie einer Zeile in der /usr/passwd
+0;alle Methoden sind geeignet
+@;0;Welche Option für useradd ist falsch:
+0;-c Kommentar Eintrag in in das GECOS-Feld
+1;-h Heimatverzeichnis Fehlt diese Angabe, wird /home/ ⟨Benutzername⟩ angenommen
+0;-e Datum Datum, an dem der Zugang automatisch gesperrt wird 
+0;-g Primäre Gruppe des neuen Benutzers, als Name oder GID. 
+@;0;Beim Anlegen des Heimatverzeichnisses werden Daten und Struktur aus folgendem Ordner kopiert:
+0;/usr/dir
+0;/usr/homes
+1;/etc/skel
+0;/bin/user
+@;0;Der Befehl fuer das Frontend zum Anlegen eines Benutzers theo lautet:
+1;adduser theo
+0;passwd theo
+0;useradd theo
+0;keiner der drei Befehle kann User anlegen
+@;0;Sie sind als peter eingeloggt. Sie aendern das Passwort von theo mit welchem der folgenden Befehle:
+0;;adduser theo
+0;passwd theo
+0;useradd theo
+1;keinem dieser Befehle
+@;0;Sie sind als peter angemeldet. Die Default-Einstellungen fuer den Befehl useradd sind in folgender Datei:
+0;/etc/users
+1;/etc/default/useradd
+0;es gibt keine default-Einstellungen
+@;0;Sie sind als peter angemeldet. Der Befehl zum Anzeigen der Default-Einstellungen von useradd lautet:
+1;useradd -D
+0;useradd -p
+0;useradd -d
+@;0;Sie sind als peter angemeldet. Der Befehl zum Loeschen des Users anton mitsamt Homedirectory lautet:
+0;userdel -r anton
+0;deluser -r anton
+0;userdel anton
+0;deluser anton
+0;userdel anton
+0;deluser anton
+0;sudo userdel anton
+0;sudo deluser anton
+1;keiner der genannten Befehle loescht den User
+@;0;Sie sind als peter angemeldet. Sie fuegen fuer anton die Gruppe berlin hinzu
+1;sudo usermod -aG berlin anton
+0;sudo usermod -G berlin anton
+0;sudo usermod -p berlin anton
+0;sudo usermod -a berlin anton
+0;keiner der genannten Befehle funktioniert
+@;0;Sie sind als peter angemeldet. Sie entfernen User anton aus der Gruppe berlin entfernen
+0;sudo deluser berlin anton
+1;sudo deluser anton berlin
+0;sudo userdel anton berlin
+@;0;Was gehört nicht zu einem Prozess
+0;Adressraum
+1;Festplattenspeicher
+0;Sammlung von Datenstrukturen innerhalb des Kernels
+@;0;Unter einem Adressraum versteht man:
+1;Speicherseiten vom Kernel fuer den Prozess freigegeben, enthalten Programmcode und Variablen
+1;Speicherseiten vom Kernel sind aussschliesslich fuer Variablen
+@;0;Zu den Datenstrukturen eines Prozesses gehoert nicht:
+0;Adressen der Speicherseiten
+0;Zustand des Prozesses
+0;Resourcen die vom Prozess verwendet werden
+0;Eigentuemer des Prozesses
+1;alle genannten Datenstrukturen gehoeren zu einem Prozess
+@;0;Welche Aussage trifft bezogen auf die PID zu:
+1;Der Kernel weist jedem Prozess eine eindeutige ID zu
+0;Die PID wird vom init-Prozess vergeben
+@;Welche Aussage stimmt nicht bezueglich der PPID
+0;Ein neuer Prozess wird erzeugt, indem ein bestehender geklont wird
+0;Ein neuer Prozess wird mit fork erzeugt
+1;Beide Aussagen sind zutreffend
+@;0; Was Charakterisiert den init-Prozess am wenigsten
+1;init ist kein Prozess
+0;wird beim Systemstart gestartet
+0;hat die PID 1
+@;0;Welche Aussage stimmt nicht in Bezug auf Signale
+0;strg+c und strg+z versendet auf Terminalebene Signale (INT)
+0;kill (Programm) versendet Signale (KILL)
+0;Kernel versendet Signale
+1;alle Instanzen koennen Signale an einen Prozess versenden
+16. Welches Signal beendet einen UNIX-Prozess normal?
+0;SIGHUP
+0;SIGINT
+0;SIGKILL
+1;SIGTERM
+@;0;Mit welchem UNIX-Systemaufruf wird ein Signal an einen Prozess gesendet?
+0;signal()
+1;kill()
+0;send()
+0;term()
+@;0;Welche Aussage über UNIX-Prozesse ist zutreffend?
+0;Der Prozess init hat die PID 0
+0;Neue Prozesse werden durch den Systemaufruf CreateProcess() gebildet
+1;Der Child-Prozess ist eine identische Kopie des Parent-Prozesses
+0;Mit einem fork()-Aufruf lassen sich beliebig viele Child-Prozesse auf einmal ableiten
+@;0;Welche der folgenden Aussagen über die UID und GID eines UNIX-Prozesses ist falsch?
+1;Um einem Prozess ein Signal zu senden, muss die UID des Absenders der PID des Prozesses entsprechen
+0;Um einem Prozess ein Signal zu senden, muss die UID des Absenders der UID des Prozesses entsprechen
+0;Um einem Prozess ein Signal zu senden, muss die GID des Absenders der GID des Prozesses entsprechen
+0;Der User root (UID 0, GID 0) darf jedem Prozess Signale senden
+@; Welche Benennung kennzeichnet keinen Prozesszustand
+0;runnable
+0;sleeping
+0;Zombie
+0;stopped
+1;alle Bezeichnungen sind Prozesszustaende
+@;0;Ein Hintergrundprozess wird auf der Shell mit einem
+0;vorangestellten & erzeugt
+1;angehaengten & erzeugt
+0;weder noch
+@;0;Bei einem Hintergrundprozess sind folgende Dateideskriptoren nicht mit dem jeweiligen Standardgeraet verbunden:
+1;0,1,2
+0;0
+0;1,2
+0;2
+@;0;Welche Aussage stimmt für einen Hintergrundprozess nicht:
+0;Man verwendet Hintergrundprozesse in erster Linie, um durch einen langwierigen Prozess nicht vom weiteren Arbeiten abgehalten zu werden. 
+0;Charakteristisch für klassische Hintergrundprozesse ist, dass sie weiterhin Kindprozess der Shell bleiben.
+1;Beide Aussagen treffen zu
+@;0; Welche Aussage zum Thema Daemonprozesse ist falsch
+0;Sie arbeiten im Hintergrund und werden vorwiegend für Aufgaben genutzt, die keiner direkten Kontrolle bedürfen.
+0;Ein Beispiel wäre ein Serverdienst, wie beispielsweise Webserver oder Mailserver.
+0;Solche Dämonprozesse werden normalerweise während des Bootens gestartet und erst beim Shutdown des Systems beendet, indem der Kernel ein TERMINATE- oder KILL-Signal an den Prozess sendet. 
+1;Dämonprozesse sind in der Regel keine Kinder des Prozesses init.
+@;0;Welcher Befehl listet alle Prozesse in einer Baumstruktur
+0;ps aux
+1;ps fax
+0;keiner
+@;0;Einen Ueberblick ueber alle Prozesse mit periodischer Erneuerung bietet das Programm:
+0;ps
+1;top
+0;pstree
+0;time
+@;0;Was bedeutet das UNIX-Dateizugriffsrecht -rwxr-xr--?
+1;Der Eigentümer darf lesen, schreiben und ausführen; die Gruppe darf lesen und ausführen; alle anderen dürfen nur lesen.
+0;Der Eigentümer darf lesen, schreiben und ausführen; andere lokale Benutzer dürfen lesen und ausführen; Netzwerkbenutzer dürfen nur lesen.
+0;Der Eigentümer darf lesen, schreiben und ausführen; andere Benutzer dürfen lesen und ausführen; Gäste dürfen nur lesen
+0;Der Eigentümer darf lokal lesen, schreiben und ausführen; meldet er sich über das Netzwerk an, darf er nur lesen und ausführen; alle anderen dürfen nur lesen
+@;0;Wie lautet das Dateizugriffsrecht -rw-rw-r-- numerisch?
+0;0775
+1;0664
+0;0441
+0;0442
+@;0;Welche der folgenden Zeichenketten findet der reguläre Ausdruck [A-Z]aus nicht?
+0;Haus
+0;Laus
+1;raus
+0;Maus
+@;0;Was bedeutet [a-z]* in einem regulären Ausdruck?
+1;beliebig viele Kleinbuchstaben
+0;mindestens ein Kleinbuchstabe
+0;ein Kleinbuchstabe oder keiner
+0;erst ein Kleinbuchstabe und dann beliebige Zeichen
+@;0;Welcher der folgenden regulären Ausdrücke findet die E-Mail-Adresse peter@schmitz.de nicht?
+0;[a-z]+\@[a-z]+\.[a-z]{2,3}
+0;[^\@]+\@[^\@]+
+1;[a-z]+\@\.[a-z]+
+0;.+\@.+
+@;0;Welche Formulierung findet ALLE Vorkommen einer deutschen Postleitzahl (5 Stellen), gefolgt von einer Ortsangabe?
+0;/\d{5}\s+[a-z]/g
+0;/\d{5}\s+[a-z]+/i
+0;/\d{5}\s+[a-z]/gi
+1;/\d{5}\s+[a-z]+/gi
+@;0;Was erledigt die folgende Anweisung, wenn $name einen Namen nach dem Schema "Vorname Nachname" enthält: $name =~ s/([a-z]+)\s+([a-z]+)/$2, $1/i; ?
+0;Vor- und Nachname werden durch ein Komma getrennt
+1;"Vorname Nachname" wird durch "Nachname, Vorname" ersetzt
+0;Die Namensbestandteile werden nicht gefunden, weil nur nach Kleinbuchstaben gesucht wird
+0;Fehler: Innerhalb von () dürfen keine [] stehen
+@;0;Welche Datei enthält die Plug-and-Play-Informationen?
+0;/etc/pnp.conf
+0;etc/pcipnp.conf
+0;/usr/config/isapnp
+1;/etc/isapnp.conf
+@;0;Zu welchem Bereich gehören (Geräte)Treiber?
+1;Kernel-Bereich (Kernel Space)
+0;Anwender-Bereich (Application space)
+0;Benutzer-Bereich (User Space)
+0;Geräte-Bereich (Device Space)
+@;0;Worin besteht der Unterschied zwischen Coldplug und Hotplug?
+0;Coldplug-Geräte können zwar im laufenden Betrieb des Computers angeschlossen werden, werden jedoch nicht automatisch eingebunden.
+1;Coldplug-Geräte können nur angeschlossen oder vom System getrennt werden, wenn der Computer aus ist.
+0;Hotplug-Geräte können während des laufenden Betriebes angeschlossen werden, aber sie dürfen nicht entfernt werden.
+0;Hotplug-Geräte können während des laufenden Betriebes weder angeschlossen noch entfernt werden.
+@;0;Welche Modemtypen werden in der Regel nicht unter Linux unterstützt?
+1;Winmodem
+0;Externe PnP-Modems
+0;PCI
+0;PCMCIA
+@;0;Welches Programm kann zur Partitionierung einer Festplatten benutzt werden?
+0;dfdisk
+0;diskpart
+1;fdisk
+0;party
+@;0;Bei initrd handelt es sich um
+0;einen speziellen Prozess, der als erstes nach dem Booten gestartet wird.
+0;die sogenannte initial EPROM disk.
+1;ein temporäres Dateisystem (initial ramdisk), das dem Kernel während des Startvorgangs zur Verfügung steht.
+0;ein Laufwerk,das den Inhalt der initial RAM Disk enthält.
+@;0;Mit welchem Kommando erhält man Informationen über die erste SCSI-Festplatte?
+0;scsiinfo /dev/sda
+1;scsi_info /dev/sda
+0;more /procs/scsi/scsi
+0;ls -sCSi /proc/scsi/
+@;0;Bei welchen der folgenden Geräte handelt es sich um Coldplug-Geräte?
+0;USB-Geräte
+0;PCMCIA-Geräte
+1;PCI-Steckkarten
+@;0;DMA steht im Zusammenhang mit PCs für
+0;Digital Media Adapter
+0;District Management Area
+1;Direct Memory Access
+0;Direct Memory Ability
+@;0;Welche der folgenden Bezeichnungen ist eine ungültige Partitions-Type?
+0;Primäre Partition
+1;Sekundäre Partition
+0;Erweiterte Partition
+0;Logische Partition
+@;0;Die Einstellungen für Kernelmodule befinden sich in einer Datei 
+1;/etc/modules.conf
+0;/boot/modules.conf
+0;/betc/modprobe.conf
+0;/boot/modprobe.conf
+@;0;Wozu dient udev?
+1;Zur Verwaltung des /dev-Dateisystems
+0;Dient zur Verwaltung von universellen Hotplug-Devices
+0;Zum Laden von Linux-Gerätetreibern
+0;ein universellen (u) Entwicklungstool (dev)
+@;0;Was ist der korrekte Name für eine zweite SCSI Festplatte?
+0;/dev/hdb
+0;/dev/hda
+1;/dev/sdb
+0;/dev/sdc
+@;0;Bei welcher der folgenden Partition handelt es sich um keine primäre Partition?
+0;/dev/sda2
+0;/dev/hde1
+1;/dev/hda6
+0;/dev/sda4
+@;0;Wird Linux mit dem Bootloader lilo installiert und liegt ein älteres BIOS vor, so kann man den Linux-Kernel nur bis zu einer bestimmten oberen Zylindergrenze installieren. Welche der folgenden Werte ist korrekt?
+0;bis inklusive Zylinder 2048
+1;Der erreichbare Bereich liegt zwischen den Zylindern 0 bis 1023
+0;Der erreichbare Bereich liegt zwischen den Zylindern 0 bis 2047
+0;Der erreichbare Bereich liegt zwischen den Zylindern 0 bis 511
+@;0;Wieviele primäre Partitionen können auf einer Festplatte erstellt werden?
+0;2
+1;4
+0;8
+0;Abhängig vom Betriebssystem, d.h. unter Linux beliebig viele.
+@;0;Der Bootloader kann an folgenden Stellen platziert werden:
+1;MBR
+0;lib-Partition
+0;im Windows-Bootloader als weiteres alternatives Betriebssystem
+0;im Bios
+@;0;Welche der folgenden Aussagen über Winmodems ist nicht korrekt?
+0;Winmodems werden auch Softmodems genannt
+0;Winmodems werden meist in Hinblick auf ihren Einsatz in einem Microsoft-Windows-System konzipiert.
+1;Linux arbeitet problemlos mit Winmodems zusammen
+0;Bei Winmodems werden aus Kostengründen bestimmte HW-Komponenten weggelassen, die dann von der SW erledigt werden müssen.
+@;0;Was ist bei der Installation einer neuen SCSI-Festplatte zu beachten?
+0;Es darf keine IDE-Festplatten zusätzlich geben. 
+1;Terminatoren müssen an den Enden des SCSI-Busses angebracht sein
+0;das Gerät muss am Kabelende angeschlossen werden
+0;die Zuordnung einer SCSI-ID ist nicht nötig
+@;0;Worin besteht der Unterschied zwischen SCSI-1 und Fast SCSI?
+0;Statt eines 8-Bit breiten Datenbusses verwendet Fast SCSI einen 1-Bit Bus zur Vermeidung von Überholeffekten
+0;Fast SCSI verfügt über einen doppelt so breiten Datenbus und kann deshalb den doppelten Durchsatz erreichen.
+1;Fast SCSI ist doppelt so schnell getaktet und erreicht deshalb einen doppelt so hohen Durchsatz (10 MB/s) wie SCSI-1 (5 MB/s)
+Welche der folgenden Aussagen treffen für SCSI-3 SPI nicht zu?
+0;SCSI-3 ist doppelt so hoch (20 MB/s) getaktet wie Fast SCSI (SCSI-2) (10 MB/s).
+0;SCSI-3 ist auch als Ultra Wide SCSI bekannt.
+0;SCSI-3 verfügt über einen 16-Bit-Bus.
+1;SCSI-3 ist viermal so hoch (40 MB/s) getaktet wie Fast SCSI (SCSI-2) (10 MB/s).
+@;0;Welche Aussagen treffen für IRQs nicht zu?
+0;IRQ steht für Interrupt Requests.
+0;Bei PCI-Mainboards ist IRQ-Sharing möglich
+1;Bei ISA-Architekturen ist IRQ-Sharing nicht möglich
+0; Es gibt 16 verschiedene IRQ-Signale, die von 0 bis 15 nummeriert sind.
+Welche der folgenden IRQ-Signale können nicht geändert werden?
+0;3 Serieller Port COM 2
+0;4 Serieller Port COM 1
+0;6 Diskettenlaufwerk
+0;7 Parallelport
+0;8 Echtzeituhr
+0;12 PS/2-Maus
+1;13 Koprozessor
+0;14 Erster IDE-Controller
+0;15 Zweiter IDE-Controller
+@;0;SCSI ist eine Abkürzung für
+0;Simulated Concurrent Signal Interface
+0;Simulated Computer System Interface
+1;Small Computer System Interface
+0;Small Concurrent System Interface
+@;0;Welche der folgenden Aussagen trifft für udev nicht zu?
+1;udev ist veraltet und es sollte stattdessen devfs benutzt werden
+0;udev ist der Nachfolger von devfs
+0;udev verwaltet das /dev-Dateisystem im Userspace
+0;udev zeigt nur tatsächlich verfügbare Geräte an
+@;0;Wieviele Geräte können an einen SCSI-Bus angeschlossen werden?
+1;7 
+0;10 falls WIDE-SCSI
+0;8
+0;16 falls WIDE-SCSI
+@;0;Welche Beziehung besteht zwischen der Gerätenummer und der Priorität eines Gerätes am SCSI-Bus
+1;Je größer je höher die Priorität
+0;Je größer je kleiner die Priorität
+0;Im SCSI-Bus gibt es keine Prioritäten, d.h. alle Geräte haben die gleiche Priorität. 
+@;0;Welche Gerätenummer besitzt der SCSI-Controller?
+0;0 egal ob SCSI mit 8-Bit oder 16-Bit-Kabel.
+0;7 bzw. 15 bei WIDE-SCSI
+1;Üblicherweise 7, auch bei WIDE-SCSI
+@;0;In welcher Datei findet man Informationen über die IRQs?
+1;/proc/interrupts
+0;/proc/irq
+0;/etc/interrupts
+0;/var/irqs
+@;0;Wieviele Geräteadressen hat ein 16-Bit SCSI-2-Bus?
+0;7
+0;8
+0;15
+1;16
+0;32
+@;Wie kann man verhindern, dass beim nächsten Reboot ein fsck durchgeführt wird.
+1;shutdown -f
+0;shutdown -F
+0;init 6
+0;init 1
+@;0;Mit welchem Kommando kann man sich einen Überblick verschaffen, an welcher Stelle im Dateisystem Festplatten, Datenträger usw. eingebunden sind und wieviel Platz auf den einzelnen Partionen und Festplatten noch frei ist?
+1;df -T
+0;du -cs /
+0;mount -v
+@;0;Welche der folgenden Dateien kann sich automatisch im laufenden Betrieb ändern, wenn ein USB-Stick eingesteckt wird?
+1;/etc/mtab
+0;/etc/fstab
+0;/etc/crontab
+@;0;Mit welchem Befehl kann man die in /etc/fstab aufgeführten Dateisysteme überprüfen lassen?
+0;extcheck 
+1;fsck -A
+0;dosfsck
+@;0;Welche der folgenden Optionen bezeichnet die vierte Partition der zweiten IDE-Festplatte?
+0;/dev/hda4
+0;/dev/hdb3
+0;/dev/hda3
+1;/dev/hdb4
+@;0;Welches elementare Kommando dient dazu Partitionen auf der Festplatte anzulegen?
+1;fdisk
+0;mount
+0;part
+@;0;Auf einem Computer, der nur über eine einzige SATA-Festplatte verfügt, wurde Linux neu installiert. Welche der folgenden Gerätedateien bezeichnet diese Festplatte?
+0;/dev/hda
+1;/dev/sda
+0;Das hängt von der verwendeten Distribution ab, d.h. entweder /dev/sda oder /dev/hda
+0;/dev/hda1
+@;0;Mit welcher Option zeigt fdisk eine Liste aller Partitionen einer Festplatte?
+0;-A
+0;-C
+0;-b
+1;-l
+@;0;Was ist kein Vorteil von Journaling-Dateisystemen?
+0;Journaling-Dateisysteme sind vor allem nach Systemabstürzen oder Stromausfällen von besonderem Vorteil.
+0;Ein Journaling-Dateisystem garantiert die Konsistenz eines Dateisystems
+1;Ein Journaling-Dateisystem garantiert die Konsistenz der Dateiinhalte
+0;Nach einem Systemabsturz kann ein Journaling-Dateisystem schneller wieder hergestellt werden als ein äteres Dateisystem.
+@;0;Wieviele primäre Partitionen sind auf einer Festplatte erlaubt?
+0;2
+1;4
+0;8
+0;16
+Wieviele primäre (primary) und erweiterte (extended) Partitionen sind auf einer Festplatte erlaubt?
+0;2
+1;4
+0;8
+0;16
+Mittels "fdisk -l /dev/sda" erhalten wir eine Auflistung von vier Partitionen: /dev/sda1, /dev/sda2, /dev/sda5 und /dev/sda6. Welche der folgenden Aussagen sind zutreffend?
+0;/dev/sda2 muss eine erweiterte Partition sein
+0;/dev/sda5 und /dev/sda6 sind erweiterte Partitionen
+1;/dev/sda5 ist eine logische Partition
+0;Entweder /dev/sda1 oder /dev/sda2 ist eine logische Partition
+@;0;Welcher Dateisystem-Typ wird für virtuellen Speicher im Linux-System benutzt?
+0;ext3
+0;reiserfs
+1;swap
+0;nfs
+@;0;Mit welchem Kommando kann man sich die Meldungen während des Bootvorgangs zu einem späteren Zeitpunkt nochmals anschauen?
+1;dmesg
+0;df
+0;mesg
+@;0;Welches Werkzeug benutzt Debian zur Disk-Partitionierung während der Installation?
+0;fdisk
+1;cfdisk
+0;Yast
+0;diskdrake
+0;Disk Druid
+@;0;In welchem Partitionstyp sind logische Partitionen enthalten?
+0;swap
+0;root
+1;extented
+0;primary
+@;0;Welche Option verlässt bei fdisk das Programm und schreibt die Partitionstabelle auf die Festplatte?
+0;q
+1;w
+0;x
+0;m
+@;0;Wie wird fdisk gestartet?
+1;In einer Konsole mit "fdisk device"
+0;Automatisch über den YaST
+0;fdisk kann nicht direkt gestartet werden, denn es wird nur bei der Installation vom Installationsprogramm aufgerufen.
+0;In einer Konsole mit "fdisk"
+@;0;An welchen Einhängepunkt (mount point) wird die swap-Partition normalerweise eingehängt?
+0;/swap
+0;/boot/swap
+1;es gibt keinen Einhängepunkt
+0;distributionsabhängig
+@;0;Für welche der folgenden Verzeichnisse ist ein Backup am wichtigsten?
+0;/usr/
+0;/tmp/
+0;/opt/
+1;/etc/
+@;0;Mit welchem Kommando kann man die Zugriffsrechte für eine Datei ändern?
+0;chown
+1;chmod
+0;perm
+0;chfile
+@;0;Welche der folgenden Kommandos sind äquivalent zu "chmod 751 ~/test.c, wenn sie von einem Benutzer frank ausgeführt werden"? 
+1;chmod u=rwx,g=rx,o=x ~/test.c
+0;chmod u+rwx,g+rx,o+x ~/test.c
+0;chmod u+rwx,g+rx,o+x /home/frank/test.c
+0;chmod u=rw,g=rx,g-w,o=x,o-wr ~/test.c
+@;0;Mit welchem Kommando kann man den Eigentümer (owner) einer Datei dat in owner linus ändern?
+1;chown linus dat
+0;change -o linus dat
+0;owner linus dat
+@;0;Nehmen wir an, dass wir uns in einem Verzeichnis befinden, in dem es nur die Datei mit dem Namen abcd gibt. Was wird ausgegeben, wenn wir dort die Kommandos
+DIR=ls; echo $DIR "$DIR" '$DIR' `$DIR`
+abschicken?
+0;ls ls $DIR ls
+1;ls ls $DIR abcd
+0;ls ls abcd abcd
+0;ls abcd ls ls
+@;0;Welches der folgenden Kommandos hat neben anderen Zeilen auch die folgende Zeile
+/dev/sdb2             439G  286G  131G  69% /home 
+ausgegeben? 
+0;ls -l
+0;ls -lh
+0;du -csh
+1;df -h
+@;0;Welche der folgenden Zugriffsberechtigung stellt "read, write und execute" für den Besitzer und "read und execute" für die anderen dar?
+1;755
+0;644
+0;711
+0;522
+@;0;Mit welchem Kommando kann man den Besitzer einer Datei oder eines Verzeichnisses ändern?
+0;chgrp
+0;group
+0;chmod
+1;chown
+@;0;Mit welchem Kommando kann man versuchen den Dateityp einer Datei zu bestimmen?
+0;check
+1;file
+0;dtype
+0;type
+@;0;Mit welchem Kommando kann man die Gruppenzugehörigkeit von Dateien und Verzeichnissen ändern?
+1;chgrp
+0;group
+0;chmod
+0;chowner
+@;0;Mit welchem Kommando kann man die Gruppenzugehörigkeit einer Datei dat in Gruppe team ändern?
+0;chown -g team dat
+1;chgrp team dat
+0;chgrp -g team dat
+@;0;Welche der folgenden Aussagen sind falsch?
+1;Ein Paketmanager ist ein Programm, dass die Zustellung von E-Mails unter Linux überwacht.
+0;Paketmanager dienen der komfortablen Verwaltung von Software eines Computersystems. 
+0;RPM ist ein Paketmanager
+@;0;Welche der folgenden Distributionen benutzen RPM nicht als Paketmanger?
+1;Debian
+0;OpenSuSE
+0;Fedora
+0;Mandriva
+@;0;Was ist normalerweise nicht in einem Paket enthalten?
+0;binäre Programmdateien
+0;Konfigurationsdateien
+1;Angaben zur Übersetzung in andere Paketformate
+0;Dateien mit Daten
+0;Metadaten
+@;0;Mit welchem der folgenden Kommandos kann man kein Paket installieren?
+0;rpm
+0;apt-get
+a;apt-rpm
+1;package-install
+@;0;Mit welchem der folgenden Befehle kann man ein lokal vorliegendes Debian-Paket foobar.deb nicht installieren?
+0;dpkg --install foobar.deb
+0;apt-get -i foobar.deb
+1;aptitude install foobar.deb
+@;0;Welche der folgenden Aussagen treffen für den Befehl apt-get zu?
+0;Abhängige Pakete werden automatisch nachinstalliert.
+1;Die Pakete müssen lokal auf dem Rechner vorliegen, aber nicht notwendigerweise im Arbeitsverzeichnis.
+0;Der Befehl "apt-get remove paketname" entfernt ein vorhandenes Paket, jedoch nicht die von diesem abhängigen Pakete.
+@;0;Mit welchem Kommando lässt sich ein rpm-Paket foobar.rpm nicht in ein Debian-Paket wandeln?
+0;alien foobar.rpm
+0;alien -d foobar.rpm
+1;pconv -debian foobar.rpm
+@;0;In welcher der folgenden Kommandozeilen wird ein Paket mit dem Namen beispiel.rpm installiert?
+0;rpm install beispiel.rpm
+0;rpi beispiel.rpm
+1;rpm -i beispiel.rpm
+0;rpm-install beispiel.rpm
+@;0;Welches Paketsystem wird von SuSE verwendet?
+1;rpm
+0;deb
+0;tgz
+0;tar
+@;0;Wie installiert man zwei rpm-Pakete a.rpm und b.rpm, wenn diese wechselseitig voneinander abhängig sind?
+0;rpm -f a.rpm; rpm -f b.rpm
+1;rpm -i a.rpm b.prm
+0;rpm -i a.rpm; rpm -i b.rpm
+0;rpm --dependancy a.rpm b.prm
+@;0;Wie lautet die korrekte Syntax, um ein Paket beispiel.deb vollständig, d.h. inklusive der Konfigurationsdateien aus dem System zu entfernen?
+0;dpkg -r beispiel.deb
+0;dpkg -r --complete beispiel.deb
+0;dpkg -e beispiel.deb
+1;dpkg --purge beispiel.deb
+@;0;Mit welchem Skript kann man ein Makefile für ein spezifisches System generieren?
+0;genmake
+1;configure
+0;config
+0;generate
+@;0;Mit welcher Linking-Methode kann man kleinere ausführbare Dateien erzeugen?
+0;compact
+1;dynamisch
+0;variabel
+0;statisch
+@;0;Mit welchem Befehl kann man kompilierte Software im System installieren?
+0;install
+0;make
+1;make install
+0;make setup
+@;0;Welche rpm-Option dient dazu eine beschädigte rpm-Datenbank von neuem zu erzeugen?
+1;rpm --rebuilddb
+0;rpm --updatedb
+0;rpm --regenerate
+0;rpm --fixdb
+@;0;Welches Programm aktualisiert die Datei /etc/ld.so.cache?
+0;ldupdate
+0;ldconf
+1;ldconfig
+0;ldcache
+@;0;Welche der folgenden rpm-Befehle löschen ein RPM Paket beispiel.rpm?
+0;rpm --uninstall beispiel.rpm
+0;rpm --remove beispiel.rpm
+0;rpm -u beispiel.rpm
+1;rpm --erase beispiel.rpm
+@;0;Welche der folgenden apt-get-Optionen aktualisieren die Paketdatenbank?
+0;refresh
+0;reload
+0;upgrade
+1;update
+@;0;Welche der folgenden apt-get-Optionen führt ein Update der Pakete auf einem Debian/ubuntu-System durch?
+0;refresh
+0;reload
+1;upgrade
+0;update
+@;0;Welcher Unterschied besteht zwischen den Befehlen 'apt-get upgrade' und 'apt-get dist_upgrade'
+0;apt-get dist-upgrade führt einen Distrubutionsupgrade durch
+1;apt-get dist-upgrade entspricht apt-get upgrade, kann aber auch ganze Pakete ersetzen
+@;0;In welchem Verzeichnis befinden sich die Paketinformationen der Debian-Paketverwaltung?
+0;/etc/dpkg
+1;/var/lib/dpkg
+0;/var/log/dpkg
+0;/usr/lib/dpkg
+@;0;In welcher Datei sind die Quellen für ein Update von Software und System gelistet?
+0;/etc/sources.list
+0;/etc/sources
+1;/etc/apt/sources.list
+0;/etc/apt/sources
+@;0;Bei Ubuntu sind die von der Community verwalteten opensource-Pakete in:
+0;main
+0;restricted
+1;universe
+0;multiverse
+@;0;Bei Ubuntu sind die vom Ubuntu-Team erstellten und verwalteten Pakete als Opensource-Software in:
+1;main
+0;restricted
+0;universe
+0;multiverse
+@;0;Bei Ubuntu sind die vom Ubuntu-Team erstellten und verwalteten Pakete, die allerdings keine Opensource-Software ist, in:
+0;main
+1;restricted
+0;universe
+0;multiverse
+@;0;Bei Ubuntu sind die Pakete die nicht unter der Opensource-Lizenz in:
+0;main
+0;restricted
+0;universe
+1;multiverse
+@;0;Das Paket 'vim' wird mit folgendem Befehl entfernt
+0;apt-get del vim
+0;apt-get delete vim
+1;apt-get remove vim
+@;0;Pakete die nicht mehr benötigt werden werden mit dem Befehl gelöscht
+0;apt-get clean
+1;apt-get autoremove
+0;apt-get remove-all
+@;0;Was stimmt in Bezug auf aptitude 
+1;aptitude ist bei einem Debian/Ubuntu-System als Erweiterung der Paketverwaltung um eine grafische Oberfläche einsetzbar
+0;In der Servervariante von Ubuntu muss es nachinstalliert werden
+0;Bietet keinerleit Vorteile gegenüber apt-get
+@;0;Welcher Befehl zeigt den Installationsstatus von vim an
+1;aptitude show vim
+0;apt-get paket vim
+0;apt-get which vim
+@;0;Mit welchem Kommando kann man in einem laufenden System in den Einbenutzermodus (single user mode) wechseln?
+0;init 0
+1;init 1
+0;single
+0;runlevel 1
+@;0;Welcher der folgenden Namen bezeichnet keinen Bootloader?
+0;GRUB
+0;LILO
+0;NTLDR
+1;GRAB
+@;0;Wann muss Lilo neu initialisiert werden?
+0;Wenn einer neuer Kernel installiert wurde
+1;Nach jeder Änderung in der Konfigurationsdatei des Lilo
+0;Wenn zwischenzeitlich ein anderes Betriebssystem gestartet worden ist.
+0;Lilo muss nur einmal mit der Installation initialisiert werden. Danach nicht mehr
+@;0;Wann muss Grub neu initialisiert werden?
+0;Wenn einer neuer Kernel mit einer neuen Versionsnummer installiert wurde
+0;Nach einer Änderung in der Konfigurationsdatei des Grub
+0;Wenn zwischenzeitlich ein anderes Betriebssystem gestartet worden ist.
+1;Grub muss nur einmal mit der Installation initialisiert werden. Danach nicht mehr
+Welche der folgenden Aussagen/Unterschiede zu LILO und GRUB treffen nicht zu?
+1;Während LILO nur Linux-Systeme booten kann, kann GRUB auch andere Betriebssysteme, wie beispielsweise Windows booten
+0;Der Grub muss nur einmal z.B. bei der Systeminstallation mit grub-install installiert werden, während beim Lilo nach jeder Änderung in der Konfigurationsdatei mit dem Befehl lilo neu initialisiert werden muss.
+0;Grub steht für Grand Unified Bootloader
+0;Lilo steht für Linux Loader
+0;Grub findet ohne genaue Positionsangaben Kerneldateien auf der Festplatte, während Lilo nur erfolgreich startet, wenn ihm die genaue Position des Kernels bekannt ist.
+0;Nach einem Kernel-Update ist jedesmal ein Aufruf von Lilo (/sbin/lilo) notwendig, während bei Grub nur eine Aktualisierung der Konfigurationsdatei nötig ist.
+@;0;Die Konfigurationsdatei von Lilo befindet sich in 
+0;/boot/lilo/lilo.conf
+1; /etc/lilo.conf
+0;/boot/lilo.conf
+0;/etc/lilo/lilo.conf
+@;0;Welches der folgenden Kommandos führt zu einem Anhalten des Rechners (shutdown mit halt)
+1;init 0
+0;init 1
+0;init 3
+0;init 6
+@;0;Was geschieht in Runlevel 4?
+0;Der Computer wird neu gestartet
+0;Der Computer geht in den Mehrbenutzerbetrieb mit Netzwerk
+0;Der Computer geht in den Mehrbenutzerbetrieb ohne Netzwerk
+1;Dieses Runlevel wird normalerweise nicht verwendet
+@;0;Die Konfigurationsdatei vom Grub befindet sich in 
+0;/etc/grub.conf
+1;/boot/grub/grub.conf
+0;/boot/grub.conf
+0;/etc/grub/grub.conf
+@;0;Durch welche Datei wird das Verhalten der Tastenkombination <Strg>+<Alt>+<Entf> gesteuert? 
+0;/etc/magic
+0;/etc/keybinds
+1;/etc/inittab
+0;/etc/defkeymap.name
+@;0;Mit welchen Kommandos fährt man Linux im Textmodus nicht herunter?
+0;shutdown -h now
+0;halt
+1;stop
+0;init 0
+0;poweroff
+@;0;Welche der folgenden Aussagen sind korrekt?
+0;shutdown ruft halt auf und halt seinerseits benutzt den "init 0"-Prozess
+1;halt ruft shutdown auf und shutdown seinerseits benutzt den "init 0"-Prozess
+0;Der "init 0"-Prozess ruft sowohl "shutdown" als auch "halt" auf
+@;0;Man gibt das Kommando "runlevel" und erhält als Ergebnis die beiden Zahlen "1 5". Wie ist dieses Ergebnis zu interpretieren?
+1;Das System befindet sich derzeit in Runlevel 5
+0;Das System befindet sich derzeit in Runlevel 1
+0;Der vorherige Runlevel war 4
+0;Der vorherige Runlevel war 1
+@;0;Welches der folgenden Kommandos bewirkt einen Neustart des Rechners (shutdown mit reboot)
+0;init 0
+0;init 2
+0;init 5
+1;init 6
+@;0;Mit welcher Option muss man halt aufrufen, wenn man erzwingen will, dass ein halt ohne Aufruf von shutdown ausgeführt wird.
+1;halt -f
+0;halt -n
+0;halt -i
+@;0;Welche PID hat der init-Prozess?
+0;0
+1;1
+0;2
+0;immer verschieden, d.h. irgendeine gültige Prozessnummer
+0;distributionsabhängig mal 0 mal 1
+@;0;Ein Benutzer führt den Befehl "runlevel" aus und erhält "3 5" als Antwort. Was bedeutet dies?
+0;Es zeigt dem Benutzer, dass System nicht korrekt konfiguriert ist, da die beiden Zahlen übereinstimmen müssten.
+0;Das System befindet sich im Runlevel 3, und die 5 stellt den Default-Wert dar.
+1;Zu einem früheren Zeitpunkt hatte sich das System im Runlevel 3 befunden, befindet sich jetzt aber im Runlevel 5
+0;Das System befindet sich im Runlevel 3 wird aber diesen in 5 Sekunden wegen eines Reboots verlassen.
+@;0;Was bewirkt die Eingabe von "linux 3" beim Lilo-Boot-Prompt?
+1;Linux wird im Runlevel 3 gebootet
+0;Linux wird im Runlevel 2 gebootet, da die Zählung hier bei Null beginnt.
+0;Die dritte Version des Linux-Kernels wird gebootet.
+@;0;Was bewirkt in der Bash-Shell das Drücken von <Strg>+<Z> (control-Z) bei einem laufenden Programm?
+0;Das im Vordergrund laufende Programm wird fortgesetzt.
+1;An das im Vordergrund laufende Programm wird ein SIGTSTP-Signal geschickt, was eine Unterbrechung des Programms bewirkt.
+0;Ein im Vordergrund laufendes Programm wird in den Hintergrund geschickt.
+0;Der Benutzer wird aus der laufenden Shell abgemeldet.
+@;0;Was bewirkt das Et-Zeichen (&), wenn es am Ende einer Eingabezeile in der Bash steht?
+0;Es bewirkt, dass der Prozess im Vordergrund läuft.
+1;Damit wird der vor dem Et-Zeichen stehende Proszess im Hintergrund ablaufen.
+0;Es sagt der Shell, dass das Kommando auf der nächsten Zeile fortgesetzt werden wird.
+0;Das Et-Zeichen sollte nie am Ende einer Zeile stehen, sondern immer zwischen zwei Kommandos.
+@;0;Mit welcher Zeichenfolge schickt man ein von einem Terminal aus im Vordergrund gestartetes Programm in den Hintergrund?
+0;<Strg>+<C> und anschließende Eingabe von bg
+0;<Strg>+<B> und anschließende Eingabe von bg
+1;<Strg>+<Z> und anschließende Eingabe von bg
+0;<Strg>+<D> und anschließende Eingabe von bg
+@;0;Mit welchem der folgenden Kommandos beendet man einen Prozess mit der Nummer 4711 ohne ihm zu erlauben sich ordentlich zu beenden.
+0;kill 4711
+0;kill -1 4711
+1;kill -9 4711
+0;kill -15 4711
+@;Welches Signal wird mit "kill" verschickt, wenn kill ohne weitere Optionen aufgerufen wird, d.h. keine Signal angegeben wird? (Bitte die Nummer und nicht den Signalnamen angeben.)
+0;5
+0;7
+1;15
+0;17
+@;0;Mit dem "kill -9"-Kommando wird folgendes Signal an einen laufenden Prozess geschickt:
+0;SIGHUP
+1;SIGKILL
+0;SIGTERM
+0;SIGQUIT
+@;0;Mit welchem Kommando kann man sich die Prozesse in einer baumartigen Struktur darstellen lassen? (Nur einen Kommandonamen ohne Pfad und ohne Optionen angeben)
+0;tree
+0;ps
+1;pstree
+0;psshow
+@;0;Welche der folgenden kill-Kommandos ist eine alternative Schreibweise zu "kill -9"?
+1;kill -s SIGKILL
+0;kill -SKILL
+0;kill -i 
+0;kill -NOW
+@;0;Welches Signal wird mit "kill" verschickt, wenn kill ohne weitere Optionen aufgerufen wird, d.h. keine Signal angegeben wird? (Bitte den Signalnamen und nicht die Nummer angeben.)
+0;SIGHUP
+0;SIGKILL
+1;SIGTERM
+0;SIGQUIT
+@;0;Mit welchem Kommando kann man die Priorität eines bereits gestarteten Prozesses ändern?
+0;priority
+1;renice
+0;nice
+0;ps
+0;tops
+Was bewirkt das folgende Kommando renice +1 4711 -u freddy root -p 42 ?
+0;Der Prozess mit der PID 4711 wird auf die Priorität 1 gesetzt und der Besitzer wird von freddy auf root geändert. Die maximale Laufzeit wird auf 42 Sekunden gesetzt.
+1;Die Priorität der Prozesse mit den PIDs 4711 und 42 werden auf 1 gesetzt, ebenso wie alle Prozesse der Benutzer freddy und root.
+0;Die Priorität der Prozesse mit den PIDs 4711 und 42 werden auf 1 gesetzt, falls die Prozesse entweder dem Benutzer freddy oder dem Benutzer root gehören.
+0;Die Priorität der Prozesse mit den PIDs 4711 und 42 werden auf 1 gesetzt, und der Besitzer wird von freddy auf root geändert.
+@;0;Was bewirkt das Kommando
+kill -15 4711 9 ?
+0;Die Prozesse 4711 und 9 bekommen das SIGKILL-Kommando geschickt.
+1;Die Prozesse 4711 und 9 bekommen das SIGTERM-Kommando geschickt.
+0;Der Prozess 4711 erhält nach 9 Sekunden das SIGKILL-Kommando geschickt.
+0;Der Prozess 4711 erhält nach 9 Sekunden das SIGTERM-Kommando geschickt.
+@;0;Welche der folgenden Aussagen bzgl. des init-Prozesses ist richtig?
+1;Bei dem init-Prozess handelt es sich um den ersten vom Kernel gestarteten Prozess.
+0;Der init-Prozess hat die PID 0 und ist der Vorfahre von allen anderen Prozessen.
+0;Der init-Prozess ist der Prozess, der den Kernel startet.
+@;0;Welche der folgenden Aussagen bzgl. Elternprozesse ist falsch?
+0;Unter dem Elternprozess eines Prozesses versteht man den Prozess, der ihn geschaffen hat.
+1;Unter dem Elternprozess eines Prozesses versteht man den Prozess, der eine um eins kleinere Prozessnummer hat.
+0;Es gibt mindestens einen Prozess, der keinen Elternprozess hat.
+0;Wenn ein Elternprozess eines Programmes x aufhört zu existieren, wird automatisch der init-Prozess zum Elternprozess des Programmes x.
+@;0;Was bewirkt der top-Befehl?
+0;top druckt per Default die ersten 20 Zeilen einer Datei aus.
+0;Das top-Kommando druckt die 10 Prozesse aus, welche die meiste Rechenzeit verbraucht haben.
+1;top zeigt eine Prozessliste an, die alle paar Sekunden aktualisiert wird. 
+0;Die Programme, die als letztes aktiv waren, erscheinen ganz unten in der Liste.
+@;0;Mit welchem Kommando kann man Prozesse beenden?
+1;kill
+0;renice
+0;ps
+0;stop
+@;0;Wie kann man mit pstree sowohl den Prozess-Namen als auch die PID ausgeben lassen?
+0;pstree gibt per Default beides aus.
+1;Mit der Option -p
+0;Durch Angabe der Option -c
+@;0;Was ist die Ausgabe von ps ohne Parameter?
+0;Alle Prozesse, aber nur die Namen und keine PID oder Benutzer-Angaben
+1;ps zeigt ohne Optionen nur die eigenen Prozesse des Benutzers, aber nur die, die aus Textkonsolen bzw. Shell-Fenstern gestartet
+0;ps zeigt ohne Optionen nur die eigenen Prozesse des Benutzer
+@;0;Welche Art von Optionen kennt das ps-Kommando?
+0; nur UNIX-Optionen und BSD-Optionen
+0;nur Lang-Optionen von GNU
+1;alle
+@;0;Was bewirkt die Option -h beim pstree-Kommando?
+0;Wie auch bei anderen Kommandos üblich, erhält man einen Hilfe-Text zum Kommando.
+1;Mit "pstree -h" werden die Elternpfade zum gerade laufenden Prozess durch Fettdruck hervorgehoben.
+0;Es gibt keine Option -h beim pstree-Kommando
+@;0;Mit welcher Option, kann man sich mittels ps auch Prozesse anzeigen lassen, die keinem Terminal zugeordnet sind, also interne Prozesse zur Systemverwaltung (Daemons)?
+0;-u
+1;-x
+0;u
+0;-i
+@;0;Mit welchem Kommando lassen sich alle Hintergrundprozesse der aktiven Shell anzeigen?
+0;psback
+1;jobs
+0;ps -b
+@;0;Wie kann man sich beim hobs-Kommando auch die Prozess-ID anzeigen lassen?
+0;Die wird immer mit angezeigt.
+1;mit der Option -l
+0;mit der Option -p
+@;0;Was bewirkt das Kommando "kill %9"?
+0;Hier kann es sich wohl nur um einen Schreibfehler handeln und "kill -9" ist gemeint
+0;Alle Prozesse, die bis zu 9 Prozen der Prozessorleistung beanspruchen werden gestoppt.
+1;Der 9. im Hintergrund laufende Job wird beendet.
+@;0;Welches Signal kannn von Prozessen nicht abgefangen werden?
+0;SIGHUB
+0;SIGTRAP
+0;SIGINT
+1;SIGSTOP
+0;SIGTERM
+@;0;Mit welchem Befehl erreicht man, dass ein Hintergrundprozess nach dem Ende seines Elternprozesses selbständig weiterexistiert.
+0;sighub
+1;nohup
+0;back
+0;sighub -b
+@;0;Welches der folgenden Kommandos sendet kein SIGTERM zu dem Prozess mit der PID 1001?
+0;kill 1001
+1;kill -12 1001
+0;kill -SIGTERM 1001
+0;kill -sigterm 1001
+0;kill -TERM 1001
+0;kill -s 15 1001
+0;kill -s SIGTERM 1001
+@;0;Welche Aussage bechreibt einen Zombie nicht?
+0;Das ist ein Prozess, der beim ps-Kommando als <defunct> eingetragen ist.
+0;Das ist ein Prozess, der beim Beenden hängen geblieben ist und nicht mehr ansprechbar ist.
+1;Einen Zombie kann man mittels "kill -9 <PID>" abschießen.
+
+
+
+

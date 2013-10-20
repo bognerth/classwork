@@ -13,3 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# ignore secret
+/db/seeds.rb
+/config/initializers/setup_mail.rb
+/config/database.yml
+/config/deploy.rb

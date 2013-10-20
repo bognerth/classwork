@@ -1,0 +1,303 @@
+@;0;Was ist kein typisches Verzeichnis im UNIX-Verzeichnisbaum?
+0;/bin
+0;/usr
+1;/usw
+0;/etc
+@;0;zwei Dateien fuege ich mit folgendem Kommand zu einer zusammen
+0;touch
+1;cat
+0;less
+0;cut
+0;head
+0;tail
+@;0;Der Schalter für das Kommando head um die ersten 25 Zeichen einer Datei angzeigt zu bekommen ist
+0;-d 20
+1;–n 20
+0;-c 20
+@;0;Der Schalter für das Kommando tail um eine Protokolldatei dauerhaft zu oeffnen um Eingaben zu sehen ist
+0;-d
+0;-n
+0;-c
+1;nicht angefuehrt
+@;0;Welche Aussage ist kein Merkmal der lexikographischen Sortierung
+0;Die ganze Zeile wird genommen
+0;Das erste differerierende Zeichen sorgt fuer die Reihenfolge
+1;beide Aussagen sind Merkmale
+@;0;Welcher Befehl sortiert die Datei text.dat nach der 2. Spalte
+1;sort –k 2 text.dat
+0;sort –n 1 text.dat
+0;sort –k 1 text.dat
+0;sort –o 1 text.dat
+@;0;Nennen Sie das Kommando mit dem nur die Zeilen der Datei text.dat ausgegeben werden die nicht doppelt vorkommen
+1;unique
+0;cut
+0;paste
+0;touch
+0;echo
+0;keiner der Befehle
+@;0;Nennen Sie das Kommando mit dem Sie Spalten aus einer Datei extrahieren koennen
+0;unique
+1;cut
+0;paste
+0;touch
+0;sort
+0;keiner der Befehle 
+@;0;Nennen Sie das Kommando mit dem Sie verschiedene Eingabedateien zeilenweise aneinanderfuegen koennen
+0;unique
+0;cat
+1;paste
+0;touch
+0;echo
+0;keiner der Befehle
+@;0;der Befehl mit dem Sie die Shell fuer 10 Sekunden pausiert heisst
+1;sleep 10
+0;wait 10
+@;0;Welche Anweisung macht folgende Ausgaben, wenn es eine Variable w=Welt gibt: Hallo Weltenbummler
+1;printf Hallo ${var}enbummler
+1;echo Hallo ${w}enbummler
+0;printf Hallo ${w}enbummler
+0;echo 'Hallo '. $w . 'enbummler'
+@;0;Welcher Befehl zeigt die in der aktuellen Shell gültigen Pfade?
+1;echo $PATH
+0;pwd
+0;keiner der Befehle
+@;0;Welcher Befehl zeigt den tatsaechlichen Pfad des Programmes 'ruby' 
+0;path ruby
+1;which ruby
+0;type ruby
+@;0;Folgender Befehl gibt die history seitenweise aus:
+0; . | less
+0; history > less
+1;history | less
+@;0;Der Befehl mit dem Sie den Befehl mit der History-Nr. 199 erneut ausführen lassen lautet:
+0;199
+1;!199
+0;keiner der Befehle
+@;0;Welche Aussage charkaterisiert nicht den Begriff Datei aus Linuxsicht
+0;Der Begriff Datei steht allgemein fuer eine abgeschlossene Ansammlung von Daten.
+1;Fuer die Art der enthaltenen Daten gibt es Einschraenkungen
+0;Eine Datei kann ein Text sein, der nur wenige Buchstaben lang ist, aber auch ein viele Megabyte großes Archiv, das das gesamte Lebenswerk eines Anwenders umfaßt.
+@;0;Welche Aussage stimmt nicht in Bezug das Linux-Dateisystem
+0;Das Dateisystem legt fest, nach welcher Methode die Daten auf einem Datenträger angeordnet und verwaltet werden.
+0;Der Verzeichnisbaum, oder ein Medium (Stick, Festplatte) wird so genannt.
+1;Es gibt ein einheitliches Dateisystem für Linuxdistributionen
+@;0;Welches Dateisystem ist nicht originär Linux
+0;ext2
+0;ext3
+1;ntfs
+0;ReiserFS
+0;btrfs
+0;swap
+@;0;Welcher Dateityp ist kein Dateityp in einem Standardlinuxsystem
+0;FILES: Grafik, Audio, Text
+0;DIRECTORIES: Tabelle mit Inode-Nummern
+0;SYMBOLISCHE LINKS: ln –s. Verknüpfungen
+0;DEVICES: Gerätedateien. Schnittstellen zu Geräten, etwa einem Laufwerk (/dev/fd0) wird mit mknod angelegt
+0;FIFOs: named pipes, erlauben die direkte Kommunikation zwischen Programmen
+0;UNIX-DOMAIN-SOCKETS: ähnlich wie FIFOs, aber mit einer bidirektionalen Kommunikation (beide Partner haben Lese- und Schreibzugriff)
+1;alle Dateitypen sind typisch fuer Linux
+@;0;In welchem Verzeichnis liegt das Betriebssystem?
+1;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis liegen die wichtigsten zum Systemstart notwendigen, ausführbaren Programme?
+1;/bin und /sbin
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis liegen die Systembibliotheken (Shared Libraries)?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+1;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis liegen  die Gerätedateien?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+1;/dev
+0;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis liegen  die Konfigurationsdateien?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+1;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis sind die Benutzer-Heimat-Verzeichnisse gelistet?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+1;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis werden  temporäre Dateien gespeichert?
+0;/boot
+0;/etc/fstab
+0;/usr
+1;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis liegen die veränderlichen Dateien?
+0;/boot
+0;/etc/fstab
+0;/usr
+0;/tmp
+1;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;0;In welchem Verzeichnis liegen die  unveränderlichen Dateien?
+0;/boot
+0;/etc/fstab
+1;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib
+0;keinem der genannten
+@;0;Welche Datei beschreibt die Zusammensetzung des Systems?
+0;/boot
+1;/etc/fstab
+0;/usr
+0;/tmp
+0;/var
+0;/etc
+0;/home
+0;/dev
+0;/lib/etc/fstab
+0;keinem der genannten
+@;0;Was beschreibt den Begriff „mounten“ am Besten?
+0;Einbinden eines usb-Stick
+1;Einhaengen eines Datentraegers in das Dateisystem
+0;Einen Datenträger dauerhaft verbinden
+@;0;Welche Charakterisierung trifft am Besten den Begriff SWAP- Bereich?
+0;Auslagerung von System-Dateien auf die Festplatte
+0;Mit ext2 formatierte Partition der Festplatte
+1;Auslagerung des RAM-Speichers auf die Festplatte
+@;0;Nennen Sie das Kommando um einen USB-Stick ins Dateisystem einzuhaengen
+0;mount /media/usb /dev/sda1
+1;mount /dev/sda1 /media/usb
+0;keiner der Befehle ist erfolgreich
+@;0;Nennen Sie den Befehl zum Archivieren aller Dateien mit der Endung „.dat“ im Ordner docs im home-Verzeichnis. Das Archiv hat den Namen Daten.tar und liegt im Ordner archiv des home-Verzeichnisses
+1;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl zum Archivieren aller Dateien des Ordners docs im home-Verzeichnis. Das Archiv hat den Namen Daten.tar und liegt im Ordner archiv des home-Verzeichnisses
+0;tar ~/archiv/Daten.tar ~/docs
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+1;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl zum Ausgeben des Inhalts des Archivs Daten.tar
+0;tar –z Daten.tar
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+1;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl zum Entpacken des Artchivs Daten.tar
+0;tar –f Daten.tar
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+1;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl zum Komprimieren der Datei daten.txt
+0;gzip daten
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+1;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl zum Entpacken der komprimierten Datei daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+1;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl zum Komprimieren aller Dateien mit der Endung '.dat' im Ordner docs im home-Verzeichnis. Das Archiv hat den Namen Daten.tar.gz und liegt im Ordner archiv des home-Verzeichnisses
+1;tar –cvzf ~/archiv/Daten.tar ~/docs/*.dat
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar –xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl zum Entpacken des komprimierten Archivs Daten.tar.gz
+1;tar –xvzf Daten.tar.gz
+0;tar –cvf ~/archiv/Daten.tar ~/docs/*.dat
+0;gzip daten.txt
+0;tar –cvf ~/archiv/Daten.tar ~/docs
+0;tar –tf Daten.tar
+0;tar –xvf Daten.tar
+0;gzip –d daten.txt
+0;tar xvzf Daten.tar.gz
+0;keiner der gelisteten Befehle
+@;0;Nennen Sie den Befehl um sich unter Ubuntu dauerhaft als root einzuloggen
+1;sudo  -i
+0;sudo
+0;sudo

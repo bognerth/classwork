@@ -1,0 +1,968 @@
+#-*- encoding: utf-8 -*-
+@;5;Welche Aussage muss nicht erfuellt sein, damit ein Geraet als Computer bezeichnet werden kann
+0;Verarbeitung von Daten gemaess einer Folge von automatisch ausgefuehrten Instruktionen
+0;Programme erlauben Entscheidungen und Wiederholungen
+0;Programme können geändert oder ausgetauscht werden
+1;Benutzt X-Server zur Ausgabe
+@;5;Welche beiden Bestandteile machen die Hardware eines Computers aus?
+0;Ein- und Ausgabegeräte
+1;Zentraleinheit und Peripherie
+0;Eingabegeräte und Peripherie
+0;Zentraleinheit und Ausgabegeräte
+@;5;Welches der folgenden Elemente ist kein Bestandteil der Zentraleinheit?
+0;CPU
+0;BIOS
+1;Ausgabegeräte
+0;Chipsatz
+@;5;Nach welchem Prinzip arbeiten Computer?
+0;ADAM-Prinzip
+1;EVA-Prinzip
+0;NOAH-Prinzip
+0;MOSES-Prinzip
+@;5;Wie hieß das Betriebssystem, das die Entwicklung von UNIX inspirierte?
+0;TIMICS
+1;MULTICS
+0;COMPLICS
+0;ULTRICS
+@;5;Welche Prgrammiersprache wurde 1971 zur Neuimplementierung von UNIX entwickelt?
+0;Pascal
+0;BASIC
+1;C
+0;SmallTalk
+@;5;An welcher Universität wurde UNIX weiterentwickelt?
+0;Massachusetts Institute of Technology
+1;University of California, Berkely
+0;University of Illinois
+0;Harvard
+@;5;Was ist POSIX?
+0;Eine UNIX-Variante
+0;Eine Programmiersprache
+1;Der kleinste gemeinsame Nenner aller UNIX-Systeme
+0;Eine jährliche UNIX-Entwicklerkonferenz in San Francisco
+@;5;Welches Betriebssystem gilt als das erste echte PC-Betriebssystem?
+0;Windows
+0;Linux
+1;CP/M
+0;MS-DOS
+@;5;Was ist eine GUI?
+1;Graphical User Interface (Grafische Benutzeroberfläche)
+0;Generic UNIX Interface (UNIX-Standard-Systemschnittstelle)
+0;Globally Unique Identity (Weltweit einmalige Registriernummer)
+0;Gate Undefined Issue (Sicherheitslücke in Betriebssystemen)
+@;5;Wofür steht die Abkürzung GNU?
+0;Georgia Newton University
+1;GNU's Not UNIX
+0;Graphical Network Usage
+0;Global Networking Union
+@;5;Welche der folgenden Aussagen über den Kernel trifft zu?
+0;Monolithische Kernel sind schneller als Mikrokernel
+0;Alle modernen Kernel sind Mikrokernel
+1;Der Kernel führt die Prozess- und Speicherverwaltung durch
+0;Der Kernel stellt die grafische Benutzeroberfläche bereit
+@;5;Was bedeutet "Bootstrapping" beim Betriebssytem?
+0;Kontrolle des Bootvorgangs eines PCs über das Netzwerk
+0;Installation eines Gerätetreibers
+0;Im Hintergrund laufende Programme während des Bootvorgangs
+1;Anderes Wort für das Booten des Betriebssystems
+@;5;Welche Aussage über die Betriebsmodi eines Betriebssystems trifft zu?
+0;Es gibt vier verschiedene Betriebsmodi
+0;Prozesse im Kernelmodus können jederzeit unterbrochen werden
+0;Prozesse im Benutzermodus genießen einen stärkeren Zugriffsschutz
+1;Prozesse im Kernelmodus haben Priorität
+@;5;Was ist kein Bestandteil einer Speicheradresse der Memory Management Unit (MMU) eines Intel-Prozessors?
+0;Offset
+0;Page Directory
+0;Page Table
+1;Page File
+@;5;Wie lautet der relative Pfad, um von /home/user1/test/ aus die Datei /home/user2/hallo.txt anzusprechen?
+0;../user2/hallo.txt
+0;../../hallo.txt
+0;user2/hallo.txt
+1;../../user2/hallo.txt
+@;5;Für welches Verzeichnis im UNIX-Verzeichnisbaum steht die Abkürzung ~ ?
+0;das Systemverzeichnis
+1;das Home-Verzeichnis des aktuellen Benutzers
+0;das Wurzelverzeichnis
+0;das Verzeichnis /usr/sbin
+@;5;Welche Aussage über Symlinks im UNIX-Dateisystem ist zutreffend?
+0;Wird der letzte Symlink gelöscht, der auf eine inode zeigt, dann wird die entsprechende Datei gelöscht
+0;Ein Symlink verweist auf eine inode
+1;Ein Symlink verweist auf einen Verzeichniseintrag
+0;Symlinks können nur auf Dateien auf demselben physikalischen Datenträger verweisen
+@;5;Was geschieht, wenn unter Linux "ls -l > verzeichnis.txt" eingegeben wird?
+0;Der Befehl ls liest seine Optionen aus der Datei verzeichnis.txt
+0;Es werden nur Dateien angezeigt, deren Dateinamen im Alphabet hinter verzeichnis.txt liegen
+1;Die Ausgabe des Befehls ls wird in die Datei verzeichnis.txt umgeleitet
+0;Der Inhalt der Datei verzeichnis.txt wird zeilenweise aufgelistet
+@;5;Welches Zeichen oder welche Zeichenfolge verwenden UNIX-Textdateien als Zeilenumbruch?
+0;CR (ASCII-Code 13)
+0;LF+CR (ASCII-Codes 10+13)
+1;LF (ASCII-Code 10)
+0;CR+LF (ASCII-Codes 13+10)
+@;5;Was zaehlt nicht zu den Merkmalen von Firmware
+0;Ist auf der Hauptplatine des Computers gespeichert
+0;Versetzt den Computer beim Einschalten in einen bestimmten Zustand
+0;ermöglicht das Starten des Betriebssystems
+1;alle Aussagen charakterisieren Firmware
+@;5;Welche Eigenschaft beschreibt am besten ein multiuserfaehiges Betriebssystem:
+0;hat eine grafische Bedienoberfläche
+0;alles ist eine Datei 
+1;ermöglicht das gleichzeitige Arbeiten mehrerer Benutzer
+0;ermöglicht vielen Benutzern das Arbeiten
+@;5;Welches Merkmal charakterisiert am wenigsten die wesentlichen Funktionen eines Betriebsystems
+0;Verwaltet die Ressourcen
+1;Ermoeglicht grafischen Output
+0;Sorgt dafür dass Programme gestartet und beendet werden können
+0;Enthält eine Benutzerschnittstelle
+0;Regelt die Netzwerkfähigkeit auf einer elementaren Ebene
+@;5;Der erste Linux-Kernel wurde von folgender Person geschrieben:
+0;Ken Thompson
+0;Bill Gates
+0;Steve Balmer
+1;Linus Torvalds
+@;5;Linux gibt es seit
+0;1969
+0;1970
+1;1991
+0;1993
+@;5;Welche der folgenden Aussagen ist nicht korrekt?
+0;Was man allgemein als Linux bezeichnet, ist nicht Linux, sondern der Linux-Kernel plus GNU?
+0;Minux ist ein Unix-ähnliches Betriebssystem.
+1;Shareware ist Open Source.
+0;Linux basiert auf Unix.
+@;5;Welchem Betriebssystem ist Linux ähnlich?
+0;DOS
+0;Windows NT
+1;Unix
+@;5;Was wurde von Linux Torvalds entwickelt?
+1;Linux-Kernel
+0;Linux als Ganzes
+0;Unix
+0;MS-DOS
+@;5;Von wem wurde die erste Version von Unix geschrieben?
+0;Richard Stallman
+1;Ken Thompson
+0;Dennis M. Ritchie
+0;Brian W. Kernighan
+@;5;In welchem Jahr entstand die erste Version von Unix?
+1;1969
+0;1970
+0;1991
+0;1993
+@;5;Was versteht man unter "The EPOCHE" im Linux/Unix-Umfeld?
+1;Der Beginn der Unix-Zeitzählung.
+0;Der Tag der ersten Veröffentlichung eines Unix-Systems.
+0;Die Zeit, in der der erste Linux-Kernel entwickelt wurde.
+@;5;Wann beginnt die offzielle Unixzeit?
+0;1. August 1969
+1;1. Januar 1970
+0;1. Januar 1969
+0;1. Januar 1991
+@;5;Die erste X-Oberfläche gibt es in Linux seit:
+0;Von Anfang an
+0;1999
+1;1992
+0;2003
+@;5;Welche der folgenden Aussagen stehen nicht im Einklang mit der Linux bzw. Unix-Philosophie?
+0;klein aber fein
+1;Programme sollten nach Möglichkeit kompativel zu Microsoft-Betriebssystemen sein
+0;Portabilität ist wichtiger als Effizienz
+0;Schweigen ist Gold
+0;Jedes Programm ist ein Filter
+@;5;Welche Aussage stimmt nicht? Freie Software / OpenSource-Software ist Sofware, 
+0;die in menschenlesbarer Form vorliegt.
+0;die beliebig oft kopiert, verbreitet und genutzt werden darf.
+1;die zunächst kostenlos ist. Zahlen muss man, wenn die SW regelmäßig nutzt.
+0;die verändert und in veränderter Form weitergegeben werden darf.
+@;5;Was bedeutet GNU?
+0;General Public License
+1;Gnu is not Unix
+0;Generally not Unix
+@;5;Von wem wurde das GNU-Projekt gegründet?
+0;Linux Torvalds
+0;Richard Stallman gründete zusammen mit Linux Torvalds das GNU-Projekt
+1;Richard Stallman
+0;AT&T
+@;5;Richard Stallman ist nicht der Begründer
+0;der Open-Source-Bewegung
+0;der Freie-Software-Bewegung
+0;der Free Software Foundation
+0;des GNU-Projektes
+1;von Red Hat
+@;5;Unix hieß ursprünglich
+1;Unics
+0;Multics
+0;DR-DOS
+0;SINIX
+@;5;Wann wurde Linux unter die GNU GPL gestellt?
+0;Von Anfang an
+0;1991
+1;1992
+0;2000
+@;5;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Unix
+0;Linus Torvald
+0;Andrew Tannenbaum
+1;Dennis Ritchie
+0;Richard Stallman
+@;5;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Linux
+1;Linus Torvald
+0;Andrew Tannenbaum
+0;Dennis Ritchie
+0;Richard Stallman
+@;5;Welcher Entwickler hat entscheidenden Anteil am Entstehen von Minix
+0;Linus Torvald
+1;Andrew Tannenbaum
+0;Dennis Ritchie
+0;Richard Stallman
+@;5;Welche Aussage stimmt fuer die Entstehung von Unix
+0;Unix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
+0;Unix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
+1;Unix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
+0;Unix wurde als Terminalemulator fuer einen 386er PC entwickelt.
+0;Keine der Aussagen trifft zu
+@;5;Welches Aussage charakterisiert den Zusammenhang zwischen BSD und Unix
+0;Unix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
+1;Unix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
+0;Unix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
+0;Unix wurde als Terminalemulator fuer einen 386er PC entwickelt.
+0;Keine der Aussagen trifft zu
+@;5;Welche Aussage charakterisiert den Zusammenhang von Unix und Minix
+1;Minix wurde von Andrew S. Tanenbaum an der Uni Amsterdam für Unterrichtszwecke geschrieben.
+0;Minix wurde Ender der 70er von Studenten in Berkley auf die Vax transferiert.
+0;Minix war ein HobbyProjekt von Ken Thompson und Dennis Ritchie, Entwickler bei den Bell Laboratories (AT&T).
+0;Minix wurde als Terminalemulator fuer einen 386er PC entwickelt.
+0;Keine der Aussagen trifft zu
+@;5;Welche Aussage ist falsch. Bei Linux gilt grundsätzlich ... 
+0;Alles ist eine Datei, z.B. die PCI-Geräte des Computers in der Datei/proc/pci 
+1;Kleine, spezialisierte Programme.Ein Programm erledigt nur eine Aufgabe, aber die perfekt: less kann nur Ordnerinhalte anzeigen
+0;Vermeidung von Redundanz: wenn ein Programm eine Aufgabe erfolgreich erledigt hat, gibt es keine Ausgabe: touch datei.
+@;5;Urheberrecht bedeutet nicht:
+0;Der Urheber eines Werks hat als einziger das Verfügungsrecht über das Erzeugnis
+1;Der Urheber ist verpflichtet 
+@;5;Welches Aussage charakterisiert die Softwareproduktion in den 60er und 70er Jahren am Besten
+1;Software wurde nicht verkauft, sondern war Bestandteil der Hardware
+0;Programme kopieren und zu tauschen war selbstverständlich
+0;Software war unbezahlbar teuer
+@;5;Welcher Grund hat am Entstehen des GNU-Systems keinen Anteil
+0;Software wurde in den 70ern und 80ern zur Ware
+0;Der Quellcode des gekauften Produktes war nicht mehr einsehbar
+1;Linus Torvald wollte Linux eine Basis in der Community geben
+0;Richard M.Stallman wollte ein System implementieren, das auf der Kultur des Teilens basiert
+@;5;Welches Merkmal trifft für freie Software im Sinne des GNU-Systems nicht zu
+0;das Programm muss für jeden beliebigen Zweck benutzt werden dürfen
+0;der Quellcode muss einsehbar und veränderbar sein
+1;die Arbeit des Programmierers soll geschützt werden
+0;das veränderte Programm muss veröffentlicht und  weitergegeben werden können
+@;5;Auf der Basis von OpenSourceSoftware kann man kein Geld verdienen mit ...
+0;Training
+0;Dokumentation
+0;Kundenspezifische Weiterentwicklung und Anpassung
+1;Mit allen genannten Tätigkeiten kann eine Firma Geld verdienen
+@;5;Wozu ist man verpflichtet, wenn man unter der GPL (General Public License) veröffentlichte Software weiterentwickelt
+0;die eigene Software unter der GPL veröffentlichen
+1;den Quellcode verschlüsseln
+@;5;Welches Lizenzmodelle ist nicht im Umfeld von OpenSource
+0;Apache-Lizenz
+0;Mozilla Public Lizenz
+1;Eula
+0;BSD Lizenz
+@;5;Welches Merkmal gilt nicht für alle Linux-Distributionen 
+0;Enthalten neben dem betriebssystem eine komplette Softwareumgebung
+0;Arbeiten mit der Bash als Shell
+1;Bieten eine grafische Benutzeroberfläche an
+@;5;Welche Distribution basiert auf der Paketverwaltung DEB
+0;Red Hat
+0;Suse
+1;Debian
+@;5;Welche Distribution wird von einer nicht firmengebundenen Community gepflegt
+0;Red Hat
+0;Suse
+1;Debian
+@;5;Welche Distribution ist auf Server spezialisiert?
+1;Red Hat
+0;Suse
+0;Debian
+@;5;Welche Zuordnung von Paketverwaltungen und Distribution trifft zu:
+0;RPM (Suse, RedHat, Ubuntu)
+1;DEB (Debian, ubuntu)
+0;DEB (Debian, Arch-Linux)
+@;5;Welche Aussage zum Thema Kernel ist falsch:
+0;Der Kernel bildet die hardwareabstrahierende Schicht (Hardwareabstraktionsschicht), das heißt, er stellt der auf dieser Basis aufsetzenden Software eine einheitliche Schnittstelle (API) zur Verfügung, die unabhängig von der Rechnerarchitektur ist.
+0; Der modulare Aufbau ds Kernel ermöglicht es, im laufenden Betrieb Komponenten hinzu zu fügen und zu entfernen 
+1;Beide Aussagen sind korrekt
+@;5;Welche Zuordnung stimmt für grafische Arbeitsumgebungen
+0;Gnome,LXDE, KDE vollwertig
+1;Gnome + KDE vollwertig
+0;KDE leichtgewichtig
+1;XFCE vollwertig
+@;5;Gründe, die für die Benutzung der Kommandozeile unter Linux sprechen
+1;Viele Aufgaben lassen sich auf der Kommandozeile effizienter lösen
+0;Unter Linux gibt es mächtige Werkzeuge in der grafischen Umgebung
+@;5;Mit welchem Tastenkürzel kann man in der Liste der bereits früher eingegebenen Kommandos (command history) suchen?
+1;<Strg>+<R>
+0;<Strg>+<S>
+0;<Alt>+<F>
+0;<Alt>+<B>
+0;<Strg>+<K>
+@;5;Der Zweck einer Shell aus der Betriebssystemsicht wird beschrieben mit ...
+0;Einfache Schnittstelle zwischen User und System
+1;Benutzerschnittstelle zur Interaktion mit dem Betriebssystem-Kernel
+0;Komfortable Systemschnittstelle
+@;5;Welche Aufgaben einer Shell aus der Benutzersicht stimmt am Wenigsten
+0;Kommando von der Tastatur einlesen
+0;Kommando überprüfen
+0;Kommando ausführen
+1;Resultat ausgeben
+@;5;Welche Shell wird in den meisten Distributionen als Standard eingesetzt
+0;Korn-Shell
+1;Bash
+0;C-Shell
+@;5;Welcher Bestandteil einer Kommandozeilenaufforderung theo@;5;mars:/var > ist falsch wiedergegeben:
+0;Theo: Benutzername
+0;Mars: Rechnername
+1;/var: Home-Verzeichnis
+@;5;Welches Tastaturzeichen verteilt ein Kommando auf zwei Zeilen
+0;Slash
+1;Backslash
+0;Pipe
+@;5;Welche Aussage stimmt für den Unterschied von langen und kurzen Optionen nicht
+0;Kurze Optionen werden mit einem vorangestellt Bindestrich markiert, lange haben zwei Bindestriche
+1;Optionen spezifiziert den Befehl
+0;bei kurzen Optionen können mehrere hintereinander folgen 
+@;5;Unterschied zwischen einer Option und einem Argument
+0;Option spezifiziert den Befehl, womit es gemacht wird
+1;Argument Gegenstand des Befehls, womit wird es gemacht
+0;Argument spezifiziert den Befehl
+@;5;History-Funktion der Shell wird nicht bedient mit?
+1;.5
+0;!5
+0;Pfeil-Tasten
+0;Tab-Taste
+@;5;Nennen Sie die Differenz zwischen externen und internen Kommandos
+Intern: wird von Bash zur Verfügung gestellt, Vorteil Geschwindigkeit
+Extern: Programme der Verzeichnisse /usr und /usr/bin
+@;5;Nennen Sie den Befehl zur Bestimmung eines Kommandos
+1;type
+0;which
+@;5;Welche Option von 'man' zeigt nicht die Manualseiten, sondern die Position der Dateien im Dateisystem an?
+1;-w
+0;-p
+0;-l
+0;-o
+@;5;Welche Sektion der Man-Pages enthält Informationen über Kernel-Fehler?
+0;1
+1;2
+0;7
+0;9
+@;5;In welcher Sektion der Man-Pages gibt es Informationen über Benutzer-Kommandos?
+1;1
+0;2
+0;7
+0;9
+@;5;Wie verhält sich 'man' defaultmäßig, wenn es in verschiedenen Abschnitten der Manualseiten Einträge mit gleichen Namen gibt?
+1;Wird eine Manualseite in einem Abschnitt gefunden, so terminiert man nach Anzeigen dieser Seite.
+0;Es werden immer alle Einträge ausgegeben
+@;5;Befehl zum Aufruf der manpages für den Befehl ls
+1;man ls
+0;apropos ls
+0;ls -man
+@;5;Taste zur Stichwortsuche innerhalb der Man-Pages
+0:ESC
+0;q
+1:/
+0:c
+@;5;Taste zum Beenden der Hilfe der Man-Pages
+0:ESC
+1;q
+0:/
+0:c
+@;5;Mit welcher Tastatureingabe wechsele ich beim vi vom Eingabe- zum Befehlsmodus
+1;Esc
+0;:
+0;i
+@;5;Tastureingaben zum Einfügen am Zeilenende
+1;A
+0;a
+0;i
+0;I
+@;5;Tastureingaben zum Einfügen am Zeilenanfang
+0;A
+0;a
+0;i
+1;I
+@;5;Tastureingaben zum Einfügen vor der Cursorposition
+0;A
+0;a
+1;i
+0;I
+@;5;Tastureingaben zum Einfügen nach der Cursorposition
+0;A
+1;a
+0;i
+0;I
+@;5;Tastenkombination mit der ich einen Text im vi speichern kann
+0;:q
+0;:q!
+0;q!
+1;:w
+0;:wq
+@;5;Tastenkombination zum Beenden des vi, ohne dass die Änderungen gespeichert werden
+0;:q
+1;:q!
+0;q!
+0;:wq
+@;5;Welche Aussage beschreibt die Besonderheiten des Umgangs mit Dateien unter Linux nicht
+0;Differenz zwischen Groß- und Kleinschreibung
+0;Es gibt keine Programmcharekterisierenden Endungen
+0;Dateiname kann beliebig lang sein und alle Buchstaben enthalten
+1;Dateinamen können bis zu 256 Zeichen lang sein
+@;5;Wie lautet die Notation der versteckten Datei ‚versteckt‘
+1;.versteckt
+0;versteckt.bak
+@;5;Welches Zeichen steht zwischen Directory und Datei
+1;Schraegstrich
+0;Backslash
+@;5;Sie sind als theo angemeldet. Im Unterverzeichnis dokumente befindet sich eine Datei: etwas.log. Sie wollen sich diese Datei mit less anzeigen lassen. Wie lautet der Befehl mit einem relativen Pfad
+1;less dokumente/etwas.log
+0;less /home/theo/dokumente/etwas.log
+0;less/dokument/etwas.log
+0;less etwas.log
+0;less ./etwas.log
+@;5;Sie sind als theo angemeldet. Im Unterverzeichnis dokumente befindet sich eine Datei: etwas.log. Sie wollen sich diese Datei mit less anzeigen lassen. Wie lautet der Befehl mit einem absoluten Pfad
+0;less dokumente/etwas.log
+1;less /home/theo/dokumente/etwas.log
+0;less/dokument/etwas.log
+0;less etwas.log
+0;less ./etwas.log
+@;5;Welcher Befehl zeigt den Ordnerinhalt des Verzeichnisses /etc/apache2 als Langform mit allen Dateien und allen Eigenschaften und Rechte der Dateien an
+0;ls -vxc /etc
+1;ls –la /etc/apache2
+0;ls --long /etc/apache2
+@;5;Wie lautet der Befehl zum Erstellen eines Ordner myweb als Unterverzeichnis von /var/www?
+1;mkdir /var/www/myweb
+0;md /var/www/myweb
+@;5;Welcher Befehl kopiert alle Dateien und Unterordner von Ihrem HOME-Verzeichnis in das neu angelegte Verzeichnis. (Sie sind als myname angemeldet)
+0;cy –R /home/myname/* /var/www/myweb
+0;cp –R /var/www/myweb /home/myname/* 
+1;cp –R /home/myname/* /var/www/myweb
+@;5;Welcher Befehl löscht das komplette Verzeichnis myweb in Ihrem home – Verzeichnis 
+0;rm /home/myweb
+1;rm –R /home/myweb
+0;rmdir /home
+@;5;Welcher Befehl verschiebt die Datei dat.txt vom Unterverzeichnis web ihres Homeverzeichnisses in den Temp-Ordner (tmp, direkt hinter der root) Ihres Systems
+1;mv /home/theo/web/dat.txt /tmp/dat.txt
+0;mv /tmp/dat.txt /home/theo/web/dat.txt
+0;cp /home/theo/web/dat.txt /tmp/dat.txt
+@;5;Welcher Befehl benennt die Datei datei.txt aus ihrem home-Verzeichnis in datei.log um
+0;rename datei.txt datei.log
+0;rn datei.txt datei.log
+0;move datei.txt datei.log
+1;mv datei.txt datei.log
+@;5;Welcher Befehl erzeugt ohne weitere Ausgabe die Datei datei.txt in Ihrem Homeverzeichnis  
+1;touch datei.txt
+0;cat dat.txt
+0;make dat.txt
+@;5;Nennen Sie den Befehl zum Erzeugen eines Links mit der Bezeichnung ‚mylog‘ im Unterverzeichnis ‚links‘ Ihres Homeverzeichnisses auf die Datei system.log(Verzeichnis /var/log)
+0;ln -s /var/log/system.log  mylog
+0;ln -s mylog /var/log/system.log 
+1;ln /var/log/system.log  mylog
+@;5;Welcher Befehl zeigt die Inode des Links ‚mylog‘  im Unterverzeichnis ‚links‘ Ihres Homeverzeichnisses 
+1;ls -i links
+0;ls -s links
+0;ls -s links/mylog
+@;5;Welche Aussage stimmt nicht in Bezug auf Links
+1;Auf Verzeichnisse können keine symbolischen Links gesetzt werden.
+0;Ein symbolischer Link ist eine Datei in der der Name steht auf den sie verweist. 
+0;Ein Hardlink ist ein Verweis im Dateisystem
+@;5;Welcher Befehl erstellt einen Link auf das Verzeichnis /var/log in Ihrem Homeverzeichnis mit der Bezeichnung log
+1;ln –s /var/log log
+0;ln /var/log log
+0;ln log /var/log
+@;5;der Inhalt der Datei vieltext.txt aus Ihrem Homeverzeichnis lässt sich mit folgendem Befehl seitenweise anzeigen
+0;much vieltext.txt
+1;less vieltext.txt
+0;page vieltext.txt
+@;5;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls dat*.txt?
+0;keine
+1;datei1.txt datei2.txt datei3.txt
+0;datei2.txt
+0;datei1.txt datei3.txt
+0;datei1.txt datei2.txt
+0;datei1.txt
+@;5;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls Datei?.txt?
+1;keine
+0;datei1.txt datei2.txt datei3.txt
+0;datei2.txt
+0;datei1.txt datei3.txt
+0;datei1.txt datei2.txt
+0;datei1.txt
+@;5;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls datei[23].txt?
+0;keine
+1;datei1.txt datei2.txt datei3.txt
+0;datei2.txt
+0;datei1.txt datei3.txt
+0;datei1.txt datei2.txt
+0;datei1.txt
+@;5;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls [A-Z]at*.txt?
+1;keine
+0;datei1.txt datei2.txt datei3.txt
+0;datei2.txt
+0;datei1.txt datei3.txt
+0;datei1.txt datei2.txt
+0;datei1.txt
+@;5;Im Unterverzeichnis Ihres Homedirectories liegt der Ordner Programme. Darin sind die Dateien:datei1.txt, datei2.txt, datei2.txt. Welche Ausgabe erzeugt der Befehl ls datei[!2].txt?
+0;keine
+0;datei1.txt datei2.txt datei3.txt
+0;datei2.txt
+1;datei1.txt datei3.txt
+0;datei1.txt datei2.txt
+0;datei1.txt
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, die dem User theo gehören und sich unterhalb des Verzeichnisses /var/www befinden
+1;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien von /var/log aus, deren Namen mit einem großen oder kleinen C beginnt, keine Fehlerausgabe
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+1;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, von ihrem Home-Verzeichnis ausgehend, die groesser als 1 MB sind
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+1;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print 
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, von Ihrem Home-Verzeichnis ausgehend, die seit 30 Tagen nicht mehr verändert wurden
+1;find . -atime +30  
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print  
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, in dem zur Übung angelegten Verzeichnis, die mit a beginnen und dann ein r oder n als 2. Buchstaben haben
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name *anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+1;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, /home ausgehend alle Dateien des Users als der Sie angemeldet sind
+1;find /home -user tb
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name „*anwalt“ -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien, vom Typ link in dem zur Übung angelegten Verzeichnis
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+1;find /bin -type l
+0;find / -type d -print
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl zeigt alle Dateien ihres Home-Directorys 
+1;find / -type d -print
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find /home -type d -print
+@;5;Die Eingabeaufforderung der geoeffneten Konsole zeigt: "theo@ubuntu:~$". Welcher Befehl löscht alle Dateien aus dem Übungsverzeichnis, deren Endung auf .txt lautet
+1;find *.txt -exec rm {} \;
+0;find /var/www –user theo
+0;find ~ -user theo
+0;find /dokumente –name '*anwalt' -print
+0;find / -name "[cC]*" -print 2>/dev/null
+0;find / -name "[cC]*" -print 1>/dev/null
+0;find . -size +1M
+0;find . -iname "a[rn]*"
+0;find /bin -type l
+0;find / -type d -print
+@;5;Welche der Aussagen stimmt nicht fuer das exec-Kommando
+0;Mit der –exec Funktion des find – Kommandos können Folgekommandos mit den gefundenen Dateien ausgeführt werden.
+0;Mit der -ok Funktion des find - Kommandos werden Folgekommandos mit den gefundenen Dateien ausgeführt werden. Vorher wird aber eine Bestätigungseingabe nötig.
+0;Das Semikolon muss eine ok oder exec - Funktion abschliessen
+1;Die geschweiften Klammern {} werden nur bei der -ok - Funktion durch den gefundenen Dateinamen ersetzt.
+0;Die find-Option »-print0« zu benutzen, gibt wie -print die Namen der gefundenen Dateien aus, trennt diese aber nicht durch Zeilentrenner, sondern durch Nullbytes voneinander 
+@;5;Welche der Aussagen stimmt nicht fuer das xargs-Kommando
+0;Das xargs-Kommando arbeitet effizienter als das exec-Kommando, da es soviele Dateinamen wie moeglich sammelt, bevor der Folgebefehl ausgefuehrt wird.
+0;Die Option »-r« von xargs sorgt dafür, dass das Kommando rm nur ausgeführt wird, wenn find wirklich einen Dateinamen schickt.
+0;Die find/xargs-Kombination kommt bei eigenartigen Dateinamen in Schwierigkeiten, etwa solchen, die Leerzeichen oder gar Zeilentrenner enthalten, welche dann als Trennzeichen fehlinterpretiert werden.
+1;Die find-Option »-print0« kann nicht fuer die xargs Funktion verwendet werden. 
+@;5;Welche Aussage stimmt nicht fuer das locate - Kommando
+1;locate ist ein grundlegender Dienst, der zur Standardinstallation jeder Linux-Distribution gehört
+0;locate ist schneller als das find-Kommando
+0;Die Sonderzeichen »*«, »?« und »[…]« funktionieren bei locate wie bei Suchmustern in der Shell. 
+0;Während eine Anfrage ohne Suchmuster-Sonderzeichen jedoch alle Namen liefert, in denen der Suchbegriff irgendwo auftaucht, gibt eine Anfrage mit Suchmuster-Sonderzeichen nur diejenigen Namen aus, die komplett – von Anfang bis Ende – vom Suchbegriff beschrieben werden.
+0;Der Schrägstrich (»/«) erfährt bei locate keine Sonderbehandlung.
+@;5;Der Befehl locate -e brief.txt ist schneller als der Befehl find brief.txt
+1;stimmt nicht
+0;stimmt
+@;5;Welche Behauptung stimmt nicht fuer reguläre Ausdrücke
+0;Reguläre Ausdrücke werden gerne »rekursiv« aus Bausteinen aufgebaut, die selbst als reguläre Ausdrücke gelten. 
+0;Die einfachsten regulären Ausdrücke sind Zeichen Buchstaben, Ziffern und viele andere Zeichen des üblichen Zeichenvorrats, die für sich selber stehen.
+1;Ein regulärer Ausdruck der mit einem $ anfaengt passt nur am Zeilenanfang, und ein regulärer Ausdruck, der mit dem ^ - Zeichen aufhört, entsprechend nur am Zeilenende 
+0;aehnlich Zeichenklassen wie bei Shell-Suchmustern gibt es die Möglichkeit, Zeichenklassen zu definieren
+@;5;Welche Behauptung ueber Suchmuster stimmt nicht
+0;»a« passt; der reguläre Ausdruck »abc« passt auf die Zeichenkette »abc«.
+0;der reguläre Ausdruck »[a-e]« passt also auf genau eines der Zeichen »a« bis »e«
+0;»a[xy]b« passt entweder auf »axb« oder »ayb«. 
+0;»[A-Za-z]« passt auf alle Groß- und Kleinbuchstaben (ohne Umlaute)
+0;»[^abc]« passt auf alle Zeichen außer »a«, »b« und »c«. (Bei der Shell
+1;der Punkt ».« steht für ein mindestens ein beliebiges Zeichen
+@;5;Welche Behauptung beschreibt egrep am Besten
+1;egrep bietet mehr Suchmoeglichkeiten, ist aber langsamer als grep
+0;egrep erlaubt nur die Suche fester Zeichenketten, ist aber dafür schneller als grep
+0;egrep sucht in Dateien nach Zeilen bestimmten Inhalts, keine regulären Ausdrücke erlaubt
+@;5;Welche Behauptung beschreibt fgrep am Besten
+0;fgrep bietet mehr Suchmoeglichkeiten, ist aber langsamer als grep
+0;fgrep erlaubt nur die Suche fester Zeichenketten, ist aber dafür schneller als grep
+0;fgrep sucht in Dateien nach Zeilen bestimmten Inhalts, reguläre Ausdrücke sind erlaubt
+1;fgrep erlaubt nur die Suche fester Zeichenketten, ist aber dafür schneller als grep
+0;Keine der Aussagen trifft auf fgreb zu
+@;5;Der Befehl mit dem Sie in der Datei beispiel.txt alle Zeilen finden, in denen das Wort Frosch vorkommt
+1;grep Frosch beispiel.txt
+0;grep '\<Frosch\<' beispiel.txt
+0;grep ^Frosch beispiel.txt
+@;5;Der Befehl mit dem Sie in der Datei beispiel.txt alle Zeilen finden, die nur das Wort Frosch, also keine zusammengesetzten Worte wie Froschkönig, enthalten
+0;grep \Frosch\ beispiel.txt
+0;grep Frosch beispiel.txt
+1;grep '\<Frosch\<' beispiel.txt
+0;grep ^Frosch beispiel.txt
+@;5;Der Befehl mit dem Sie in der Datei beispiel.txt alle Zeilen finden, die mit Frosch anfangen
+1;grep ^Frosch beispiel.txt
+0;grep Frosch beispiel.txt
+0;grep '\<Frosch\<' beispiel.txt
+0;grep *Frosch beispiel.txt
+@;5;Die Standardkanäle fuer Daten der Bash sind
+0;pipe, tee
+1;stdin, stdout, stderr
+0;stdin, stdout
+@;5;Der Befehl mit dem Sie die Ausgabe von ls –laF in die Datei inhalt umleiten lautet
+1;ls –laF >inhalt
+0;ls -laF | inhalt
+0;ls -laF | datei
+1;ls -laF >> inhalt
+0;ls -laF < inhalt
+@;5;Nennen Sie den Operator mit dem Sie eine Zeichenfolge an eine schon bestehende Datei anhängen
+0;>
+0;<
+1;>>
+0;|
+0;keiner der Operatoren eignet sich
+@;5;Nennen Sie den Operator mit dem Sie den Standard-Eingabekanal umleiten
+0;tee
+0;>
+1;<
+0;>>
+0;|
+0;keiner der Operatoren eignet sich
+@;5;Welche Aussage beschreibt die Verwendung von Backticks am Besteb
+0;Backticks werden synonym zum einfachen Anfuehrungszeichen verwendet
+1;Backticks werden zur Kommandosubstitution verwendet 
+0;Backticks maskieren ein Kommando
+@;5;Das Konzept der Kommandosubstitution bedeutet, dass
+0;Die Standardeingabe eines Befehls anstelle des Kommandoaufrufs in die Befehlszeile eingebaut
+1;Die Standardausgabe eines Befehls anstelle des Kommandoaufrufs in die Befehlszeile eingebaut
+0;Die Fehlerausgabe eines Befehls wird unterdrueckt
+@;5;Erläutern Sie, welche Aktionen durch den folgenden Befehl ausgeführt werden: wc –w < frosch.txt >wortzahl
+0;Die Anzahl der Buchstaben, die die Datei frosch.txt enthält wird in die Datei wortzahl geschrieben
+1;Die Anzahl der Worte, die die Datei frosch.txt enthält wird in die Datei wortzahl geschrieben
+0;Die Datei frosch.txt wird formatiert und in wortzahl geschrieben
+@;5;Nennen Sie das Zeichen mit dem Sie Kommandos auf der Kommandozeile verknuepfen koennen?
+0;tee
+0;>
+0;<
+0;>>
+1;keines des Zeichen eignet sich
+@;5;Pipes leiten die Ausgabe eines Kommandos in das nächste Kommando weiter.
+1;ja
+0;nein
+@;5;Der Befehl tee leitet den Datenstrom innerhalb einer Pipeline an zwei Stellen gleichzeitig
+1;ja
+0;nein
+@;5;Welche Aussage beschreibt das Werkzeugkastenprinzip von Linux nicht zutreffend
+0;Viele kleine Programme werden zu einem Befehl zusammengefasst. 
+1;Durch die Verwendung vorhandener Funktionalitaet wird keine Zeit gespart. 
+0;Bei einer Fehlerkorrektur oder Optimierung eines verwendeten Befehls profitiert der Benutzer ohne Zeit investieren zu muessen
+
+@;5;Welche der folgenden Aussagen sind korrekt?
+1;Bei einem Hardlink handelt es sich um einen weiteren Dateinamen für eine bereits existierende Datei. 
+0;Hardlinks zu beliebigen Dateien sind möglich.
+0;Hardlinks können nur zu Verzeichnissen auf der gleichen Festplattenpartition exisitieren.
+0;Hardlinks können nur zu Verzeichnissen und Dateien auf der gleichen Partition existieren.
+@;5;Welches der folgenden Kommandos sendet die Standardausgabe (stdout) in die Datei ausgabe und die Fehlermeldungen (stderr) in die Datei fehler?
+1;ein_programm 1> ausgabe 2> fehler
+0;ein_programm 2> ausgabe 1> fehler
+0;ein_programm 0> ausgabe 1> fehler
+0;ein_programm > ausgabe
+@;5;Welches der folgenden Kommandos lenkt die Ausgabe des ls-Kommandos in die Datei verzeichnis_inhalt um?
+0;ls | verzeichnis_inhalt
+0;ls -f verzeichnis_inhalt
+0;ls < verzeichnis_inhalt
+1;ls > verzeichnis_inhalt
+@;5;Jemand möchte eine Textdatei mit allen xml-Dateien des aktuellen Verzeichnisses erstellen. Jeweils ein Dateiname pro Zeile. Welches der folgenden Kommandos leistet dies?
+0;ls -l > XML-Dateien.txt
+0;ls -1 > XML-Dateien.txt
+0;ls -1 | XML-Dateien.txt
+0;ls -s > XML-Dateien.txt
+1;ls -1 *.xml | tee XML-Dateien.txt
+@;5;Welches der folgenden Kommandos sendet sowohl die Standardausgabe (stdout) als auch die Fehlermeldungen (stderr) nicht in die Datei beides?
+1;ein_programm 2> beides 1> beides
+0;ein_programm >& beides
+0;ein_programm &> beides
+0;ein_programm > beides 2>&1
+0;ein_programm 2> beides 1>&2
+@;5;Welches der folgenden Kommandos erzeugt eine neue Datei mit dem Namen NEU?
+0;mkfile NEU
+1;touch NEU
+0;create
+@;5;Mit welchem Kommando wechselt man das Arbeitsverzeichnis?
+0;ls
+0;mkdir
+1;cd
+@;5;In welchem Verzeichnis liegen die Home-Verzeichnisse der Benutzer?
+1;/home
+0;/data
+0;/root/
+0;/usr
+@;5;Mit welchem Kommando erzeugt man ein neues Verzeichnis?
+0;ls
+1;mkdir
+0;dir
+0;new
+@;5;Mit welchem Kommando kann man die Datei datei1 in datei2 umbenennen?
+0;cp datei1 datai2
+1;mv datei1 datei2
+0;mv datei2 datei1
+0;rename datei1 datei2
+@;5;Was passiert, wenn man einen Soft-Link ln1, der auf eine Datei data zeigt, mit "cp ln1 ln2" kopiert? 
+0;ln2 ist anschließend ein weiterer Soft-Link auf die Datei data
+1;Es entsteht eine neue Datei ln2, die eine exakte Kopie von der data ist.
+0;ln2 wird zu einem Hardlink von ln1
+0;ln2 wird zu einem Hardlink zu der Datei data
+@;5;Man befindet sich in einem Verzeichnis, in dem es kein Unterverzeichnis mit dem Namen sub1 gibt. Welches der folgenden Kommandos erzeugt die Unterverzeichnisse sub1/sub11/sub111?
+0;mkdir sub1/sub11/sub111
+1;mkdir -p sub1/sub11/sub111
+0;mkdir -m sub1/sub11/sub111
+0;mkdir -s sub1/sub11/sub111
+@;5;Ein Benutzer führt folgendes Kommando aus: mv t1 t2 t3 . Was passiert, wenn t1, t2 und t3 Dateien sind?
+0;Die Datei t3 wird mit dem Inhalt von t1 und t2 überschrieben.
+1;Man erhält die Fehlermeldung "mv: target `t3' is not a directory".
+0;Das System erzeugt ein Verzeichnis t3 und speichert dann die drei Dateien t1, t2 und t3 in diesem Verzeichnis.
+@;5;Was passiert, wenn man den Befehl cp mit mehreren Dateinamen und als letztem PArameter ein Verzeichnis aufruft? Beispiel: cp Datei1 Datei2 Datei2 Docus
+0;Geht nicht, da cp immer nur eine Datei auf eine andere kopieren kann.
+1;Alle angegebenen Dateien werden in das Verzeichnis kopiert, also im Beispiel Docus
+0;Geht nur einzeln, wenn man auch im Verzeichnis "Docus" den Dateinamen angibt, unter dem die Datei gespeichert werden soll.
+@;5;Wie kann man sicherstellen, dass cp nachfragt, bevor es eine bereits existierende Datei überschreibt?
+0;Geht nicht, man sollte sich deshalb vorher genau überlegen, was man tut.
+0;Man muss die "-p"-Option setzen.
+1;Man muss die "-i"-Option setzen.
+0;Man muss die "-q"-Option setzen.
+@;5;Das Verzeichnis "Programme" befindet sich im aktuellen Verzeichnis. Mit welchem der folgenden Befehle kann man diese Verzeichnis komplett kopieren?
+1;cp -r Programme /data/backup/Programme
+0;cp -a Programme /data/backup/Programme
+0;cp Programme /data/backup/Programme
+@;5;Ein Benutzer führt folgendes Kommando aus: mv Datei1 Datei2 mein-verzeichnis. Was passiert, wenn das Verzeichnis mein-verzeichnis noch nicht vorhanden ist?
+1;Geht nicht, denn das Zielverzeichnis muss vorhanden sein!
+0;Es wird ein neues Verzeichnis mit dem Namen "mein-verzeichnis" angelegt und anschließend werden die beiden Dateien in neue Verzeichnis verschoben.
+@;5;Ein Benutzer führt folgendes Kommando aus: mv Datei mein_verzeichnis. Was passiert, wenn das Verzeichnis mein-verzeichnis noch nicht vorhanden ist?
+0;Geht nicht, denn das Zielverzeichnis muss vorhanden sein!
+1;Die Datei "Datei" wird in "mein_verzeichnis" umbenannt.
+0;Es wird ein Verzeichnis "mein_verzeichnis" angelegt und die Datei "Datei" in dieses Verzeichnis verschoben. 
+@;5;Ein Benutzer führt folgendes Kommando aus: mv Datei1 Datei2 mein-verzeichnis . Was passiert, wenn das Verzeichnis mein-verzeichnis bereits vorhanden ist?
+0;Das Zielverzeichnis, also in unserem Beispeil mein-verzeichnis, darf nicht vorhanden sein.
+1;Die beiden Dateien werden in das vorhandene Verzeichnis verschoben.
+0;Es wird ein neues Verzeichnis mit einer Tilde am Ende angelegt, also mein-verzeichnis~
+@;5;Ein Benutzer führt folgendes cp-Kommando durch: cp t1 t2 t3 . Was passiert, wenn t1, t2 und t3 Dateien sind?
+0;Die Datei t3 wird mit dem Inhalt von t1 und t2 überschrieben.
+1;Man erhält die Fehlermeldung "cp: target `t3' is not a directory".
+0;Das System erzeugt ein Verzeichnis t3 und speichert dann die drei Dateien t1, t2 und t3 in diesem Verzeichnis.
+@;5;Welcher der folgenden Befehle löscht ein Verzeichnis mit all seinen Unterverzeichnissen?
+0;rm -a Docus
+0;rmdir Docus
+0;rmdir -r docus
+0;rmdir -R docus
+1;rm -R Docus
+0;rmdir -p docus
+@;5;Bei welcher Anweisung wird die Standard-Ausgabe (stdout) des Kommandos cmd in die Datei "datei" geschrieben bzw. falls "datei" bereits existiert an den Inhalt angehängt?
+0;cmd | datei 
+0;cmd; datei
+1;cmd >> datei
+0;cmd > datei
+@;5;Wie wird die Standardausgabe in der Bash-Shell angesprochen?
+1;stdout
+0;stderror
+0;Bildschcirmausgabe 
+@;5;Wie lautet die Standarddatei der Bash-Shell für den Standardfehler?
+0;stdout
+1;stderr
+0;stderror 
+@;5;Welches der folgenden Kommandos sendet die Ausgabe von Kommando1 zu Kommando2?
+1;Kommando1 | Kommando2
+0;Kommando1 && Kommando2
+0;Kommando1 || Kommando2
+0;Kommando1 > Kommando2
+0;Kommando1 >> Kommando2 
+@;5;Wie kann man Fehlerkanal und Ausgabe vertauschen?
+1;kommando 3>&2 2>&1 1>&3
+0;Kommando 1>&3 2>&1 3>&2 
+0;Kommando 1>&2 2>&1
+0;Kommando 2>&1 1>&2
+0;Fehlerkanal und Ausgabe kann man nicht vertauschen, da sie immer getrennt bleiben müssen. 
+@;5;Welche der folgenden Anweisungsfolgen schreiben nicht sowohl das Ergebnis von "pwd" als auch das Ergebnis von "ls -l" in die Datei verzeichnis.txt?
+1;pwd ; ls -l > verzeichnis.txt
+0;(pwd ; ls -l) > verzeichnis.txt
+0;{ pwd ; ls -l; } > verzeichnis.txt
+0;pwd > verzeichis.txt; ls -l >> verzeichnis.txt
+@;5;Welche der folgenden Zeichenfolgen dient dazu stdout und stderr in eine Datei umzulenken?
+0;&&
+0;<&
+0;|&
+1;>&
+@;5;Aufgabe für Spezialisten: Welche der folgenden Kommandozeilen schreibt die Ergebnisse eines Kommandos "Kommando" in eine Datei "Ergebnisse" und übergibt die Fehlerausgaben an einen Prozess mit dem Namen Nachbearbeitung, der dann seine Ausgabe in die Datei "Fehler.log" schreibt.
+1;Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 3>&- | Nachbearbeitung > Fehler.log
+0;Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 | Nachbearbeitung > fehler.log
+0;Kommando 2> Ergebnisse 3>&1 1>&2 2>&3 | Nachbearbeitung 2> Fehler.log
+0;Kommando 3>&1 1>&2 2> Ergebnisse 2>&3 | Nachbearbeitung > Fehler.log
+0;Kommando 3>&1 1>&2 2>&3 2> Ergebnisse | Nachbearbeitung 2> Fehler.log
+@;5;Welches der folgenden Kommandos sendet die Ausgabe von Kommando in die Datei "Daten-File", wobei eine bereits bestehende Datei gelöscht wird?
+0;Kommando | Daten-File
+0;Kommando && Daten-File
+0;Kommando || Daten-File
+1;Kommando > Daten-File
+0;Kommando >> Daten-File
+@;5;In welchen der folgenden Kommandozeilen wird die Standardfehlerausgabe (stderr) und die Standardausgabe (stdout) vertauscht?
+1;cat a b c d 3>&1 1>&2 2>&3 3>&- | less 
+0;(pwd; ls foobar) >fehler.txt 1>&3 2>&1 3>&2 3>&- 
+0;(pwd; ls foobar) >fehler.txt 1>&3 3>&2 2>&1 3>&-
+@;5;Wie kann man sowohl die Fehlerausgabe als auch die Standardausgabe in die Datei "Alle_Ausgaben" lenken?
+0;(ls foobar; ls) 2>&1 >Alle_Ausgaben
+0;(ls foobar; ls) >Alle_Ausgaben 2>&
+1;(ls foobar; ls) >>Alle_Ausgaben 2>&1
+0;(ls foobar; ls) >Alle_Ausgaben 1>&2
+@;5;Welches der folgenden Kommandos erzeugt eine benamte Pipe mit dem Namen npipe?
+0;mkpipe npipe
+1;mkfifo npipe
+0;kommando |npipe
+0;lnpipe npipe
+@;5;Welcher der folgenden Kommandos überschreibt auf jeden Fall ohne Nachzufragen die Datei "Chancenlos"?
+0;echo "Ich ueberschreibe dich." > Chancenlos
+0;echo "Ich ueberschreibe dich." >> Chancenlos
+0;echo "Ich ueberschreibe dich." 2> Chancenlos
+1;echo "Ich ueberschreibe dich." >| Chancenlos
+0;echo "Ich ueberschreibe dich." |> Chancenlos
+@;5;Wie kann man die Fehlerausgaben eines Skriptes "beispiel.sh" an eine Datei "logdatei.txt" anhängen?
+1;./beispiel.sh 2>> logdatei.txt
+0;./beispiel.sh 1>> logdatei.txt
+0;./beispiel.sh 2> logdatei.txt
+0;./beispiel.sh 1> logdatei.txt
+@;5;Welch der folgenden Kommandozeilen schreibt die Ergebnisse des "ls -l"-Kommandos nicht in die Dateien Datei1 und Datei2 
+0;ls -l | tee Datei1 Datei2
+0;ls -l | tee Datei1 > Datei2
+0;ls -l | tee Datei1 Datei2
+0;ls -l | tee Datei1 | tee Datei2
+1;ls -l > Datei1 | tee Datei2
+@;5;Mit welchem Kommando wird der Standardeingabekanal (stdin) geschlossen?
+0;1<&-
+1;0<&-
+0;close(stdin)
+0;close("stdin")
+@;5;Welche Aussage bzgl. des folgenden Kommandos: >> Ausgabe Programm < Eingabe  ist korrekt? 
+0;Die Umlenkung ">> Ausgabe" darf nicht am Anfang stehen, sondern muss am Ende oder vor "< Eingabe" kommen.
+0;Die Eingabe für das Kommando "Programm" kommt von der Datei "Ausgabe"
+1;Die Ausgabe des Kommandos "Programm" wird in die Datei "Ausgabe" geschrieben
+0;Die Position von ">> Ausgabe" ist falsch, deshalb wird ein Schreiben in die Datei "Ausgabe" nicht erfolgen. Stattdessen wird die Ausgabe an stdout weitergeleitet.
+@;5;Für welche der folgenden Kommandos gilt in der Bash-Shell nicht: Falls eine Datei "filename" existiert, wird deren Inhalt gelöscht. Anschließend existiert eine Datei mit leerem Inhalt. Wenn keine Datei "filename" existiert, wird eine mit leerem Inhalt erzeugt. 
+0;: > filename
+0;rm -f filename; touch filename
+0;> filename
+1;cat filename > /dev/null
+@;5;Was passiert in folgendem Kommando? foobar >foo 2>&1
+0;Die Standardausgabe von foobar wird in die Datei "foo" geschrieben, während die Standardfehlerausgabe nach "&1" geschrieben wird.
+1;Sowohl die Standardausgabe als auch die Standardfehlerausgabe werden in die Datei "foo" geschrieben.
+0;Das Kommando ergibt keinen Sinn, da der Fehlerkanal nicht mehr wegen der vorigen Umlenkung in die Datei "foo" in die Standardausgabe geschrieben kann.
+@;5;Man hat die Aufgabe mittels "cat shell.txt tutorial.txt" die beiden Dateien "shell.txt" "tutorial.txt" zu konkatenieren. Das Ergebis möchte man in die Datei shell_tutorial.txt schreiben. Welche der folgenden Kommandos realisieren die Aufgabe nicht?
+0;cat shell.txt tutorial.txt > shell_tutorial.txt
+0;cat shell.txt >shell_tutorial.txt tutorial.txt
+0;cat >shell_tutorial.txt shell.txt tutorial.txt
+0;>shell_tutorial.txt cat shell.txt tutorial.txt
+1;alle Kommandos erledigen die Aufgabe
+@;5;Ein Shell-Skript soll keine Fehlerausgaben liefern. Mit welcher Anweisung am Anfang des Skriptes kann man dies erreichen?
+1;exec 2>/dev/null
+0;2>&3
+0;exec 2>&1
+@;5;Gibt man im Kommandozeilenmodus des Editors vi oder vim, also nach dem ":" ein "q!", geschieht folgendes:
+1;Der vi wird verlassen ohne dass der bearbeitete Text abgespeichert wird
+0;Der vi wird verlassen, nachdem der bearbeitete Text ohne Nachfrage abgespeichert wurde
+0;Der Benutzer wird gefragt, ob der Text abgespeichert werden soll, dann wird der vi verlassen.
+0;Der Befehl ist falsch, er sollte "!q" lauten
+@;5;Der Name vi stammt von:
+0;römisch sechs (VI)
+1;visual
+@;5;In welchem Modus befindet sich der vi nach dem Start?
+0;Einfügemodus (insert mode)
+1;Befehlsmodus (command mode)
+0;Kommandozeilenmodus (ex mode)
+@;5;Was bewirkt die Eingabe der Taste A im Befehlsmodus?
+0;Ein "A" erscheint im Text
+0;Der vi geht in den Einfügemodus, und der Cursor wird an den Anfang der Zeile positioniert.
+1;Der vi geht in den Einfügemodus, und der Cursor wird ans Ende der Zeile positioniert.
+0;Der vi geht in den Einfügemodus, und der Text wird hinter der aktuellen Cursorposition eingefügt.
+@;5;Was bewirkt die Eingabe der Taste a im Befehlsmodus?
+0;Ein "a" erscheint im Text
+0;Der vi geht in den Einfügemodus, und der Cursor wird an den Anfang der Zeile positioniert.
+0;Der vi geht in den Einfügemodus, und der Cursor wird ans Ende der Zeile positioniert.
+1;Der vi geht in den Einfügemodus, und der Text wird hinter der aktuellen Cursorposition eingefügt.
+@;5;Man befindet sich im Befehlsmodus und möchte Text unmittelbar vor der aktuellen Cursorposition einfügen. Mit welchem Kommando lässt sich dies bewerkstelligen?
+1;i
+0;I
+0;a
+0;o
+@;5;Man möchte einen Text im vi unter einem neuen Namen "lpic.txt" abspeichern. Mit welchem Kommando kann man dies im Kommandozeilenmodus realisieren?
+0;:write lpic.txt
+1;:w lpic.txt
+0;:save lpic.txt
+0;:s lpic.txt
+@;5;Welche der folgenden Kommandos im Kommandozeilenmodus speichert eine Datei unter dem bestehenden Namen ab und verlässt dann den vi?
+0;:we
+1;:wq
+0;:m
+0;:s
+@;5;Mit welcher Taste bzw. Tastenkombination kann man den Einfügemodus verlassen und in den Befehlsmodus gehen?
+0;Mit der ~-Taste
+1;ESC-Taste
+0;Ctrl+b

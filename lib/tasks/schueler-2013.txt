@@ -1,0 +1,36 @@
+FIT1AF;Sommer;Theo;password
+FIT1AF;Beßler;Stefan;02.10.1984
+FIT1AF;Engels;Nico;17.06.1987
+FIT1AF;Fleschmann;Chris;08.04.1989
+FIT1AF;Friedrich;Jens;12.10.1983
+FIT1AF;Gencerler;Suha;12.05.1971
+FIT1AF;Glaubke;Stefan;15.06.1983
+FIT1AF;Haensch;Johannes;02.10.1984
+FIT1AF;Hamann;Christian;06.11.1979
+FIT1AF;Jacobs;Daniel;29.11.1984
+FIT1AF;Maier;Michael;02.07.1977
+FIT1AF;Noack;Heiko;01.11.1979
+FIT1AF;Ratzow;Bianca;28.04.1980
+FIT1AF;Roth;Alexander;20.07.1980
+FIT1AF;Schneider;Vitali;12.04.1972
+FIT1AF;Springer;Jan-Philipp;12.02.1986
+FIT1AF;Tekin;Mair;27.12.1976
+FIT1AF;Westphal;Martin;30.05.1981
+FIT2AH;Pan;Peter;password
+FIT2AH;Akbulut;Senol;15.06.1991
+FIT2AH;Baumann;Mario;08.12.1987
+FIT2AH;Burghardt;Jaqueline;23.07.1988
+FIT2AH;Czembor;Pierre;10.01.1986
+FIT2AH;Goizet;Yves;27.09.1990
+FIT2AH;Göritz;Bastian;17.09.1976
+FIT2AH;Karsten;Eduard;10.08.1981
+FIT2AH;Kuhn;Daniel;08.07.1985
+FIT2AH;Marquardt;Kai;11.02.1988
+FIT2AH;Mück;Jan Michael;13.08.1990
+FIT2AH;Müller;Karl Sebastian;16.02.1984
+FIT2AH;Reime;Rayk;11.04.1983
+FIT2AH;Stamm;Mathias;02.03.1984
+FIT2AH;Stein;John-Patrick;18.09.1987
+FIT2AH;Stövesand;Roy;08.10.1989
+FIT2AH;Widera;Derk;03.01.1991
+FIT2AH;Wulf;Marc;26.04.1988
